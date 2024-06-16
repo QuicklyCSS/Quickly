@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Quickly: Componente Barra de Navegación | Mejora la Experiencia del Usuario</title>
+    <meta name="description" content="Explora nuestro componente de navegación diseñado para mejorar la experiencia del usuario. Ofrece una forma efectiva de mostrar opciones de navegación adicionales sin saturar la interfaz principal. Aprende cómo integrarlo para proporcionar una navegación fluida y eficiente en tu sitio web.">
+    <link rel="icon" type="image/png" href="./img/ico.png">
+    <link rel="stylesheet" href="./css/quickly.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/quickly.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./prism/prism.css">
+    <script src="./prism/prism.js" defer></script>
+    <script>var currentPage = 'compBarraNavegacion';</script>
+</head>
+<body>
+    <div id="headerContent"></div>
+    <section class="cont">
+        <aside id="menuContent"></aside> 
+        <main class="bg-white-2 pt-5">  
+            <div class="cont-80 py-5"> 
+                
+                <!-- NAVBAR CENTRADO -->
+                <section class="border rounded bg-color-1">
+
+                    <div class="p-5 bg-white-1 rounded-t border-b">
+                        <h1 class="font-l">Barra de Navegación</h1>
+                        <p class="font-l font-s-4">Con la  barra de navegación de <strong class="text-quickly" >Quickly</strong> simplifica la experiencia del usuario al proporcionar una guía intuitiva y accesible a través de tu sitio web. Con diseño claro y funcionalidades versátiles, facilita la navegación y mejora la interacción del usuario, garantizando una experiencia fluida y satisfactoria.</p>
+                    </div>
+                
+                    <!-- NAVBAR 1 -->
+                    <section class="pt-3 p-5">
+                        <h2 class="font-l font-s-2">Barra centrada</h2>
+                        <p class="pb-2">Explora nuestra barra de navegación centrada: intuitiva, elegante y fácil de usar. Accede rápidamente a todas nuestras secciones principales mientras disfrutas de una experiencia de usuario sin complicaciones.</p>        
+                        <div class="table-cont border">  
+                            <div class="border-b p-2">
+                                Ejemplo
+                            </div>                        
+                            <div class="hatched-1 p-5 grid g-5"> 
+
+<!-- Primer menú -->
+<nav class="navbar rounded bg-black">
+    <div class="navbar-container grid align-content-hc" id="navbar1">
+        <div class="navbar-header">
+            <button class="navbar-toggle" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Mi Logo</a>
+        </div>
+        <div class="navbar-collapse" id="navbar-collapse1">
+            <ul class="navbar-nav">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+                                                                          
+                            </div>                   
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                                                           
+    &lt;!-- Primer menú --&gt;
+    &lt;nav class="navbar rounded bg-black"&gt;
+        &lt;div class="navbar-container grid align-content-hc" id="navbar1"&gt;
+            &lt;div class="navbar-header"&gt;
+                &lt;button class="navbar-toggle" aria-label="Toggle navigation"&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;a href="#" class="navbar-brand"&gt;Mi Logo&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="navbar-collapse" id="navbar-collapse1"&gt;
+                &lt;ul class="navbar-nav"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+                                </code></pre>
+                            </div>                      
+                        </div>                                 
+                    </section>       
+                                   
+                    <!-- NAVBAR 2 -->
+                    <section class="px-5 pb-5">
+                        <h2 class="font-l font-s-2">Barra justificada a los extremos</h2>
+                        <div class="table-cont border">  
+                            <div class="border-b p-2">
+                                Ejemplos
+                            </div>                        
+                            <div class="hatched-1 p-5 grid g-5"> 
+
+<!-- Segundo menú -->
+<nav class="navbar rounded bg-black">
+    <div class="navbar-container grid space-hb" id="navbar2">
+        <div class="navbar-header">
+            <button class="navbar-toggle" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Mi Logo</a>
+        </div>
+        <div class="navbar-collapse" id="navbar-collapse2">
+            <ul class="navbar-nav">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+                                                                          
+                            </div>                   
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                                                           
+    &lt;!-- Segundo menú --&gt;
+    &lt;nav class="navbar rounded bg-black"&gt;
+        &lt;div class="navbar-container grid space-hb" id="navbar2"&gt;
+            &lt;div class="navbar-header"&gt;
+                &lt;button class="navbar-toggle" aria-label="Toggle navigation"&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                &lt;/button&gt;
+                &lt;a href="#" class="navbar-brand"&gt;Mi Logo&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="navbar-collapse" id="navbar-collapse2"&gt;
+                &lt;ul class="navbar-nav"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+                                </code></pre>
+                            </div>                      
+                        </div>                                 
+                    </section>                              
+                    
+                    <!-- NAVBAR 3 -->
+                    <section class="px-5 pb-5">
+                        <h2 class="font-l font-s-2">Barra justificada a los extremos invertida</h2>
+                        <p class="pb-2">Para invertir una barra de navegación, puedes emplear la clase ".reverse-h-es". Esto te permite justificar el logo y el menú a los extremos opuestos sin tener que modificar el código.</p>        
+                        <div class="table-cont border">  
+                            <div class="border-b p-2">
+                                Ejemplos
+                            </div>                        
+                            <div class="hatched-1 p-5 grid g-5"> 
+
+<!-- Tercer menú -->
+<nav class="navbar rounded bg-black">
+    <div class="navbar-container grid space-hb reverse-es" id="navbar3">
+        <div class="navbar-header grid space-hb">
+            <a href="#" class="navbar-brand">Mi Logo</a>
+            <button class="navbar-toggle" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>            
+        </div>
+        <div class="navbar-collapse" id="navbar-collapse3">
+            <ul class="navbar-nav">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+                                                                          
+                            </div>                   
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                                                           
+    &lt;!-- Tercer menú --&gt;
+    &lt;nav class="navbar rounded bg-black"&gt;
+        &lt;div class="navbar-container grid space-hb reverse-es" id="navbar3"&gt;
+            &lt;div class="navbar-header grid space-hb"&gt;
+                &lt;a href="#" class="navbar-brand"&gt;Mi Logo&lt;/a&gt;
+                &lt;button class="navbar-toggle" aria-label="Toggle navigation"&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                &lt;/button&gt;            
+            &lt;/div&gt;
+            &lt;div class="navbar-collapse" id="navbar-collapse3"&gt;
+                &lt;ul class="navbar-nav"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+                                </code></pre>
+                            </div>                      
+                        </div>                                 
+                    </section>      
+
+                    <!-- NAVBAR 4 -->
+                    <section class="px-5 pb-5">
+                        <h2 class="font-l font-s-2">Navbar con submenu</h2>
+                        <p class="pb-2">Barra de navegación con equidistantes espacios entre sus bloques y menú centrado.</p>        
+                        <div class="table-cont border">  
+                            <div class="border-b p-2">
+                                Ejemplos
+                            </div>                        
+                            <div class="hatched-1 p-5 grid g-5"> 
+
+<!-- Cuarto menú -->
+<nav class="navbar rounded bg-black">
+    <div class="navbar-container grid space-ha" id="navbar4">
+        <div class="navbar-header grid space-ha">
+            <button class="navbar-toggle" aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>            
+            <a href="#" class="navbar-brand">Mi Logo</a>
+        </div>
+        <div class="navbar-collapse" id="navbar-collapse4">
+            <ul class="navbar-nav">
+                <li><a href="#">Inicio</a></li>
+                <li>
+                    <a href="#" aria-haspopup="true" aria-expanded="false">Acerca de <svg class="ml-1 ico-8 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg></a>
+                    <ul>
+                        <li><a href="#">Acerca de 1</a></li>
+                        <li><a href="#">Acerca de 2</a></li>
+                      </ul>
+                </li>
+                <li>
+                    <a href="#" aria-haspopup="true" aria-expanded="false">Servicios <svg class="ml-1 ico-8 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg></a>
+                    <ul>
+                      <li><a href="#">Servicio 1</a></li>
+                      <li><a href="#">Servicio 2</a></li>
+                    </ul>
+                  </li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="hide-s">
+            <a href="#" title="..." class="mr-1">
+                <svg class="ico-24 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg>
+            </a>
+            <a href="#" title="..." class="mr-1">
+                <svg class="ico-24 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.082c1.602 0 1.792.006 2.425.035 1.627.074 2.385.845 2.46 2.459.028.633.034.822.034 2.424s-.006 1.792-.034 2.424c-.075 1.613-.832 2.386-2.46 2.46-.633.028-.822.035-2.425.035-1.602 0-1.792-.006-2.424-.035-1.63-.075-2.385-.849-2.46-2.46-.028-.632-.035-.822-.035-2.424s.007-1.792.035-2.424c.074-1.615.832-2.386 2.46-2.46.632-.029.822-.034 2.424-.034zm0-1.082c-1.63 0-1.833.007-2.474.037-2.18.1-3.39 1.309-3.49 3.489-.029.641-.036.845-.036 2.474 0 1.63.007 1.834.036 2.474.1 2.179 1.31 3.39 3.49 3.49.641.029.844.036 2.474.036 1.63 0 1.834-.007 2.475-.036 2.176-.1 3.391-1.309 3.489-3.49.029-.64.036-.844.036-2.474 0-1.629-.007-1.833-.036-2.474-.098-2.177-1.309-3.39-3.489-3.489-.641-.03-.845-.037-2.475-.037zm0 2.919c-1.701 0-3.081 1.379-3.081 3.081s1.38 3.081 3.081 3.081 3.081-1.379 3.081-3.081c0-1.701-1.38-3.081-3.081-3.081zm0 5.081c-1.105 0-2-.895-2-2 0-1.104.895-2 2-2 1.104 0 2.001.895 2.001 2s-.897 2-2.001 2zm3.202-5.922c-.397 0-.72.322-.72.72 0 .397.322.72.72.72.398 0 .721-.322.721-.72 0-.398-.322-.72-.721-.72z"/></svg>        
+            </a>
+            <a href="#" title="...">
+                <svg class="ico-24 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg>        
+            </a>
+        </div>
+    </div>
+</nav>
+                                                                          
+                            </div>                   
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                                                           
+    &lt;!-- Cuarto menú --&gt;
+    &lt;nav class="navbar rounded bg-black"&gt;
+        &lt;div class="navbar-container grid space-ha" id="navbar4"&gt;
+            &lt;div class="navbar-header grid space-ha"&gt;
+                &lt;button class="navbar-toggle" aria-label="Toggle navigation"&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                    &lt;span class="icon-bar"&gt;&lt;/span&gt;
+                &lt;/button&gt;            
+                &lt;a href="#" class="navbar-brand"&gt;Mi Logo&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class="navbar-collapse" id="navbar-collapse4"&gt;
+                &lt;ul class="navbar-nav"&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#" aria-haspopup="true" aria-expanded="false"&gt;Acerca de &lt;svg class="ml-1 ico-8 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"&gt;&lt;path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/&gt;&lt;/svg&gt;&lt;/a&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Acerca de 1&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Acerca de 2&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="#" aria-haspopup="true" aria-expanded="false"&gt;Servicios &lt;svg class="ml-1 ico-8 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"&gt;&lt;path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/&gt;&lt;/svg&gt;&lt;/a&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Servicio 1&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href="#"&gt;Servicio 2&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="hide-s"&gt;
+                &lt;a href="#" title="..." class="mr-1"&gt;
+                    &lt;svg class="ico-24 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/&gt;&lt;/svg&gt;
+                &lt;/a&gt;
+                &lt;a href="#" title="..." class="mr-1"&gt;
+                    &lt;svg class="ico-24 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.082c1.602 0 1.792.006 2.425.035 1.627.074 2.385.845 2.46 2.459.028.633.034.822.034 2.424s-.006 1.792-.034 2.424c-.075 1.613-.832 2.386-2.46 2.46-.633.028-.822.035-2.425.035-1.602 0-1.792-.006-2.424-.035-1.63-.075-2.385-.849-2.46-2.46-.028-.632-.035-.822-.035-2.424s.007-1.792.035-2.424c.074-1.615.832-2.386 2.46-2.46.632-.029.822-.034 2.424-.034zm0-1.082c-1.63 0-1.833.007-2.474.037-2.18.1-3.39 1.309-3.49 3.489-.029.641-.036.845-.036 2.474 0 1.63.007 1.834.036 2.474.1 2.179 1.31 3.39 3.49 3.49.641.029.844.036 2.474.036 1.63 0 1.834-.007 2.475-.036 2.176-.1 3.391-1.309 3.489-3.49.029-.64.036-.844.036-2.474 0-1.629-.007-1.833-.036-2.474-.098-2.177-1.309-3.39-3.489-3.489-.641-.03-.845-.037-2.475-.037zm0 2.919c-1.701 0-3.081 1.379-3.081 3.081s1.38 3.081 3.081 3.081 3.081-1.379 3.081-3.081c0-1.701-1.38-3.081-3.081-3.081zm0 5.081c-1.105 0-2-.895-2-2 0-1.104.895-2 2-2 1.104 0 2.001.895 2.001 2s-.897 2-2.001 2zm3.202-5.922c-.397 0-.72.322-.72.72 0 .397.322.72.72.72.398 0 .721-.322.721-.72 0-.398-.322-.72-.721-.72z"/&gt;&lt;/svg&gt;        
+                &lt;/a&gt;
+                &lt;a href="#" title="..."&gt;
+                    &lt;svg class="ico-24 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/&gt;&lt;/svg&gt;        
+                &lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+                                </code></pre>
+                            </div>                      
+                        </div>                                 
+                    </section>                          
+
+                </section>  
+
+            </div>
+        </main>     
+        <footer id="footerContent"></footer>    
+    </section>
+</body>
+</html>

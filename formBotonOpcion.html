@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con Botones de Opción | Estilo y Funcionalidad</title>
+  <meta name="description" content="Descubre cómo mejorar la usabilidad de tus formularios con botones de opción utilizando Quickly. Nuestra biblioteca de estilos está diseñada para optimizar la apariencia y funcionalidad de tus formularios, ofreciendo una experiencia de usuario intuitiva y atractiva. Personaliza y optimiza tus formularios web para una interacción fluida y eficiente con los usuarios.">
+  <link rel="stylesheet" href="./css/quickly.css">  <link rel="stylesheet" href="./css/app.css">
+  <script src="./js/quickly.js" defer></script>
+  <script src="./js/app.js" defer></script>
+  <link rel="stylesheet" href="./prism/prism.css">
+  <script src="./prism/prism.js" defer></script>
+  <script>var currentPage = 'formBotonOpcion';</script>
+</head>
+<body>
+    <div id="headerContent"></div>
+    <section class="cont">
+        <aside id="menuContent"></aside> 
+        <main class="bg-white-2 pt-5">  
+            <div class="cont-80 py-5"> 
+                
+                <!-- FORMULARIO -->
+                <section class="border rounded bg-color-1">
+                    <div class="p-5 item-1 bg-white-1 rounded-t border-b">
+                        <h1 class="font-l">Botón de radio (Radio Button)</h1>
+                        <p class="font-l font-s-4">Descubre la simplicidad y flexibilidad de <strong class="text-quickly">Quickly</strong> para diseñar formularios con botones de opción personalizados. Aplica estilos y personalízalos fácilmente para que se adapten a tu diseño de manera intuitiva y atractiva.</p>
+                    </div>
+                
+                    <!-- FORMULARIO VALIDACIÓN -->
+                    <section class="pt-3 px-5">
+                        <h2 class="font-l font-s-2">Botón de opción</h2>
+                        <p class="pb-2">Presentamos opciones de botones de opción: el primero con el atributo 'requerido' y el segundo sin dicho atributo.
+                        </p>                           
+                        <div class="table-cont">                        
+                            <div class="table-grid grid">
+                                <div class="table-item-th bg-table-h font-b">Atributo / Clase</div>
+                                <div class="table-item-th bg-table-h font-b">Descripción</div>    
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">required</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Para activar la validación de los campos, debes especificar el atributo.</div>
+                                </div>  
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">disabled / .disabled</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Para deshabilitar el campo, debes especificar el atributo correspondiente o la clase.</div>
+                                </div>  
+                            </div>
+                            <div class="border-x mb-5">                      
+                                <div class="border-b p-2">
+                                    <p>Ejemplo</p>
+                                </div>  
+                                <div class="hatched-1 p-5"> 
+                                    <form id="form" class="form" aria-labelledby="formulario-titulo" role="form">
+                                        <div class="grid item-3 g-2">
+                                            <div class="form-group">
+                                                <fieldset class="grid item-2">
+                                                    <legend>Opción</legend>
+                                                    <label><input type="radio" name="opcion" value="opcion1" required> Opción 1</label>
+                                                    <label><input type="radio" name="opcion" value="opcion2" required> Opción 2</label>
+                                                </fieldset>
+                                                <div class="valid-feedback">¡Texto ok!</div>
+                                                <div class="invalid-feedback">¡Texto error!</div>
+                                            </div>     
+                                            <div class="form-group">
+                                                <fieldset class="grid item-2">
+                                                    <legend>Opción</legend>
+                                                    <label><input type="radio" name="opcion1" value="opcion1"> Opción 1</label>
+                                                    <label><input type="radio" name="opcion1" value="opcion2"> Opción 2</label>
+                                                </fieldset>
+                                                <div class="valid-feedback">¡Texto ok!</div>
+                                                <div class="invalid-feedback">¡Texto error!</div>
+                                            </div> 
+                                            <div class="form-group">
+                                                <fieldset class="grid item-2">
+                                                    <legend>Elige una opción</legend>
+                                                    <label><input class="disabled" type="radio" name="opcion2" value="opcion1" disabled> Opción 1</label>
+                                                    <label><input class="disabled" type="radio" name="opcion2" value="opcion2" disabled> Opción 2</label>
+                                                </fieldset>
+                                                <div class="valid-feedback">¡Texto ok!</div>
+                                                <div class="invalid-feedback">¡Texto error!</div>
+                                            </div>                                                                                        
+                                        </div>                                                                                                                                                                                                       
+                                        <div class="form-group grid align-content-hr m-0">
+                                            <button class="btn btn-secondary" type="reset">Borrar <svg class="ml-1 ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M5.662 23l-5.369-5.365c-.195-.195-.293-.45-.293-.707 0-.256.098-.512.293-.707l14.929-14.928c.195-.194.451-.293.707-.293.255 0 .512.099.707.293l7.071 7.073c.196.195.293.451.293.708 0 .256-.097.511-.293.707l-11.216 11.219h5.514v2h-12.343zm3.657-2l-5.486-5.486-1.419 1.414 4.076 4.072h2.829zm.456-11.429l-4.528 4.528 5.658 5.659 4.527-4.53-5.657-5.657z"/></svg></button>
+                                        </div>   
+                                    </form>                                                                                                                                                                                                 
+                                </div>                   
+                                <div class="border-t p-2">
+                                    HTML
+                                </div>
+                                <div class="pre-pre2">
+                                    <pre class="cont-100 scroll-x"><code class="language-html">   
+    &lt;!-- Requerido --&gt;                                                                                                                                                             
+    &lt;div class="form-group"&gt;
+        &lt;fieldset class="grid item-2"&gt;
+            &lt;legend&gt;Opción&lt;/legend&gt;
+            &lt;label&gt;&lt;input type="radio" name="opcion" value="opcion1" required&gt; Opción 1&lt;/label&gt;
+            &lt;label&gt;&lt;input type="radio" name="opcion" value="opcion2" required&gt; Opción 2&lt;/label&gt;
+        &lt;/fieldset&gt;
+        &lt;div class="valid-feedback"&gt;¡Texto ok!&lt;/div&gt;
+        &lt;div class="invalid-feedback"&gt;¡Texto error!&lt;/div&gt;
+    &lt;/div&gt;    
+    
+    &lt;!-- No Requerido --&gt; 
+    &lt;div class="form-group"&gt;
+        &lt;fieldset class="grid item-2"&gt;
+            &lt;legend&gt;Opción&lt;/legend&gt;
+            &lt;label&gt;&lt;input type="radio" name="opcion1" value="opcion1"&gt; Opción 1&lt;/label&gt;
+            &lt;label&gt;&lt;input type="radio" name="opcion1" value="opcion2"&gt; Opción 2&lt;/label&gt;
+        &lt;/fieldset&gt;
+        &lt;div class="valid-feedback"&gt;¡Texto ok!&lt;/div&gt;
+        &lt;div class="invalid-feedback"&gt;¡Texto error!&lt;/div&gt;
+    &lt;/div&gt; 
+
+    &lt;!-- Deshabilitado --&gt;
+    &lt;div class="form-group"&gt;
+        &lt;fieldset class="grid item-2"&gt;
+            &lt;legend&gt;Opción&lt;/legend&gt;
+            &lt;label&gt;&lt;input class="disabled" type="radio" name="opcion" value="opcion1" disabled&gt; Opción 1&lt;/label&gt;
+            &lt;label&gt;&lt;input class="disabled" type="radio" name="opcion" value="opcion2" disabled&gt; Opción 2&lt;/label&gt;
+        &lt;/fieldset&gt;
+        &lt;div class="valid-feedback"&gt;¡Texto ok!&lt;/div&gt;
+        &lt;div class="invalid-feedback"&gt;¡Texto error!&lt;/div&gt;
+    &lt;/div&gt;      
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>                                 
+                    </section>    
+                            
+                    
+                </section>    
+
+            </div>
+        </main>     
+        <footer id="footerContent"></footer>    
+    </section>
+</body>
+</html>

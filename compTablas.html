@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Quickly: Componente Tablas | Organiza y Visualiza Datos de Forma Eficiente</title>
+    <meta name="description" content="Descubre nuestro componente de tablas diseñado para organizar y visualizar datos de manera eficiente. Ofrece una forma efectiva de presentar información de manera clara y estructurada, facilitando la comprensión y el análisis de los datos. Aprende cómo integrarlo para mejorar la presentación de información en tu sitio web.">
+    <link rel="icon" type="image/png" href="./img/ico.png">
+    <link rel="stylesheet" href="./css/quickly.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/quickly.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./prism/prism.css">
+    <script src="./prism/prism.js" defer></script>
+    <script>var currentPage = 'compTablas';</script>
+</head>
+<body>
+    <div id="headerContent"></div>
+    <section class="cont">
+        <aside id="menuContent"></aside> 
+        <main class="bg-white-2 pt-5">  
+            <div class="cont-80 py-5"> 
+                
+                <!-- NAVBAR CENTRADO -->
+                <section class="border rounded bg-color-1">
+
+                    <div class="p-5 bg-white-1 rounded-t border-b">
+                        <h1 class="font-l">Tablas</h1>
+                        <p class="font-l font-s-4">Explora la potencia de nuestras tablas de <strong class="text-quickly" >Quickly</strong>, la herramienta esencial para organizar y visualizar datos de manera eficiente. Diseñadas con precisión para ofrecer claridad y facilidad de uso, nuestras tablas simplifican la presentación de información compleja. Descubre cómo nuestras tablas pueden llevar tus análisis de datos al siguiente nivel, brindando una experiencia fluida y productiva para tus usuarios.</p>
+                    </div>
+                
+                    <!-- TABLA 1 -->
+                    <section class="pt-3 p-5">
+                        <h2 class="font-l font-s-2">Tabla simple</h2>
+                        <p class="pb-2">Las tablas proporcionan una flexibilidad total para adaptarlas según tus preferencias. Puedes ajustar con facilidad sus anchos y alturas mediante clases específicas. Estas tienen asignado un alto mínimo de 150px y un alto máximo en la versión móvil de 350px. Además, tienes la libertad de personalizar su tamaño según las necesidades de tu diseño utilizando las clases .w y .h para el ancho y la altura respectivamente. Si deseas más información detallada, te recomendamos consultar nuestra documentación. También puedes añadir colores de fondo a las cabeceras de la tabla utilizando la notación de clases .bg-color-COLOR.</p>        
+                        <div class="table-cont border">  
+                            <div class="border-b p-2">
+                                Ejemplo
+                            </div>                        
+                            <div class="hatched-1 p-5"> 
+
+                                <!-- Tabla 1 -->
+                                <section class="table">
+                                    <table class="table-container">
+                                        <thead class="table-header">
+                                            <tr>
+                                                <th class="w-40">N°</th>
+                                                <th class="w-250">Nombre</th>
+                                                <th class="w-250">Apellido</th>
+                                                <th class="w-80">Edad</th>
+                                                <th class="w-200">Ciudad</th>
+                                                <th class="w-250">Teléfono</th>
+                                                <th class="w-auto">Email</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-body">
+                                            <tr>
+                                                <td class="w-40">01</td>
+                                                <td class="w-250">Juan</td>
+                                                <td class="w-250">Soto</td>
+                                                <td class="w-80">28</td>
+                                                <td class="w-200">Madrid</td>
+                                                <td class="w-250">56-999-88-77</td>
+                                                <td class="w-auto">juan@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-40">02</td>
+                                                <td class="w-250">Ana</td>
+                                                <td class="w-250">Espinoza</td>
+                                                <td class="w-80">24</td>
+                                                <td class="w-100">Barcelona</td>
+                                                <td class="w-250">56-999-88-66</td>
+                                                <td class="w-auto">ana@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-40">03</td>
+                                                <td class="w-250">Carlos</td>
+                                                <td class="w-250">Latín</td>
+                                                <td class="w-80">30</td>
+                                                <td class="w-100">Sevilla</td>
+                                                <td class="w-250">56-999-88-55</td>
+                                                <td class="w-auto">carlos@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-40">04</td>
+                                                <td class="w-250">Laura</td>
+                                                <td class="w-250">Gonzales</td>
+                                                <td class="w-80">22</td>
+                                                <td class="w-100">Valencia</td>
+                                                <td class="w-250">56-999-88-44</td>
+                                                <td class="w-auto">laura@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-40">05</td>
+                                                <td class="w-250">Miguel</td>
+                                                <td class="w-250">Troncoso</td>
+                                                <td class="w-80">26</td>
+                                                <td class="w-100">Bilbao</td>
+                                                <td class="w-250">56-999-88-33</td>
+                                                <td class="w-auto">miguel@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-40">06</td>
+                                                <td class="w-250">Elena</td>
+                                                <td class="w-250">Osses</td>
+                                                <td class="w-80">29</td>
+                                                <td class="w-100">Granada</td>
+                                                <td class="w-250">56-999-88-22</td>
+                                                <td class="w-auto">lucia@gmail.com</td>
+                                            </tr>        
+                                        </tbody>
+                                    </table>
+                                </section>
+                                                                          
+                            </div>                   
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                                                           
+    &lt;!-- Tabla --&gt;
+    &lt;section class="table"&gt;
+        &lt;table class="table-container"&gt;
+            &lt;thead class="table-header"&gt;
+                &lt;tr&gt;
+                    &lt;th class="w-40"&gt;N°&lt;/th&gt;
+                    &lt;th class="w-250"&gt;Nombre&lt;/th&gt;
+                    &lt;th class="w-250"&gt;Apellido&lt;/th&gt;
+                    &lt;th class="w-80"&gt;Edad&lt;/th&gt;
+                    &lt;th class="w-200"&gt;Ciudad&lt;/th&gt;
+                    &lt;th class="w-250"&gt;Teléfono&lt;/th&gt;
+                    &lt;th class="w-auto"&gt;Email&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody class="table-body"&gt;
+                &lt;tr&gt;
+                    &lt;td class="w-40"&gt;01&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Juan&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Soto&lt;/td&gt;
+                    &lt;td class="w-80"&gt;28&lt;/td&gt;
+                    &lt;td class="w-200"&gt;Madrid&lt;/td&gt;
+                    &lt;td class="w-250"&gt;56-999-88-77&lt;/td&gt;
+                    &lt;td class="w-auto"&gt;juan@gmail.com&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class="w-40"&gt;02&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Ana&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Espinoza&lt;/td&gt;
+                    &lt;td class="w-80"&gt;24&lt;/td&gt;
+                    &lt;td class="w-100"&gt;Barcelona&lt;/td&gt;
+                    &lt;td class="w-250"&gt;56-999-88-66&lt;/td&gt;
+                    &lt;td class="w-auto"&gt;ana@gmail.com&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class="w-40"&gt;03&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Carlos&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Latín&lt;/td&gt;
+                    &lt;td class="w-80"&gt;30&lt;/td&gt;
+                    &lt;td class="w-100"&gt;Sevilla&lt;/td&gt;
+                    &lt;td class="w-250"&gt;56-999-88-55&lt;/td&gt;
+                    &lt;td class="w-auto"&gt;carlos@gmail.com&lt;/td&gt;
+                &lt;/tr&gt;      
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/section&gt;
+                                </code></pre>
+                            </div>                      
+                        </div>                                 
+                    </section>    
+                    
+                    <!-- TABLA con cabecera de color -->
+                    <section class="px-5 pb-5">
+                        <h2 class="font-l font-s-2">Tabla con cabecera de color</h2>
+                        <p class="pb-2">Puedes asignar diferentes colores a las cabeceras de las tablas según tus necesidades de diseño.</p>        
+                        <div class="table-cont border">  
+                            <div class="border-b p-2">
+                                Ejemplo
+                            </div>                        
+                            <div class="hatched-1 p-5"> 
+
+                                <!-- Tabla con color y alto y ancho variable -->
+                                <section class="table">
+                                    <table class="table-container">
+                                        <thead class="table-header bg-skyblue-4">
+                                            <tr>
+                                                <th class="w-40">N°</th>
+                                                <th class="w-250">Nombre</th>
+                                                <th class="w-250">Apellido</th>
+                                                <th class="w-80">Edad</th>
+                                                <th class="w-200">Ciudad</th>
+                                                <th class="w-250">Teléfono</th>
+                                                <th class="w-auto">Email</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-body">
+                                            <tr>
+                                                <td class="w-40">01</td>
+                                                <td class="w-250">Juan</td>
+                                                <td class="w-250">Soto</td>
+                                                <td class="w-80">28</td>
+                                                <td class="w-200">Madrid</td>
+                                                <td class="w-250">56-999-88-77</td>
+                                                <td class="w-auto">juan@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-40">02</td>
+                                                <td class="w-250">Ana</td>
+                                                <td class="w-250">Espinoza</td>
+                                                <td class="w-80">24</td>
+                                                <td class="w-100">Barcelona</td>
+                                                <td class="w-250">56-999-88-66</td>
+                                                <td class="w-auto">ana@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-40">03</td>
+                                                <td class="w-250">Carlos</td>
+                                                <td class="w-250">Latín</td>
+                                                <td class="w-80">30</td>
+                                                <td class="w-100">Sevilla</td>
+                                                <td class="w-250">56-999-88-55</td>
+                                                <td class="w-auto">carlos@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-40">04</td>
+                                                <td class="w-250">Laura</td>
+                                                <td class="w-250">Gonzales</td>
+                                                <td class="w-80">22</td>
+                                                <td class="w-100">Valencia</td>
+                                                <td class="w-250">56-999-88-44</td>
+                                                <td class="w-auto">laura@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-40">05</td>
+                                                <td class="w-250">Miguel</td>
+                                                <td class="w-250">Troncoso</td>
+                                                <td class="w-80">26</td>
+                                                <td class="w-100">Bilbao</td>
+                                                <td class="w-250">56-999-88-33</td>
+                                                <td class="w-auto">miguel@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-40">06</td>
+                                                <td class="w-250">Elena</td>
+                                                <td class="w-250">Osses</td>
+                                                <td class="w-80">29</td>
+                                                <td class="w-100">Granada</td>
+                                                <td class="w-250">56-999-88-22</td>
+                                                <td class="w-auto">lucia@gmail.com</td>
+                                            </tr>        
+                                        </tbody>
+                                    </table>
+                                </section>
+                                                                          
+                            </div>                   
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                                                           
+    &lt;!-- Tabla --&gt;
+    &lt;section class="table"&gt;
+        &lt;table class="table-container"&gt;
+            &lt;thead class="table-header bg-skyblue-1"&gt;
+                &lt;tr&gt;
+                    &lt;th class="w-40"&gt;N°&lt;/th&gt;
+                    &lt;th class="w-250"&gt;Nombre&lt;/th&gt;
+                    &lt;th class="w-250"&gt;Apellido&lt;/th&gt;
+                    &lt;th class="w-80"&gt;Edad&lt;/th&gt;
+                    &lt;th class="w-200"&gt;Ciudad&lt;/th&gt;
+                    &lt;th class="w-250"&gt;Teléfono&lt;/th&gt;
+                    &lt;th class="w-auto"&gt;Email&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody class="table-body"&gt;
+                &lt;tr&gt;
+                    &lt;td class="w-40"&gt;01&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Juan&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Soto&lt;/td&gt;
+                    &lt;td class="w-80"&gt;28&lt;/td&gt;
+                    &lt;td class="w-200"&gt;Madrid&lt;/td&gt;
+                    &lt;td class="w-250"&gt;56-999-88-77&lt;/td&gt;
+                    &lt;td class="w-auto"&gt;juan@gmail.com&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class="w-40"&gt;02&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Ana&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Espinoza&lt;/td&gt;
+                    &lt;td class="w-80"&gt;24&lt;/td&gt;
+                    &lt;td class="w-100"&gt;Barcelona&lt;/td&gt;
+                    &lt;td class="w-250"&gt;56-999-88-66&lt;/td&gt;
+                    &lt;td class="w-auto"&gt;ana@gmail.com&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class="w-40"&gt;03&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Carlos&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Latín&lt;/td&gt;
+                    &lt;td class="w-80"&gt;30&lt;/td&gt;
+                    &lt;td class="w-100"&gt;Sevilla&lt;/td&gt;
+                    &lt;td class="w-250"&gt;56-999-88-55&lt;/td&gt;
+                    &lt;td class="w-auto"&gt;carlos@gmail.com&lt;/td&gt;
+                &lt;/tr&gt;      
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/section&gt;
+                                </code></pre>
+                            </div>                      
+                        </div>                                 
+                    </section>     
+                    
+                    <!-- TABLA con alto ancho variable -->
+                    <section class="px-5 pb-5">
+                        <h2 class="font-l font-s-2">Tabla con ancho del 50% y alto de 200px</h2>
+                        <p class="pb-2">Este es un ejemplo que muestra la tabla con ancho y alto variable aplicado.</p>        
+                        <div class="table-cont border">  
+                            <div class="border-b p-2">
+                                Ejemplo
+                            </div>                        
+                            <div class="hatched-1 p-5 grid align-cc"> 
+
+                                <!-- Tabla con color y alto y ancho variable -->
+                                <section class="table h-200 wp-50">
+                                    <table class="table-container">
+                                        <thead class="table-header">
+                                            <tr>
+                                                <th class="w-40">N°</th>
+                                                <th class="w-250">Nombre</th>
+                                                <th class="w-250">Apellido</th>
+                                                <th class="w-80">Edad</th>
+                                                <th class="w-200">Ciudad</th>
+                                                <th class="w-250">Teléfono</th>
+                                                <th class="w-auto">Email</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-body">
+                                            <tr>
+                                                <td class="w-40">01</td>
+                                                <td class="w-250">Juan</td>
+                                                <td class="w-250">Soto</td>
+                                                <td class="w-80">28</td>
+                                                <td class="w-200">Madrid</td>
+                                                <td class="w-250">56-999-88-77</td>
+                                                <td class="w-auto">juan@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-40">02</td>
+                                                <td class="w-250">Ana</td>
+                                                <td class="w-250">Espinoza</td>
+                                                <td class="w-80">24</td>
+                                                <td class="w-100">Barcelona</td>
+                                                <td class="w-250">56-999-88-66</td>
+                                                <td class="w-auto">ana@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-40">03</td>
+                                                <td class="w-250">Carlos</td>
+                                                <td class="w-250">Latín</td>
+                                                <td class="w-80">30</td>
+                                                <td class="w-100">Sevilla</td>
+                                                <td class="w-250">56-999-88-55</td>
+                                                <td class="w-auto">carlos@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-40">04</td>
+                                                <td class="w-250">Laura</td>
+                                                <td class="w-250">Gonzales</td>
+                                                <td class="w-80">22</td>
+                                                <td class="w-100">Valencia</td>
+                                                <td class="w-250">56-999-88-44</td>
+                                                <td class="w-auto">laura@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-40">05</td>
+                                                <td class="w-250">Miguel</td>
+                                                <td class="w-250">Troncoso</td>
+                                                <td class="w-80">26</td>
+                                                <td class="w-100">Bilbao</td>
+                                                <td class="w-250">56-999-88-33</td>
+                                                <td class="w-auto">miguel@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="w-40">06</td>
+                                                <td class="w-250">Elena</td>
+                                                <td class="w-250">Osses</td>
+                                                <td class="w-80">29</td>
+                                                <td class="w-100">Granada</td>
+                                                <td class="w-250">56-999-88-22</td>
+                                                <td class="w-auto">lucia@gmail.com</td>
+                                            </tr>        
+                                        </tbody>
+                                    </table>
+                                </section>
+                                                                          
+                            </div>                   
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                                                           
+    &lt;!-- Tabla --&gt;
+    &lt;section class="table h-200 wp-50"&gt;
+        &lt;table class="table-container"&gt;
+            &lt;thead class="table-header"&gt;
+                &lt;tr&gt;
+                    &lt;th class="w-40"&gt;N°&lt;/th&gt;
+                    &lt;th class="w-250"&gt;Nombre&lt;/th&gt;
+                    &lt;th class="w-250"&gt;Apellido&lt;/th&gt;
+                    &lt;th class="w-80"&gt;Edad&lt;/th&gt;
+                    &lt;th class="w-200"&gt;Ciudad&lt;/th&gt;
+                    &lt;th class="w-250"&gt;Teléfono&lt;/th&gt;
+                    &lt;th class="w-auto"&gt;Email&lt;/th&gt;
+                &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody class="table-body"&gt;
+                &lt;tr&gt;
+                    &lt;td class="w-40"&gt;01&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Juan&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Soto&lt;/td&gt;
+                    &lt;td class="w-80"&gt;28&lt;/td&gt;
+                    &lt;td class="w-200"&gt;Madrid&lt;/td&gt;
+                    &lt;td class="w-250"&gt;56-999-88-77&lt;/td&gt;
+                    &lt;td class="w-auto"&gt;juan@gmail.com&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class="w-40"&gt;02&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Ana&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Espinoza&lt;/td&gt;
+                    &lt;td class="w-80"&gt;24&lt;/td&gt;
+                    &lt;td class="w-100"&gt;Barcelona&lt;/td&gt;
+                    &lt;td class="w-250"&gt;56-999-88-66&lt;/td&gt;
+                    &lt;td class="w-auto"&gt;ana@gmail.com&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td class="w-40"&gt;03&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Carlos&lt;/td&gt;
+                    &lt;td class="w-250"&gt;Latín&lt;/td&gt;
+                    &lt;td class="w-80"&gt;30&lt;/td&gt;
+                    &lt;td class="w-100"&gt;Sevilla&lt;/td&gt;
+                    &lt;td class="w-250"&gt;56-999-88-55&lt;/td&gt;
+                    &lt;td class="w-auto"&gt;carlos@gmail.com&lt;/td&gt;
+                &lt;/tr&gt;      
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/section&gt;
+                                </code></pre>
+                            </div>                      
+                        </div>                                 
+                    </section>                         
+
+                </section>  
+
+            </div>
+        </main>     
+        <footer id="footerContent"></footer>    
+    </section>
+</body>
+</html>

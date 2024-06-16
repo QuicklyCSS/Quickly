@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickly: Componente de Notificaciones Emergentes | Mejora la Interactividad y la Comunicación</title>
+    <meta name="description" content="Explora el componente de notificaciones emergentes en Quickly. Diseñado para mejorar la interactividad y la comunicación con los usuarios, nuestro componente ofrece una forma efectiva de presentar información importante de manera rápida y atractiva. Descubre cómo integrarlo para mejorar la experiencia del usuario y mantenerlos informados sobre eventos importantes o acciones realizadas en tu aplicación.">
+    <link rel="icon" type="image/png" href="./img/ico.png">
+    <link rel="stylesheet" href="./css/quickly.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/quickly.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./prism/prism.css">
+    <script src="./prism/prism.js" defer></script>
+    <script>var currentPage = 'compNotificacionesEmergentes';</script>
+</head>
+<body>
+    <div id="headerContent"></div>
+    <section class="cont">
+        <aside id="menuContent"></aside> 
+        <main class="bg-white-2 pt-5">  
+            <div class="cont-80 py-5"> 
+                
+                <!-- MODAL -->
+                <section class="border rounded bg-color-1">
+
+                    <div class="p-5 bg-white-1 rounded-t border-b">
+                        <h1 class="font-l">Notificaciones emergentes</h1>
+                        <p class="font-l font-s-4">Las notificaciones emergentes son una solución efectiva para mantener a los usuarios informados sobre eventos importantes en la aplicación. Permiten la interacción directa del usuario con el contenido, mejorando así la comunicación y la experiencia del usuario.</p>
+                    </div>
+                
+                    <!-- NOTIFICACION -->
+                    <section class="pt-3 p-5 rounded-b">
+                        <h2 class="font-l font-s-2">Notificaciones </h2>
+                        <p class="pb-2">Siguiendo el ejemplo proporcionado, puedes implementar fácilmente las notificaciones de Quickly, inspiradas en las alertas push comunes en los sistemas operativos. Estas notificaciones se cerrarán automáticamente después de 40 segundos, o puedes optar por cerrarlas manualmente haciendo clic en el botón X.</p>             
+                        <h3 class="font-l font-s-2">.toast</h3>
+                        <div class="table-cont border">  
+                            <div class="border-b p-2">
+                                Ejemplo
+                            </div>                        
+                            <div class="hatched-1 p-5 "> 
+  
+                                <!-- NOTIFICACION UNO -->  
+                                <!-- Botón para abrir la notificación -->
+                                <button class="btn btn-primary" data-Qy-toggle="toastId">Abrir Notificación</button>                                   
+                                
+                                <!-- Notificación ejemplo visible -->
+                                <div class="grid align-hc">
+                                    <div class="toast-ejemplo">
+                                        <div class="toast-header">
+                                            <div class="toast-title">
+                                                <img class="wh-24 mr-1" src="./img/ico.png"><h6 class="font-b">Notificación</h6>   
+                                            </div>
+                                            <div class="toast-close toast-close-x"><svg class="ico-24 ico-gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg></div>
+                                        </div>
+                                        <div class="toast-body">
+                                            <p>Mi primera Notificación :).</p>
+                                        </div>                                   
+                                    </div>
+                                </div>
+
+                                <!-- Contenedor del Notificación -->
+                                <div id="toastId" class="toast">
+                                    <div class="toast-content">
+                                        <div class="toast-header">
+                                            <div class="toast-title">
+                                                <img class="wh-24 mr-1" src="./img/ico.png"><h6 class="font-b">Notificación</h6>   
+                                            </div>
+                                            <div class="toast-close toast-close-x"><svg class="ico-24 ico-gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg></div>
+                                        </div>
+                                        <div class="toast-body">
+                                            <p>Mi primera Notificación :).</p>
+                                        </div>                                   
+                                    </div>
+                                </div>
+                                                                 
+                            </div>                   
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;button class="btn btn-primary" data-Qy-toggle="toastId"&gt;Abrir Notificación&lt;/button&gt;
+    &lt;div id="toastId" class="toast"&gt;
+        &lt;div class="toast-content"&gt;
+            &lt;div class="toast-header"&gt;
+                &lt;div class="toast-title"&gt;
+                    &lt;img class="wh-24 mr-1" src="./img/ico.png"&gt;&lt;h6 class="font-b"&gt;Notificación&lt;/h6&gt;   
+                &lt;/div&gt;
+                &lt;div class="toast-close toast-close-x"&gt;&lt;svg class="ico-24 ico-gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"&gt;&lt;path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/&gt;&lt;/svg&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="toast-body"&gt;
+                &lt;p&gt;Mi primera Notificación :).&lt;/p&gt;
+            &lt;/div&gt;                                   
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                </code></pre>
+                            </div>                      
+                        </div>                                 
+                    </section>      
+
+                </section>  
+            </div>
+        </main>     
+        <footer id="footerContent"></footer>    
+    </section>
+</body>
+</html>

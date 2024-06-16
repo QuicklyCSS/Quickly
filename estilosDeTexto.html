@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quickly: Estilos de Texto, Fuentes y Tamaños CSS para Grillas | Personalización y Legibilidad</title>
+  <meta name="description" content="Explora los estilos de texto, fuentes y tamaños CSS especializados para grillas en Quickly. Diseñados para ofrecer personalización y legibilidad en tus diseños, nuestros estilos facilitan la creación de interfaces web con tipografías atractivas y claras. Descubre cómo utilizarlos para mejorar la apariencia y la legibilidad del texto en tus proyectos de desarrollo web.">
+    <link rel="icon" type="image/png" href="./img/ico.png">
+  <link rel="stylesheet" href="./css/quickly.css">
+  <link rel="stylesheet" href="./css/app.css">
+  <script src="./js/quickly.js" defer></script>
+  <script src="./js/app.js" defer></script>
+  <link rel="stylesheet" href="./prism/prism.css">
+  <script src="./prism/prism.js" defer></script>
+  <script>var currentPage = 'estilosDeTexto';</script>
+</head>
+<body>
+    <div id="headerContent"></div>
+    <section class="cont">
+        <aside id="menuContent"></aside> 
+        <main class="bg-white-2 pt-5">  
+            <div class="cont-80 py-5 "> 
+
+                <!-- Estilos de texto -->
+                <section class="border rounded bg-color-1">
+                    <div class="p-5 bg-white-1 rounded-t border-b">
+                        <h1 class="font-l">Textos, Tamaños, Alineaciones, etiquetas</h1>
+                        <p class="font-l font-s-4">Aquí encontrarás documentación y ejemplos sobre la tipografía en <strong class="text-quickly" >Quickly</strong>, abarcando configuraciones globales, encabezados, texto del cuerpo, listas, Alineaciones de texto y más.</p>
+                    </div>
+                
+                    <!-- Encabezados H -->
+                    <section class="pt-3 px-5 border-b">
+                        <h2 class="font-l font-s-2">Configuraciones Globales</h2>
+                        <p class="pb-2">Recuerda que siempre tienes la libertad de personalizar cada aspecto de este framework. Puedes lograrlo creando tus propias reglas CSS y vinculando tu archivo CSS después de las llamadas a los estilos predeterminados de Quickly en la sección de header de tu documento HTML.</p>             
+                        <h3 class="font-l font-s-2">Encabezados H</h3>
+                        <div class="table-cont-b">                        
+                            <div class="table-grid grid">
+                                <div class="table-item-th bg-table-h font-b">Etiqueta</div>
+                                <div class="table-item-th bg-table-h font-b">Descripción</div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">h1</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 2.5rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">h2</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 2rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">h3</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 1.75rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">h4</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 1.5rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">h5</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 1.25rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">h6</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 1.12rem</div>
+                                </div>                        
+                            </div>    
+                        </div>                    
+                        <div class="border-l border-r mb-5">
+                            <div class="block border-b p-2">
+                                <p>Tamaños aplicados a las etiquetas H</p>
+                            </div>
+                            <div class="p-5 div0 grid text-l hatched-1">            
+                                <h1 class="border-b p-1 pl-2">Este es el titulo de Quickly en h1</h1>   
+                                <h2 class="border-b p-1 pl-2">Este es el titulo de Quickly en h2</h2>
+                                <h3 class="border-b p-1 pl-2">Este es el titulo de Quickly en h3</h3>  
+                                <h4 class="border-b p-1 pl-2">Este es el titulo de Quickly en h4</h4>  
+                                <h5 class="border-b p-1 pl-2">Este es el titulo de Quickly en h5</h5>  
+                                <h6 class="p-1 pl-2">Este es el titulo de Quickly en h6</h6>                                
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+            &lt;div&gt;
+                &lt;h1&gt;Este es el titulo de Quickly en h1&lt;/h1&gt;   
+                &lt;h2&gt;Este es el titulo de Quickly en h2&lt;/h2&gt;
+                &lt;h3&gt;Este es el titulo de Quickly en h3&lt;/h3&gt;  
+                &lt;h4&gt;Este es el titulo de Quickly en h4&lt;/h4&gt;  
+                &lt;h5&gt;Este es el titulo de Quickly en h5&lt;/h5&gt;  
+                &lt;h6&gt;Este es el titulo de Quickly en h6&lt;/h6&gt;  
+            &lt;/div&gt;
+                                </code></pre>
+                            </div> 
+                        </div>                
+                    </section>   
+            
+                    <!-- Clases H -->
+                    <section class="pt-3 px-5 border-b">
+                        <h2 class="font-l font-s-2">Clases .hn°</h2>
+                        <p class="pb-2">Las clases .h1 hasta .h6 están disponibles para cuando necesitas replicar el estilo de la fuente de un encabezado, pero no puedes utilizar el elemento HTML correspondiente.</p>             
+                        <h3 class="font-l font-s-2">.h1 (2,3,4,5,6)</h3>
+                        <div class="table-cont-b">                        
+                            <div class="table-grid grid">
+                                <div class="table-item-th bg-table-h font-b">Clase</div>
+                                <div class="table-item-th bg-table-h font-b">Descripción</div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.h1</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 2.5rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.h2</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 2rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.h3</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 1.75rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.h4</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 1.5rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.h5</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 1.25rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.h6</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 1.12rem</div>
+                                </div>                         
+                            </div>    
+                        </div>                    
+                        <div class="border-l border-r mb-5">
+                            <div class="block border-b p-2">
+                                <p>Ejemplos de los tamaños</p>
+                            </div>
+                            <div class="p-5 div0 grid text-l hatched-1">            
+                                <p class="h1 border-b pl-2 p-1">Este es el titulo de Quickly con clase h1</p>   
+                                <p class="h2 border-b pl-2 p-1">Este es el titulo de Quickly con clase h2</p>
+                                <p class="h3 border-b pl-2 p-1">Este es el titulo de Quickly con clase h3</p>  
+                                <p class="h4 border-b pl-2 p-1">Este es el titulo de Quickly con clase h4</p>  
+                                <p class="h5 border-b pl-2 p-1">Este es el titulo de Quickly con clase h5</p>  
+                                <p class="h6 pl-2 p-1">Este es el titulo de Quickly con clase h6</p>                                
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+            &lt;div&gt;
+                &lt;p class="h1 border-b pl-2"&gt;Este es el titulo de Quickly con clase h1&lt;/h1&gt;   
+                &lt;p class="h2 border-b pl-2"&gt;Este es el titulo de Quickly con clase h2&lt;/h2&gt;
+                &lt;p class="h3 border-b pl-2"&gt;Este es el titulo de Quickly con clase h3&lt;/h3&gt;  
+                &lt;p class="h4 border-b pl-2"&gt;Este es el titulo de Quickly con clase h4&lt;/h4&gt;  
+                &lt;p class="h5 border-b pl-2"&gt;Este es el titulo de Quickly con clase h5&lt;/h5&gt;  
+                &lt;p class="h6 pl-2"&gt;Este es el titulo de Quickly con clase h6&lt;/h6&gt;  
+            &lt;/div&gt;
+                                </code></pre>
+                            </div> 
+                        </div>                
+                    </section>     
+
+                    <!-- Parrafos strong & small -->
+                    <section class="pt-3 px-5 border-b">
+                        <h2 class="font-l font-s-2">Etiquetas semánticas</h2>
+                        <p class="pb-2">Este es un listado de las etiquetas semánticas incluidas en este framework.</p>             
+                        <div class="table-cont-b">                        
+                            <div class="table-grid grid">
+                                <div class="table-item-th bg-table-h font-b">Etiqueta</div>
+                                <div class="table-item-th bg-table-h font-b">Descripción</div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">p</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Por defecto, la altura para los párrafos es de 1rem, equivalente a 16px.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">strong</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">La etiqueta "strong" tiene asignado un font weight bold.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">em</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">La etiqueta "em" tiene asignado un font weight normal y cursiva.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">ins</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">La etiqueta "ins" tiene asignado un font weight normal y con underline.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">small</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">La etiqueta "small" tiene asignado un font size de .8rem (1rem = 16px) = 12px de altura.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">del</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">La etiqueta "del" tiene asignado un tachado.</div>
+                                </div>     
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">mark</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">La etiqueta "mark" tiene asignado un background y un color de texto.</div>
+                                </div>                         
+                                
+                            </div>    
+                        </div>                    
+                        <div class="border-l border-r mb-5">
+                            <div class="block border-b p-2">
+                                <p>Ejemplos de etiquetas</p>
+                            </div>
+                            <div class="p-5 div0 grid text-l hatched-1">            
+                                <p class="border-b p-2">P. Este es el ejemplo de la etiqueta parrafo.</p>   
+                                <p class="border-b p-2">Strong. Este es el ejemplo de la etiqueta <strong>strong</strong>.</p>    
+                                <p class="border-b p-2">Em. Este es el ejemplo <em>"para etiqueta em"</em> en el parrafo.</p>    
+                                <p class="border-b p-2">Ins. Este es el ejemplo <ins>para etiqueta ins</ins> en el parrafo.</p>     
+                                <small class="border-b p-2">Small. Este es el ejemplo para etiqueta small.</small>   
+                                <p class="border-b p-2">Del. Este es el ejemplo <del>"para etiqueta del"</del> en el parrafo.</p>    
+                                <p class="p-2">Mark. Este es el ejemplo <mark>para etiqueta mark</mark> en el parrafo.</p>                                                                            
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+            &lt;div class="m-5 grid text-l gy-1"&gt;            
+                &lt;p class="border-b p-2"&gt;P. Este es el ejemplo parrafo.&lt;/p&gt;   
+                &lt;p class="border-b p-2"&gt;Strong. Este es el ejemplo &lt;strong&gt;strong&lt;/strong&gt;.&lt;/p&gt;    
+                &lt;p class="border-b p-2"&gt;Em. Este es el ejemplo &lt;em&gt;"para etiqueta em"&lt;/em&gt;.&lt;/p&gt;    
+                &lt;p class="border-b p-2"&gt;Ins. Este es el ejemplo &lt;ins&gt;para etiqueta ins&lt;/ins&gt;.&lt;/p&gt;     
+                &lt;small class="border-b p-2"&gt;Small. Este es el ejemplo para etiqueta small.&lt;/small&gt;   
+                &lt;p class="border-b p-2"&gt;Del. Este es el ejemplo &lt;del&gt;"para etiqueta del"&lt;/del&gt;.&lt;/p&gt;    
+                &lt;p class="border-b p-2"&gt;Mark. Este es el ejemplo &lt;mark&gt;para etiqueta mark&lt;/mark&gt;.&lt;/p&gt;                                                                            
+            &lt;/div&gt;
+                                </code></pre>
+                            </div> 
+                        </div>                
+                    </section>  
+
+                    <!-- Subrayados de texto -->
+                    <section class="pt-3 px-5 border-b">
+                        <h2 class="font-l font-s-2">Clases para aplicar subrayado u tachado a texto</h2>
+                        <p class="pb-2">Presentamos tres clases diseñadas para agregar subrayado y tachado al texto sin comprometer la integridad semántica de tu sitio web.</p>             
+                        <div class="table-cont-b">                        
+                            <div class="table-grid grid">
+                                <div class="table-item-th bg-table-h font-b">Clase</div>
+                                <div class="table-item-th bg-table-h font-b">Descripción</div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.underline</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Aplica una línea de subrayado al texto que tenga la clase asignada.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.midleline</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Aplica un tachado a la mitad del texto que tenga la clase asignada.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.overline</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Aplica una línea encima del texto que tenga la clase asignada.</div>
+                                </div>                        
+                            </div>    
+                        </div>                    
+                        <div class="border-l border-r mb-5">
+                            <div class="block border-b p-2">
+                                <p>Ejemplos de etiquetas</p>
+                            </div>
+                            <div class="p-5 div0 grid text-l hatched-1">            
+                                <p class="border-b p-2 underline">Underline. Este es el ejemplo de la etiqueta.</p>   
+                                <p class="border-b p-2 middleline">Middleline. Este es el ejemplo de la etiqueta.</p>    
+                                <p class="p-2 overline">Overline. Este es el ejemplo de la etiqueta.</p>                                                                                
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+            &lt;div class="m-5 grid text-l gy-1"&gt;            
+                &lt;p class="border-b p-2 underline"&gt;Underline. Este es el ejemplo de la etiqueta.&lt;/p&gt;   
+                &lt;p class="border-b p-2 middleline"&gt;Middleline. Este es el ejemplo de la etiqueta.&lt;/p&gt;    
+                &lt;p class="border-b p-2 overline"&gt;Overline. Este es el ejemplo de la etiqueta.&lt;/p&gt;                                                                                
+            &lt;/div&gt;
+                                </code></pre>
+                            </div> 
+                        </div>                
+                    </section>              
+
+                    <!-- Font size -->
+                    <section class="pt-3 px-5 border-b">
+                        <h2 class="font-l font-s-2">Alturas de texto</h2>
+                        <p class="pb-2">Cuando quieras destacar un texto dentro de un párrafo, por ejemplo, por encima de los demás, puedes considerar el uso de las clases font-s-n°. Estas te proporcionarán la libertad de elegir el tamaño más adecuado.</p>             
+                        <h3 class="font-l font-s-2">.font-s-n°</h3>
+                        <div class="table-cont-b">                        
+                            <div class="table-grid grid">
+                                <div class="table-item-th bg-table-h font-b">Clase</div>
+                                <div class="table-item-th bg-table-h font-b">Descripción</div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.font-s-1</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 2.5rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.font-s-2</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 2rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.font-s-3</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 1.75rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.font-s-4</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 1.5rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.font-s-5</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 1.25rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.font-s-6</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 1.12rem</div>
+                                </div>                         
+                            </div>    
+                        </div>                    
+                        <div class="border-l border-r mb-5">
+                            <div class="block border-b p-2">
+                                <p>Ejemplos de los tamaños</p>
+                            </div>
+                            <div class="p-5 div1 grid text-l hatched-1">            
+                                <p class="border-b pl-2 p-2">Este es el texto <span class="font-s-1">destacado</span> para ejemplo.</p>   
+                                <p class="border-b pl-2 p-2">Este es el texto <span class="font-s-2">destacado</span> para ejemplo.</p>
+                                <p class="border-b pl-2 p-2">Este es el texto <span class="font-s-3">destacado</span> para ejemplo.</p>  
+                                <p class="border-b pl-2 p-2">Este es el texto <span class="font-s-4">destacado</span> para ejemplo.</p>  
+                                <p class="border-b pl-2 p-2">Este es el texto <span class="font-s-5">destacado</span> para ejemplo.</p>  
+                                <p class="pl-2 p-2">Este es el texto <span class="font-s-6">destacado</span> para ejemplo.</p>                                
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+            &lt;div class="m-5 grid text-l g-1"&gt;        
+                &lt;p class="border-b pl-2"&gt;Este es el texto &lt;span class="font-s-1"&gt;destacado&lt;/span&gt; para ejemplo.&lt;/p&gt;   
+                &lt;p class="border-b pl-2"&gt;Este es el texto &lt;span class="font-s-2"&gt;destacado&lt;/span&gt; para ejemplo.&lt;/p&gt;
+                &lt;p class="border-b pl-2"&gt;Este es el texto &lt;span class="font-s-3"&gt;destacado&lt;/span&gt; para ejemplo.&lt;/p&gt;  
+                &lt;p class="border-b pl-2"&gt;Este es el texto &lt;span class="font-s-4"&gt;destacado&lt;/span&gt; para ejemplo.&lt;/p&gt;  
+                &lt;p class="border-b pl-2"&gt;Este es el texto &lt;span class="font-s-5"&gt;destacado&lt;/span&gt; para ejemplo.&lt;/p&gt;  
+                &lt;p class="pl-2"&gt;Este es el texto &lt;span class="font-s-6"&gt;destacado&lt;/span&gt; para ejemplo.&lt;/p&gt;                                
+            &lt;/div&gt;
+                                </code></pre>
+                            </div> 
+                        </div>                
+                    </section>               
+                    
+                    <!-- Dis Textos grandes -->
+                    <section class="pt-3 px-5 border-b">
+                        <h2 class="font-l font-s-2">Grandes textos</h2>
+                        <p class="pb-2">Si necesitas destacar en grande, puedes utilizar las siguientes clases para hacer tu diseño aún más llamativo.</p>             
+                        <h3 class="font-l font-s-2">.font-s-n°</h3>
+                        <div class="table-cont-b">                        
+                            <div class="table-grid grid">
+                                <div class="table-item-th bg-table-h font-b">Clase</div>
+                                <div class="table-item-th bg-table-h font-b">Descripción</div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.dis-s-1</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 5rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.dis-s-2</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 4.5rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.dis-s-3</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 4rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.dis-s-4</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 3.5rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.dis-s-5</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 3rem</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.dis-s-6</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El Font size aplicado es de 2.75rem</div>
+                                </div>                         
+                            </div>    
+                        </div>                    
+                        <div class="border-l border-r mb-5">
+                            <div class="block border-b p-2">
+                                <p>Ejemplos de los tamaños</p>
+                            </div>
+                            <div class="p-5 div0 grid text-l hatched-1">            
+                                <h1 class="dis-s-1 border-b pl-2 p-1">dis-s-1</h1>   
+                                <h1 class="dis-s-2 border-b pl-2 p-1">dis-s-2</h1>
+                                <h1 class="dis-s-3 border-b pl-2 p-1">dis-s-3</h1>  
+                                <h1 class="dis-s-4 border-b pl-2 p-1">dis-s-4</h1>  
+                                <h1 class="dis-s-5 border-b pl-2 p-1">dis-s-5</h1>  
+                                <h1 class="dis-s-6 pl-2 p-1">dis-s-6</h1>                                
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+            &lt;div class="m-5 grid text-l g-1"&gt;            
+                &lt;h1 class="dis-s-1 border-b pl-2"&gt;dis-s-1&lt;/h1&gt;   
+                &lt;h1 class="dis-s-2 border-b pl-2"&gt;dis-s-2&lt;/h1&gt;
+                &lt;h1 class="dis-s-3 border-b pl-2"&gt;dis-s-3&lt;/h1&gt;  
+                &lt;h1 class="dis-s-4 border-b pl-2"&gt;dis-s-4&lt;/h1&gt;  
+                &lt;h1 class="dis-s-5 border-b pl-2"&gt;dis-s-5&lt;/h1&gt;  
+                &lt;h1 class="dis-s-6 pl-2"&gt;dis-s-6&lt;/h1&gt;                                
+            &lt;/div&gt; 
+                                </code></pre>
+                            </div> 
+                        </div>                
+                    </section>    
+                    
+                    <!-- Alineaciones de Texto -->
+                    <section class="pt-3 px-5 border-b">
+                        <h2 class="font-l font-s-2">Alineaciones de textos</h2>
+                        <p class="pb-2">Para alinear textos, existen tres formas: a la derecha, al centro y a la izquierda. </p>             
+                        <h3 class="font-l font-s-2">.text-aOpción (r,c,l)</h3>
+                        <div class="table-cont-b">                        
+                            <div class="table-grid grid">
+                                <div class="table-item-th bg-table-h font-b">Clase</div>
+                                <div class="table-item-th bg-table-h font-b">Descripción</div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.text-ar</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Text-Align-Right. Alinea el texto a la derecha.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.text-ac</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Text-Align-Center. Alinea el texto al centro.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.text-al</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Text-Align-Left. Alinea el texto a la izquierda.</div>
+                                </div>                     
+                            </div>    
+                        </div>                    
+                        <div class="border-l border-r mb-5">
+                            <div class="block border-b p-2">
+                                <p>Ejemplos de alineación</p>
+                            </div>
+                            <div class="p-5 grid item-3 g-5 hatched-1">            
+                                <div class="div1 border pl-2 p-1 text-ar">text-right</div>   
+                                <div class="div1 border pl-2 p-1 text-ac">text-center</div>
+                                <div class="div1 border pl-2 p-1 text-al">text-left</div>                               
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+            &lt;div class="m-5 grid item-3 g-5"&gt;            
+                &lt;div class="div1 border pl-2 p-1 text-ar"&gt;text-right&lt;/div&gt;   
+                &lt;div class="div1 border pl-2 p-1 text-ac"&gt;text-center&lt;/div&gt;
+                &lt;div class="div1 border pl-2 p-1 text-al"&gt;text-left&lt;/div&gt;                               
+            &lt;/div&gt;
+                                </code></pre>
+                            </div> 
+                        </div>                
+                    </section>     
+                    
+                    <!-- Text transform -->
+                    <section class="pt-3 px-5 border-b">
+                        <h2 class="font-l font-s-2">Transformaciones de textos</h2>
+                        <p class="pb-2">Para tranformar textos, existen tres formas más una: Capitalize, Lowercase, Uppercase y none. </p>             
+                        <h3 class="font-l font-s-2">.text-tOpción (c.l.u.n)</h3>
+                        <div class="table-cont-b">                        
+                            <div class="table-grid grid">
+                                <div class="table-item-th bg-table-h font-b">Clase</div>
+                                <div class="table-item-th bg-table-h font-b">Descripción</div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.text-tc</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Text-Transform-Capitalize. Transforma el texto para que la primera letra de cada palabra esté en mayúscula y las demás en minúscula.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.text-tl</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Text-Transform-Lowercase. Convierte todo el texto en minúsculas.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.text-tu</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Text-Transform-Uppercase. Convierte todo el texto en mayúsculas.</div>
+                                </div>     
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.text-tn</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Text-Transform-None. Mantiene el texto sin modificar, sin ninguna transformación de mayúsculas o minúsculas.</div>
+                                </div>                    
+                            </div>    
+                        </div>                    
+                        <div class="border-l border-r mb-5">
+                            <div class="block border-b p-2">
+                                <p>Ejemplos de transformación</p>
+                            </div>
+                            <div class="p-5 grid item-4 g-5 hatched-1">            
+                                <div class="div1 border pl-2 p-1 text-tc">text-tc</div>   
+                                <div class="div1 border pl-2 p-1 text-tl">text-tl</div>
+                                <div class="div1 border pl-2 p-1 text-tu">text-tu</div>           
+                                <div class="div1 border pl-2 p-1 text-tn">text-tn</div>                        
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+            &lt;div class="m-5 grid item-4 g-5"&gt;            
+                &lt;div class="div1 border pl-2 p-1 text-tc"&gt;text-tc&lt;/div&gt;   
+                &lt;div class="div1 border pl-2 p-1 text-tl"&gt;text-tl&lt;/div&gt;
+                &lt;div class="div1 border pl-2 p-1 text-tu"&gt;text-tu&lt;/div&gt;  
+                &lt;div class="div1 border pl-2 p-1 text-tn"&gt;text-tn&lt;/div&gt;                                       
+            &lt;/div&gt;
+                                </code></pre>
+                            </div> 
+                        </div>                
+                    </section>  
+                    
+                    <!-- Reduce textos extensos añadiendo puntos suspensivos al final. -->
+                    <section class="pt-3 px-5">
+                        <h2 class="font-l font-s-2">Reduce textos extensos</h2>
+                        <p class="pb-2">Puedes aplicar las clases "text-cut-n°" para acortar la longitud del texto a mostrar, según la cantidad de caracteres especificados. Por ejemplo, con "text-cut-150" solo se mostrarán los primeros 150 caracteres del párrafo. Después de eso, se añadirán tres puntos suspensivos (...). </p>             
+                        <h3 class="font-l font-s-2">.text-cut-n°</h3>
+                        <div class="table-cont-b rounded-b mb-5">                        
+                            <div class="table-grid grid">
+                                <div class="table-item-th bg-table-h font-b">Clase</div>
+                                <div class="table-item-th bg-table-h font-b">Descripción</div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.text-cut-150</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Text-Cut-150. Limita el texto a 150 caracteres.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.text-cut-200</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Text-Cut-200. Limita el texto a 200 caracteres.</div>
+                                </div>    
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.text-cut-250</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Text-Cut-250. Limita el texto a 250 caracteres.</div>
+                                </div>    
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.text-cut-300</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Text-Cut-300. Limita el texto a 300 caracteres.</div>
+                                </div>       
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.text-cut-350</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Text-Cut-350. Limita el texto a 350 caracteres.</div>
+                                </div>      
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.text-cut-400</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Text-Cut-400. Limita el texto a 400 caracteres.</div>
+                                </div>                                                                                      
+                        
+                            </div>    
+                        </div>                                 
+                    </section> 
+                </section>               
+
+            </div>
+        </main>     
+        <footer id="footerContent"></footer>    
+    </section>
+</body>
+</html>
+
+                

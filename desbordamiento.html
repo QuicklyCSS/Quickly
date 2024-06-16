@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quickly: Desbordamiento CSS para Grillas | Control de Contenido y Flujo</title>
+  <meta name="description" content="Explora las opciones de desbordamiento CSS especializadas para grillas en Quickly. Diseñadas para controlar el contenido y el flujo dentro de elementos, nuestras opciones de desbordamiento facilitan la creación de interfaces web con una gestión eficiente del contenido. Descubre cómo utilizarlas para manejar el desbordamiento de contenido en tus proyectos de desarrollo web.">
+    <link rel="icon" type="image/png" href="./img/ico.png">
+  <link rel="stylesheet" href="./css/quickly.css">
+  <link rel="stylesheet" href="./css/app.css">
+  <script src="./js/quickly.js" defer></script>
+  <script src="./js/app.js" defer></script>
+  <link rel="stylesheet" href="./prism/prism.css">
+  <script src="./prism/prism.js" defer></script>
+  <script>var currentPage = 'desbordamiento';</script>
+</head>
+<body>
+    <div id="headerContent"></div>
+    <section class="cont">
+        <aside id="menuContent"></aside> 
+        <main class="bg-white-2 pt-5">  
+            <div class="cont-80 py-5 "> 
+                
+                <!-- ALINEACIONES -->
+                <section class="border rounded bg-color-1">
+                    <div class="p-5 bg-white-1 rounded-t border-b">
+                        <h1 class="font-l">Desbordamiento</h1>
+                        <p class="font-l font-s-4">Utiliza las clases de desbordamiento para controlar eficientemente el contenido de un elemento.</p>
+                    </div>
+                
+                    <!-- z index -->
+                    <section class="pt-3 px-5">
+                        <h3 class="font-l font-s-2">Tipos de desbordamientos</h3>
+                        <p>Para controlar el desbordamiento de los elementos dentro de un contenedor puedes utilizar las clases .scroll.</p>
+                        <h3 class="font-l font-s-2">.scroll-opción (a-h-x-y)</h3>
+                        <div class="table-cont">                        
+                            <div class="table-grid grid">
+                                <div class="table-item-th bg-table-h font-b">Clase</div>
+                                <div class="table-item-th bg-table-h font-b">Descripción</div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.scroll-h</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Scroll-Hidden. Ocultara cualquier contenido que se desborde del área asignada del elemento.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.scroll-a</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Scroll-Auto. Las barras de desplazamiento vertical u horizontal se mostrarán automáticamente si el contenido excede los límites del elemento. Si el contenido no se desborda, las barras de desplazamiento no serán visibles.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.scroll-x</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Scroll-X. Proporcionará barras de desplazamiento horizontal aunque su contenido no exceda su tamaño definido.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.scroll-y</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">Scroll-Y. Proporcionará barras de desplazamiento vertical aunque su contenido no exceda su tamaño definido.</div>
+                                </div>
+                            </div>    
+                            <div class="border-l border-r mb-5">
+                                <div class="block border-b p-2">
+                                    <p>Barras de desplazamiento</p>
+                                </div>  
+                                <div class="grid item-2 g-5 hatched-1 p-5">   
+                                    <div class="h-200 scroll-h div1 p-2 rounded"> 
+                                        <p>scroll-h <br>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>                      
+                                    </div>    
+                                    <div class="h-200 scroll-a div1 p-2 rounded"> 
+                                        <p>scroll-a <br>
+                                        Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet, Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet, Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet, Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet, Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet, Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet, Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet.</p>                      
+                                    </div>  
+                                    <div class="h-200 scroll-x div1 p-2 rounded"> 
+                                        <p>scroll-x <br>
+                                        Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet, Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet, Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet, Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet, Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet, Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet, Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet,consectetueradipiscingelit.Loremipsumdolorsitamet.</p>                      
+                                    </div>    
+                                    <div class="h-200 scroll-y div1 p-2 rounded"> 
+                                        <p>scroll-y <br>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>                      
+                                    </div>  
+                                </div>                   
+                                <div class="border-t p-2">
+                                HTML
+                                </div>
+                                <div class="pre-pre2">
+                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
+            &lt;div class="grid item-2 g-5 hatched-1 p-5"&gt;   
+                &lt;div class="h-200 scroll-h p-2 rounded"&gt; 
+                    &lt;p&gt;scroll-h &lt;br&gt;
+                    texto...            
+                &lt;/div&gt;    
+                &lt;div class="h-200 scroll-a p-2 rounded"&gt; 
+                    &lt;p&gt;scroll-a &lt;br&gt;
+                    texto...         
+                &lt;/div&gt;  
+                &lt;div class="h-200 scroll-x p-2 rounded"&gt; 
+                    &lt;p&gt;scroll-x &lt;br&gt;
+                    texto... 
+                &lt;/div&gt;    
+                &lt;div class="h-200 scroll-y p-2 rounded"&gt; 
+                    &lt;p&gt;scroll-y &lt;br&gt;
+                    texto... 
+                &lt;/div&gt;  
+            &lt;/div&gt;     
+                                    </code></pre>
+                                </div>                      
+                        </div>                                 
+                    </section>                                          
+                </section> 
+
+            </div>
+        </main>     
+        <footer id="footerContent"></footer>    
+    </section>
+</body>
+</html>
+

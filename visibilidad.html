@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quickly: Visibilidad CSS para Grillas | Control de Elementos Interactivos</title>
+  <meta name="description" content="Explora las opciones de visibilidad CSS especializadas para grillas en Quickly. Diseñadas para controlar la visibilidad de elementos interactivos, nuestras opciones de visibilidad facilitan la creación de interfaces web dinámicas y adaptables. Descubre cómo utilizarlas para mostrar u ocultar elementos según las necesidades de tus proyectos de desarrollo web.">  
+  <link rel="icon" type="image/png" href="./img/ico.png">
+  <link rel="stylesheet" href="./css/quickly.css">
+  <link rel="stylesheet" href="./css/app.css">
+  <script src="./js/quickly.js" defer></script>
+  <script src="./js/app.js" defer></script>
+  <link rel="stylesheet" href="./prism/prism.css">
+  <script src="./prism/prism.js" defer></script>
+  <script>var currentPage = 'visibilidad';</script>
+</head>
+<body>
+    <div id="headerContent"></div>
+    <section class="cont">
+        <aside id="menuContent"></aside> 
+        <main class="bg-white-2 pt-5">  
+            <div class="cont-80 py-5 "> 
+                
+                <!-- ALINEACIONES -->
+                <section class="border rounded bg-color-1">
+                    <div class="p-5 bg-white-1 rounded-t border-b">
+                        <h1 class="font-l">Visibilidad</h1>
+                        <p class="font-l font-s-4">Para lograr un progreso más veloz y una experiencia móvil más agradable, emplee clases de visualización adaptable para exhibir u ocultar elementos según el dispositivo. Evite generar múltiples versiones del sitio, optando en su lugar por la ocultación selectiva de elementos según el tamaño de pantalla.</p>
+                    </div>
+                
+                    <!-- hidden -->
+                    <section class="pt-3 px-5">
+                        <h3 class="font-l font-s-2">.hide</h3>
+                        <div class="table-cont">                        
+                            <div class="table-grid grid">
+                                <div class="table-item-th bg-table-h font-b">Clase</div>
+                                <div class="table-item-th bg-table-h font-b">Descripción</div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.hidden</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">(&gt;992px). El elemento se oculta visualmente en la página para todas las resoluciones.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.hidden-m</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">(&gt;576px y &lt;992px). El elemento se oculta visualmente en la página para resoluciones entre 576px y 992px.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.hidden-s</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">(&lt;576px). El elemento se oculta visualmente en la página para resoluciones inferiores a 576px.</div>
+                                </div>
+                            </div>    
+                        </div>                                 
+                    </section>
+
+                    <!-- show -->
+                    <section class="pt-3 px-5">
+                        <h3 class="font-l font-s-2">.show</h3>
+                        <div class="table-cont mb-5">                        
+                            <div class="table-grid grid">
+                                <div class="table-item-th bg-table-h font-b">Clase</div>
+                                <div class="table-item-th bg-table-h font-b">Descripción</div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.show</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">El elemento se muestra visualmente en la página para todas las resoluciones.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.show-m</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">(&gt;576px y &lt;992px). El elemento se muestra visualmente en la página para resoluciones entre 576px y 992px.</div>
+                                </div>
+                                <div class="bg-table-f grid">
+                                    <div class="table-item-td">.show-s</div>
+                                </div>
+                                <div class="bg-table-f grid">                            
+                                    <div class="table-item-td">(&lt;576px). El elemento se muestra visualmente en la página para resoluciones inferiores a 576px.</div>
+                                </div>
+                            </div>  
+                            <div class="border-l border-r">
+                                <div class="block border-b p-2">
+                                    <p>Visible y Oculto</p>
+                                </div>            
+                                <div class="p-5 text-l hatched-1 grid item-3 g-5"> 
+                                    <div class="div1 p-1 hide show-m">N° 1<br>El elemento solo será visible en resoluciones de tamaño mediano (&gt;576px y &lt;992px).</div>         
+                                    <div class="div1 p-1 hide-m ">N° 2<br>El elemento se ocultara para tamaños medianos (&gt;576px y &lt;992px).</div>                        
+                                    <div class="div1 p-1 hide-s">N° 3<br>El elemento se ocultara para tamaños pequeños (&lt;576px).</div>                  
+                                </div>
+                                <div class="border-t p-2">
+                                HTML
+                                </div>
+                                <div class="pre-pre2">
+                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
+            &lt;div&gt;
+                &lt;div class="p-1 hide show-m"&gt;N° 1 - El elemento solo será visible en resoluciones de tamaño mediano (&gt;576px y &lt;992px).&lt;/div&gt;   
+                &lt;div class="p-1 hide-m"&gt;N° 2 - El elemento se ocultara para tamaños medianos (&gt;576px y &lt;992px).&lt;/div&gt;
+                &lt;div class="p-1 hide-s"&gt;N° 3 - El elemento se ocultara para tamaños pequeños (&lt;576px).&lt;/div&gt;  
+            &lt;/div&gt; 
+                                    </code></pre>
+                                </div>   
+                        </div>                                 
+                    </section>                      
+                </section>               
+
+            </div>
+        </main>     
+        <footer id="footerContent"></footer>    
+    </section>
+</body>
+</html>
+ 
+            

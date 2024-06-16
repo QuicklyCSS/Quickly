@@ -1,0 +1,607 @@
+
+        <!-- ALINEACIONES -->
+        <section class="cont-80 m-esp">  
+            <div class="p-5 item-1 bg-Color--1 rounded-t border">
+                <h2 class="font-l font-s-2">Uso de Alineaciones en <strong>Quickly</strong></h2>
+                <p class="font-l font-s-1">¡Desata tu creatividad con las alineaciones! Desde las opciones más simples hasta las avanzadas como space-around y stretch, CSS Grid te brinda un abanico de posibilidades para diseñar interfaces web únicas y atractivas. Descubre cómo las alineaciones en CSS Grid pueden elevar tus diseños al siguiente nivel y cautivar a tu audiencia desde el primer vistazo.</p>
+            </div>
+           
+            <!-- col-n  -->
+            <section class="bg-color--4 pt-3 pt-5 px-5">
+                <h3 class="font-l font-s-2">Alineaciones Simples y Efectivas</h3>
+                <p>En Quickly, implementar alineaciones para textos y objetos es rápido y sencillo. Con opciones para alinear textos a la izquierda, derecha o centrados, así como para posicionar objetos con precisión, podrás crear diseños visualmente atractivos en pocos pasos. Aprovecha nuestras herramientas intuitivas para lograr la alineación perfecta y destacar tu contenido de manera efectiva.</p>             
+            </section>
+
+            <!-- Align vertical  -->
+            <section class="bg-color--4 pt-3 px-5 border-b">
+                <h3 class="font-l font-s-2">.align-v</h3>
+                <div class="table-cont-b">                        
+                    <div class="table-grid grid">
+                        <div class="table-item-th bg-4 font-b">Clase</div>
+                        <div class="table-item-th bg-4 font-b">Descripción</div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.align-vs</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">Align-Vertical-Start. Alinea los elementos verticalmente al principio del contenedor.</div>
+                        </div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.align-vc</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">Align-Vertical-Center. Alinea los elementos al centro verticalmente dentro del contenedor.</div>
+                        </div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.align-ve</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">Align-Vertical-End. Alinea los elementos verticalmente en el extremo izquierdo del contenedor. </div>
+                        </div>
+                    </div>    
+                </div>                    
+                <div class="border-l border-r mb-5">
+                    <div class="block border-b p-2">
+                        <p>Alineacion inicio, centro y fin</p>
+                    </div>
+                    <div class="m-5 div1 grid vh-30">
+                        <div class="align-vs">               
+                            <div class="div2 p-2 text-c w-200">align-vs</div>                                
+                        </div>
+                        <div class="align-vc border">               
+                            <div class="div2 p-2 text-c w-200">align-vc</div>                             
+                        </div> 
+                        <div class="align-ve">               
+                            <div class="div2 p-2 text-c w-200">align-ve</div>                       
+                        </div>
+                    </div>
+                    <div class="border-t p-2">
+                        HTML
+                    </div>
+                    <div class="pre-pre2">
+                        <pre class="cont-100 scroll-x"><code>                                    
+    &lt;div&gt;
+        &lt;div class="align-vs"&gt;               
+            &lt;div class="p-2 text-c w-200"&gt;align-vs&lt;/div&gt;                             
+        &lt;/div&gt;
+        &lt;div class="align-vc"&gt;               
+            &lt;div class="p-2 text-c w-200"&gt;align-vc&lt;/div&gt;                             
+        &lt;/div&gt; 
+        &lt;div class="align-ve"&gt;               
+            &lt;div class="p-2 text-c w-200"&gt;align-ve&lt;/div&gt;                             
+        &lt;/div&gt;
+    &lt;/div&gt;
+                        </code></pre>
+                    </div> 
+                </div>                
+            </section>   
+
+
+            <!-- Alineación vertical por item -->
+            <section class="bg-color--4 pt-3 px-5 border-b">
+                <h3 class="font-l font-s-2">Alineación vertical por item</h3>      
+                <p class="pb-2">También tienes la opción de ajustar la alineación de cada item (columna) de manera individual utilizando cualquiera de las clases responsivas disponibles. </p>          
+                <div class="border-l border-r mb-5 rounded-t border-t">
+                    <div class="block border-b  p-2">
+                        <p>Alineación vertical por item, inicio, centro y fin </p>
+                    </div>
+                    <div class="m-5 div1 grid item-3 vh-25">
+                        <div class="align-vs">               
+                            <div class="div2 p-2 text-c w-200">align-vs</div>                               
+                        </div>
+                        <div class="align-vc border  ">               
+                            <div class="div2 p-2 text-c w-200">align-vc</div>                             
+                        </div>
+                        <div class="align-ve  ">               
+                            <div class="div2 p-2 text-c w-200">align-ve</div>                             
+                        </div>
+                    </div>
+                    <div class="border-t p-2">
+                        HTML
+                    </div>
+                    <div class="pre-pre2">
+                        <pre class="cont-100 scroll-x"><code>                                    
+    &lt;div class="p-4 grid item-3"&gt;
+        &lt;div class="align-vs"&gt;
+            &lt;div class="p-2 text-c w-200"&gt;item 1&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="align-vc"&gt;
+            &lt;div class="p-2 text-c w-200"&gt;item 2&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="align-ve"&gt;
+            &lt;div class="p-2 text-c w-200"&gt;item 1&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                        </code></pre>
+                    </div> 
+                </div>                
+            </section>    
+            
+            <!-- Align horizontal por item  -->
+            <section class="bg-color--4 pt-3 px-5 border-b">                  
+                <h3 class="font-l font-s-2">Alineación horizontal por item</h3> 
+                <p class="pb-2">Alinea horizontalmente los elementos en tres posiciones: start (inicio), center (centro) y end (final), para ajustar tus diseños. </p>             
+                <h3 class="font-l font-s-2">.align-h</h3>
+                <div class="table-cont-b ">                        
+                    <div class="table-grid grid">
+                        <div class="table-item-th bg-4 font-b">Clase</div>
+                        <div class="table-item-th bg-4 font-b">Descripción</div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.align-hs</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">Align-horizontal-start. Alinea los elementos horizontalmente al principio del contenedor.</div>
+                        </div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.align-hc</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">Align-horizontal-center. Alinea los elementos al centro horizontalmente dentro del contenedor.</div>
+                        </div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.align-he</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">Align-horizontal-end. Alinea los elementos horizontalmente en el extremo derecho del contenedor. </div>
+                        </div>                        
+                    </div>    
+                </div>                    
+                <div class="border-l border-r mb-5">
+                    <div class="block border-b p-2">
+                        <p>Alineación horizontal inicio, centro y fin</p>
+                    </div>
+                    <div class="div1 m-5">
+                        <div class="align-hs">               
+                             <div class="div2 p-2 text-c w-200">align-hs</div>                            
+                        </div>
+                        <div class="align-hc border">               
+                            <div class="div2 p-2 text-c w-200">align-hc</div>                              
+                        </div> 
+                        <div class="align-he">               
+                            <div class="div2 p-2 text-c w-200">align-he </div>                       
+                        </div>
+                    </div>
+                    <div class="border-t p-2">
+                        HTML
+                    </div>
+                    <div class="pre-pre2">
+                        <pre class="cont-100 scroll-x"><code>                                    
+    &lt;div&gt;
+        &lt;div class="align-hs"&gt;               
+            &lt;div class="p-2 text-c w-200"&gt;align-hs&lt;/div&gt;                             
+        &lt;/div&gt;
+        &lt;div class="align-hc"&gt;               
+            &lt;div class="p-2 text-c w-200"&gt;align-hc&lt;/div&gt;                             
+        &lt;/div&gt; 
+        &lt;div class="align-he"&gt;               
+            &lt;div class="p-2 text-c w-200"&gt;align-he&lt;/div&gt;                             
+        &lt;/div&gt;
+    &lt;/div&gt;
+                        </code></pre>
+                    </div> 
+                </div>                
+            </section>   
+
+            <!-- Alineación por bloque horizontal -->
+            <section class="bg-color--4 pt-3 px-5 pb-5 border-b ">
+                <h3 class="font-l font-s-2">Alineación horizontal de elementos</h3>      
+                <p class="pb-2">Puedes alinear en fila varios elementos dentro de un contenedor.</p>                              
+                <h3 class="font-l font-s-2">.align-content-h(l,c,r)</h3>
+                <div class="table-cont-b ">                        
+                    <div class="table-grid grid">
+                        <div class="table-item-th bg-4 font-b">Clase</div>
+                        <div class="table-item-th bg-4 font-b">Descripción</div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.align-content-hl</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">Align-Content-Hortizontal-Left. Los elementos se alinean a la izquierda en fila dentro del contenedor.</div>
+                        </div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.align-content-hc</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">Align-Content-Hortizontal-Center. Los elementos se alinean al centro en fila dentro del contenedor.</div>
+                        </div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.align-content-hr</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">Align-Content-Hortizontal-Right. Los elementos se alinean a la derecha en fila dentro del contenedor.</div>
+                        </div>
+                    </div>    
+                </div>   
+                <div class="border-l border-r">      
+                    <div class="block border-b  p-2">
+                        <p>Alineación horizontal, izquierda, centro y derecha </p>
+                    </div>
+                    <div>
+                        <div class="m-5 div1 align-content-hl g-3 text-c">          
+                            <div class="div2 p-2 w-200">align-content-hl</div>                             
+                            <div class="div2 p-2 w-200">align-content-hl</div>    
+                            <div class="div2 p-2 w-200">align-content-hl</div>   
+                        </div>
+                        <div class="m-5 div1 align-content-hc g-3 text-c">          
+                            <div class="div2 p-2 w-200">align-content-hc</div>                             
+                            <div class="div2 p-2 w-200">align-content-hc</div>    
+                            <div class="div2 p-2 w-200">align-content-hc</div>   
+                        </div>
+                        <div class="m-5 div1 align-content-hr g-3 text-c">          
+                            <div class="div2 p-2 w-200">align-content-hr</div>                             
+                            <div class="div2 p-2 w-200">align-content-hr</div>    
+                            <div class="div2 p-2 w-200">align-content-hr</div>   
+                        </div>
+                    </div>
+                    <div class="border-t p-2">
+                        HTML
+                    </div>
+                    <div class="pre-pre2">
+                        <pre class="cont-100 scroll-x"><code>                                    
+    &lt;div class="align-content-hc g-3 text-c"&gt;
+        &lt;div class="p-2 w-200"&gt;align-content-hc&lt;/div&gt;
+        &lt;div class="p-2 w-200"&gt;align-content-hc&lt;/div&gt;
+        &lt;div class="p-2 w-200"&gt;align-content-hc&lt;/div&gt;
+    &lt;/div&gt;
+                        </code></pre>
+                    </div> 
+                </div>                
+            </section>    
+
+            <!-- Alineación por bloque vertical -->
+            <section class="bg-color--4 pt-3 px-5 pb-5 border-b ">
+                <h3 class="font-l font-s-2">Alineación vertical de elementos</h3>      
+                <p class="pb-2">Puedes alinear en columna varios elementos dentro de un contenedor.</p>                              
+                <h3 class="font-l font-s-2">.align-content-v(l,c,r)</h3>
+                <div class="table-cont-b ">                        
+                    <div class="table-grid grid">
+                        <div class="table-item-th bg-4 font-b">Clase</div>
+                        <div class="table-item-th bg-4 font-b">Descripción</div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.align-content-vl</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">Align-Content-Vertical-Left. Los elementos se alinean a la izquierda en columna dentro del contenedor.</div>
+                        </div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.align-content-vc</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">Align-Content-Vertical-Center. Los elementos se alinean al centro en columna dentro del contenedor.</div>
+                        </div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.align-content-vr</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">Align-Content-Vertical-Right. Los elementos se alinean a la derecha en columna dentro del contenedor.</div>
+                        </div>
+                    </div>    
+                </div>   
+                <div class="border-l border-r">      
+                    <div class="block border-b  p-2">
+                        <p>Alineación vertical, izquierda, centro y derecha </p>
+                    </div>
+                    <div>
+                        <div class="m-5 div1 align-content-vl gy-3 text-c">          
+                            <div class="div2 p-2 w-200">align-content-vl</div>                             
+                            <div class="div2 p-2 w-200">align-content-vl</div>    
+                            <div class="div2 p-2 w-200">align-content-vl</div>    
+                        </div>
+                        <div class="m-5 div1 align-content-vc g-3 text-c">          
+                            <div class="div2 p-2 w-200">align-content-vc</div>                             
+                            <div class="div2 p-2 w-200">align-content-vc</div>    
+                            <div class="div2 p-2 w-200">align-content-vc</div>    
+                        </div>
+                        <div class="m-5 div1 align-content-vr gy-3 text-c">          
+                            <div class="div2 p-2 w-200">align-content-vr</div>                             
+                            <div class="div2 p-2 w-200">align-content-vr</div>    
+                            <div class="div2 p-2 w-200">align-content-vr</div>    
+                        </div>
+                    </div>
+                    <div class="border-t p-2">
+                        HTML
+                    </div>
+                    <div class="pre-pre2">
+                        <pre class="cont-100 scroll-x"><code>                                    
+    &lt;div class="align-content-hc g-3 text-c"&gt;
+        &lt;div class="p-2 w-200"&gt;align-content-hc&lt;/div&gt;
+        &lt;div class="p-2 w-200"&gt;align-content-hc&lt;/div&gt;
+        &lt;div class="p-2 w-200"&gt;align-content-hc&lt;/div&gt;
+    &lt;/div&gt;
+                        </code></pre>
+                    </div> 
+                </div>                
+            </section>                
+                     
+            <!-- Alineación Stretch -->
+            <section class="bg-color--4 pt-3 px-5 border-b">
+                <h3 class="font-l font-s-2">Control vertical en contenedores</h3>      
+                <p class="pb-2">Por defecto, los elementos dentro de un contenedor se expanden horizontalmente para ocupar todo el ancho disponible. Sin embargo, para lograr que se expandan verticalmente, necesitarás aplicar la clase "stretch". Esta clase fuerza al elemento a estirarse verticalmente dentro de su contenedor.</p>    
+                <h3 class="font-l font-s-2">.stretch</h3>
+                <div class="table-cont-b ">                        
+                    <div class="table-grid grid">
+                        <div class="table-item-th bg-4 font-b">Clase</div>
+                        <div class="table-item-th bg-4 font-b">Descripción</div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.stretch</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">Stretch. Los elementos se estiran verticalmente para ocupar todo el ancho y alto disponible.</div>
+                        </div>
+                    </div>    
+                </div>                    
+                <div class="border-l border-r mb-5">
+                    <div class="border-b p-2">
+                        <p>Estiramiento horizontal y vertical</p>
+                    </div>
+                    <div class="m-5 grid item-auto-fit g-5 h-200">
+                        <div class="div1">                                                                      
+                            <div class="div2 p-2 text-c">Defecto</div>                                          
+                        </div>   
+                        <div class="div1 stretch">                                                              
+                            <div class="div2 p-2 text-c align-vc">Stretch</div>                        
+                        </div>                          
+                    </div>
+                    <div class="border-t p-2">
+                        HTML
+                    </div>
+                    <div class="pre-pre2">
+                        <pre class="cont-100 scroll-x"><code>                                    
+    &amp;lt;div class="m-5 grid item-auto-fit g-5 h-200"&amp;gt;
+        &amp;lt;div class="div1"&amp;gt;                                                                      
+            &amp;lt;div class="div2 p-2 text-c"&amp;gt;Defecto&amp;lt;/div&amp;gt;                                          
+        &amp;lt;/div&amp;gt;   
+        &amp;lt;div class="div1 stretch"&amp;gt;                                                              
+            &amp;lt;div class="div2 p-2 text-c align-vc"&amp;gt;Stretch&amp;lt;/div&amp;gt;                        
+        &amp;lt;/div&amp;gt;                          
+    &amp;lt;/div&amp;gt;
+                        </code></pre>
+                    </div> 
+                </div>                
+            </section>    
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Alineación No-Stretch -->
+            <section class="bg-color--4 pt-3 px-5 border-b">
+                <h3 class="font-l font-s-2">Control vertical en contenedores</h3>      
+                <p class="pb-2">A veces, no queremos que los elementos se expandan verticalmente al aplicar la clase "grid". En tales casos, podemos emplear las clases "no-stretch", las cuales previenen la expansión vertical.</p>    
+                <h3 class="font-l font-s-2">.stretch</h3>
+                <div class="table-cont-b ">                        
+                    <div class="table-grid grid">
+                        <div class="table-item-th bg-4 font-b">Clase</div>
+                        <div class="table-item-th bg-4 font-b">Descripción</div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.no-stretch</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">No-Stretch. Evita que los elementos se expandan verticalmente.</div>
+                        </div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.no-stretch-vs</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">No-Stretch-Vertical-Start. Previene la expansión vertical de los elementos al posicionarlos en la parte superior del contenedor.</div>
+                        </div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.no-stretch-vc</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">No-Stretch-Vertical-Center. Previene la expansión vertical de los elementos al posicionarlos en la parte central del contenedor.</div>
+                        </div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.no-stretch-ve</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">No-Stretch-Vertical-End. Previene la expansión vertical de los elementos al posicionarlos en la parte inferior del contenedor.</div>
+                        </div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.no-stretch-h</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">No-Stretch-Horizontal. Previene la expansión horizontal de los elementos en el contenedor.</div>
+                        </div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.no-stretch-v</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">No-Stretch-Vertical. Previene la expansión vertical de los elementos en el contenedor.</div>
+                        </div>
+                    </div>    
+                </div>                    
+                <div class="border-l border-r mb-5">
+                    <div class="border-b p-2">
+                        <p>Estiramiento horizontal y vertical</p>
+                    </div>
+
+                    <div class="">
+                        <div class="div1 m-5 h-200 grid item-1 ">
+                            <div class="div1 stretch  no-stretch">                                     
+                                <div class="div2 p-2">No-stretch</div>                        
+                            </div>
+                        </div>
+
+                        <div class="div1 m-5 h-200 grid item-1 ">
+                            <div class="div1">                                     
+                                <div class="div2 p-2 block-i">Block-i</div>                        
+                            </div>
+                        </div>
+
+                        <div class="div1 m-5 grid item-auto-fit no-stretch-vc">                                                           
+                            <div class="div2 p-2 no-stretch-h">no-stretch-h</div>  
+                            <div class="h-200 stretch"> 
+                                <div class="div2 align-cc ">Stretch-Vertical</div>  
+                            </div>                                                                                                                                                         
+                        </div>
+                    
+                        <div class="m-5 grid item-3 div1 g-3 text-c h-200">   
+                            <div class="border no-stretch-vs">
+                                <div class="div2 p-2">no-stretch-vs</div>
+                            </div>  
+                            <div class="border no-stretch-vc">
+                                <div class="div2 p-2">no-stretch-vc</div>
+                            </div>  
+                            <div class="border no-stretch-ve">
+                                <div class="div2 p-2">no-stretch-ve</div>
+                            </div>  
+                        </div>                    
+                    </div>
+                    
+                    <div class="border-t p-2">
+                        HTML
+                    </div>
+                    <div class="pre-pre2 px-2">
+                        <pre class="cont-100 scroll-x"><code>                                    
+    &lt;div&gt;
+        &lt;div class="stretch-h"&gt;               
+            &lt;div class="p-2 text-c"&gt;Stretch-Horizontal&lt;/div&gt;                             
+        &lt;/div&gt;
+        &lt;div class="h-100 stretch-v align-hc wp-100"&gt;
+            &lt;div class="text-c align-vc w-200"&gt;Stretch-Vertical&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                        </code></pre>
+                    </div> 
+                </div>                
+            </section>              
+            
+
+
+
+
+
+
+
+
+            
+            <!-- Alineación Space Around -->
+            <section class="bg-color--4 pt-3 px-5 border-b">
+                <h3 class="font-l font-s-2">.space-around</h3>
+                <div class="table-cont-b ">                        
+                    <div class="table-grid grid">
+                        <div class="table-item-th bg-4 font-b">Clase</div>
+                        <div class="table-item-th bg-4 font-b">Descripción</div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.space-ha</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">Space-Horizontal-Around. Se distribuyen uniformemente a lo largo del eje horizontal con espacio alrededor de cada elemento. </div>
+                        </div>  
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.space-va</div>
+                        </div>
+                        <div class="bg-3 grid rounded-0">                            
+                            <div class="table-item-td">Space-Vertical-Around. Se distribuyen uniformemente a lo largo del eje vertical con espacio alrededor de cada elemento. </div>
+                        </div>          
+                    </div>    
+                </div>                    
+                <div class="border-l border-r mb-5">
+                    <div class="block border-b p-2">
+                        <p>Espacios alrededor horizontal y vertical</p>
+                    </div>
+                    <div class="div1 m-5 grid g-5 p-5">
+                        <div class="space-ha border">               
+                            <div class="div2 p-2 text-c w-200">Space-Around-Horizonal 1</div> 
+                            <div class="div2 p-2 text-c w-200">Space-Around-Horizonal 2</div>     
+                            <div class="div2 p-2 text-c w-200">Space-Around-Horizonal 3</div>                                    
+                        </div>        
+                            <div class="space-va border h-f-9">               
+                                <div class="div2 p-2 text-c">Space-Around-Vertical 1</div> 
+                                <div class="div2 p-2 text-c">Space-Around-Vertical 2</div>     
+                                <div class="div2 p-2 text-c">Space-Around-Vertical 3</div>                       
+                            </div>                                                                          
+                    </div>
+                    <div class="border-t p-2">
+                        HTML
+                    </div>
+                    <div class="pre-pre2 px-2">
+                        <pre class="cont-100 scroll-x"><code>                                    
+    &lt;div&gt;
+        &lt;div class="space-ha"&gt;               
+            &lt;div class="p-2 text-c"&gt;Space-Around-Horizonal 1&lt;/div&gt; 
+            &lt;div class="p-2 text-c"&gt;Space-Around-Horizonal 2&lt;/div&gt;     
+            &lt;div class="p-2 text-c"&gt;Space-Around-Horizonal 3&lt;/div&gt;                                    
+        &lt;/div&gt;        
+        &lt;div class="space-va h-f-9"&gt;               
+            &lt;div class="p-2 text-c"&gt;Space-Around-Vertical 1&lt;/div&gt; 
+            &lt;div class="p-2 text-c"&gt;Space-Around-Vertical 2&lt;/div&gt;     
+            &lt;div class="p-2 text-c"&gt;Space-Around-Vertical 3&lt;/div&gt;                       
+        &lt;/div&gt;                            
+    &lt;/div&gt;
+                        </code></pre>
+                    </div> 
+                </div>                
+            </section>           
+            
+            
+            <!-- Alineacion Space Evenly -->
+            <section class="bg-color--4 pt-3 px-5 border-b rounded-b">
+                <h3 class="font-l font-s-2">.space-evenly</h3>
+                <div class="table-cont-b ">                        
+                    <div class="table-grid grid">
+                        <div class="table-item-th bg-4 font-b">Clase</div>
+                        <div class="table-item-th bg-4 font-b">Descripción</div>
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.space-he</div>
+                        </div>
+                        <div class="bg-3 grid">                            
+                            <div class="table-item-td">Space-Horizontal-Evenly. Se distribuyen uniformemente el espacio entre las filas dentro del contenedor en la dirección horizontal. </div>
+                        </div>                 
+                        <div class="bg-3 grid">
+                            <div class="table-item-td">.space-ve</div>
+                        </div>
+                        <div class="bg-3 grid rounded-0">                            
+                            <div class="table-item-td">Space-Vertical-Evenly. Se distribuyen uniformemente el espacio entre las filas dentro del contenedor en la dirección vertical. </div>
+                        </div>          
+                    </div>    
+                </div>                    
+                <div class="border-l border-r mb-5">
+                    <div class="block border-b p-2">
+                        <p>Justificaciones</p>
+                    </div>
+                    <div class="div1 m-5 grid g-5 p-5">
+                         <div class="space-he border">               
+                            <div class="div2 p-2 text-c w-200">Space-Evenly-Horizontal 1</div> 
+                            <div class="div2 p-2 text-c w-200">Space-Evenly-Horizontal 2</div>     
+                            <div class="div2 p-2 text-c w-200">Space-Evenly-Horizontal 3</div>                                    
+                        </div>    
+                        <div class="space-ve border h-f-9">               
+                                <div class="div2 p-2 text-c">Space-Evenly-Vertical 1</div> 
+                                <div class="div2 p-2 text-c">Space-Evenly-Vertical 2</div>     
+                                <div class="div2 p-2 text-c">Space-Evenly-Vertical 3</div>                       
+                        </div>                                                                                       
+                    </div>
+                    <div class="border-t p-2">
+                        HTML
+                    </div>
+                    <div class="pre-pre2 px-2">
+                        <pre class="cont-100 scroll-x"><code>                                    
+    &lt;div class="m-5 g-5 p-5"&gt;
+        &lt;div class="space-he border"&gt;               
+            &lt;div class="p-2 text-c w-200"&gt;Space-Evenly-Horizontal 1&lt;/div&gt; 
+            &lt;div class="p-2 text-c w-200"&gt;Space-Evenly-Horizontal 2&lt;/div&gt;     
+            &lt;div class="p-2 text-c w-200"&gt;Space-Evenly-Horizontal 3&lt;/div&gt;                                    
+        &lt;/div&gt;    
+        &lt;div class="space-ve border h-f-9"&gt;               
+            &lt;div class="p-2 text-c"&gt;Space-Evenly-Vertical 1&lt;/div&gt; 
+            &lt;div class="p-2 text-c"&gt;Space-Evenly-Vertical 2&lt;/div&gt;     
+            &lt;div class="p-2 text-c"&gt;Space-Evenly-Vertical 3&lt;/div&gt;                       
+        &lt;/div&gt;                                                                              
+    &lt;/div&gt;
+                        </code></pre>
+                    </div> 
+                </div>                
+            </section>            
+            
+            
+            

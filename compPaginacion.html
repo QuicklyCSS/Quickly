@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickly: Componente de Paginación | Navega Fácilmente por tus Páginas</title>
+    <meta name="description" content="Explora el componente de paginación en Quickly. Diseñado para facilitar la navegación por tus páginas web, nuestro componente ofrece una forma efectiva de dividir contenido extenso en varias páginas y permitir a los usuarios moverse entre ellas de manera intuitiva. Descubre cómo integrarlo para mejorar la experiencia del usuario y mantenerlos navegando sin problemas por tu sitio web.">
+    <link rel="icon" type="image/png" href="./img/ico.png">
+    <link rel="stylesheet" href="./css/quickly.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/quickly.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./prism/prism.css">
+    <script src="./prism/prism.js" defer></script>
+    <script>var currentPage = 'compPaginacion';</script>
+</head>
+<body>
+    <div id="headerContent"></div>
+    <section class="cont">
+        <aside id="menuContent"></aside> 
+        <main class="bg-white-2 pt-5">  
+            <div class="cont-80 py-5"> 
+                
+                <!-- BARRA -->
+                <section class="border rounded bg-color-1">
+
+                    <div class="p-5 bg-white-1 rounded-t border-b">
+                        <h1 class="font-l">Paginación</h1>
+                        <p class="font-l font-s-4">Descubre la eficiencia de la Paginación de <strong class="text-quickly" >Quickly</strong>. Organiza tu contenido extenso en páginas fácilmente accesibles, ya sea un blog o una tienda en línea. Altamente personalizable, se adapta perfectamente a tu estética y funcionalidad. Simplifica la experiencia de tus usuarios y lleva la navegación de tu sitio web al siguiente nivel.</p>
+                    </div>
+                
+                    <!-- BARRA PROGRESO UNO -->
+                    <section class="pt-3 p-5 rounded-b">
+                        <h2 class="font-l font-s-2">Paginación de bloque</h2>
+                        <p class="pb-2">Puedes Aplicar las clases .pagination-link-off para desabilitar el boton de inicio y .pagination-link-active para marcar el item activo. como se muestra en el ejemplo</p>             
+                        <h3 class="font-l font-s-2">.pagination</h3>
+                        <div class="table-cont border">  
+                            <div class="border-b p-2">
+                                Ejemplo de barra de paginación y alineaciones izquierda, Centro y derecha.
+                            </div>                        
+                            <div class="hatched-1 p-5 grid item-1"> 
+                                <div class="mb-1">Barra alineada a la izquierda</div> 
+                                <nav class="pagination-container grid align-hs" aria-label="...">
+                                    <ul class="pagination">
+                                      <li class="pagination-item"><a class="pagination-link-off" href="#" >Anteriores</a></li>
+                                      <li class="pagination-item"><a class="pagination-link-active" href="#">1</a></li>
+                                      <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+                                      <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+                                      <li class="pagination-item"><a class="pagination-link" href="#">Siguiente</a></li>
+                                    </ul>
+                                </nav>  
+                                <div class="mb-1 mt-2">Barra alineada al centro</div>                                    
+                                <nav class="pagination-container grid align-hc" aria-label="...">
+                                    <ul class="pagination">
+                                      <li class="pagination-item"><a class="pagination-link-off" href="#" >Anteriores</a></li>
+                                      <li class="pagination-item"><a class="pagination-link-active" href="#">1</a></li>
+                                      <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+                                      <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+                                      <li class="pagination-item"><a class="pagination-link" href="#">Siguiente</a></li>
+                                    </ul>
+                                </nav>     
+                                <div class="mb-1 mt-2">Barra alineada a la derecha</div> 
+                                <nav class="pagination-container grid align-he" aria-label="...">
+                                    <ul class="pagination">
+                                      <li class="pagination-item"><a class="pagination-link-off" href="#" >Anteriores</a></li>
+                                      <li class="pagination-item"><a class="pagination-link-active" href="#">1</a></li>
+                                      <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+                                      <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+                                      <li class="pagination-item"><a class="pagination-link" href="#">Siguiente</a></li>
+                                    </ul>
+                                </nav>                          
+                                
+                            </div>                   
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                                                           
+    &lt;!-- Barra alineada a la izquierda --&gt;
+    &lt;nav class="pagination-container grid align-hs" aria-label="..."&gt;
+        &lt;ul class="pagination"&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link-off" href="#"&gt;Anteriores&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link-active" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link" href="#"&gt;Siguiente&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;!-- Barra alineada al centro --&gt;
+    &lt;nav class="pagination-container grid align-hc" aria-label="..."&gt;
+        &lt;ul class="pagination"&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link-off" href="#"&gt;Anteriores&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link-active" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link" href="#"&gt;Siguiente&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;!-- Barra alineada a la derecha --&gt;
+    &lt;nav class="pagination-container grid align-he" aria-label="..."&gt;
+        &lt;ul class="pagination"&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link-off" href="#"&gt;Anteriores&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link-active" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link" href="#"&gt;Siguiente&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+                                </code></pre>
+                            </div>                      
+                        </div>                                 
+                    </section>   
+                    
+                    <!-- BARRA PROGRESO DOS -->
+                    <section class="px-5 pb-5 rounded-b">
+                        <h2 class="font-l font-s-2">Paginación de bloque</h2>
+                        <p class="pb-2">Puedes Aplicar las clases .pagination-link-off para desabilitar el boton de inicio y .pagination-link-active para marcar el item activo. como se muestra en el ejemplo</p>             
+                        <h3 class="font-l font-s-2">.pagination</h3>
+                        <div class="table-cont border">  
+                            <div class="border-b p-2">
+                                Ejemplo de barra de paginación
+                            </div>                        
+                            <div class="hatched-1 p-5 grid item-1"> 
+                                
+                                <div class="mb-1">Barra alineada a la izquierda</div> 
+                                <nav class="pagination-container grid align-hs" aria-label="...">
+                                    <ul class="pagination">
+                                        <li class="pagination-item-arrow">
+                                            <a class="pagination-link-off" href="#" >
+                                                <svg class="ico-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
+                                            </a>
+                                        </li>
+                                        <li class="pagination-item"><a class="pagination-link-active" href="#">1</a></li>
+                                        <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+                                        <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+                                        <li class="pagination-item-arrow">
+                                            <a class="pagination-link" href="#">
+                                                <svg class="ico-16 ico-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>   
+
+                                <div class="mb-1 mt-2">Barra alineada al centro</div> 
+                                <nav class="pagination-container  grid align-hc" aria-label="...">
+                                    <ul class="pagination">
+                                        <li class="pagination-item-arrow">
+                                            <a class="pagination-link-off" href="#" >
+                                                <svg class="ico-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
+                                            </a>
+                                        </li>
+                                        <li class="pagination-item"><a class="pagination-link-active" href="#">1</a></li>
+                                        <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+                                        <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+                                        <li class="pagination-item-arrow">
+                                            <a class="pagination-link" href="#">
+                                                <svg class="ico-16 ico-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>  
+
+                                <div class="mb-1 mt-2">Barra alineada a la derecha</div> 
+                                <nav class="pagination-container  grid align-he" aria-label="...">
+                                    <ul class="pagination">
+                                        <li class="pagination-item-arrow">
+                                            <a class="pagination-link-off" href="#" >
+                                                <svg class="ico-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
+                                            </a>
+                                        </li>
+                                        <li class="pagination-item"><a class="pagination-link-active" href="#">1</a></li>
+                                        <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+                                        <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+                                        <li class="pagination-item-arrow">
+                                            <a class="pagination-link" href="#">
+                                                <svg class="ico-16 ico-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>                                                                   
+                                
+                            </div>                   
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                                                           
+    &lt;!-- Barra alineada a la izquierda --&gt;
+    &lt;nav class="pagination-container grid align-hs" aria-label="..."&gt;
+        &lt;ul class="pagination"&gt;
+            &lt;li class="pagination-item-arrow"&gt;
+                &lt;a class="pagination-link-off" href="#" &gt;
+                    &lt;svg class="ico-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/&gt;&lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link-active" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item-arrow"&gt;
+                &lt;a class="pagination-link" href="#"&gt;
+                    &lt;svg class="ico-16 ico-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/&gt;&lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;   
+
+    &lt;!-- Barra alineada a la centro --&gt;
+    &lt;nav class="pagination-container  grid align-hc" aria-label="..."&gt;
+        &lt;ul class="pagination"&gt;
+            &lt;li class="pagination-item-arrow"&gt;
+                &lt;a class="pagination-link-off" href="#" &gt;
+                    &lt;svg class="ico-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/&gt;&lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link-active" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item-arrow"&gt;
+                &lt;a class="pagination-link" href="#"&gt;
+                    &lt;svg class="ico-16 ico-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/&gt;&lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;  
+
+    &lt;!-- Barra alineada a la derecha --&gt;
+    &lt;nav class="pagination-container  grid align-he" aria-label="..."&gt;
+        &lt;ul class="pagination"&gt;
+            &lt;li class="pagination-item-arrow"&gt;
+                &lt;a class="pagination-link-off" href="#" &gt;
+                    &lt;svg class="ico-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/&gt;&lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link-active" href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link" href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item"&gt;&lt;a class="pagination-link" href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="pagination-item-arrow"&gt;
+                &lt;a class="pagination-link" href="#"&gt;
+                    &lt;svg class="ico-16 ico-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/&gt;&lt;/svg&gt;
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;  
+                                   </code></pre>
+                            </div>                      
+                        </div>                                 
+                    </section>                      
+                    
+                  
+
+                </section>  
+            </div>
+        </main>     
+        <footer id="footerContent"></footer>    
+    </section>
+</body>
+</html>

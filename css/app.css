@@ -1,0 +1,296 @@
+body {min-height: 100vh; overflow: hidden;}
+header{
+    /*grid-area: header;*/
+    background-color: rgba(221, 226, 238, .2) !important;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(16px);
+    /*border-bottom: 1px solid  rgba(221, 226, 238, .1);*/
+    transition: all ease 100ms;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.1);
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    /*width: calc(100% - 200px);*/
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #fff, var(--color-lightBlue), var(--color-purple), #fff) 1;
+  
+}
+
+.logo{
+    width: 160px;
+    padding: 4px 0 0 0;
+}
+
+.cont{
+    display: grid;
+    grid-template-columns: minmax(0px, 180px) 1fr; 
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "aside main"
+        "aside footer";
+    height: 100vh;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #fff;
+    border-right: 1px solid #efefef;
+    overflow-y: auto;
+
+}
+
+main{
+    background-color: var(--color-8);
+    grid-area: main;
+    overflow-y: auto;
+    background-color: #fafafa;
+    position: relative;
+    top: 0px;    
+}
+
+
+/* NAV VERTICAL */
+.nav-v {
+    height: 100vh; /* Utilizamos el 100% de la altura del viewport */
+    display: flex;
+    flex-direction: column; /* Establecemos la dirección del flexbox como columna */
+    align-items: flex-start; /* Alineamos los elementos al inicio */
+    padding: 100px 0 ;
+}
+
+.nav-v ul {
+    list-style: none;
+    padding: 0 0 0 20px;
+    margin: 0;
+    width: 100%;
+}
+
+.nav-v ul li {
+    margin: 0; /* Establecemos el ancho al 100% para que ocupe todo el espacio disponible */
+}
+
+.nav-v ul li a {
+    border-left:4px solid transparent;
+    color: var(--gray);
+    text-decoration: none;
+    padding: 4px 16px !important; /* Ajustamos el espaciado vertical */
+    display: block; /* Cambiamos el display a bloque para que ocupen todo el ancho */
+}
+
+.nav-v a.active {
+    color: var(--light-blue);
+    border-left:4px solid var(--color-purple);
+    background-color: #fafafa;
+}
+
+.nav-v a:hover {
+    border-left:4px solid var(--color-lightBlue);
+    background-color: #fafafa;
+    color: var(--light-blue)
+}
+.pend{
+    background: rgb(255, 204, 204);
+}
+
+/* CSS MUESTRA DE CODIGO */ 
+.pre-pre{
+    background-color: #202428;
+    border-radius: 8px;
+    overflow: auto;
+    height: auto;
+    /*color: #90dff1;*/
+    font-size: 12px !important;
+}
+
+.pre-pre2{
+    background-color: #202428;
+    border-radius: 0 0 8px 8px;
+    overflow: auto;
+    height: auto;
+    /*color: #90dff1;*/
+    font-size: 12px !important;
+}
+
+pre{
+    margin: 16px 0 16px 0;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Estilos de barras verticales */
+/* Estilo del riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Estilo del mango (thumb) de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background: #009EE2;
+    border-radius: 5px; /* Ajusta el radio de borde para hacerlo más delgado */
+}
+
+/* Estilo del mango al pasar el ratón sobre él */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #370aff;
+}
+/* Estilos para navegadores específicos */
+/* Internet Explorer */
+::-ms-scrollbar {
+    width: 5px;
+}
+
+/* Firefox */
+::-moz-scrollbar {
+    width: 5px;
+}
+/* Estilos para la barra de desplazamiento horizontal */
+/* Ancho de la barra de desplazamiento horizontal */
+::-webkit-scrollbar {
+height: 5px;
+}
+
+/* Estilo del riel de la barra de desplazamiento horizontal */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+/* Estilo del mango (thumb) de la barra de desplazamiento horizontal */
+::-webkit-scrollbar-thumb {
+background: #009EE2;
+border-radius: 10px; /* Ajusta el radio de borde para hacerlo más delgado */
+}
+
+/* Estilo del mango al pasar el ratón sobre él */
+::-webkit-scrollbar-thumb:hover {
+background: #370aff;
+}
+/* Estilos para navegadores específicos */
+/* Internet Explorer */
+::-ms-scrollbar {
+height: 5px;
+}
+
+/* Firefox */
+::-moz-scrollbar {
+height: 5px;
+}
+
+/* Div para la muestra */
+.div0{
+    background-color: rgba(206, 246, 255, 1);
+}
+.div1{
+    background-color: rgba(215, 245, 254,.7);
+    border:1px solid rgba(0, 35, 193, 0.2);
+}
+.div2{
+    background-color: rgba(195, 240, 254,.7);
+    border:1px solid rgba(0, 35, 193, 0.2);
+}
+.div3{
+    width: auto;
+    height: auto;
+    background-image: repeating-linear-gradient(45deg, rgba(0,0,0,0.05), rgba(0,0,0,0.05) 5px, transparent 5px, transparent 10px);
+}
+
+/* Estilo para el contenido del modal */
+.modal-content-ejemplo {
+    background-color: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: var(--md-24);
+    width: 500px;
+    max-width: 60%;
+    border-radius: var(--md-8);
+    position: relative;
+    margin: 0 auto;
+    animation-name: fadeIn;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards; /* Mantener el estado final de la animación */
+    -webkit-box-shadow: 0px 0px 16px -4px rgba(89, 89, 89, .2);
+    -moz-box-shadow: 0px 0px 16px -4px rgba(89, 89, 89, .2);
+    box-shadow: 0px 0px 8px 2px rgba(89, 89, 89, .2);
+    overflow: hidden;
+}
+
+.toast-ejemplo {
+    height: auto;
+    width: 350px;
+    background-color: var(--color-white);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: var(--md-8);
+}
+
+.offcanvas-ejemplo {
+    display: block;
+    width: 100%;
+    height: 350px;
+    background-color: rgba(0, 0, 0, .65); 
+    overflow: hidden;
+}
+
+.offcanvas-content-ejemplo {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: var(--md-24);
+    width: 350px;
+    height: 100%;
+}
+.offcanvas-content-ejemplo-r {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: var(--md-24);
+    width: 350px;
+    height: 100%;
+    float: right;
+}
+
+
+/* ====================
+    * TABLE *
+==================== */
+.table-cont {
+    border-radius: var(--md-8);
+    /* Aplica el borde redondeado al contorno del grid */
+    overflow: auto;
+    /* Asegura que el borde redondeado sea visible */
+}
+
+.table-cont-b {
+    border-radius: var(--md-8) var(--md-8) 0px 0px;
+    /* Aplica el borde redondeado al contorno del grid */
+    overflow: auto;
+    /* Asegura que el borde redondeado sea visible */
+}
+
+.table-grid {
+    display: grid;
+    grid-template-columns: 180px auto;
+    /* La primera columna tiene un ancho fijo de 200px y la segunda tiene un ancho automático */
+}
+
+.table-grid-3 {
+    display: grid;
+    grid-template-columns: 180px 200px auto;
+    /* La primera columna tiene un ancho fijo de 200px y la segunda tiene un ancho automático */
+}
+
+.table-item-th {
+    padding: var(--md-16);
+}
+
+.table-item-td {
+    padding: var(--md-8) var(--md-16) var(--md-8);
+    /* Ajusta los valores de relleno */
+    border-bottom: 1px solid var(--border-1);
+}
+
+/* OTHERS */
+.bg-table-h { background-color: var(--bg-color-table-h); }
+.bg-table-f { background-color: var(--bg-color-table-f); }

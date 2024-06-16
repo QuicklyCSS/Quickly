@@ -1,0 +1,309 @@
+/* ====================
+	* CONFIGURACION *
+==================== */
+body {
+  min-height: 100vh;
+}
+
+.m-esp{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+/* no tiene borde */
+.div0{
+    background-color: rgba(206, 246, 255, 1);
+}
+.div1{
+    /*background-color: rgba(206, 246, 255, 1);*/
+    background-color: var(--bg-color-skyblue-4);
+    border:1px solid rgba(0, 35, 193, 0.2);
+}
+.div2{
+    /*background-color: rgba(143, 234, 255, 1);*/
+    background-color: var(--bg-color-skyblue-3);
+    border:1px solid rgba(0, 35, 193, 0.2);
+}
+.div3{
+    /*background-color: rgb(255, 212, 249);*/
+    /*border:1px solid rgba(0, 35, 193, 0.2);*/
+    width: auto;
+    height: auto;
+    background-image: repeating-linear-gradient(45deg, rgba(0,0,0,0.05), rgba(0,0,0,0.05) 5px, transparent 5px, transparent 10px);
+}
+/*//////////////////////////////////////////////////////////*/
+
+/* EJEMPLOS DE BEM */
+/* .mi-bloque {} */
+
+/* Element */
+/* .mi-bloque__elemento {} */
+
+/* Modifier */
+/* .mi-bloque--modificador {} */
+
+/*//////////////////////////////////////////////////////////*/
+
+/* RESPONSIVE CONFIG */
+
+.cont{
+    display: grid;
+    grid-template-columns: minmax(0px, 180px) 1fr; 
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "aside header"
+        "aside main"
+        "aside footer";
+    height: 100vh;
+}
+
+.logo{
+    width: 180px;
+    padding: 4px 0 0 0;
+}
+
+.h-header{height: 65px;}
+.h-text{
+    position: absolute;
+    z-index: 10;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    padding: 10px;
+    text-align: center;
+}
+
+/* ESTRUTURA */
+
+header{
+    /*grid-area: header;*/
+    background-color: rgba(221, 226, 238, .2) !important;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(16px);
+    /*border-bottom: 1px solid  rgba(221, 226, 238, .1);*/
+    transition: all ease 100ms;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.1);
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    /*width: calc(100% - 200px);*/
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #fff, var(--light-blue), var(--purple), #fff) 1;  
+}
+
+aside{
+    /*background-color: rgb(0, 158, 226);*/
+    grid-area: aside;
+    /*background-color: #fafafa;*/
+    background-color: #fff;
+    border-right: 1px solid #efefef;
+    overflow-y: auto;
+
+}
+
+main{
+    background-color: var(--color-8);
+    grid-area: main;
+    overflow-y: auto;
+    background-color: #fafafa;
+    position: relative;
+    top: 0px;
+    
+}
+
+footer{
+   /*background-color: var(--color-8);*/
+    grid-area: footer;
+    color: var(--gray);
+}
+
+
+
+
+.title-color{
+    color: #419ec9
+}
+
+.bg-Color--1{
+    background-color: var(--bg-color-white-1);
+    width: 100%;
+}
+
+.bg-color--2{
+    background-color: rgba(192, 192, 192, 0.2);
+}
+.bg-color--3{
+    background-color: rgba(214, 214, 214, 0.8);
+}
+.bg-color--4{
+    background-color: rgba(192, 192, 192, 0.2);
+}
+
+@media screen and (max-width: 576px) {
+    .cont{
+        display: grid;
+        grid-template-columns: minmax(0px, 200px) 1fr; 
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "footer footer";
+        height: 100vh;
+    }
+    nav{display: none;}
+
+}
+
+/* CSS MUESTRA DE CODIGO */ 
+.pre-pre{
+    background-color: #202428;
+    border-radius: 8px;
+    overflow: auto;
+    height: auto;
+    color: #90dff1;
+    font-size: 12px !important;
+}
+.pre-pre2{
+    background-color: #202428;
+    border-radius: 0 0 8px 8px;
+    overflow: auto;
+    height: auto;
+    color: #90dff1;
+    font-size: 12px !important;
+}
+
+pre{
+    margin: 16px 0 16px 0;
+}
+
+
+
+
+
+/* PRUEBA */
+.etiqueta { color: #8dc2e8 !important}
+.aperturaCierre { color: #f66d6d !important}
+.comentarios { color: #f66dd8 !important}
+.atributos { color: #fce39a !important}
+.valor-atributo { color: #abffe6 !important}
+.texto-etiqueta { color: #df7777 !important}
+.texto-entre-etiquetas { color: #d1d1d1 !important}
+
+/*.signo{color: #dbdfe3}*/
+
+
+
+/* NAV VERTICAL */
+.nav-v {
+    height: 100vh; /* Utilizamos el 100% de la altura del viewport */
+    display: flex;
+    flex-direction: column; /* Establecemos la dirección del flexbox como columna */
+    align-items: flex-start; /* Alineamos los elementos al inicio */
+    padding: 100px 0 ;
+}
+
+.nav-v ul {
+    list-style: none;
+    padding: 0 0 0 20px;
+    margin: 0;
+    width: 100%;
+}
+
+.nav-v ul li {
+    margin: 0; /* Establecemos el ancho al 100% para que ocupe todo el espacio disponible */
+}
+
+.nav-v ul li a {
+    border-left:4px solid transparent;
+    color: var(--gray);
+    text-decoration: none;
+    padding: 4px 16px !important; /* Ajustamos el espaciado vertical */
+    font-size: .8rem;
+    display: block; /* Cambiamos el display a bloque para que ocupen todo el ancho */
+}
+
+.nav-v a.activo {
+	/*background: rgba(0, 110, 157,.5);*/
+    color: var(--light-blue);
+    border-left:4px solid var(--purple);
+    background-color: #fafafa;
+}
+
+.nav-v a:hover {
+    border-left:4px solid var(--light-blue);
+    background-color: #fafafa;
+    color: var(--light-blue)
+}
+
+.pend{
+    background: rgb(255, 204, 204);
+}
+
+
+/* BARRAS DEL NAVEGADOR */
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Estilos de barras verticales */
+/* Estilo del riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Estilo del mango (thumb) de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background: #009EE2;
+    border-radius: 5px; /* Ajusta el radio de borde para hacerlo más delgado */
+}
+
+/* Estilo del mango al pasar el ratón sobre él */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #370aff;
+}
+/* Estilos para navegadores específicos */
+/* Internet Explorer */
+::-ms-scrollbar {
+    width: 5px;
+}
+
+/* Firefox */
+::-moz-scrollbar {
+    width: 5px;
+}
+/* Estilos para la barra de desplazamiento horizontal */
+/* Ancho de la barra de desplazamiento horizontal */
+::-webkit-scrollbar {
+height: 5px;
+}
+
+/* Estilo del riel de la barra de desplazamiento horizontal */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+/* Estilo del mango (thumb) de la barra de desplazamiento horizontal */
+::-webkit-scrollbar-thumb {
+background: #009EE2;
+border-radius: 10px; /* Ajusta el radio de borde para hacerlo más delgado */
+}
+
+/* Estilo del mango al pasar el ratón sobre él */
+::-webkit-scrollbar-thumb:hover {
+background: #370aff;
+}
+/* Estilos para navegadores específicos */
+/* Internet Explorer */
+::-ms-scrollbar {
+height: 5px;
+}
+
+/* Firefox */
+::-moz-scrollbar {
+height: 5px;
+}
+  

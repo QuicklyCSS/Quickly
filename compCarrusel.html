@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickly: Componente de Carrusel CSS | Presentación de Contenido Dinámico</title>
+    <meta name="description" content="Explora el componente de carrusel CSS en Quickly. Diseñado para ofrecer una presentación dinámica y atractiva del contenido, nuestro carrusel facilita la creación de interfaces web con contenido interactivo y visualmente atractivo. Descubre cómo utilizarlo para mejorar la presentación de tus proyectos de desarrollo web.">
+    <link rel="icon" type="image/png" href="./img/ico.png">
+    <link rel="stylesheet" href="./css/quickly.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/quickly.js" defer></script>
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./prism/prism.css">
+    <script src="./prism/prism.js" defer></script>
+    <script>var currentPage = 'compCarrusel';</script>
+</head>
+<body>
+    <div id="headerContent"></div>
+    <section class="cont">
+        <aside id="menuContent"></aside> 
+        <main class="bg-white-2 pt-5">  
+            <div class="cont-80 py-5"> 
+                
+                <!-- CAROUSEL -->
+                <section class="border rounded bg-color-1">
+                    <div class="p-5 bg-white-1 rounded-t border-b">
+                        <h1 class="font-l">Carrusel</h1>
+                        <p class="font-l font-s-4">Potencia tu sitio web con el nuevo Carrusel CSS de <strong class="text-quickly" >Quickly</strong>: Presentación dinámica y cautivadora en solo unos clics.</p>
+                    </div>
+                
+                    <!-- CAROUSEL STANDAR -->
+                    <section class="pt-3 p-5 rounded-b">
+                        <h2 class="font-l font-s-2">Carrusel estandar</h2>
+                        <p class="pb-2">Descubre nuestra versátil solución de Carrusel CSS con Javascript, meticulosamente diseñada para integrarse sin complicaciones en cualquier diseño web. Se adapta con fluidez a su contenedor, ofreciendo una forma estándar y elegante de resaltar dinámicamente el contenido de tu sitio web. Una de sus características distintivas es la capacidad de activarse automáticamente al agregar la clase "auto-play", o bien, de disfrutarlo manualmente al eliminar dicha clase. Además, este carrusel se detendrá automáticamente cuando detecte el mouse sobre él, reanudándose después de retirarlo.</p>             
+                        <h3 class="font-l font-s-2"></h3>
+                        <div class="table-cont border">                          
+                            <div class="hatched-1 p-5 grid item-1 g-5"> 
+  
+                                <!-- CAROUSEL -->
+                                <div id="carousel-container" class="carousel-container auto-play">
+                                    <div class="carousel" id="carouselId">
+                                        <div class="carousel_item" id="item1">
+                                            <img src="./img/16-9.webp" alt="Imagen uno" class="img-fluid"/>
+                                            <div class="caption-carousel text-al">
+                                                <h2 class="font-l">Título Uno</h2>
+                                                <p class="mb-2">Texto párrafo de relleno para la diapositiva.</p>
+                                                <button class="btn btn-secondary">Botón secondary</button><button class="btn btn-primary">Botón primary</button>
+                                            </div>
+                                        </div>
+                                        <div class="carousel_item" id="item2">
+                                            <img src="./img/16-9.webp" alt="Imagen dos" class="img-fluid"/>
+                                            <div class="caption-carousel text-ac">
+                                                <h2 class="font-l">Título Dos</h2>
+                                                <p class="mb-2">Texto párrafo de relleno para la diapositiva.</p>
+                                                <button class="btn btn-secondary">Botón secondary</button><button class="btn btn-primary">Botón primary</button>
+                                            </div>
+                                        </div>
+                                        <div class="carousel_item" id="item3">
+                                            <img src="./img/16-9.webp" alt="Imagen tres" class="img-fluid"/>
+                                            <div class="caption-carousel text-ar">
+                                                <h2 class="font-l">Título Tres</h2>
+                                                <p class="mb-2">Texto párrafo de relleno para la diapositiva.</p>
+                                                <button class="btn btn-secondary">Botón secondary</button><button class="btn btn-primary">Botón primary</button>
+                                            </div>
+                                        </div>
+                                        <div class="carousel_item" id="item4">
+                                            <img src="./img/16-9.webp" alt="Imagen cuatro" class="img-fluid"/>
+                                            <div class="caption-carousel text-ar">
+                                                <h2 class="font-l">Título Cuatro</h2>
+                                                <p class="mb-2">Texto párrafo de relleno para la diapositiva.</p>
+                                                <button class="btn btn-secondary">Botón secondary</button><button class="btn btn-primary">Botón primary</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-buttons">
+                                        <button id="button-left" class="button ml-2" aria-label="Botón de desplazamiento izquierdo">
+                                            <svg class="ico-16 ico-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                                <path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z"/>
+                                            </svg>
+                                        </button>
+                                        <button id="button-right" class="button mr-2" aria-label="Botón de desplazamiento derecho">
+                                            <svg class="ico-16 ico-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                                <path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z"/>
+                                            </svg>
+                                        </button>
+                                    </div>                                    
+                                </div> 
+
+                            </div>                   
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;div id="carousel-container" class="carousel-container auto-play"&gt;
+        &lt;div class="carousel" id="carouselId"&gt;
+            &lt;div class="carousel_item" id="item1"&gt;
+                &lt;img src="..." alt="..." class="img-fluid"/&gt;
+                &lt;div class="caption-carousel text-al"&gt;
+                    &lt;h2 class="font-l"&gt;Título Uno&lt;/h2&gt;
+                    &lt;p class="mb-2"&gt;Texto párrafo&lt;/p&gt;
+                    &lt;button class="btn btn-secondary"&gt;Botón secondary&lt;/button&gt;
+                    &lt;button class="btn btn-primary"&gt;Botón primary&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="carousel_item" id="item2"&gt;
+                &lt;img src="..." alt="..." class="img-fluid"/&gt;
+                &lt;div class="caption-carousel text-ac"&gt;
+                    &lt;h2 class="font-l"&gt;Título Dos&lt;/h2&gt;
+                    &lt;p class="mb-2"&gt;Texto párrafo&lt;/p&gt;
+                    &lt;button class="btn btn-secondary"&gt;Botón secondary&lt;/button&gt;
+                    &lt;button class="btn btn-primary"&gt;Botón primary&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="carousel_item" id="item3"&gt;
+                &lt;img src="..." alt="..." class="img-fluid"/&gt;
+                &lt;div class="caption-carousel text-ar"&gt;
+                    &lt;h2 class="font-l"&gt;Título Tres&lt;/h2&gt;
+                    &lt;p class="mb-2"&gt;Texto párrafo&lt;/p&gt;
+                    &lt;button class="btn btn-secondary"&gt;Botón secondary&lt;/button&gt;
+                    &lt;button class="btn btn-primary"&gt;Botón primary&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="carousel_item" id="item4"&gt;
+                &lt;img src="..." alt="..." class="img-fluid"/&gt;
+                &lt;div class="caption-carousel text-ar"&gt;
+                    &lt;h2 class="font-l"&gt;Título Cuatro&lt;/h2&gt;
+                    &lt;p class="mb-2"&gt;Texto párrafo&lt;/p&gt;
+                    &lt;button class="btn btn-secondary"&gt;Botón secondary&lt;/button&gt;
+                    &lt;button class="btn btn-primary"&gt;Botón primary&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="carousel-buttons"&gt;
+            &lt;button id="button-left" class="button ml-2"&gt;
+                &lt;svg class="ico-16 ico-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"&gt;
+                    &lt;path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755"/&gt;
+                &lt;/svg&gt;
+            &lt;/button&gt;
+            &lt;button id="button-right" class="button mr-2"&gt;
+                &lt;svg class="ico-16 ico-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"&gt;
+                    &lt;path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755"/&gt;
+                &lt;/svg&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;                                    
+    &lt;/div&gt;
+                                </code></pre>
+                            </div>                      
+                        </div>                                 
+                    </section>                                       
+                </section>   
+
+            </div>
+        </main>     
+        <footer id="footerContent"></footer>    
+    </section>
+</body>
+</html>
