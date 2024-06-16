@@ -48,8 +48,10 @@ El equipo de Quickly está comprometido con la mejora continua y la expansión d
 Quickly no solo es un framework CSS, sino una plataforma que impulsa la creatividad y la eficiencia en el diseño y desarrollo web. Únete a nosotros en este emocionante viaje y descubre cómo Quickly puede transformar tu flujo de trabajo y potenciar tus proyectos web.
 
 ### Documentación y Recursos
-Para obtener más información y empezar a utilizar Quickly, visita nuestro sitio web oficial: [Quickly CSS](https://quicklycss.github.io/Quickly/)
+Para obtener más información y empezar a utilizar Quickly, visita nuestro sitio web oficial: [QuicklyCSS](https://quicklycss.github.io/Quickly/)
 
 ---
-¡Esperamos que disfrutes usando Quickly y que te ayude a llevar tus proyectos al siguiente nivel! Si tienes alguna pregunta o sugerencia, no dudes en contactarnos.
+¡Esperamos que disfrutes usando Quickly y que te ayude a llevar tus proyectos al siguiente nivel! Si tienes alguna pregunta o sugerencia, no dudes en contactarme.
 Para más información escribenos a: getquicklycss@gmail.com
+
+Diseñado y construido por Alexander Osses ❤️
