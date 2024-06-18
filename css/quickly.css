@@ -5069,9 +5069,6 @@ select {
     display: none;
   }
 
-
-
-
 /* /////////////////////// SWITCH /////////////////////// */
 /* Estilos para el interruptor estándar */
 .switch-standard {
@@ -5208,12 +5205,6 @@ select {
     visibility: hidden;
   }
   
-  
-
-
-
-
-
 /* VALIDACION */
 .disabled {
     pointer-events: none;
