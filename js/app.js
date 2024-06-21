@@ -75,3 +75,34 @@ document.addEventListener('DOMContentLoaded', function() {
     cargarContenido();
     marcarMenu();
 });
+
+
+
+
+window.onload = function() {
+    const button = document.querySelector('button[data-qy-toggle="offcanvas-4"]');
+    const aside = document.getElementById('menuContent');
+    
+    console.log('Button:', button);
+    console.log('Aside:', aside);
+
+    if (button && aside) {
+        button.addEventListener('click', function() {
+            console.log('Button clicked');
+            if (aside.classList.contains('visible')) {
+                console.log('Aside is visible, hiding it.');
+                aside.classList.remove('visible');
+                aside.style.left = '-100%';
+            } else {
+                console.log('Aside is not visible, showing it.');
+                aside.classList.add('visible');
+                aside.style.left = '0';
+            }
+        });
+    } else {
+        if (!button) {
+        }
+        if (!aside) {
+        }
+    }
+};

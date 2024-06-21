@@ -1,12 +1,25 @@
-<header class="h-header grid item-2 px-2 fixed">
+<header class="h-header grid space-hb px-2 fixed">
     <div class="logo col-1">
         <img src="./img/Quickly.png" class="img-fluid">
     </div>   
-    <div class="grid align-vc stretch-h col-1">
-        <div class="grid">
-            <small class="text-ar align-vc">Inicio proyecto 26-03-2024</small>     
-            <small class="text-ar align-vc">Actualización 16-06-2024 · Versión Alfa 1.0.0</small>  
+ 
+    <div class="grid item-1">
+        <div class="grid align-content-hc align-vc">
+            <div class="grid item-1 mr-2 hide-s show-m">
+                <!--small class="text-ar align-vc">Inicio proyecto 26-03-2024</small-->     
+                <small class="text-ar align-vc">Actualización 16-06-2024 · Versión Alfa 1.0.0</small>  
+            </div>
+        
+            <div class="hide show-s show-m">
+                <!-- Botón para abrir el offcanvas con button ico -->
+                <button data-qy-toggle="offcanvas-4" type="button" class="btn-ico btn-primary no-stretch">
+                    <svg class="ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/>
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
+    
     <div class="hide h-text font-n title-color" id="titulo"></div>  
 </header>

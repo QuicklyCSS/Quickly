@@ -1,10 +1,8 @@
 body {min-height: 100vh; overflow: hidden;}
 header{
-    /*grid-area: header;*/
     background-color: rgba(221, 226, 238, .2) !important;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(16px);
-    /*border-bottom: 1px solid  rgba(221, 226, 238, .1);*/
     transition: all ease 100ms;
     -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.1);
@@ -14,7 +12,6 @@ header{
     top: 0px;
     right: 0px;
     width: 100%;
-    /*width: calc(100% - 200px);*/
     border-bottom: 2px solid;
     border-image: linear-gradient(to right, #fff, var(--color-lightBlue), var(--color-purple), #fff) 1;
   
@@ -27,12 +24,97 @@ header{
 
 .cont{
     display: grid;
-    grid-template-columns: minmax(0px, 180px) 1fr; 
+    grid-template-columns: minmax(0px, 250px) 1fr; 
     grid-template-rows: auto 1fr;
     grid-template-areas:
         "aside main"
         "aside footer";
     height: 100vh;
+}
+
+
+/* Media query para smartphones (ancho máximo de 480px) */
+@media screen and (max-width: 576px) {
+    .cont {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        grid-template-areas:
+            "aside"
+            "main"            
+            "footer";
+    }
+    aside {
+        grid-area: aside;
+        background-color: rgba(255,255,255,.95)!important;
+        border-right: 1px solid #efefef;
+        overflow-y: auto;
+        width: 100% !important;
+        height: 100vh !important;
+        z-index: 9;
+        position: absolute;
+        display: block;
+        left: -100%;
+        transition: left 0.3s ease-in-out;
+    }
+    aside.visible {
+        display: block;
+        left: 0;
+    }
+    .nav-v {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 64px 0 !important;
+    }     
+}
+
+/* Media query para tablets (ancho máximo de 768px) */
+@media screen and (max-width: 992px) {
+    .cont {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "main"
+            "aside"
+            "footer";
+        }
+        aside {
+            grid-area: aside;
+            background-color: rgba(0,0,0,.2)!important;
+            background-color: rgba(0, 158, 226,.2) !important;
+            backdrop-filter: blur(2px); /* Aplicar desenfoque al fondo */
+
+            border-right: 1px solid #efefef;
+            overflow-y: auto;
+            width: 100% !important;
+            height: 100vh !important;
+            z-index: 9;
+            position: absolute;
+            display: block;
+            left: -100%;
+            transition: left 0.3s ease-in-out;
+        }
+        aside.visible {
+            display: block;
+            left: 0;
+        }    
+        .nav-v {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 64px 0 !important;
+            width: 50% !important;
+            background-color: rgba(255,255,255,1)!important;
+            height: 100vh !important;
+        }   
+        .nav-v ul {
+            list-style: none;
+            padding: 0 0 0 20px;
+            margin: 0;
+            width: 200%;
+            background-color: rgba(255,255,255,1)!important;           
+          }
 }
 
 aside{
@@ -59,7 +141,7 @@ main{
     display: flex;
     flex-direction: column; /* Establecemos la dirección del flexbox como columna */
     align-items: flex-start; /* Alineamos los elementos al inicio */
-    padding: 100px 0 ;
+    padding: 70px 0 ;
 }
 
 .nav-v ul {
