@@ -26,27 +26,26 @@ function cargarContenido() {
             
             // Después de cargar el menú, llamar a la función para marcar el enlace correspondiente como activo
             marcarMenu();
-
-            // Después de cargar el menú, configurar el botón
-            setupButton();
         })
         .catch(error => {
             console.error('Error al cargar el contenido del menú:', error);
         });
 
-    // URL del archivo footer.html
+    // URL del archivo menu.html
     var footerUrl = "footer.html";
 
     // Fetch para obtener el contenido de footer.html
     fetch(footerUrl)
         .then(response => response.text())
         .then(data => {
-            // Insertar el contenido en el contenedor del footer
+            // Insertar el contenido en el contenedor del menú
             document.getElementById('footerContent').innerHTML = data;
         })
         .catch(error => {
             console.error('Error al cargar el contenido del footer:', error);
         });
+
+    marcarMenu();
 }
 
 // Función para marcar el menú activo
@@ -70,10 +69,48 @@ function marcarMenu() {
     });
 }
 
+
 // Llamar a la función para marcar el menú activo cuando se cargue el DOM
 document.addEventListener('DOMContentLoaded', function() {
     cargarContenido();
     marcarMenu();
+});
+
+
+
+/*
+window.onload = function() {
+    const button = document.querySelector('button[data-qy-toggle="offcanvas-4"]');
+    const aside = document.getElementById('menuContent');
+    
+    console.log('Button:', button);
+    console.log('Aside:', aside);
+
+    if (button && aside) {
+        button.addEventListener('click', function() {
+            console.log('Button clicked');
+            if (aside.classList.contains('visible')) {
+                console.log('Aside is visible, hiding it.');
+                aside.classList.remove('visible');
+                aside.style.left = '-100%';
+            } else {
+                console.log('Aside is not visible, showing it.');
+                aside.classList.add('visible');
+                aside.style.left = '0';
+            }
+        });
+    } else {
+        if (!button) {
+        }
+        if (!aside) {
+        }
+    }
+};
+*/
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM fully loaded and parsed');
+    console.log('All buttons:', document.querySelectorAll('button'));
+    setupButton();
 });
 
 function setupButton() {
@@ -105,3 +142,4 @@ function setupButton() {
         }
     }
 }
+

@@ -996,9 +996,7 @@ document.addEventListener('DOMContentLoaded', function() {
           botonEnviar.classList.remove('disabled');
           botonEnviar.classList.add('enabled');
           botonEnviar.disabled = false;
-
           var camposRequeridos = formulario.querySelectorAll('[required], input[type="checkbox"], select, textarea');
-
           camposRequeridos.forEach(function(campo) {
               if (campo.type === 'checkbox' || campo.tagName.toLowerCase() === 'select' || campo.tagName.toLowerCase() === 'textarea') {
                   campo.removeEventListener('change', habilitarBotonEnviar);
