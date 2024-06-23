@@ -67,6 +67,10 @@ header{
         align-items: flex-start;
         padding: 64px 0 !important;
     }     
+    .logo{
+        width: 120px;
+        padding: 4px 0 0 0;
+    }
 }
 
 /* Media query para tablets (ancho máximo de 768px) */
