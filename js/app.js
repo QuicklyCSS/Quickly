@@ -1,70 +1,39 @@
 // Función para cargar el contenido de header.html y menu.html
 function cargarContenido() {
-    // URL del archivo header.html
     var headerUrl = "header.html";
-
-    // Fetch para obtener el contenido de header.html
     fetch(headerUrl)
         .then(response => response.text())
         .then(data => {
-            // Insertar el contenido en el contenedor del header
             document.getElementById('headerContent').innerHTML = data;
         })
-        .catch(error => {
-            console.error('Error al cargar el contenido del header:', error);
-        });
-
-    // URL del archivo menu.html
+        .catch(error => {});
     var menuUrl = "menu.html";
-
-    // Fetch para obtener el contenido de menu.html
     fetch(menuUrl)
         .then(response => response.text())
         .then(data => {
-            // Insertar el contenido en el contenedor del menú
             document.getElementById('menuContent').innerHTML = data;
-            
-            // Después de cargar el menú, llamar a la función para marcar el enlace correspondiente como activo
             marcarMenu();
-
-            // Después de cargar el menú, configurar el botón
             setupButton();
         })
-        .catch(error => {
-            console.error('Error al cargar el contenido del menú:', error);
-        });
+        .catch(error => {});
 
-    // URL del archivo footer.html
     var footerUrl = "footer.html";
 
-    // Fetch para obtener el contenido de footer.html
     fetch(footerUrl)
         .then(response => response.text())
         .then(data => {
-            // Insertar el contenido en el contenedor del footer
             document.getElementById('footerContent').innerHTML = data;
         })
-        .catch(error => {
-            console.error('Error al cargar el contenido del footer:', error);
-        });
+        .catch(error => {});
 }
 
 // Función para marcar el menú activo
 function marcarMenu() {
-    // Obtener la variable global que identifica la página actual
     var currentPage = window.currentPage;
-
-    // Obtener todos los enlaces del menú
     var menuLinks = document.querySelectorAll('.nav-v a');
-
-    // Iterar sobre cada enlace del menú
     menuLinks.forEach(function (link) {
-        // Obtener la URL del enlace del menú
         var menuUrl = link.getAttribute('href');
-
-        // Verificar si la URL del enlace del menú coincide exactamente con la variable que identifica la página actual
         if (menuUrl === currentPage + '.html') {
-            // Agregar la clase "activo" al enlace del menú correspondiente
             link.classList.add('active');
         }
     });
@@ -76,32 +45,35 @@ document.addEventListener('DOMContentLoaded', function() {
     marcarMenu();
 });
 
+// Funcion para controlar el estado del botón menú
 function setupButton() {
-    const button = document.querySelector('button[data-qy-toggle="offcanvas-4"]');
+    const btnMenuH = document.getElementById('btnMenuH');
+    const btnMenuC = document.getElementById('btnMenuC');
     const aside = document.getElementById('menuContent');
 
-    console.log('Button:', button);
-    console.log('Aside:', aside);
-
-    if (button && aside) {
-        button.addEventListener('click', function() {
-            console.log('Button clicked');
-            if (aside.classList.contains('visible')) {
-                console.log('Aside is visible, hiding it.');
-                aside.classList.remove('visible');
-                aside.style.left = '-100%';
-            } else {
-                console.log('Aside is not visible, showing it.');
-                aside.classList.add('visible');
-                aside.style.left = '0';
-            }
+    if (btnMenuH && btnMenuC && aside) {
+        btnMenuH.addEventListener('click', function() {
+            toggleButtons();
+            toggleAside();
         });
-    } else {
-        if (!button) {
-            console.log('Button not found');
-        }
-        if (!aside) {
-            console.log('Aside not found');
+
+        btnMenuC.addEventListener('click', function() {
+            toggleButtons();
+            toggleAside();
+        });
+    }
+
+    function toggleButtons() {
+        btnMenuH.parentNode.style.display = btnMenuH.parentNode.style.display === 'none' ? 'block' : 'none';
+        btnMenuC.parentNode.style.display = btnMenuC.parentNode.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function toggleAside() {
+        aside.classList.toggle('visible');
+        if (aside.classList.contains('visible')) {
+            aside.style.left = '0';
+        } else {
+            aside.style.left = '-100%';
         }
     }
 }

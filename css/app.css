@@ -32,7 +32,6 @@ header{
     height: 100vh;
 }
 
-
 /* Media query para smartphones (ancho máximo de 480px) */
 @media screen and (max-width: 576px) {
     .cont {
@@ -66,6 +65,7 @@ header{
         flex-direction: column;
         align-items: flex-start;
         padding: 64px 0 !important;
+        width: 100% !important;
     }     
     .logo{
         width: 120px;
@@ -108,7 +108,7 @@ header{
             flex-direction: column;
             align-items: flex-start;
             padding: 64px 0 !important;
-            width: 50% !important;
+            width: 84% !important;
             background-color: rgba(255,255,255,1)!important;
             height: 100vh !important;
         }   
