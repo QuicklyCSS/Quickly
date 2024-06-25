@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="./img/ico.png">
   <link rel="stylesheet" href="./css/quickly.css">
   <link rel="stylesheet" href="./css/app.css" defer>
-  <script src="./js/quickly.js" defer></script>
+  <script src="./js/quicklyComp.js" defer></script>
   <script src="./js/app.js" defer></script>
   <link rel="stylesheet" href="./prism/prism.css">
   <script src="./prism/prism.js" defer></script>
@@ -20,165 +20,164 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DZQS41TB5G');
 </script>
 
 </head>
 <body>
     <div id="headerContent"></div>
-    <section class="cont">
+    <section class="cont cont-m">
         <aside id="menuContent"></aside> 
-        <main class="bg-white-2 pt-5">  
-            <div class="cont-80 py-5 "> 
+        <main class="bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5 "> 
                 
                 <!-- GRILLA -->
                 <section class="border rounded bg-color-1">            
                     <!-- TITLE --> 
-                    <section class="p-5 bg-white-1 rounded-t border-b">
+                    <section class="p-5 pm-2 bg-white-1 rounded-t border-b">
                         <h1 class="font-l">Sistema de Columnas CSS Grid en <strong class="text-quickly" >Quickly</strong></h1>
                         <p class="font-l font-s-4">En Quickly, el sistema de columnas de CSS Grid ofrece una forma rápida y sencilla de crear diseños flexibles y visualmente atractivos. Con solo unas pocas líneas de código, puedes organizar tu contenido en columnas perfectamente alineadas y adaptadas a cualquier dispositivo. La facilidad de implementación de CSS Grid en Quickly permite a los desarrolladores crear interfaces sofisticadas con una mínima curva de aprendizaje, lo que agiliza el proceso de desarrollo y garantiza resultados profesionales en poco tiempo.</p>
                     </section>
 
                     <!-- col-n  -->
-                    <section class="pt-3 px-5">
-                        <h3 class="font-l font-s-2">Domina la Gestión de Columnas con .col-n°</h3>
-                        <p class="pb-3 ">Descubre de forma rápida cómo gestionar las columnas dentro de un item. Nuestra configuración estándar de anchos de columnas permite dividir cada item en un máximo de 12 columnas utilizando la clase .col-n°. Esto te brinda la flexibilidad para ajustar y organizar el contenido según tus necesidades, independientemente del tamaño del navegador.</p>
-                        <p class="pb-2">Ejemplo de columnas aplicadas.</p>
-                        <div class="border-t border-l border-r rounded-t p-2">
-                            Grilla 12 item y 12 columnas.
-                        </div>
-                        <div class="border p-5 hatched-1">
-                            <div class="grid item-1 g-2 ">
-                                <div class="grid item-12 text-ac">
-                                    <div class="col-1 div1">col-1</div>
+                    <section class="p-5 pm-2">
+                        <section>
+                            <h3 class="font-l font-s-2">Domina la Gestión de Columnas con .col-n°</h3>
+                            <p class="pb-2 ">Descubre de forma rápida cómo gestionar las columnas dentro de un item. Nuestra configuración estándar de anchos de columnas permite dividir cada item en un máximo de 12 columnas utilizando la clase .col-n°. Esto te brinda la flexibilidad para ajustar y organizar el contenido según tus necesidades, independientemente del tamaño del navegador.</p>
+                            <div class="border rounded">
+                                <div class="p-2 border-b">
+                                    Grilla 12 item y 12 columnas.
                                 </div>
-                                <div class="grid item-12 text-ac">
-                                    <div class="col-2 div1">col-2</div>
-                                </div>
-                                <div class="grid item-12 text-ac">
-                                    <div class="col-3 div1">col-3</div>
-                                </div>     
-                                <div class="grid item-12 text-ac">
-                                    <div class="col-4 div1">col-4</div>
-                                </div>   
-                                <div class="grid item-12 text-ac">
-                                    <div class="col-5 div1">col-5</div>
-                                </div>      
-                                <div class="grid item-12 text-ac">
-                                    <div class="col-6 div1">col-6</div>
-                                </div>    
-                                <div class="grid item-12 text-ac">
-                                    <div class="col-7 div1">col-7</div>
-                                </div>        
-                                <div class="grid item-12 text-ac">
-                                    <div class="col-8 div1">col-8</div>
-                                </div>       
-                                <div class="grid item-12 text-ac">
-                                    <div class="col-9 div1">col-9</div>
-                                </div>        
-                                <div class="grid item-12 text-ac">
-                                    <div class="col-10 div1">col-10</div>
-                                </div>          
-                                <div class="grid item-12 text-ac">
-                                    <div class="col-11 div1">col-11</div>
-                                </div>   
-                                <div class="grid item-12 text-ac">
-                                    <div class="col-12 div1">col-12</div>
-                                </div>    
-                            </div>      
-                        </div>  
-                    </section>  
+                                <div class="p-5 pm-2 hatched-1">
+                                    <div class="grid item-1 g-2 ">
+                                        <div class="grid item-12 text-ac">
+                                            <div class="col-1 div1">col-1</div>
+                                        </div>
+                                        <div class="grid item-12 text-ac">
+                                            <div class="col-2 div1">col-2</div>
+                                        </div>
+                                        <div class="grid item-12 text-ac">
+                                            <div class="col-3 div1">col-3</div>
+                                        </div>     
+                                        <div class="grid item-12 text-ac">
+                                            <div class="col-4 div1">col-4</div>
+                                        </div>   
+                                        <div class="grid item-12 text-ac">
+                                            <div class="col-5 div1">col-5</div>
+                                        </div>      
+                                        <div class="grid item-12 text-ac">
+                                            <div class="col-6 div1">col-6</div>
+                                        </div>    
+                                        <div class="grid item-12 text-ac">
+                                            <div class="col-7 div1">col-7</div>
+                                        </div>        
+                                        <div class="grid item-12 text-ac">
+                                            <div class="col-8 div1">col-8</div>
+                                        </div>       
+                                        <div class="grid item-12 text-ac">
+                                            <div class="col-9 div1">col-9</div>
+                                        </div>        
+                                        <div class="grid item-12 text-ac">
+                                            <div class="col-10 div1">col-10</div>
+                                        </div>          
+                                        <div class="grid item-12 text-ac">
+                                            <div class="col-11 div1">col-11</div>
+                                        </div>   
+                                        <div class="grid item-12 text-ac">
+                                            <div class="col-12 div1">col-12</div>
+                                        </div>    
+                                    </div>      
+                                </div>  
+                            </div>
+                        </section>  
 
-                    <section class="px-5 pt-3">
-                        <h3 class="font-l font-s-2">Opciones de Columnas</h3>
-                        <p class="pb-2">El sistema de columnas de Quickly se adapta a los tres puntos de interrupción predeterminados y a cualquier punto de interrupción que personalices. Los tres niveles de columna predeterminados son los siguientes:</p>
-                        <div class="table-cont">                        
-                            <div class="table-grid-3 grid">
-                                <div class="table-item-th bg-table-h font-b">Tipo</div>
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Normal</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.col-n°</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Más de 992px · Para televisores, computadores de escritorio y tablets. </div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Mediano</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.col-m-n°</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Menos de 992px · Para teléfonos móviles o tabletas en orientación vertical.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Pequeño</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.col-s-n°</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Menor a 576px · Para teléfonos móviles en modo vertical.</div>
-                                </div>
-                            </div>     
-                        </div>
-                    </section>
-                    
-                    <section class="px-5 pt-3">
-                        <h3 class="font-l font-s-2">¿Y cómo se utiliza la clase .col?</h3>
-                        <p class="pb-2">La clase .col es esencial en el desarrollo web para crear diseños adaptables. Al aplicarla a elementos HTML, como divs, podemos dividir el espacio disponible en columnas proporcionales dentro de un contenedor principal. Esto facilita la creación de diseños responsivos que se ajustan automáticamente a diferentes tamaños de pantalla, garantizando una experiencia de usuario óptima en dispositivos móviles y de escritorio. A continuación, presentamos una demostración de cómo aplicar las clases .col.</p>
-                        <div class="table-cont-b">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.col-2 <br>(1,2,3,...12)</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                <div class="table-item-td">Se utiliza para especificar cuántos espacios debe ocupar la columna en los item de la cuadrícula. En este caso específico, col-2 indica que el elemento debe ocupar dos espacios para la columna en la cuadrícula de 3 item (item-3).</div>
-                                </div>
-                            </div>      
-                        </div>  
+                        <section class="pt-3">
+                            <h3 class="font-l font-s-2">Opciones de Columnas</h3>
+                            <p class="pb-2">El sistema de columnas de Quickly se adapta a los tres puntos de interrupción predeterminados y a cualquier punto de interrupción que personalices. Los tres niveles de columna predeterminados son los siguientes:</p>
+                            <div class="table">
+                                <table class="table-container">
+                                    <thead class="table-header bg-skyblue-4">
+                                        <tr>
+                                            <th class="w-100 bg-maya-blue-5">Tipo</th>
+                                            <th class="w-100 bg-maya-blue-5">Clase</th>
+                                            <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-body">
+                                        <tr>
+                                            <td class="bg-maya-blue-9">Normal</td>
+                                            <td class="bg-maya-blue-9">.col-n°</td>
+                                            <td class="bg-maya-blue-9">Más de 992px · Para televisores, computadores de escritorio y tablets.</td>                                
+                                        </tr>       
+                                        <tr>
+                                            <td class="bg-maya-blue-9">Mediano</td>
+                                            <td class="bg-maya-blue-9">.col-m-n°</td>
+                                            <td class="bg-maya-blue-9">Menos de 992px · Para teléfonos móviles o tabletas en orientación vertical.</td>                                
+                                        </tr> 
+                                        <tr>
+                                            <td class="bg-maya-blue-9">Pequeño</td>
+                                            <td class="bg-maya-blue-9">.col-s-n°</td>
+                                            <td class="bg-maya-blue-9">Menor a 576px · Para teléfonos móviles en modo vertical.</td>                                
+                                        </tr>                                                                                                                                                                                    
+                                    </tbody>
+                                </table>
+                            </div>                          
+                        </section>
                         
-                        <div class="border-l border-r mb-5">
-                            <div class="block border-b p-2">
-                                <p>Grilla de 3 item y 2 espacios para columna</p>
-                            </div>
-                            <div class="grid item-3 text-ac p-5 hatched-1">                
-                                <div class="col-2">                                    
-                                    <div class="div1 pt-1">
-                                        <div class="grid item-2">
-                                            <div class="border-r"> item 1</div><div>item 2  </div>  
-                                        </div>                                         
-                                        <div class="block div2 col-1 py-1 mt-1">Columna ocupa 2 item
-                                            <div class="my-1 grid item-2">                                            
-                                                <div class="col-1 div2 p-1 hatched-1">Col 1 </div>
-                                                <div class="col-1 div2 p-1 hatched-1">Col 2 </div>
-                                            </div>
-                                        </div>                                       
-                                    </div>                            
+                        <section class="pt-3">
+                            <h3 class="font-l font-s-2">¿Y cómo se utiliza la clase .col?</h3>
+                            <p class="pb-2">La clase .col es esencial en el desarrollo web para crear diseños adaptables. Al aplicarla a elementos HTML, como divs, podemos dividir el espacio disponible en columnas proporcionales dentro de un contenedor principal. Esto facilita la creación de diseños responsivos que se ajustan automáticamente a diferentes tamaños de pantalla, garantizando una experiencia de usuario óptima en dispositivos móviles y de escritorio. A continuación, presentamos una demostración de cómo aplicar las clases .col.</p>
+                            <div class="table">
+                                <table class="table-container">
+                                    <thead class="table-header bg-skyblue-4">
+                                        <tr>
+                                            <th class="w-150 bg-maya-blue-5">Clase</th>
+                                            <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-body">
+                                        <tr>
+                                            <td class="bg-maya-blue-9">.col-2 <br>(1,2,3,...12)</td>
+                                            <td class="bg-maya-blue-9">Se utiliza para especificar cuántos espacios debe ocupar la columna en los item de la cuadrícula. En este caso específico, col-2 indica que el elemento debe ocupar dos espacios para la columna en la cuadrícula de 3 item (item-3).</td>
+                                        </tr>                                                                                                                                                                                          
+                                    </tbody>
+                                </table>
+                            </div>                                                   
+                            <div class="border rounded mt-2">
+                                <div class="block border-b p-2">
+                                    <p>Grilla de 3 item y 2 espacios para columna</p>
                                 </div>
-                                <div class="grid div1 p-2 align-cc">item 3</div>   
-                            </div>  
-                            <div class="border-t p-2">
-                                HTML
-                            </div>
-                            <div class="pre-pre2">
-                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="grid item-3 text-ac"&gt;                
-        &lt;div class="col-2"&gt;                                    
-            Columna ocupa 2 item                                                        
-        &lt;/div&gt;
-        &lt;div class="align-cc"&gt;item 3&lt;/div&gt;   
-    &lt;/div&gt;  
-                                </code></pre>
-                            </div> 
-                        </div>                
+                                <div class="grid item-3 text-ac p-5 pm-2 hatched-1">                
+                                    <div class="col-2">                                    
+                                        <div class="div1 pt-1">
+                                            <div class="grid item-2">
+                                                <div class="border-r"> item 1</div><div>item 2</div>  
+                                            </div>                                         
+                                            <div class="block div2 col-1 py-1 mt-1">Columna ocupa 2 item
+                                                <div class="my-1 grid item-2">                                            
+                                                    <div class="col-1 div2 p-1 hatched-1">Col 1 </div>
+                                                    <div class="col-1 div2 p-1 hatched-1">Col 2 </div>
+                                                </div>
+                                            </div>                                       
+                                        </div>                            
+                                    </div>
+                                    <div class="grid div1 p-2 align-cc">item 3</div>   
+                                </div>  
+                                <div class="border-t p-2">
+                                    HTML
+                                </div>
+                                <div class="pre-pre2">
+                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
+        &lt;div class="grid item-3 text-ac"&gt;                
+            &lt;div class="col-2"&gt;                                    
+                Columna ocupa 2 item                                                        
+            &lt;/div&gt;
+            &lt;div class="align-cc"&gt;item 3&lt;/div&gt;   
+        &lt;/div&gt;  
+                                    </code></pre>
+                                </div> 
+                            </div>                
+                        </section>
                     </section>
              
                 </section>               
