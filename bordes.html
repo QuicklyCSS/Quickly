@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="./img/ico.png">
   <link rel="stylesheet" href="./css/quickly.css">
   <link rel="stylesheet" href="./css/app.css">
-  <script src="./js/quickly.js" defer></script>
+  <script src="./js/quicklyComp.js" defer></script>
   <script src="./js/app.js" defer></script>
   <link rel="stylesheet" href="./prism/prism.css">
   <script src="./prism/prism.js" defer></script>
@@ -21,74 +21,69 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DZQS41TB5G');
 </script>
 
 </head>
 <body>
     <div id="headerContent"></div>
-    <section class="cont">
+    <section class="cont cont-m">
         <aside id="menuContent"></aside> 
-        <main class="bg-white-2 pt-5">  
-            <div class="cont-80 py-5 "> 
+        <main class="bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5"> 
 
                 <!-- ALINEACIONES -->
                 <section class="border rounded bg-color-1">     
-                    <div class="p-5 bg-white-1 rounded-t border-b">
+                    <div class="p-5 pm-2 bg-white-1 rounded-t border-b">
                         <h1 class="font-l">Los Bordes <strong class="text-quickly" >Quickly</strong></h1>
                         <p class="font-l font-s-4">Estiliza tus elementos con facilidad utilizando las utilidades de borde para ajustar rápidamente el borde y el radio de esquina. Perfecto para darle un toque especial a tus imágenes, resaltar tus botones o realzar cualquier otro elemento de tu diseño.</p>
                     </div>
                 
                     <!-- Border -->
-                    <section class="pt-3  px-5">
+                    <section class="p-5 pm-2">
                         <h3 class="font-l font-s-2">Los tipo de bordes</h3>
                         <p>Hay cinco tipos de bordes que puedes aplicar a tus objetos o imágenes.</p>
                     </section>
                     <!-- Bordes -->
-                    <section class="pt-3 px-5 border-b">
+                    <section class="pt-0 p-5 pm-2">
                         <h3 class="font-l font-s-2">.border</h3>
-                        <div class="table-cont-b ">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.border</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Agrega un borde de 1px a todo el contorno del elemento.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.border-t</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Border-Top. Agrega un borde de 1px arriba del elemento.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.border-r</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Border-Right. Agrega un borde de 1px a la derecha del elemento. </div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.border-b</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Border-Bottom. Agrega un borde de 1px en la parte de abajo del elemento. </div>
-                                </div>      
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.border-l</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Border-Left. Agrega un borde de 1px al lado izquierdo del elemento. </div>
-                                </div>                
-                            </div>    
-                        </div>                    
-                        <div class="border-l border-r mb-5">
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.border</td>
+                                        <td class="w-auto bg-maya-blue-9">Agrega un borde de 1px a todo el contorno del elemento.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.border-t</td>
+                                        <td class="w-auto bg-maya-blue-9">Border-Top. Agrega un borde de 1px arriba del elemento.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.border-r</td>
+                                        <td class="w-auto bg-maya-blue-9">Border-Right. Agrega un borde de 1px a la derecha del elemento.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.border-b</td>
+                                        <td class="w-auto bg-maya-blue-9">Border-Bottom. Agrega un borde de 1px en la parte de abajo del elemento.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.border-l</td>
+                                        <td class="w-auto bg-maya-blue-9">Border-Left. Agrega un borde de 1px al lado izquierdo del elemento.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                
+                                </tbody>
+                            </table>
+                        </div>                      
+                        <div class="border rounded mt-2">
                             <div class="block border-b p-2">
                                 <p>Bordes arriba, izquierda, abajo, derecha.</p>                   
                             </div>
-                            <div class="p-5 grid item-5 g-5 align-cc hatched-1">        
+                            <div class="p-5 grid item-5 g-5 align-cc hatched-1 scroll-a">        
                                 <div class="div0 text-ac wh-100 grid align-vc border-w-2">100x100 <br> All</div>                             
                                 <div class="div0 text-ac wh-100 grid align-vc border-t-w-2">100x100 <br> Top</div>  
                                 <div class="div0 text-ac wh-100 grid align-vc border-r-w-2">100x100 <br> Right</div>      
@@ -100,66 +95,62 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-            &lt;div class="p-5 grid item-5 g-5 align-cc hatched-1"&gt;        
-                &lt;div class="text-ac wh-100 grid align-vc border-w-2"&gt;100x100 All&lt;/div&gt;                             
-                &lt;div class="text-ac wh-100 grid align-vc border-t-w-2"&gt;100x100 Top&lt;/div&gt;  
-                &lt;div class="text-ac wh-100 grid align-vc border-r-w-2"&gt;100x100 Left&lt;/div&gt;      
-                &lt;div class="text-ac wh-100 grid align-vc border-b-w-2"&gt;100x100 Bottom&lt;/div&gt;    
-                &lt;div class="text-ac wh-100 grid align-vc border-l-w-2"&gt;100x100 Right&lt;/div&gt; 
-            &lt;/div&gt;
+    &lt;div class="p-5 grid item-5 g-5 align-cc hatched-1"&gt;        
+        &lt;div class="text-ac wh-100 grid align-vc border-w-2"&gt;100x100 All&lt;/div&gt;                             
+        &lt;div class="text-ac wh-100 grid align-vc border-t-w-2"&gt;100x100 Top&lt;/div&gt;  
+        &lt;div class="text-ac wh-100 grid align-vc border-r-w-2"&gt;100x100 Left&lt;/div&gt;      
+        &lt;div class="text-ac wh-100 grid align-vc border-b-w-2"&gt;100x100 Bottom&lt;/div&gt;    
+        &lt;div class="text-ac wh-100 grid align-vc border-l-w-2"&gt;100x100 Right&lt;/div&gt; 
+    &lt;/div&gt;
                                 </code></pre>
                             </div> 
                         </div>                
                     </section>   
 
                     <!-- Border Width X -->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                             <h3 class="font-l font-s-2">Personalización del Grosor de los Bordes</h3>
                             <p>También puedes aumentar el grosor del borde utilizando las siguientes clases: ".border-w-n°". Reemplaza "n°" con un número del 1 al 5 para ajustar el grosor del borde.</p>
                     </section>
-                    <section class="pt-3 px-5 border-b">
+                    <section class="pt-0 p-5 pm-2">
                         <h3 class="font-l font-s-2">.border-w-n°</h3>
-                        <div class="table-cont-b ">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.border-w-1 o .border</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Border-Width-1px. Asigna el grosor del borde a 1px.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.border-w-2</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Border-Width-2px. Aumenta el grosor del borde a 2px.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.border-w-3</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Border-Width-3px. Aumenta el grosor del borde a 3px.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.border-w-4</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Border-Width-4px. Aumenta el grosor del borde a 4px. </div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.border-w-5</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Border-Width-5px. Aumenta el grosor del borde a 5px. </div>
-                                </div>                      
-                            </div>    
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.border-w-1 o .border</td>
+                                        <td class="w-auto bg-maya-blue-9">Border-Width-1px. Asigna el grosor del borde a 1px.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.border-w-2</td>
+                                        <td class="w-auto bg-maya-blue-9">Border-Width-2px. Aumenta el grosor del borde a 2px.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.border-w-3</td>
+                                        <td class="w-auto bg-maya-blue-9">Border-Width-3px. Aumenta el grosor del borde a 3px.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.border-w-4</td>
+                                        <td class="w-auto bg-maya-blue-9">Border-Width-4px. Aumenta el grosor del borde a 4px.</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.border-w-5</td>
+                                        <td class="w-auto bg-maya-blue-9">Border-Width-5px. Aumenta el grosor del borde a 5px.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+                                </tbody>
+                            </table>
                         </div>                    
-                        <div class="border-l border-r mb-5">
+                        <div class="border rounded mt-2">
                             <div class="block border-b p-2">
                                 <p>Bordes arriba, izquierda, abajo, derecha.</p>
                             </div>
-                            <div class="p-5 grid item-5 g-5 align-cc hatched-1">   
+                            <div class="p-5 grid item-5 g-5 align-cc hatched-1 scroll-a">   
                                 <div class="div0 text-ac wh-100 grid align-vc border-w-1">100x100 border-w-1</div>                                
                                 <div class="div0 text-ac wh-100 grid align-vc border-w-2">100x100 border-w-2</div>  
                                 <div class="div0 text-ac wh-100 grid align-vc border-w-3">100x100 border-w-3</div>      
@@ -171,61 +162,59 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-            &lt;div class="p-5 grid item-5 g-5 align-cc hatched-1"&gt;        
-                &lt;div class="text-ac wh-100 align-vc border-w-1"&gt;100x100 border-w-1&lt;/div&gt;                             
-                &lt;div class="text-ac wh-100 align-vc border-w-2"&gt;100x100 border-w-2&lt;/div&gt;  
-                &lt;div class="text-ac wh-100 align-vc border-w-3"&gt;100x100 border-w-3&lt;/div&gt;      
-                &lt;div class="text-ac wh-100 align-vc border-w-4"&gt;100x100 border-w-4&lt;/div&gt;    
-                &lt;div class="text-ac wh-100 align-vc border-w-5"&gt;100x100 border-w-5&lt;/div&gt; 
-            &lt;/div&gt;
+    &lt;div class="p-5 grid item-5 g-5 align-cc hatched-1"&gt;        
+        &lt;div class="text-ac wh-100 align-vc border-w-1"&gt;100x100 border-w-1&lt;/div&gt;                             
+        &lt;div class="text-ac wh-100 align-vc border-w-2"&gt;100x100 border-w-2&lt;/div&gt;  
+        &lt;div class="text-ac wh-100 align-vc border-w-3"&gt;100x100 border-w-3&lt;/div&gt;      
+        &lt;div class="text-ac wh-100 align-vc border-w-4"&gt;100x100 border-w-4&lt;/div&gt;    
+        &lt;div class="text-ac wh-100 align-vc border-w-5"&gt;100x100 border-w-5&lt;/div&gt; 
+    &lt;/div&gt;
                                 </code></pre>
                             </div> 
                         </div>                
                     </section>    
                     
                     <!-- Personalizacion del lugar del borde y grosor -->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                             <h3 class="font-l font-s-2">Personalización del lugar del borde y Grosor</h3>
                             <p>Si prefieres, puedes aplicar bordes solo en ciertas caras del elemento utilizando las clases ".border-t (Arriba), .border-r (Derecha), border.b (Abajo) o border-l (Izquierda)". También, puedes ajustar el grosor del borde agregando un "-"" y una "w" seguido de un número del 1 al 5, según el grosor que se adapte a tu diseño. Por ejemplo, la clase ".border-t-w-2" añadiría un borde en la parte superior con un grosor de 2px.</p>
                     </section>
-                    <section class="pt-3 px-5 border-b">
+                    <section class="pt-0 p-5 pm-2">
                         <h3 class="font-l font-s-2">.border-x-w-n°</h3>
-                        <div class="table-cont-b ">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.border-t-w-n°</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Border-Top-Width-N°. Incrementa el grosor del borde superior. Además, ajusta el número para variar el grosor del borde de 1 a 5.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.border-r-w-n°</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Border-Right-Width-N°. Incrementa el grosor del borde derecha. Además, ajusta el número para variar el grosor del borde de 1 a 5.</div>
-                                </div> 
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.border-b-w-n°</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Border-Bottom-Width-N°. Incrementa el grosor del borde inferior. Además, ajusta el número para variar el grosor del borde de 1 a 5. </div>
-                                </div>
-
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.border-l-w-n°</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Border-Left-Width-N°. Incrementa el grosor del borde izquierdo. Además, ajusta el número para variar el grosor del borde de 1 a 5.</div>
-                                </div>                     
-                            </div>    
-                        </div>                    
-                        <div class="border-l border-r mb-5">
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.border-t-w-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">Border-Top-Width-N°. Incrementa el grosor del borde superior. Además, ajusta el número para variar el grosor del borde de 1 a 5.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.border-r-w-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">Border-Right-Width-N°. Incrementa el grosor del borde derecha. Además, ajusta el número para variar el grosor del borde de 1 a 5.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.border-b-w-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">Border-Bottom-Width-N°. Incrementa el grosor del borde inferior. Además, ajusta el número para variar el grosor del borde de 1 a 5.</td>
+                                    </tr>          
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.border-l-w-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">Border-Left-Width-N°. Incrementa el grosor del borde izquierdo. Además, ajusta el número para variar el grosor del borde de 1 a 5.</td>
+                                    </tr>                                                                                                     
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                                </tbody>
+                            </table>
+                        </div>                     
+                        <div class="border rounded mt-2">
                             <div class="block border-b p-2">
                                 <p>Bordes arriba, izquierda, abajo, derecha. con grosor 4px</p>
                             </div>
-                            <div class="p-5 grid item-4 g-5 align-cc hatched-1">                            
+                            <div class="p-5 grid item-4 g-5 align-cc hatched-1 scroll-a">                            
                                 <div class="div0 text-ac wh-100 grid align-vc border-t-w-4">100x100 border-t-w-4</div>  
                                 <div class="div0 text-ac wh-100 grid align-vc border-r-w-4">100x100 border-r-w-4</div>      
                                 <div class="div0 text-ac wh-100 grid align-vc border-b-w-4">100x100 border-b-w-4</div>    
@@ -236,77 +225,69 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-            &lt;div class="p-5 grid item-4 g-5 align-cc hatched-1"&gt;                                 
-                &lt;div class="text-ac wh-100 align-vc border-t-w-4"&gt;100x100 border-t-w-4&lt;/div&gt;  
-                &lt;div class="text-ac wh-100 align-vc border-r-w-4"&gt;100x100 border-r-w-4&lt;/div&gt;      
-                &lt;div class="text-ac wh-100 align-vc border-b-w-4"&gt;100x100 border-b-w-4&lt;/div&gt;    
-                &lt;div class="text-ac wh-100 align-vc border-l-w-4"&gt;100x100 border-l-w-4&lt;/div&gt; 
-            &lt;/div&gt;
+    &lt;div class="p-5 grid item-4 g-5 align-cc hatched-1"&gt;                                 
+        &lt;div class="text-ac wh-100 align-vc border-t-w-4"&gt;100x100 border-t-w-4&lt;/div&gt;  
+        &lt;div class="text-ac wh-100 align-vc border-r-w-4"&gt;100x100 border-r-w-4&lt;/div&gt;      
+        &lt;div class="text-ac wh-100 align-vc border-b-w-4"&gt;100x100 border-b-w-4&lt;/div&gt;    
+        &lt;div class="text-ac wh-100 align-vc border-l-w-4"&gt;100x100 border-l-w-4&lt;/div&gt; 
+    &lt;/div&gt;
                                 </code></pre>
                             </div> 
                         </div>                
                     </section>                 
                     
                     <!-- Rounded n -->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                             <h3 class="font-l font-s-2">Bordes con radios</h3>
                             <p>Puedes personalizar los bordes de los elementos que selecciones aplicando bordes redondeados. Hay cinco tipos de radios disponibles, que comienzan con "rounded" por defecto. Además, puedes utilizar "rounded-n°" del 1 al 5, donde cada número representa un radio diferente. Por ejemplo, el radio número 1 equivale a 8px, el número 2 a 16px, el número 3 a 24px, el número 4 a 32px y el número 5 a 40px.</p>
                     </section>
-                    <section class="pt-3 px-5 border-b">
+                    <section class="pt-0 p-5 pm-2">
                         <h3 class="font-l font-s-2">.rounded-n°</h3>
-                        <div class="table-cont-b ">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Aplica un radio de borde a los elementos seleccionados.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-2</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Aumenta al doble el radio de borde a los elementos seleccionados.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-3</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Aumenta al triple el radio de borde a los elementos seleccionados. </div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-4</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Aumenta cuatro veces el radio de borde a los elementos seleccionados. </div>
-                                </div>      
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-5</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Aumenta cinco veces el radio de borde a los elementos seleccionados. </div>
-                                </div>     
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-c</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Genera un circulo. </div>
-                                </div>    
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-p</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Genera una pildora. </div>
-                                </div>                   
-                            </div>    
-                        </div>                    
-                        <div class="border-l border-r mb-5">
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded</td>
+                                        <td class="w-auto bg-maya-blue-9">Aplica un radio de borde a los elementos seleccionados.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-2</td>
+                                        <td class="w-auto bg-maya-blue-9">Aumenta al doble el radio de borde a los elementos seleccionados.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-3</td>
+                                        <td class="w-auto bg-maya-blue-9">Aumenta al triple el radio de borde a los elementos seleccionados.</td>
+                                    </tr>          
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-4</td>
+                                        <td class="w-auto bg-maya-blue-9">Aumenta cuatro veces el radio de borde a los elementos seleccionados. </td>
+                                    </tr>      
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-5</td>
+                                        <td class="w-auto bg-maya-blue-9">Aumenta cinco veces el radio de borde a los elementos seleccionados.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-c</td>
+                                        <td class="w-auto bg-maya-blue-9">Genera un circulo.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-p</td>
+                                        <td class="w-auto bg-maya-blue-9">Genera una pildora.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+                                </tbody>
+                            </table>
+                        </div>                     
+                        <div class="border rounded mt-2">
                             <div class="block border-b p-2">
                                 <p>Rounded</p>
                             </div>
-                            <div class="p-5 grid item-4 align-cc g-5 hatched-1">        
+                            <div class="p-5 grid item-4 align-cc g-5 hatched-1 scroll-a">        
                                 <div class="div0 text-ac wh-100 grid align-vc border-w-3 rounded">100x100 Rounded</div>                             
                                 <div class="div0 text-ac wh-100 grid align-vc border-w-3 rounded-2">100x100 Rounded-2</div>  
                                 <div class="div0 text-ac wh-100 grid align-vc border-w-3 rounded-3">100x100 Rounded-3</div>      
@@ -320,62 +301,60 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-            &lt;div class="p-5 grid item-4 align-cc g-5 hatched-1"&gt;        
-                &lt;div class="text-ac wh-100 grid align-vc border-w-3 rounded"&gt;100x100 Rounded&lt;/div&gt;                             
-                &lt;div class="text-ac wh-100 grid align-vc border-w-3 rounded-2"&gt;100x100 Rounded-2&lt;/div&gt;  
-                &lt;div class="text-ac wh-100 grid align-vc border-w-3 rounded-3"&gt;100x100 Rounded-3&lt;/div&gt;      
-                &lt;div class="text-ac wh-100 grid align-vc border-w-3 rounded-4"&gt;100x100 Rounded-4&lt;/div&gt;    
-                &lt;div class="text-ac wh-100 grid align-vc border-w-3 rounded-5"&gt;100x100 Rounded-5&lt;/div&gt; 
-                &lt;div class="text-ac wh-100 grid align-vc border-w-3 rounded-c"&gt;100x100 Rounded-c&lt;/div&gt; 
-                &lt;div class="text-ac wh-100 grid align-vc border-w-3 rounded-p"&gt;Rounded-p&lt;/div&gt; 
-            &lt;/div&gt;
+    &lt;div class="p-5 grid item-4 align-cc g-5 hatched-1"&gt;        
+        &lt;div class="text-ac wh-100 grid align-vc border-w-3 rounded"&gt;100x100 Rounded&lt;/div&gt;                             
+        &lt;div class="text-ac wh-100 grid align-vc border-w-3 rounded-2"&gt;100x100 Rounded-2&lt;/div&gt;  
+        &lt;div class="text-ac wh-100 grid align-vc border-w-3 rounded-3"&gt;100x100 Rounded-3&lt;/div&gt;      
+        &lt;div class="text-ac wh-100 grid align-vc border-w-3 rounded-4"&gt;100x100 Rounded-4&lt;/div&gt;    
+        &lt;div class="text-ac wh-100 grid align-vc border-w-3 rounded-5"&gt;100x100 Rounded-5&lt;/div&gt; 
+        &lt;div class="text-ac wh-100 grid align-vc border-w-3 rounded-c"&gt;100x100 Rounded-c&lt;/div&gt; 
+        &lt;div class="text-ac wh-100 grid align-vc border-w-3 rounded-p"&gt;Rounded-p&lt;/div&gt; 
+    &lt;/div&gt;
                                 </code></pre>
                             </div> 
                         </div>                
                     </section>   
                     
                     <!-- Rounded edges -->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                             <h3 class="font-l font-s-2">Ubicación de bordes redondeados </h3>
                             <p>Puedes aplicar bordes redondeados en específicas caras del elemento utilizando las clases ".rounded-t" para el borde superior, ".rounded-r" para el borde derecho, ".rounded-b" para el borde inferior y ".rounded-l" para el borde izquierdo. </p>
                     </section>
-                    <section class="pt-3 px-5 border-b">
+                    <section class="pt-0 p-5 pm-2">
                         <h3 class="font-l font-s-2">.rounded-edges</h3>
-                        <div class="table-cont-b ">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-t</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Rounded-Top. Aplica un radio a los bordes superiores del elemento seleccionado.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-r</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Rounded-Right. Aplica un radio a los bordes derechos del elemento seleccionado.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-b</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Rounded-Bottom. Aplica un radio a los bordes inferiores del elementos seleccionado.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-l</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Rounded-Left. Aplica un radio a los bordes izquierdos del elementos seleccionados.</div>
-                                </div>                      
-                            </div>    
-                        </div>                    
-                        <div class="border-l border-r mb-5">
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-t</td>
+                                        <td class="w-auto bg-maya-blue-9">Rounded-Top. Aplica un radio a los bordes superiores del elemento seleccionado.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-r</td>
+                                        <td class="w-auto bg-maya-blue-9">Rounded-Right. Aplica un radio a los bordes derechos del elemento seleccionado.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-b</td>
+                                        <td class="w-auto bg-maya-blue-9">Rounded-Bottom. Aplica un radio a los bordes inferiores del elementos seleccionado.</td>
+                                    </tr>          
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-l</td>
+                                        <td class="w-auto bg-maya-blue-9">Rounded-Left. Aplica un radio a los bordes izquierdos del elementos seleccionados.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+                                </tbody>
+                            </table>
+                        </div>                  
+                        <div class="border rounded mt-2">
                             <div class="block border-b p-2">
                                 <p>Rounded</p>
                             </div>
-                            <div class="p-5 grid item-4 align-cc g-5 hatched-1">        
+                            <div class="p-5 grid item-4 align-cc g-5 hatched-1 scroll-a">        
                                 <div class="div0 text-ac mb-2 wh-100 grid align-vc rounded-t border-w-2">100x100 <br> Rounded</div>                             
                                 <div class="div0 text-ac mb-2 wh-100 grid align-vc rounded-l border-w-2">100x100 <br> Rounded-2</div>  
                                 <div class="div0 text-ac mb-2 wh-100 grid align-vc rounded-b border-w-2">100x100 <br> Rounded-3</div>      
@@ -386,59 +365,57 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-            &lt;div class="p-5 grid item-4 align-cc g-5 hatched-1"&gt;        
-                &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-t border-w-2"&gt;100x100 All&lt;/div&gt;                             
-                &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-l border-w-2"&gt;100x100&lt;/div&gt;  
-                &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-b border-w-2"&gt;100x100&lt;/div&gt;      
-                &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-r border-w-2"&gt;100x100&lt;/div&gt;    
-            &lt;/div&gt;
+    &lt;div class="p-5 grid item-4 align-cc g-5 hatched-1"&gt;        
+        &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-t border-w-2"&gt;100x100 All&lt;/div&gt;                             
+        &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-l border-w-2"&gt;100x100&lt;/div&gt;  
+        &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-b border-w-2"&gt;100x100&lt;/div&gt;      
+        &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-r border-w-2"&gt;100x100&lt;/div&gt;    
+    &lt;/div&gt;
                                 </code></pre>
                             </div> 
                         </div>                
                     </section>           
                     
                     <!-- Rounded edges radius -->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                             <h3 class="font-l font-s-2">Personalización del radio del borde</h3>
                             <p>Tambien puedes ajustar el radio del borde añadiendo un guion y un número del 1 al 5, indicando el grado de redondeo deseado en tu diseño. Por ejemplo, la clase ".rounded-t-2" aplicaría un radio en la parte superior con un grado de redondeo correspondiente al número seleccionado. Ten en cuenta que, por defecto, los radios se ajustan en incrementos de 8px, comenzando en 1 para 8px, 2 para 16px, 3 para 24px, 4 para 32px y 5 para 40px, según la configuración establecida por defecto en Quickly.</p>
                     </section>
-                    <section class="pt-3 px-5 border-b">
+                    <section class="pt-0 p-5 pm-2">
                         <h3 class="font-l font-s-2">.rounded-r-n°</h3>
-                        <div class="table-cont-b ">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-t-n°</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Rounded-Top-N°. Aplica un radio a los bordes superiores del elemento seleccionado.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-r-n°</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Rounded-Right-N°. Aplica un radio a los bordes derechos del elemento seleccionado.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-b-n°</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Rounded-Bottom-N° Aplica un radio a los bordes inferiores del elementos seleccionado.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-l-n°</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Rounded-Left-N°. Aplica un radio a los bordes izquierdos del elementos seleccionados.</div>
-                                </div>                      
-                            </div>    
-                        </div>                    
-                        <div class="border-l border-r mb-5">
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-t-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">Rounded-Top-N°. Aplica un radio a los bordes superiores del elemento seleccionado.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-r-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">Rounded-Right-N°. Aplica un radio a los bordes derechos del elemento seleccionado.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-b-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">Rounded-Bottom-N° Aplica un radio a los bordes inferiores del elementos seleccionado.</td>
+                                    </tr>          
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-l-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">Rounded-Left-N°. Aplica un radio a los bordes izquierdos del elementos seleccionados.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+                                </tbody>
+                            </table>
+                        </div>                   
+                        <div class="border rounded mt-2">
                             <div class="block border-b p-2">
                                 <p>Rounded</p>
                             </div>
-                            <div class="p-5 grid item-4 align-cc g-5 hatched-1">        
+                            <div class="p-5 grid item-4 align-cc g-5 hatched-1 scroll-a">        
                                 <div class="div0 text-ac mb-2 wh-100 grid align-vc rounded-t-4 border-w-2">100x100 <br> rounded-t-4 </div>                             
                                 <div class="div0 text-ac mb-2 wh-100 grid align-vc rounded-l-4 border-w-2">100x100 <br> rounded-l-4</div>  
                                 <div class="div0 text-ac mb-2 wh-100 grid align-vc rounded-b-4 border-w-2">100x100 <br> rounded-b-4</div>      
@@ -449,59 +426,57 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-            &lt;div class="p-5 grid item-4 align-cc g-5 hatched-1"&gt;        
-                &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-t border-w-2"&gt;100x100 All&lt;/div&gt;                             
-                &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-l border-w-2"&gt;100x100&lt;/div&gt;  
-                &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-b border-w-2"&gt;100x100&lt;/div&gt;      
-                &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-r border-w-2"&gt;100x100&lt;/div&gt;    
-            &lt;/div&gt;
+    &lt;div class="p-5 grid item-4 align-cc g-5 hatched-1"&gt;        
+        &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-t border-w-2"&gt;100x100 All&lt;/div&gt;                             
+        &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-l border-w-2"&gt;100x100&lt;/div&gt;  
+        &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-b border-w-2"&gt;100x100&lt;/div&gt;      
+        &lt;div class="text-ac mb-2 wh-100 grid align-vc rounded-r border-w-2"&gt;100x100&lt;/div&gt;    
+    &lt;/div&gt;
                                 </code></pre>
                             </div> 
                         </div>                
                     </section>                 
                     
                     <!-- Rounded selective-->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                             <h3 class="font-l font-s-2">Radios selectivos</h3>
                             <p>Para aplicar radios selectivos según la esquina del elemento, se sigue una convención que divide el cuadrado en cuatro esquinas designadas como a, b, c y d, en dirección de las manecillas del reloj. Por ejemplo, para agregar un radio de borde únicamente en la esquina superior izquierda de un elemento, se emplea la clase `.rounded-s-a`, donde 's' denota 'selected' (seleccionado) y 'a' indica la esquina superior izquierda. Para añadir otro radio selectivo, como en la esquina inferior derecha, se utiliza la clase `.rounded-s-c`, y así sucesivamente para las demás esquinas. Además, se puede ampliar el radio ingresando un número después de la clase, por ejemplo: `.rounded-s-a-(n°)`, que puede variar de 1 a 5. Es importante recordar que el radio 1 corresponde a 8px, el 2 a 16px, el 3 a 24px, el 4 a 32px y el 5 a 40px.</p>
                     </section>
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                         <h3 class="font-l font-s-2">.rounded-s-a-n°</h3>
-                        <div class="table-cont-b ">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-s-a</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Rounded-Selected-a. Aplica un radio al borde superior izquierdo del elemento seleccionados.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-s-b</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Rounded-Selected-b. Aplica un radio al borde superior derecho del elemento seleccionados.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-s-c</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Rounded-Selected-c. Aplica un radio al borde inferior derecho del elemento seleccionados. </div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.rounded-s-d</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Rounded-Selected-d. Aplica un radio al borde inferior derecho del elemento seleccionados.</div>
-                                </div>               
-                            </div>    
-                        </div>                    
-                        <div class="border-l border-r mb-5">
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-s-a</td>
+                                        <td class="w-auto bg-maya-blue-9">Rounded-Selected-a. Aplica un radio al borde superior izquierdo del elemento seleccionados.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-s-b</td>
+                                        <td class="w-auto bg-maya-blue-9">Rounded-Right-N°. Aplica un radio a los bordes derechos del elemento seleccionado.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-s-c</td>
+                                        <td class="w-auto bg-maya-blue-9">Rounded-Selected-c. Aplica un radio al borde inferior derecho del elemento seleccionados. </td>
+                                    </tr>          
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.rounded-s-d</td>
+                                        <td class="w-auto bg-maya-blue-9">Rounded-Selected-d. Aplica un radio al borde inferior derecho del elemento seleccionados.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+                                </tbody>
+                            </table>
+                        </div>                                            
+                        <div class="border rounded mt-2">
                             <div class="block border-b p-2">
                                 <p>Rounded selective aplicado.</p>
                             </div>
-                            <div class="p-5 grid item-4 align-cc g-5 hatched-1">        
+                            <div class="p-5 grid item-4 align-cc g-5 hatched-1 scroll-a">        
                                 <div class="div0 text-ac wh-100 grid align-vc rounded-s-a-4 border-w-2">100x100 rounded-s-a</div>                             
                                 <div class="div0 text-ac wh-100 grid align-vc rounded-s-b-4 border-w-2">100x100 Rounded-s-b</div>  
                                 <div class="div0 text-ac wh-100 grid align-vc rounded-s-c-4 border-w-2">100x100 Rounded-s-c</div>      
@@ -512,12 +487,12 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-            &lt;div class="p-5 grid item-4 align-cc g-5 hatched-1"&gt;                                  
-                &lt;div class="text-ac wh-100 grid align-vc rounded-s-a-4 border-w-2"&gt;100x100 rounded-s-a&lt;/div&gt;  
-                &lt;div class="text-ac wh-100 grid align-vc rounded-s-b-4 border-w-2"&gt;100x100 rounded-s-b&lt;/div&gt;      
-                &lt;div class="text-ac wh-100 grid align-vc rounded-s-c-4 border-w-2"&gt;100x100 rounded-s-c&lt;/div&gt;    
-                &lt;div class="text-ac wh-100 grid align-vc rounded-s-d-4 border-w-2"&gt;100x100 rounded-s-d&lt;/div&gt; 
-            &lt;/div&gt;
+    &lt;div class="p-5 grid item-4 align-cc g-5 hatched-1"&gt;                                  
+        &lt;div class="text-ac wh-100 grid align-vc rounded-s-a-4 border-w-2"&gt;100x100 rounded-s-a&lt;/div&gt;  
+        &lt;div class="text-ac wh-100 grid align-vc rounded-s-b-4 border-w-2"&gt;100x100 rounded-s-b&lt;/div&gt;      
+        &lt;div class="text-ac wh-100 grid align-vc rounded-s-c-4 border-w-2"&gt;100x100 rounded-s-c&lt;/div&gt;    
+        &lt;div class="text-ac wh-100 grid align-vc rounded-s-d-4 border-w-2"&gt;100x100 rounded-s-d&lt;/div&gt; 
+    &lt;/div&gt;
                                 </code></pre>
                             </div> 
                         </div>                

@@ -1689,6 +1689,11 @@ mark {
 .p-4 {padding: var(--md-32)}
 .p-5 {padding: var(--md-40)}
 
+.pt-0 {padding-top: 0px}
+.pr-0 {padding-right: 0px}
+.pl-0 {padding-left: 0px}
+.pb-0 {padding-bottom: 0px}
+
 .pt-1 {padding-top: var(--md-8)}
 .pr-1 {padding-right: var(--md-8)}
 .pl-1 {padding-left: var(--md-8)}
@@ -1737,6 +1742,11 @@ mark {
     .mmy-4 {margin-top: var(--md-32); margin-bottom: var(--md-32)}
     .mmy-5 {margin-top: var(--md-40); margin-bottom: var(--md-40)}
 
+    .mmt-0 {margin-top: 0px}
+    .mmr-0 {margin-right: 0px}
+    .mml-0 {margin-left: 0px}
+    .mmb-0 {margin-bottom: 0px}
+
     .mmt-1 {margin-top: var(--md-8)}
     .mmr-1 {margin-right: var(--md-8)}
     .mml-1 {margin-left: var(--md-8)}
@@ -1775,6 +1785,11 @@ mark {
     .pmx-4 {padding-left: var(--md-32); padding-right: var(--md-32)}
     .pmx-5 {padding-left: var(--md-40); padding-right: var(--md-40)}
 
+    .pmt-0 {padding-top: 0px}
+    .pmr-0 {padding-right: 0px}
+    .pml-0 {padding-left: 0px}
+    .pmb-0 {padding-bottom: 0px}
+
     .pmt-1 {padding-top: var(--md-8)}
     .pmr-1 {padding-right: var(--md-8)}
     .pml-1 {padding-left: var(--md-8)}
@@ -1809,12 +1824,17 @@ mark {
 .mx-4 {margin: 0 var(--md-32)}
 .mx-5 {margin: 0 var(--md-40)}
 
-.m-0 {margin: 0px 0px !important;}
+.m-0 {margin: 0px !important;}
 .m-1 {margin: var(--md-8)}
 .m-2 {margin: var(--md-16)}
 .m-3 {margin: var(--md-24)}
 .m-4 {margin: var(--md-32)}
 .m-5 {margin: var(--md-40)}
+
+.mt-0 {margin-top: 0px}
+.mr-0 {margin-right: 0px}
+.ml-0 {margin-left: 0px}
+.mb-0 {margin-bottom: 0px}
 
 .mt-1 {margin-top: var(--md-8)}
 .mr-1 {margin-right: var(--md-8)}
@@ -2327,7 +2347,7 @@ figure {margin: 0; padding: 0;}
 	* HIDDEN - SHOW *
 ==================== */
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .show {
@@ -2336,8 +2356,8 @@ figure {margin: 0; padding: 0;}
 }
 
 @media (max-width: 992px) {
-    .hide-m {display: none;}
-    .hide-s {display: none;}
+    .hide-m {display: none !important;}
+    .hide-s {display: none !important;}
     .show-m {
         display: block !important;
         visibility: visible !important;
@@ -2346,8 +2366,8 @@ figure {margin: 0; padding: 0;}
 
 
 @media (max-width: 576px) {
-    .hide-m {display: none;}
-    .hide-s {display: none;}
+    .hide-m {display: none !important;}
+    .hide-s {display: none !important;}
     .show-s {
         display: block !important;
         visibility: visible !important;

@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="./img/ico.png">
   <link rel="stylesheet" href="./css/quickly.css">
   <link rel="stylesheet" href="./css/app.css">
-  <script src="./js/quickly.js" defer></script>
+  <script src="./js/quicklyComp.js" defer></script>
   <script src="./js/app.js" defer></script>
   <link rel="stylesheet" href="./prism/prism.css">
   <script src="./prism/prism.js" defer></script>
@@ -20,105 +20,88 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DZQS41TB5G');
 </script>
 
 </head>
 <body>
     <div id="headerContent"></div>
-    <section class="cont">
+    <section class="cont cont-m">
         <aside id="menuContent"></aside> 
-        <main class="bg-white-2 pt-5">  
-            <div class="cont-80 py-5 ">
+        <main class="bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5 ">
                 
                 <!-- ALINEACIONES --> 
                 <section class="border rounded bg-color-1">
-                    <div class="p-5 bg-white-1 rounded-t border-b">
+                    <div class="p-5 pm-2 bg-white-1 rounded-t border-b">
                         <h1 class="font-l">Anchos y Altos</h1>
                         <p class="font-l font-s-4">Puedes asignar altos y anchos predefinidas a los elementos.</p>
                     </div>
                 
                     <!-- Width -->
-                    <section class="pt-3 px-5 border-b">
+                    <section class="p-5 pm-2">
                         <h3 class="font-l font-s-2">Anchos en px</h3>
-                        <div class="table-cont-b">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-100</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un ancho fijo de 100px para el elemento.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-150</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un ancho fijo de 150px para el elemento.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-200</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un ancho fijo de 200px para el elemento.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-250</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un ancho fijo de 250px para el elemento.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-300</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un ancho fijo de 300px para el elemento.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-350</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un ancho fijo de 350px para el elemento.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-400</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un ancho fijo de 400px para el elemento.</div>
-                                </div>    
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-500</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un ancho fijo de 500px para el elemento.</div>
-                                </div>  
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-550</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un ancho fijo de 550px para el elemento.</div>
-                                </div>      
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-600</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un ancho fijo de 600px para el elemento.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-auto</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho se ajustará automáticamente para que coincida con el ancho de su contenido.</div>
-                                </div>   
-                            </div>    
-                        </div>                    
-                        <div class="border-l border-r mb-5">
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-100</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un ancho fijo de 100px para el elemento.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-150</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un ancho fijo de 150px para el elemento.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-200</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un ancho fijo de 200px para el elemento.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-250</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un ancho fijo de 250px para el elemento.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-300</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un ancho fijo de 300px para el elemento.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-350</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un ancho fijo de 350px para el elemento.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-400</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un ancho fijo de 400px para el elemento.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-500</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un ancho fijo de 500px para el elemento.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-550</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un ancho fijo de 550px para el elemento.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-600</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un ancho fijo de 600px para el elemento.</td>
+                                    </tr>       
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-auto</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho se ajustará automáticamente para que coincida con el ancho de su contenido.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                </tbody>
+                            </table>
+                        </div>                   
+                        <div class="border rounded mt-2">
                             <div class="block border-b p-2">
                                 <p>Tamaños aplicados</p>
                             </div>
-                            <div class="p-5 text-l grid hatched-1">           
+                            <div class="p-5 pm-2 text-l grid hatched-1 scroll-a">           
                                 <div class="div1 grid w-100 p-1">.w-100</div>
                                 <div class="div1 w-150 p-1">.w-150</div>
                                 <div class="div1 w-200 p-1">.w-200</div>
@@ -137,105 +120,89 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-            &lt;div&gt;
-                &lt;div class="w-100"&gt;.w-100&lt;/div&gt;   
-                &lt;div class="w-100"&gt;.w-150&lt;/div&gt;
-                &lt;div class="w-100"&gt;.w-200&lt;/div&gt;  
-                &lt;div class="w-100"&gt;.w-250&lt;/div&gt;  
-                &lt;div class="w-100"&gt;.w-300&lt;/div&gt;  
-                &lt;div class="w-100"&gt;.w-350&lt;/div&gt;  
-                &lt;div class="w-100"&gt;.w-400&lt;/div&gt; 
-                &lt;div class="w-100"&gt;.w-450&lt;/div&gt; 
-                &lt;div class="w-100"&gt;.w-500&lt;/div&gt; 
-                &lt;div class="w-100"&gt;.w-550&lt;/div&gt; 
-                &lt;div class="w-100"&gt;.w-600&lt;/div&gt; 
-                &lt;div class="w-auto"&gt;.w-auto&lt;/div&gt; 
-            &lt;/div&gt;
+    &lt;div&gt;
+        &lt;div class="w-100"&gt;.w-100&lt;/div&gt;   
+        &lt;div class="w-100"&gt;.w-150&lt;/div&gt;
+        &lt;div class="w-100"&gt;.w-200&lt;/div&gt;  
+        &lt;div class="w-100"&gt;.w-250&lt;/div&gt;  
+        &lt;div class="w-100"&gt;.w-300&lt;/div&gt;  
+        &lt;div class="w-100"&gt;.w-350&lt;/div&gt;  
+        &lt;div class="w-100"&gt;.w-400&lt;/div&gt; 
+        &lt;div class="w-100"&gt;.w-450&lt;/div&gt; 
+        &lt;div class="w-100"&gt;.w-500&lt;/div&gt; 
+        &lt;div class="w-100"&gt;.w-550&lt;/div&gt; 
+        &lt;div class="w-100"&gt;.w-600&lt;/div&gt; 
+        &lt;div class="w-auto"&gt;.w-auto&lt;/div&gt; 
+    &lt;/div&gt;
                                 </code></pre>
                             </div> 
                         </div>                
                     </section>   
 
                     <!-- Height -->
-                    <section class="pt-3 px-5 border-b">
+                    <section class="pt-0 p-5 pm-2">
                         <h3 class="font-l font-s-2">Altos en px</h3>
-                        <div class="table-cont-b">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-100</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un alto fijo de 100px para el elemento.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-150</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un alto fijo de 150px para el elemento.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-200</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un alto fijo de 200px para el elemento.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-250</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un alto fijo de 250px para el elemento.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-300</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un alto fijo de 300px para el elemento.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-350</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un alto fijo de 350px para el elemento.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-400</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un alto fijo de 400px para el elemento.</div>
-                                </div>    
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-500</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un alto fijo de 500px para el elemento.</div>
-                                </div>  
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-550</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un alto fijo de 550px para el elemento.</div>
-                                </div>      
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-600</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Establece un alto fijo de 600px para el elemento.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-auto</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El alto se ajustará automáticamente para que coincida con el alto de su contenido.</div>
-                                </div>
-                            </div>    
-                        </div>                    
-                        <div class="border-l border-r mb-5">
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-100</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un alto fijo de 100px para el elemento.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-150</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un alto fijo de 150px para el elemento.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-200</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un alto fijo de 200px para el elemento.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-250</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un alto fijo de 250px para el elemento.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-300</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un alto fijo de 300px para el elemento.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-350</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un alto fijo de 350px para el elemento.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-400</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un alto fijo de 400px para el elemento.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-500</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un alto fijo de 500px para el elemento.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-550</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un alto fijo de 550px para el elemento.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-600</td>
+                                        <td class="w-auto bg-maya-blue-9">Establece un alto fijo de 600px para el elemento.</td>
+                                    </tr>       
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-auto</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto se ajustará automáticamente para que coincida con el alto de su contenido.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                </tbody>
+                            </table>
+                        </div>                     
+                        <div class="border rounded mt-2">
                             <div class="block border-b p-2">
                                 <p>Tamaños aplicados</p>
                             </div>
-                            <div class="p-5 text-l grid item-auto hatched-1">           
+                            <div class="p-5 pm-2 text-l grid item-auto hatched-1 scroll-a">           
                                 <div class="div1 h-100 p-1">.h-100</div>
                                 <div class="div1 h-150 p-1">.h-150</div>
                                 <div class="div1 h-200 p-1">.h-200</div>
@@ -254,382 +221,311 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-            &lt;div&gt;
-                &lt;div class="h-100"&gt;.h-100&lt;/div&gt;   
-                &lt;div class="h-100"&gt;.h-150&lt;/div&gt;
-                &lt;div class="h-100"&gt;.h-200&lt;/div&gt;  
-                &lt;div class="h-100"&gt;.h-250&lt;/div&gt;  
-                &lt;div class="h-100"&gt;.h-300&lt;/div&gt;  
-                &lt;div class="h-100"&gt;.h-350&lt;/div&gt;  
-                &lt;div class="h-100"&gt;.h-400&lt;/div&gt; 
-                &lt;div class="h-100"&gt;.h-450&lt;/div&gt; 
-                &lt;div class="h-100"&gt;.h-500&lt;/div&gt; 
-                &lt;div class="h-100"&gt;.h-550&lt;/div&gt; 
-                &lt;div class="h-100"&gt;.h-600&lt;/div&gt; 
-                &lt;div class="h-auto"&gt;.h-auto&lt;/div&gt; 
-            &lt;/div&gt;
+    &lt;div&gt;
+        &lt;div class="h-100"&gt;.h-100&lt;/div&gt;   
+        &lt;div class="h-100"&gt;.h-150&lt;/div&gt;
+        &lt;div class="h-100"&gt;.h-200&lt;/div&gt;  
+        &lt;div class="h-100"&gt;.h-250&lt;/div&gt;  
+        &lt;div class="h-100"&gt;.h-300&lt;/div&gt;  
+        &lt;div class="h-100"&gt;.h-350&lt;/div&gt;  
+        &lt;div class="h-100"&gt;.h-400&lt;/div&gt; 
+        &lt;div class="h-100"&gt;.h-450&lt;/div&gt; 
+        &lt;div class="h-100"&gt;.h-500&lt;/div&gt; 
+        &lt;div class="h-100"&gt;.h-550&lt;/div&gt; 
+        &lt;div class="h-100"&gt;.h-600&lt;/div&gt; 
+        &lt;div class="h-auto"&gt;.h-auto&lt;/div&gt; 
+    &lt;/div&gt;
                                 </code></pre>
                             </div> 
                         </div>                
                     </section>        
                     
                     <!-- Fibonachi -->
-                    <section class="pt-3 px-5 border-b">
+                    <section class="pt-0 p-5 pm-2">
                         <h1 class="font-l">Secuencia Fibonachi</h1>
                         <p class="font-l font-s-4">Opta por definir alturas y anchuras preestablecidas para los elementos siguiendo la secuencia de Fibonacci, si así lo prefieres.</p>
-                        <h3 class="font-l font-s-2">Anchos en px</h3>
-                        <div class="table-cont-b">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-f-1</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho incia en 8px</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-f-2</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho se establece en 13px.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-f-3</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho se establece en 21px.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-f-4</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho se establece en 34px.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-f-5</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho se establece en 55px.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-f-6</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho se establece en 89px.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-f-7</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho se establece en 144px.</div>
-                                </div>    
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-f-8</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho se establece en 233px.</div>
-                                </div>  
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-f-9</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho se establece en 377px.</div>
-                                </div>      
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.w-f-10</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho se establece en 610px.</div>
-                                </div>   
-                            </div>    
+                        <h3 class="mt-3 font-l font-s-2">Anchos en px</h3>
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-f-1</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho incia en 8px.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-f-2</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho se establece en 13px.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-f-3</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho se establece en 21px.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-f-4</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho se establece en 34px.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-f-5</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho se establece en 55px.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-f-6</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho se establece en 89px.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-f-7</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho se establece en 144px.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-f-8</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho se establece en 233px.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-f-9</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho se establece en 377px.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.w-f-10</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho se establece en 610px.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                                </tbody>
+                            </table>
                         </div>   
-
                         <h3 class="font-l font-s-2 mt-3">Altos en px</h3>
-                        <div class="table-cont-b mb-5 ">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-f-1</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El altos incia en 8px</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-f-2</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El altos se establece en 13px.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-f-3</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El altos se establece en 21px.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-f-4</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El altos se establece en 34px.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-f-5</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El altos se establece en 55px.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-f-6</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El altos se establece en 89px.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-f-7</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El altos se establece en 144px.</div>
-                                </div>    
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-f-8</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El altos se establece en 233px.</div>
-                                </div>  
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-f-9</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El altos se establece en 377px.</div>
-                                </div>      
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.h-f-10</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El altos se establece en 610px.</div>
-                                </div>   
-                            </div>    
-                        </div>                           
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-f-1</td>
+                                        <td class="w-auto bg-maya-blue-9">El altos incia en 8px</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-f-2</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto se establece en 13px.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-f-3</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto se establece en 21px.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-f-4</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto se establece en 34px.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-f-5</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto se establece en 55px.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-f-6</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto se establece en 89px.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-f-7</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto se establece en 144px.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-f-8</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto se establece en 233px.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-f-9</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto se establece en 377px.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.h-f-10</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto se establece en 610px.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                                </tbody>
+                            </table>
+                        </div>                          
                     </section>   
                     
                     <!-- Viewport width and Height -->
-                    <section class="pt-3 px-5 border-b ">
+                    <section class="pt-0 p-5 pm-2">
                         <h1 class="font-l">Ancho y alto de la ventana gráfica.</h1>
                         <p class="font-l font-s-4">Puedes optar por asignar altos y anchos predefinidos a los elementos en base a porcentajes de la ventana gráfica si lo prefieres</p>
-                        <h3 class="font-l font-s-2">Anchos</h3>
-                        <div class="table-cont-b">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vw-10</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un ancho que ocupa el 10% del ancho visible del navegador.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vw-20</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un ancho que ocupa el 20% del ancho visible del navegador.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vw-30</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un ancho que ocupa el 30% del ancho visible del navegador.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vw-40</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un ancho que ocupa el 40% del ancho visible del navegador.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vw-50</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un ancho que ocupa el 50% del ancho visible del navegador.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vw-60</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un ancho que ocupa el 60% del ancho visible del navegador.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vw-70</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un ancho que ocupa el 70% del ancho visible del navegador.</div>
-                                </div>    
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vw-80</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un ancho que ocupa el 80% del ancho visible del navegador.</div>
-                                </div>  
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vw-90</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un ancho que ocupa el 90% del ancho visible del navegador.</div>
-                                </div>      
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vw-100</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un ancho que ocupa el 100% del ancho visible del navegador.</div>
-                                </div>   
-                            </div>    
-                        </div>   
-
+                        <h3 class="mt-2 font-l font-s-2">Anchos</h3>
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vw-10</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un ancho que ocupa el 10% del ancho visible del navegador.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vw-20</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un ancho que ocupa el 20% del ancho visible del navegador.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vw-30</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un ancho que ocupa el 30% del ancho visible del navegador.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vw-40</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un ancho que ocupa el 40% del ancho visible del navegador.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vw-50</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un ancho que ocupa el 50% del ancho visible del navegador.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vw-60</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un ancho que ocupa el 60% del ancho visible del navegador.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vw-70</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un ancho que ocupa el 70% del ancho visible del navegador.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vw-80</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un ancho que ocupa el 80% del ancho visible del navegador.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vw-90</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un ancho que ocupa el 90% del ancho visible del navegador.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vw-100</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un ancho que ocupa el 100% del ancho visible del navegador.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                                </tbody>
+                            </table>
+                        </div> 
                         <h3 class="font-l font-s-2 mt-3">Altos</h3>
-                        <div class="table-cont-b mb-5">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vh-10</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un alto que ocupa el 10% del alto visible del navegador.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vh-20</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un alto que ocupa el 20% del alto visible del navegador.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vh-30</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un alto que ocupa el 30% del alto visible del navegador.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vh-40</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un alto que ocupa el 40% del alto visible del navegador.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vh-50</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un alto que ocupa el 50% del alto visible del navegador.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vh-60</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un alto que ocupa el 60% del alto visible del navegador.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vh-70</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un alto que ocupa el 70% del alto visible del navegador.</div>
-                                </div>    
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vh-80</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un alto que ocupa el 80% del alto visible del navegador.</div>
-                                </div>  
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vh-90</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un alto que ocupa el 90% del alto visible del navegador.</div>
-                                </div>      
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.vh-100</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El elemento tendrá un alto que ocupa el 100% del alto visible del navegador.</div>
-                                </div>   
-                            </div>    
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vh-10</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un alto que ocupa el 10% del alto visible del navegador.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vh-20</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un alto que ocupa el 20% del alto visible del navegador.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vh-30</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un alto que ocupa el 30% del alto visible del navegador.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vh-40</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un alto que ocupa el 40% del alto visible del navegador.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vh-50</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un alto que ocupa el 50% del alto visible del navegador.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vh-60</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un alto que ocupa el 60% del alto visible del navegador.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vh-70</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un alto que ocupa el 70% del alto visible del navegador.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vh-80</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un alto que ocupa el 80% del alto visible del navegador.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vh-90</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un alto que ocupa el 90% del alto visible del navegador.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.vh-100</td>
+                                        <td class="w-auto bg-maya-blue-9">El elemento tendrá un alto que ocupa el 100% del alto visible del navegador.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                                </tbody>
+                            </table>
                         </div>                         
                     </section>            
                     
                     <!-- Por porcentaje width and Height -->
-                    <section class="pt-3 px-5 border-b">
+                    <section class="pt-0 p-5 pm-2">
                         <h1 class="font-l">Ancho y alto en %.</h1>
                         <p class="font-l font-s-4">Puedes optar por asignar altos y anchos predefinidos a los elementos en base a porcentajes.</p>
-                        <h3 class="font-l font-s-2">Anchos</h3>
-                        <div class="table-cont-b">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wp-10</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho será el 10% del ancho del contenedor padre</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wp-20</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho será el 20% del ancho del contenedor padre</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wp-30</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho será el 30% del ancho del contenedor padre</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wp-40</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho será el 40% del ancho del contenedor padre</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wp-50</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho será el 50% del ancho del contenedor padre</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wp-60</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho será el 60% del ancho del contenedor padre</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wp-70</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho será el 70% del ancho del contenedor padre</div>
-                                </div>    
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wp-80</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho será el 80% del ancho del contenedor padre</div>
-                                </div>  
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wp-90</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho será el 90% del ancho del contenedor padre</div>
-                                </div>      
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wp-100</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho será el 100% del ancho del contenedor padre</div>
-                                </div>   
-                            </div>  
-                            <div class="border-l border-r mb-5">
+                        <h3 class="mt-2 font-l font-s-2">Anchos</h3>
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wp-10</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho será el 10% del ancho del contenedor padre.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wp-20</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho será el 20% del ancho del contenedor padre.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wp-30</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho será el 30% del ancho del contenedor padre.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wp-40</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho será el 40% del ancho del contenedor padre.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wp-50</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho será el 50% del ancho del contenedor padre.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wp-60</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho será el 60% del ancho del contenedor padre.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wp-70</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho será el 70% del ancho del contenedor padre.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wp-80</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho será el 80% del ancho del contenedor padre.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wp-90</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho será el 90% del ancho del contenedor padre.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wp-100</td>
+                                        <td class="w-auto bg-maya-blue-9">El ancho será el 100% del ancho del contenedor padrer.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                                </tbody>
+                            </table>
+                        </div>   
+                        <div class="border rounded mt-2">                        
                                 <div class="block border-b p-2">
                                     <p>Tamaños aplicados</p>
                                 </div>
-                                <div class="p-5 text-l hatched-1"> 
+                                <div class="p-5 pm-2 text-l hatched-1 scroll-a"> 
                                     <div class="div1 wp-10 p-1">.wp-10</div>         
                                     <div class="div1 wp-20 p-1">.wp-20</div>                        
                                     <div class="div1 wp-30 p-1">.wp-30</div>
@@ -646,278 +542,237 @@
                                 </div>
                                 <div class="pre-pre2">
                                     <pre class="cont-100 scroll-x"><code class="language-html">                                    
-                &lt;div&gt;
-                    &lt;div class="wp-10"&gt;.wp-10&lt;/div&gt;   
-                    &lt;div class="wp-20"&gt;.wp-20&lt;/div&gt;
-                    &lt;div class="wp-30"&gt;.wp-30&lt;/div&gt;  
-                    &lt;div class="wp-40"&gt;.wp-40&lt;/div&gt;  
-                    &lt;div class="wp-50"&gt;.wp-50&lt;/div&gt;  
-                    &lt;div class="wp-60"&gt;.wp-60&lt;/div&gt;  
-                    &lt;div class="wp-70"&gt;.wp-70&lt;/div&gt; 
-                    &lt;div class="wp-80"&gt;.wp-80&lt;/div&gt; 
-                    &lt;div class="wp-90"&gt;.wp-90&lt;/div&gt; 
-                    &lt;div class="wp-100"&gt;.wp-100&lt;/div&gt; 
-                &lt;/div&gt;
+    &lt;div&gt;
+        &lt;div class="wp-10"&gt;.wp-10&lt;/div&gt;   
+        &lt;div class="wp-20"&gt;.wp-20&lt;/div&gt;
+        &lt;div class="wp-30"&gt;.wp-30&lt;/div&gt;  
+        &lt;div class="wp-40"&gt;.wp-40&lt;/div&gt;  
+        &lt;div class="wp-50"&gt;.wp-50&lt;/div&gt;  
+        &lt;div class="wp-60"&gt;.wp-60&lt;/div&gt;  
+        &lt;div class="wp-70"&gt;.wp-70&lt;/div&gt; 
+        &lt;div class="wp-80"&gt;.wp-80&lt;/div&gt; 
+        &lt;div class="wp-90"&gt;.wp-90&lt;/div&gt; 
+        &lt;div class="wp-100"&gt;.wp-100&lt;/div&gt; 
+    &lt;/div&gt;
                                     </code></pre>
-                                </div> 
-                            </div>   
+                                </div>   
                         </div>   
 
-                        <h3 class="font-l font-s-2">Altos</h3>
-                        <div class="table-cont-b">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.hp-10</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El alto será el 10% del alto del contenedor padre</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.hp-20</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El alto será el 20% del alto del contenedor padre</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.hp-30</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El alto será el 30% del alto del contenedor padre</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.hp-40</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El alto será el 40% del alto del contenedor padre</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.hp-50</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El alto será el 50% del alto del contenedor padre</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.hp-60</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El alto será el 60% del alto del contenedor padre</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.hp-70</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El alto será el 70% del alto del contenedor padre</div>
-                                </div>    
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.hp-80</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El alto será el 80% del alto del contenedor padre</div>
-                                </div>  
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.hp-90</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El alto será el 90% del alto del contenedor padre</div>
-                                </div>      
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.hp-100</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">El ancho será el 100% del ancho del contenedor padre</div>
-                                </div>   
-                            </div>    
-                            <div class="border-l border-r mb-5">
+                        <h3 class="mt-3 font-l font-s-2">Altos</h3>
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.hp-10</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto será el 10% del alto del contenedor padre.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.hp-20</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto será el 20% del alto del contenedor padre.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.hp-30</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto será el 30% del alto del contenedor padre.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.hp-40</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto será el 40% del alto del contenedor padre.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.hp-50</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto será el 50% del alto del contenedor padre.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.hp-60</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto será el 60% del alto del contenedor padre.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.hp-70</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto será el 70% del alto del contenedor padre.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.hp-80</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto será el 80% del alto del contenedor padre.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.hp-90</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto será el 90% del alto del contenedor padre.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.hp-100</td>
+                                        <td class="w-auto bg-maya-blue-9">El alto será el 100% del alto del contenedor padrer.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                                </tbody>
+                            </table>
+                        </div>   
+                        <div class="border rounded mt-2">                        
                             <div class="block border-b p-2">
                                 <p>Tamaños aplicados</p>
                             </div>
-                            <div class="p-5 text-l grid item-10 h-200 hatched-1"> 
-                                <div class="div1 hp-10 pl-1">.hp-10</div>         
-                                <div class="div1 hp-20 pl-1">.hp-20</div>                        
-                                <div class="div1 hp-30 pl-1">.hp-30</div>
-                                <div class="div1 hp-40 pl-1">.hp-40</div>
-                                <div class="div1 hp-50 pl-1">.hp-50</div>
-                                <div class="div1 hp-60 pl-1">.hp-60</div>
-                                <div class="div1 hp-70 pl-1">.hp-70</div>
-                                <div class="div1 hp-80 pl-1">.hp-80</div>
-                                <div class="div1 hp-90 pl-1">.hp-90</div>
-                                <div class="div1 hp-100 pl-1">.hp-100</div>                     
+                            <div class="grid item-10 p-5 pm-2 text-l hatched-1 scroll-a h-f-10"> 
+                                <div class="div1 hp-10 p-1">.hp-10</div>         
+                                <div class="div1 hp-20 p-1">.hp-20</div>                        
+                                <div class="div1 hp-30 p-1">.hp-30</div>
+                                <div class="div1 hp-40 p-1">.hp-40</div>
+                                <div class="div1 hp-50 p-1">.hp-50</div>
+                                <div class="div1 hp-60 p-1">.hp-60</div>
+                                <div class="div1 hp-70 p-1">.hp-70</div>
+                                <div class="div1 hp-80 p-1">.hp-80</div>
+                                <div class="div1 hp-90 p-1">.hp-90</div>
+                                <div class="div1 hp-100 p-1">.hp-100</div>                     
                             </div>
                             <div class="border-t p-2">
                                 HTML
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-            &lt;div&gt;
-                &lt;div class="hp-10"&gt;.hp-10&lt;/div&gt;   
-                &lt;div class="hp-20"&gt;.hp-20&lt;/div&gt;
-                &lt;div class="hp-30"&gt;.hp-30&lt;/div&gt;  
-                &lt;div class="hp-40"&gt;.hp-40&lt;/div&gt;  
-                &lt;div class="hp-50"&gt;.hp-50&lt;/div&gt;  
-                &lt;div class="hp-60"&gt;.hp-60&lt;/div&gt;  
-                &lt;div class="hp-70"&gt;.hp-70&lt;/div&gt; 
-                &lt;div class="hp-80"&gt;.hp-80&lt;/div&gt; 
-                &lt;div class="hp-90"&gt;.hp-90&lt;/div&gt; 
-                &lt;div class="hp-100"&gt;.hp-100&lt;/div&gt; 
-            &lt;/div&gt;
+    &lt;div&gt;
+        &lt;div class="hp-10"&gt;.hp-10&lt;/div&gt;   
+        &lt;div class="hp-20"&gt;.hp-20&lt;/div&gt;
+        &lt;div class="hp-30"&gt;.hp-30&lt;/div&gt;  
+        &lt;div class="hp-40"&gt;.hp-40&lt;/div&gt;  
+        &lt;div class="hp-50"&gt;.hp-50&lt;/div&gt;  
+        &lt;div class="hp-60"&gt;.hp-60&lt;/div&gt;  
+        &lt;div class="hp-70"&gt;.hp-70&lt;/div&gt; 
+        &lt;div class="hp-80"&gt;.hp-80&lt;/div&gt; 
+        &lt;div class="hp-90"&gt;.hp-90&lt;/div&gt; 
+        &lt;div class="hp-100"&gt;.hp-100&lt;/div&gt; 
+    &lt;/div&gt;
                                 </code></pre>
-                            </div> 
-                        </div>   
-                        </div>                          
+                            </div>   
+                    </div>                        
                     </section>    
 
                     <!-- Anchos y Altos iguales -->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                         <h1 class="font-l">Dimensiones cuadradas: Ancho y alto iguales</h1>
                         <p class="font-l font-s-4">Si así lo prefieres, tienes la opción de asignar dimensiones uniformes tanto en altura como en anchura a tus elementos.</p>
-                        <h3 class="font-l font-s-2">Anchos y Altos</h3>
-                        <div class="table-cont-b">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wh-8</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Se le asignará un tamaño de 8 píxeles tanto en ancho como en altura. </div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wh-16</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Se le asignará un tamaño de 16 píxeles tanto en ancho como en altura.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wh-24</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Se le asignará un tamaño de 24 píxeles tanto en ancho como en altura.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wh-32</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Se le asignará un tamaño de 32 píxeles tanto en ancho como en altura.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wh-40</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Se le asignará un tamaño de 40 píxeles tanto en ancho como en altura.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wh-48</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Se le asignará un tamaño de 48 píxeles tanto en ancho como en altura.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wh-56</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Se le asignará un tamaño de 56 píxeles tanto en ancho como en altura.</div>
-                                </div>    
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wh-64</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Se le asignará un tamaño de 64 píxeles tanto en ancho como en altura.</div>
-                                </div>  
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wh-72</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Se le asignará un tamaño de 72 píxeles tanto en ancho como en altura.</div>
-                                </div>      
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wh-80</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Se le asignará un tamaño de 80 píxeles tanto en ancho como en altura.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wh-100</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Se le asignará un tamaño de 100 píxeles tanto en ancho como en altura.</div>
-                                </div>  
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wh-150</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Se le asignará un tamaño de 150 píxeles tanto en ancho como en altura.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wh-200</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Se le asignará un tamaño de 200 píxeles tanto en ancho como en altura.</div>
-                                </div>            
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wh-250</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Se le asignará un tamaño de 250 píxeles tanto en ancho como en altura.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.wh-300</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Se le asignará un tamaño de 300 píxeles tanto en ancho como en altura.</div>
-                                </div>          
-                            </div>  
-                            <div class="border-l border-r mb-5">
-                                <div class="block border-b p-2">
+                        <h3 class="mt-3 font-l font-s-2">Anchos y Altos</h3>
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wh-8</td>
+                                        <td class="w-auto bg-maya-blue-9">Se le asignará un tamaño de 8 píxeles tanto en ancho como en altura.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wh-16</td>
+                                        <td class="w-auto bg-maya-blue-9">Se le asignará un tamaño de 16 píxeles tanto en ancho como en altura.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wh-24</td>
+                                        <td class="w-auto bg-maya-blue-9">Se le asignará un tamaño de 24 píxeles tanto en ancho como en altura.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wh-32</td>
+                                        <td class="w-auto bg-maya-blue-9">Se le asignará un tamaño de 32 píxeles tanto en ancho como en altura.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wh-40</td>
+                                        <td class="w-auto bg-maya-blue-9">Se le asignará un tamaño de 40 píxeles tanto en ancho como en altura.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wh-48</td>
+                                        <td class="w-auto bg-maya-blue-9">Se le asignará un tamaño de 48 píxeles tanto en ancho como en altura.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wh-56</td>
+                                        <td class="w-auto bg-maya-blue-9">Se le asignará un tamaño de 56 píxeles tanto en ancho como en altura.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wh-64</td>
+                                        <td class="w-auto bg-maya-blue-9">Se le asignará un tamaño de 64 píxeles tanto en ancho como en altura.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wh-72</td>
+                                        <td class="w-auto bg-maya-blue-9">Se le asignará un tamaño de 72 píxeles tanto en ancho como en altura.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wh-80</td>
+                                        <td class="w-auto bg-maya-blue-9">Se le asignará un tamaño de 80 píxeles tanto en ancho como en altura.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wh-100</td>
+                                        <td class="w-auto bg-maya-blue-9">Se le asignará un tamaño de 100 píxeles tanto en ancho como en altura.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wh-150</td>
+                                        <td class="w-auto bg-maya-blue-9">Se le asignará un tamaño de 150 píxeles tanto en ancho como en altura.</td>
+                                    </tr>      
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wh-200</td>
+                                        <td class="w-auto bg-maya-blue-9">Se le asignará un tamaño de 200 píxeles tanto en ancho como en altura.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wh-250</td>
+                                        <td class="w-auto bg-maya-blue-9">Se le asignará un tamaño de 250 píxeles tanto en ancho como en altura.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.wh-300</td>
+                                        <td class="w-auto bg-maya-blue-9">Se le asignará un tamaño de 300 píxeles tanto en ancho como en altura.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                </tbody>
+                            </table>
+                        </div>                       
+                        <div class="border rounded mt-2">
+                            <div class="block border-b p-2">
                                     <p>Tamaños aplicados</p>
                                 </div>
-                                <div class="hatched-1">
-                                    <div class="p-5 text-l grid item-auto g-5"> 
-                                        <div class="div1 wh-8 p-1">8</div>         
-                                        <div class="div1 wh-16 p-1">16</div>                        
-                                        <div class="div1 wh-32 p-1">32</div>
-                                        <div class="div1 wh-40 p-1">40</div>
-                                        <div class="div1 wh-48 p-1">48</div>
-                                        <div class="div1 wh-56 p-1">56</div>
-                                        <div class="div1 wh-64 p-1">64</div>
-                                        <div class="div1 wh-72 p-1">72</div>
-                                        <div class="div1 wh-80 p-1">80</div>
-                                        <div class="div1 wh-100 p-1">100</div>                     
-                                    </div>
-                                    <div class="p-5 text-l grid item-auto g-1"> 
-                                        <div class="div1 wh-150 p-1">150</div>         
-                                        <div class="div1 wh-200 p-1">200</div>                        
-                                        <div class="div1 wh-250 p-1">250</div>
-                                        <div class="div1 wh-300 p-1">300</div>                  
-                                    </div>
+                            <div class="hatched-1">
+                                <div class="p-5 pm-2 text-l grid item-7 g-5 scroll-a"> 
+                                    <div class="div1 wh-8 p-1">8</div>         
+                                    <div class="div1 wh-16 p-1">16</div>                        
+                                    <div class="div1 wh-32 p-1">32</div>
+                                    <div class="div1 wh-40 p-1">40</div>
+                                    <div class="div1 wh-48 p-1">48</div>
+                                    <div class="div1 wh-56 p-1">56</div>
+                                    <div class="div1 wh-64 p-1">64</div>
+                                    <div class="div1 wh-72 p-1">72</div>
+                                    <div class="div1 wh-80 p-1">80</div>
+                                    <div class="div1 wh-100 p-1">100</div>                                                         
+                                    <div class="div1 wh-150 p-1">150</div>         
+                                    <div class="div1 wh-200 p-1">200</div>                        
+                                    <div class="div1 wh-250 p-1">250</div>
+                                    <div class="div1 wh-300 p-1">300</div>                  
                                 </div>
-                                <div class="border-t p-2">
-                                    HTML
-                                </div>
-                                <div class="pre-pre2">
-                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
-            &lt;div&gt;
-                &lt;div class="wh-8"&gt;8&lt;/div&gt;   
-                &lt;div class="wh-16"&gt;16&lt;/div&gt;
-                &lt;div class="wh-24"&gt;24&lt;/div&gt;  
-                &lt;div class="wh-32"&gt;32&lt;/div&gt;  
-                &lt;div class="wh-40"&gt;40&lt;/div&gt;  
-                &lt;div class="wh-48"&gt;48&lt;/div&gt;  
-                &lt;div class="wh-56"&gt;56&lt;/div&gt; 
-                &lt;div class="wh-64"&gt;64&lt;/div&gt; 
-                &lt;div class="wh-72"&gt;72&lt;/div&gt; 
-                &lt;div class="wh-80"&gt;80&lt;/div&gt; 
-                &lt;div class="wh-100"&gt;100&lt;/div&gt; 
-                &lt;div class="wh-150"&gt;150&lt;/div&gt;   
-                &lt;div class="wh-200"&gt;200&lt;/div&gt;
-                &lt;div class="wh-250"&gt;250&lt;/div&gt;  
-                &lt;div class="wh-300"&gt;300&lt;/div&gt;  
-            &lt;/div&gt;    
-                                    </code></pre>
-                                </div> 
-                            </div>   
-                        </div>                            
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;div&gt;
+        &lt;div class="wh-8"&gt;8&lt;/div&gt;   
+        &lt;div class="wh-16"&gt;16&lt;/div&gt;
+        &lt;div class="wh-24"&gt;24&lt;/div&gt;  
+        &lt;div class="wh-32"&gt;32&lt;/div&gt;  
+        &lt;div class="wh-40"&gt;40&lt;/div&gt;  
+        &lt;div class="wh-48"&gt;48&lt;/div&gt;  
+        &lt;div class="wh-56"&gt;56&lt;/div&gt; 
+        &lt;div class="wh-64"&gt;64&lt;/div&gt; 
+        &lt;div class="wh-72"&gt;72&lt;/div&gt; 
+        &lt;div class="wh-80"&gt;80&lt;/div&gt; 
+        &lt;div class="wh-100"&gt;100&lt;/div&gt; 
+        &lt;div class="wh-150"&gt;150&lt;/div&gt;   
+        &lt;div class="wh-200"&gt;200&lt;/div&gt;
+        &lt;div class="wh-250"&gt;250&lt;/div&gt;  
+        &lt;div class="wh-300"&gt;300&lt;/div&gt;  
+    &lt;/div&gt;    
+                                </code></pre>
+                            </div> 
+                        </div>                                                   
                     </section> 
                 </section>     
 
