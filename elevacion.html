@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="./img/ico.png">
   <link rel="stylesheet" href="./css/quickly.css">
   <link rel="stylesheet" href="./css/app.css">
-  <script src="./js/quickly.js" defer></script>
+  <script src="./js/quicklyComp.js" defer></script>
   <script src="./js/app.js" defer></script>
   <link rel="stylesheet" href="./prism/prism.css">
   <script src="./prism/prism.js" defer></script>
@@ -20,76 +20,70 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DZQS41TB5G');
 </script>
 
 </head>
 <body>
     <div id="headerContent"></div>
-    <section class="cont">
+    <section class="cont cont-m">
         <aside id="menuContent"></aside> 
-        <main class="bg-white-2 pt-5">  
-            <div class="cont-80 py-5 "> 
+        <main class="bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5"> 
                 
                 <!-- ELEVACIONES Z INDEX -->
                 <section class="border rounded bg-color-1">
-                    <div class="p-5 bg-white-1 rounded-t border-B">
+                    <div class="p-5 pm-2 bg-white-1 rounded-t border-B">
                         <h1 class="font-l">Elevación</h1>
                         <p class="font-l font-s-4">Utiliza nuestras utilidades de índice z de bajo nivel para modificar rápidamente el nivel de apilamiento de un elemento o componente.</p>
                     </div>
                 
                     <!-- z index -->
-                    <section class="pt-3 px-5">
+                    <section class="p-5 pm-2">
                         <h3 class="font-l font-s-2">Clases de elevación</h3>
                         <p>Para aplicar las clases Z, primero debes asignar la clase .block-flex al contenedor principal. Las clases Z, por defecto, se establecen con posición absoluta.</p>
-                        <h3 class="font-l font-s-2">.z-an° y .z-bn°</h3>
-                        <div class="table-cont">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.z-b3</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">z-below3. Tendrá una posición tres niveles por debajo de la capa inicial de 0.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.z-b2</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">z-below2. Tendrá una posición dos niveles por debajo de la capa inicial de 0.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.z-b1</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">z-below1. Tendrá una posición un nivel por debajo de la capa inicial de 0.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.z-a1</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">z-above1. Tendrá una superposición de un nivel por encima de la capa inicial de 0.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.z-a2</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">z-above2. Tendrá una superposición de dos niveles por encima de la capa inicial de 0.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.z-a3</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">z-above3. Tendrá una superposición de tres niveles por encima de la capa inicial de 0.</div>
-                                </div>
-                            </div>    
-                            <div class="border-l border-r">
+                        <h3 class="mt-3 font-l font-s-2">.z-an° y .z-bn°</h3>
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.z-b3</td>
+                                        <td class="w-auto bg-maya-blue-9">z-below3. Tendrá una posición tres niveles por debajo de la capa inicial de 0.</td>
+                                    </tr>       
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.z-b2</td>
+                                        <td class="w-auto bg-maya-blue-9">z-below2. Tendrá una posición dos niveles por debajo de la capa inicial de 0.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.z-b1</td>
+                                        <td class="w-auto bg-maya-blue-9">z-below1. Tendrá una posición un nivel por debajo de la capa inicial de 0.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.z-a1</td>
+                                        <td class="w-auto bg-maya-blue-9">z-above1. Tendrá una superposición de un nivel por encima de la capa inicial de 0.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.z-a2</td>
+                                        <td class="w-auto bg-maya-blue-9">z-above2. Tendrá una superposición de dos niveles por encima de la capa inicial de 0.</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.z-a3</td>
+                                        <td class="w-auto bg-maya-blue-9">z-above3. Tendrá una superposición de tres niveles por encima de la capa inicial de 0.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                               
+                                </tbody>
+                            </table>
+                        </div>  
+                        <div class="border rounded mt-2">                           
                                 <div class="block border-b p-2">
                                     <p>Posiciones Z sobre y bajo</p>
                                 </div>  
-                                <div class="grid item-2 hatched-1 p-5">   
+                                <div class="grid item-auto-fit hatched-1 p-5 pm-2">   
                                     <div class="h-300 block-flex"> 
                                         <div class="div1 z-a3 wh-80 rounded border pl-1 shadow-l">z-a3</div> 
                                         <div class="div1 z-a2 wh-150 rounded border pl-1 shadow-m">z-a2</div>      
@@ -106,124 +100,112 @@
                                 </div>
                                 <div class="pre-pre2">
                                     <pre class="cont-100 scroll-x"><code class="language-html">                                    
-            &lt;div class="h-300 display-flex hatched-1"&gt; 
-                &lt;div class="z-a3 wh-80 rounded border pl-1 shadow-l"&gt;Nivel 3&lt;/div&gt; 
-                &lt;div class="z-a2 wh-150 rounded border pl-1 shadow-m"&gt;Nivel 2&lt;/div&gt;      
-                &lt;div class="z-a1 wh-250 rounded border pl-1 shadow-s"&gt;Nivel 1&lt;/div&gt;                        
-            &lt;/div&gt;   
-            &lt;div class="h-300 display-flex hatched-1"&gt; 
-                &lt;div class="z-b3 wh-80 rounded border pl-1 shadow-s"&gt;Nivel -1&lt;/div&gt; 
-                &lt;div class="z-b2 wh-150 rounded border pl-1 shadow-m"&gt;Nivel -2&lt;/div&gt;      
-                &lt;div class="z-b1 wh-250 rounded border pl-1 shadow-l"&gt;Nivel -3&lt;/div&gt;                        
-            &lt;/div&gt;  
+    &lt;div class="h-300 display-flex hatched-1"&gt; 
+        &lt;div class="z-a3 wh-80 rounded border pl-1 shadow-l"&gt;Nivel 3&lt;/div&gt; 
+        &lt;div class="z-a2 wh-150 rounded border pl-1 shadow-m"&gt;Nivel 2&lt;/div&gt;      
+        &lt;div class="z-a1 wh-250 rounded border pl-1 shadow-s"&gt;Nivel 1&lt;/div&gt;                        
+    &lt;/div&gt;   
+    &lt;div class="h-300 display-flex hatched-1"&gt; 
+        &lt;div class="z-b3 wh-80 rounded border pl-1 shadow-s"&gt;Nivel -1&lt;/div&gt; 
+        &lt;div class="z-b2 wh-150 rounded border pl-1 shadow-m"&gt;Nivel -2&lt;/div&gt;      
+        &lt;div class="z-b1 wh-250 rounded border pl-1 shadow-l"&gt;Nivel -3&lt;/div&gt;                        
+    &lt;/div&gt;  
                                     </code></pre>
                                 </div>                      
                         </div>                                 
                     </section>  
                     
                     <!-- z index Posicionamiento -->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                         <h3 class="font-l font-s-2">Clases de elevación y posicionamiento</h3>
                         <p>Las clases de posicionamiento se dividen en tres ejes horizontales: start, center y end. Para cada posición, hay una clase correspondiente. Por ejemplo, la clase .z-t-s significa "z-top-Start", lo que indica elevación en el eje z, posición en la parte superior y justificación a la izquierda.</p>
-                        <h3 class="font-l font-s-2">.z-posición-posición</h3>
-                        <div class="table-cont">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.z-t-l</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">.Z-Top-Left. Tendrá una posición superior con alineación a la izquierda del contenedor.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.z-t-c</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">.Z-Top-Center. Tendrá una posición superior con alineación al centro del contenedor.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.z-t-r</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">.Z-Top-Right.  Tendrá una posición superior con alineación a la derecha del contenedor.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.z-c-l</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">.Z-Center-Left. Tendrá una posición centrada dentro de su contenedor padre, con alineación hacia la izquierda.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.z-c-c</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">.Z-Center-Center. Tendrá una posición centrada dentro de su contenedor padre, con alineación al centro del contenedor.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.z-c-r</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">.Z-Center-Right. Tendrá una posición centrada dentro de su contenedor padre, con alineación a la derecha del contenedor.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.z-b-l</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">.Z-Bottom-Left. Tendrá una posición inferior dentro de su contenedor padre, con alineación a la izquierda del contenedor.</div>
-                                </div>                        
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.z-b-c</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">.Z-Bottom-Center. Tendrá una posición inferior dentro de su contenedor padre, con alineación al centro del contenedor.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.z-b-r</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">.Z-Bottom-Right. Tendrá una posición inferior dentro de su contenedor padre, con alineación a la derecha del contenedor.</div>
-                                </div>                            
-                            </div>    
-                            <div class="border-l border-r mb-5 ">
-                                <div class="block border-b p-2">
-                                    <p>Posiciones Z</p>
-                                </div>          
-                                <div class="hatched-1 p-5">
-                                    <div class="h-300 block-flex"> 
-                                        <div class="div1 z-t-l wh-80 rounded text-ac">top left</div> 
-                                        <div class="div1 z-t-r wh-80 rounded text-ac">top right</div>      
-                                        <div class="div1 z-t-c wh-80 rounded text-ac">top center</div>     
-                                        <div class="div1 z-c-l wh-80 rounded text-ac">center left</div> 
-                                        <div class="div1 z-c-r wh-80 rounded text-ac">center right</div>      
-                                        <div class="div1 z-c-c wh-80 rounded text-ac">center center</div>     
-                                        <div class="div1 z-b-l wh-80 rounded text-ac">bottom left</div> 
-                                        <div class="div1 z-b-r wh-80 rounded text-ac">bottom right</div>      
-                                        <div class="div1 z-b-c wh-80 rounded text-ac">bottom center</div>                     
-                                    </div>      
-                                </div>              
-                                <div class="border-t p-2">
+                        <h3 class="mt-3 font-l font-s-2">.z-posición-posición</h3>
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.z-t-l</td>
+                                        <td class="w-auto bg-maya-blue-9">.Z-Top-Left. Tendrá una posición superior con alineación a la izquierda del contenedor.</td>
+                                    </tr>       
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.z-t-c</td>
+                                        <td class="w-auto bg-maya-blue-9">.Z-Top-Center. Tendrá una posición superior con alineación al centro del contenedor.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.z-t-r</td>
+                                        <td class="w-auto bg-maya-blue-9">.Z-Top-Right.  Tendrá una posición superior con alineación a la derecha del contenedor.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.z-c-l</td>
+                                        <td class="w-auto bg-maya-blue-9">.Z-Center-Left. Tendrá una posición centrada dentro de su contenedor padre, con alineación hacia la izquierda.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.z-c-c</td>
+                                        <td class="w-auto bg-maya-blue-9">.Z-Center-Center. Tendrá una posición centrada dentro de su contenedor padre, con alineación al centro del contenedor.</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.z-c-r</td>
+                                        <td class="w-auto bg-maya-blue-9">.Z-Center-Right. Tendrá una posición centrada dentro de su contenedor padre, con alineación a la derecha del contenedor.</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.z-b-l</td>
+                                        <td class="w-auto bg-maya-blue-9">.Z-Bottom-Left. Tendrá una posición inferior dentro de su contenedor padre, con alineación a la izquierda del contenedor.</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.z-b-c</td>
+                                        <td class="w-auto bg-maya-blue-9">.Z-Bottom-Center. Tendrá una posición inferior dentro de su contenedor padre, con alineación al centro del contenedor.</td>
+                                    </tr>        
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.z-b-r</td>
+                                        <td class="w-auto bg-maya-blue-9">.Z-Bottom-Right. Tendrá una posición inferior dentro de su contenedor padre, con alineación a la derecha del contenedor.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                  
+                                </tbody>
+                            </table>
+                        </div>  
+                        <div class="border rounded mt-2">                          
+                            <div class="block border-b p-2">
+                                <p>Posiciones Z</p>
+                            </div>          
+                            <div class="hatched-1 p-5 pm-2">
+                                <div class="h-300 block-flex"> 
+                                    <div class="div1 z-t-l wh-80 rounded text-ac">top left</div> 
+                                    <div class="div1 z-t-r wh-80 rounded text-ac">top right</div>      
+                                    <div class="div1 z-t-c wh-80 rounded text-ac">top center</div>     
+                                    <div class="div1 z-c-l wh-80 rounded text-ac">center left</div> 
+                                    <div class="div1 z-c-r wh-80 rounded text-ac">center right</div>      
+                                    <div class="div1 z-c-c wh-80 rounded text-ac">center center</div>     
+                                    <div class="div1 z-b-l wh-80 rounded text-ac">bottom left</div> 
+                                    <div class="div1 z-b-r wh-80 rounded text-ac">bottom right</div>      
+                                    <div class="div1 z-b-c wh-80 rounded text-ac">bottom center</div>                     
+                                </div>      
+                            </div>
+                            <div class="border-t p-2">
                                 HTML
-                                </div>
-                                <div class="pre-pre2">
-                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
-            &lt;div class="h-300 display-flex"&gt; 
-                &lt;div class="z-t-l wh-80 rounded text-ac"&gt;top left&lt;/div&gt; 
-                &lt;div class="z-t-r wh-80 rounded text-ac"&gt;top right&lt;/div&gt;      
-                &lt;div class="z-t-c wh-80 rounded text-ac"&gt;top center&lt;/div&gt;     
-                &lt;div class="z-c-l wh-80 rounded text-ac"&gt;center left&lt;/div&gt; 
-                &lt;div class="z-c-r wh-80 rounded text-ac"&gt;center right&lt;/div&gt;      
-                &lt;div class="z-c-c wh-80 rounded text-ac"&gt;center center&lt;/div&gt;     
-                &lt;div class="z-b-l wh-80 rounded text-ac"&gt;bottom left&lt;/div&gt; 
-                &lt;div class="z-b-r wh-80 rounded text-ac"&gt;bottom right&lt;/div&gt;      
-                &lt;div class="z-b-c wh-80 rounded text-ac"&gt;bottom center&lt;/div&gt;                     
-            &lt;/div&gt;    
-                                    </code></pre>
-                                </div>                      
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;div class="h-300 display-flex"&gt; 
+        &lt;div class="z-t-l wh-80 rounded text-ac"&gt;top left&lt;/div&gt; 
+        &lt;div class="z-t-r wh-80 rounded text-ac"&gt;top right&lt;/div&gt;      
+        &lt;div class="z-t-c wh-80 rounded text-ac"&gt;top center&lt;/div&gt;     
+        &lt;div class="z-c-l wh-80 rounded text-ac"&gt;center left&lt;/div&gt; 
+        &lt;div class="z-c-r wh-80 rounded text-ac"&gt;center right&lt;/div&gt;      
+        &lt;div class="z-c-c wh-80 rounded text-ac"&gt;center center&lt;/div&gt;     
+        &lt;div class="z-b-l wh-80 rounded text-ac"&gt;bottom left&lt;/div&gt; 
+        &lt;div class="z-b-r wh-80 rounded text-ac"&gt;bottom right&lt;/div&gt;      
+        &lt;div class="z-b-c wh-80 rounded text-ac"&gt;bottom center&lt;/div&gt;                     
+    &lt;/div&gt;    
+                                </code></pre>
+                            </div>                      
                         </div>                                 
                     </section>                
                 </section>  
-
             </div>
         </main>     
         <footer id="footerContent"></footer>    
