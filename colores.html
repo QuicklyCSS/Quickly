@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="./img/ico.png">
   <link rel="stylesheet" href="./css/quickly.css">
   <link rel="stylesheet" href="./css/app.css">
-  <script src="./js/quickly.js" defer></script>
+  <script src="./js/quicklyComp.js" defer></script>
   <script src="./js/app.js" defer></script>
   <link rel="stylesheet" href="./prism/prism.css">
   <script src="./prism/prism.js" defer></script>
@@ -20,65 +20,67 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DZQS41TB5G');
 </script>
 
 </head>
 <body>
     <div id="headerContent"></div>
-    <section class="cont">
+    <section class="cont cont-m">
         <aside id="menuContent"></aside> 
-        <main class="bg-white-2 pt-5">  
-            <div class="cont-80 py-5"> 
+        <main class="bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5"> 
                 
                 <!-- COLORES -->
                 <section class="border rounded bg-color-1">
-                    <div class="p-5 item-1 bg-white-1 rounded-t border-b">
+                    <div class="p-5 pm-2 item-1 bg-white-1 rounded-t border-b">
                         <h1 class="font-l">Colores</h1>
                         <p class="font-l font-s-4"> Aquí descubriras una paleta diseñada de <strong class="text-quickly" >Quickly</strong> para dar vida a tus proyectos, con colores primarios (rojo, azul, verde) que transmiten energía y confianza; colores secundarios (amarillo, naranja, púrpura) que añaden creatividad y elegancia; y colores neutros (blanco, negro, gris) que proporcionan equilibrio y sofisticación. Esta combinación mejora la experiencia del usuario, creando una identidad visual coherente y atractiva. ¡Explora nuestra paleta y transforma tu diseño!</p>
                     </div>
                 
                     <!-- COLORES DE TEXTO BÁSICOS -->
-                    <section class="pt-3 px-5 pb-5">
+                    <section class="p-5 pm-2">
                         <h2 class="font-l font-s-2">Colores básicos de Quickly</h2>     
                         <p class="pb-2">Quickly pone a tu disposición 12 colores de texto diseñados para casos específicos de usabilidad que puedes utilizar en tus proyectos.</p>
-                        <div class="table-cont">  
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.text-c-opción</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">.Text-Color-Opción. Esta clase define el contexto, indicando que es una clase de texto. Luego especifica color, seguido del nombre del color.</div>
-                                </div>
-                            </div>                          
-                            <div class="border-x">
-                                <div>   
-                                    <div class="block border-b p-2">
-                                        <p>Ejemplo</p>
-                                    </div>
-                                    <div class="hatched-1 p-5 grid item-3 g-2">                                             
-                                        <div class="bg-gray rounded block text-ac p-1 block-i font-s-5 text-c-white">.text-c-white</div>
-                                        <div class="bg-gray-4 rounded block text-ac p-1 block-i font-s-5 text-c-black">.text-c-black</div>
-                                        <div class="bg-gray-4 rounded block text-ac p-1 block-i font-s-5 text-c-primary1">.text-c-primary1</div>
-                                        <div class="bg-gray-4 rounded block text-ac p-1 block-i font-s-5 text-c-primary2">.text-c-primary2</div>
-                                        <div class="bg-gray-4 rounded block text-ac p-1 block-i font-s-5 text-c-secundary1">.text-c-secundary1</div>
-                                        <div class="bg-gray-4 rounded block text-ac p-1 block-i font-s-5 text-c-secundary2">.text-c-secundary2</div>                                        
-                                        <div class="bg-info rounded block text-ac p-1 block-i font-s-5 text-c-info">.text-c-info</div>
-                                        <div class="bg-danger rounded block text-ac p-1 block-i font-s-5 text-c-danger">.text-c-danger</div>
-                                        <div class="bg-warning rounded block text-ac p-1 block-i font-s-5 text-c-warning">.text-c-warning</div>
-                                        <div class="bg-success rounded block text-ac p-1 block-i font-s-5 text-c-success">.text-c-success</div>
-                                        <div class="bg-gray-4 rounded block text-ac p-1 block-i font-s-5 text-c-gray">.text-c-gray</div>
-                                        <div class="bg-gray-4 rounded block text-ac p-1 block-i font-s-5 text-c-link">.text-c-link</div>
-                                    </div>                                                                                                                                                                                  
-                                </div>               
-                                <div class="border-t p-2">
-                                    HTML
-                                </div>
-                                <div class="pre-pre2">
-                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.text-c-opción</td>
+                                        <td class="w-auto bg-maya-blue-9">.Text-Color-Opción. Esta clase define el contexto, indicando que es una clase de texto. Luego especifica color, seguido del nombre del color.</td>
+                                    </tr>                                                                                                                                                                                                                                                                  
+                                </tbody>
+                            </table>
+                        </div> 
+                        <div class="border rounded mt-2">
+                            <div class="block border-b p-2">
+                                <p>Ejemplo</p>
+                            </div>
+                            <div class="hatched-1 p-5 pm-2 grid item-3 item-s-2 g-2 scroll-a">                                             
+                                <div class="bg-gray rounded block text-ac p-1 block-i font-s-5 text-c-white">.text-c-white</div>
+                                <div class="bg-gray-4 rounded block text-ac p-1 block-i font-s-5 text-c-black">.text-c-black</div>
+                                <div class="bg-gray-4 rounded block text-ac p-1 block-i font-s-5 text-c-primary1">.text-c-primary1</div>
+                                <div class="bg-gray-4 rounded block text-ac p-1 block-i font-s-5 text-c-primary2">.text-c-primary2</div>
+                                <div class="bg-gray-4 rounded block text-ac p-1 block-i font-s-5 text-c-secundary1">.text-c-secundary1</div>
+                                <div class="bg-gray-4 rounded block text-ac p-1 block-i font-s-5 text-c-secundary2">.text-c-secundary2</div>                                        
+                                <div class="bg-info rounded block text-ac p-1 block-i font-s-5 text-c-info">.text-c-info</div>
+                                <div class="bg-danger rounded block text-ac p-1 block-i font-s-5 text-c-danger">.text-c-danger</div>
+                                <div class="bg-warning rounded block text-ac p-1 block-i font-s-5 text-c-warning">.text-c-warning</div>
+                                <div class="bg-success rounded block text-ac p-1 block-i font-s-5 text-c-success">.text-c-success</div>
+                                <div class="bg-gray-4 rounded block text-ac p-1 block-i font-s-5 text-c-gray">.text-c-gray</div>
+                                <div class="bg-gray-4 rounded block text-ac p-1 block-i font-s-5 text-c-link">.text-c-link</div>
+                            </div>                                                                                                                                                                                                                        
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
     &lt;div class="text-c-white"&gt;.text-c-white&lt;/div&gt;
     &lt;div class="text-c-black"&gt;.text-c-black&lt;/div&gt;
     &lt;div class="text-c-primary1"&gt;.text-c-primary1&lt;/div&gt;
@@ -91,168 +93,174 @@
     &lt;div class="text-c-success"&gt;.text-c-success&lt;/div&gt;
     &lt;div class="text-c-gray"&gt;.text-c-gray&lt;/div&gt;
     &lt;div class="text-c-link"&gt;.text-c-link&lt;/div&gt;
-                                    </code></pre>
-                                </div>                      
-                        </div>                                 
+                                </code></pre>
+                            </div>                              
+                        </div>
                     </section>   
 
                     <!-- COLORES DE FONDO BÁSICOS -->
-                    <section class="px-5 pb-5">
+                    <section class="p-5 pm-2">
                         <h2 class="font-l font-s-2">Colores de fondo básicos</h2>     
                         <p class="pb-2">Ponemos a tu disposición 300 colores, cada uno con su correspondiente clase para color y fondo. Ahora solo necesitas aplicar la clase correspondiente a cada color para utilizarlo, como se muestra en el siguiente ejemplo.</p>
-                        <div class="table-cont">  
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.bg-Opción-N°</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Background-Opción-Número. Estas clases indican que la clase solo se puede usar para colores de fondo. Su nomenclatura se traduce en indicación de fondo, seguida de la opción de color y, finalmente, la intensidad del color.</div>
-                                </div>
-                            </div>                          
-                            <div class="border-x">
-                                <div class="p-5 grid item-3 g-5 ">   
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.bg-Opción-N°</td>
+                                        <td class="w-auto bg-maya-blue-9">Background-Opción-Número. Estas clases indican que la clase solo se puede usar para colores de fondo. Su nomenclatura se traduce en indicación de fondo, seguida de la opción de color y, finalmente, la intensidad del color.</td>
+                                    </tr>                                                                                                                                                                                                                                                                  
+                                </tbody>
+                            </table>
+                        </div>                        
+                        <div class="border rounded mt-2">
+                            <div class="p-5 pm-2 grid item-3 item-s-1 g-2 scroll-a">   
+                                    <div class="grid item-1 g-1">
+                                        <div class="font-b color-gray font-s-3">Básicos de Quickly</div>       
+                                        <div class="bg-purple rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-purple</div></div></div>
+                                        <div class="bg-lightblue rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-lightblue</div></div></div>
+                                        <div class="bg-white rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-white</div></div></div>
+                                        <div class="bg-black rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-black</div></div></div>
+                                        <div class="bg-gray rounded text-c-gray block"><div class="bg-gray-1 p-1 rounded-l block-i"><div class="font-s-8">.bg-gray</div></div></div>
+                                    </div>
 
-<div class="grid g-1">
-    <div class="font-b color-gray font-s-3">Básicos de Quickly</div>       
-    <div class="bg-purple rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-purple</div></div></div>
-    <div class="bg-lightblue rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-lightblue</div></div></div>
-    <div class="bg-white rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-white</div></div></div>
-    <div class="bg-black rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-black</div></div></div>
-    <div class="bg-gray rounded text-c-gray block"><div class="bg-gray-1 p-1 rounded-l block-i"><div class="font-s-8">.bg-gray</div></div></div>
-</div>
+                                    <div class="grid item-1 g-1">
+                                        <div class="font-b color-gray font-s-3">Genéricos</div>       
+                                        <div class="bg-color-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-color-1</div></div></div>
+                                        <div class="bg-color-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-color-2</div></div></div>
+                                        <div class="bg-color-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-color-3</div></div></div>
+                                        <div class="bg-color-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-color-4</div></div></div>
+                                        <div class="bg-color-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-color-5</div></div></div>
+                                    </div>
 
-<div class="grid g-1">
-    <div class="font-b color-gray font-s-3">Genéricos</div>       
-    <div class="bg-color-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-color-1</div></div></div>
-    <div class="bg-color-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-color-2</div></div></div>
-    <div class="bg-color-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-color-3</div></div></div>
-    <div class="bg-color-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-color-4</div></div></div>
-    <div class="bg-color-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-color-5</div></div></div>
-</div>
+                                    <div class="grid item-1 g-1">
+                                        <div class="font-b color-gray font-s-3">White</div>       
+                                        <div class="bg-white-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-white-1</div></div></div>
+                                        <div class="bg-white-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-white-2</div></div></div>
+                                        <div class="bg-white-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-white-3</div></div></div>
+                                        <div class="bg-white-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-white-4</div></div></div>
+                                        <div class="bg-white-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-white-5</div></div></div>
+                                    </div>
 
-<div class="grid g-1">
-    <div class="font-b color-gray font-s-3">White</div>       
-    <div class="bg-white-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-white-1</div></div></div>
-    <div class="bg-white-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-white-2</div></div></div>
-    <div class="bg-white-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-white-3</div></div></div>
-    <div class="bg-white-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-white-4</div></div></div>
-    <div class="bg-white-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-white-5</div></div></div>
-</div>
+                                    <div class="grid item-1 g-1">
+                                        <div class="font-b color-gray font-s-3">Blue</div>       
+                                        <div class="bg-blue-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-blue-1</div></div></div>
+                                        <div class="bg-blue-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-blue-2</div></div></div>
+                                        <div class="bg-blue-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-blue-3</div></div></div>
+                                        <div class="bg-blue-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-blue-4</div></div></div>
+                                        <div class="bg-blue-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-blue-5</div></div></div>
+                                    </div>
 
-<div class="grid g-1">
-    <div class="font-b color-gray font-s-3">Blue</div>       
-    <div class="bg-blue-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-blue-1</div></div></div>
-    <div class="bg-blue-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-blue-2</div></div></div>
-    <div class="bg-blue-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-blue-3</div></div></div>
-    <div class="bg-blue-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-blue-4</div></div></div>
-    <div class="bg-blue-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-blue-5</div></div></div>
-</div>
+                                    <div class="grid item-1 g-1">
+                                        <div class="font-b color-gray font-s-3">Gray</div>       
+                                        <div class="bg-gray-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-gray-1</div></div></div>
+                                        <div class="bg-gray-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-gray-2</div></div></div>
+                                        <div class="bg-gray-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-gray-3</div></div></div>
+                                        <div class="bg-gray-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-gray-4</div></div></div>
+                                        <div class="bg-gray-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-gray-5</div></div></div>
+                                    </div>
 
-<div class="grid g-1">
-    <div class="font-b color-gray font-s-3">Gray</div>       
-    <div class="bg-gray-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-gray-1</div></div></div>
-    <div class="bg-gray-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-gray-2</div></div></div>
-    <div class="bg-gray-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-gray-3</div></div></div>
-    <div class="bg-gray-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-gray-4</div></div></div>
-    <div class="bg-gray-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-gray-5</div></div></div>
-</div>
+                                    <div class="grid item-1 g-1">
+                                        <div class="font-b color-gray font-s-3">Green</div>       
+                                        <div class="bg-green-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-green-1</div></div></div>
+                                        <div class="bg-green-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-green-2</div></div></div>
+                                        <div class="bg-green-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-green-3</div></div></div>
+                                        <div class="bg-green-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-green-4</div></div></div>
+                                        <div class="bg-green-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-green-5</div></div></div>
+                                    </div>
 
-<div class="grid g-1">
-    <div class="font-b color-gray font-s-3">Green</div>       
-    <div class="bg-green-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-green-1</div></div></div>
-    <div class="bg-green-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-green-2</div></div></div>
-    <div class="bg-green-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-green-3</div></div></div>
-    <div class="bg-green-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-green-4</div></div></div>
-    <div class="bg-green-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-green-5</div></div></div>
-</div>
+                                    <div class="grid item-1 g-1">
+                                        <div class="font-b color-gray font-s-3">Red</div>       
+                                        <div class="bg-red-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-red-1</div></div></div>
+                                        <div class="bg-red-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-red-2</div></div></div>
+                                        <div class="bg-red-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-red-3</div></div></div>
+                                        <div class="bg-red-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-red-4</div></div></div>
+                                        <div class="bg-red-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-red-5</div></div></div>
+                                    </div>
 
-<div class="grid g-1">
-    <div class="font-b color-gray font-s-3">Red</div>       
-    <div class="bg-red-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-red-1</div></div></div>
-    <div class="bg-red-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-red-2</div></div></div>
-    <div class="bg-red-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-red-3</div></div></div>
-    <div class="bg-red-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-red-4</div></div></div>
-    <div class="bg-red-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-red-5</div></div></div>
-</div>
+                                    <div class="grid item-1 g-1">
+                                        <div class="font-b color-gray font-s-3">Yellow</div>       
+                                        <div class="bg-yellow-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-yellow-1</div></div></div>
+                                        <div class="bg-yellow-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-yellow-2</div></div></div>
+                                        <div class="bg-yellow-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-yellow-3</div></div></div>
+                                        <div class="bg-yellow-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-yellow-4</div></div></div>
+                                        <div class="bg-yellow-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-yellow-5</div></div></div>
+                                    </div>
 
-<div class="grid g-1">
-    <div class="font-b color-gray font-s-3">Yellow</div>       
-    <div class="bg-yellow-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-yellow-1</div></div></div>
-    <div class="bg-yellow-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-yellow-2</div></div></div>
-    <div class="bg-yellow-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-yellow-3</div></div></div>
-    <div class="bg-yellow-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-yellow-4</div></div></div>
-    <div class="bg-yellow-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-yellow-5</div></div></div>
-</div>
+                                    <div class="grid item-1 g-1">
+                                        <div class="font-b color-gray font-s-3">Sky blue</div>       
+                                        <div class="bg-skyblue-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-skyblue-1</div></div></div>
+                                        <div class="bg-skyblue-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-skyblue-2</div></div></div>
+                                        <div class="bg-skyblue-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-skyblue-3</div></div></div>
+                                        <div class="bg-skyblue-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-skyblue-4</div></div></div>
+                                        <div class="bg-skyblue-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-skyblue-5</div></div></div>
+                                    </div>
 
-<div class="grid g-1">
-    <div class="font-b color-gray font-s-3">Sky blue</div>       
-    <div class="bg-skyblue-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-skyblue-1</div></div></div>
-    <div class="bg-skyblue-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-skyblue-2</div></div></div>
-    <div class="bg-skyblue-3 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-skyblue-3</div></div></div>
-    <div class="bg-skyblue-4 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-skyblue-4</div></div></div>
-    <div class="bg-skyblue-5 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-skyblue-5</div></div></div>
-</div>
-
-<div class="grid g-1">
-    <div class="font-b color-gray font-s-3">Advertencia</div>       
-    <div class="bg-success rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-success</div></div></div>
-    <div class="bg-danger rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-danger</div></div></div>
-    <div class="bg-warning rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-warning</div></div></div>
-    <div class="bg-info rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-info</div></div></div>
-</div>                                                                                                      
-                                                                         
-                                </div>  
-                                <div class="block border-y p-2">
-                                    <p>Ejemplo</p>
-                                </div>  
-                                <div class="hatched-1 p-5 grid g-5 item-4">   
+                                    <div class="grid item-1 g-1">
+                                        <div class="font-b color-gray font-s-3">Advertencia</div>       
+                                        <div class="bg-success rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-success</div></div></div>
+                                        <div class="bg-danger rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-danger</div></div></div>
+                                        <div class="bg-warning rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-warning</div></div></div>
+                                        <div class="bg-info rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.bg-info</div></div></div>
+                                    </div>                                                                                                                                                                               
+                            </div>  
+                            <div class="block border-y p-2">
+                                <p>Ejemplo</p>
+                            </div>  
+                            <div class="hatched-1 p-5 pm-2 grid g-5 item-4 scroll-a">   
                                     <h2 class="bg-success rounded p-2 text-ac color-success">Éxito</h2>                                    
                                     <h2 class="bg-danger rounded p-2 text-ac color-danger">Peligro</h2>                                    
                                     <h2 class="bg-warning rounded p-2 text-ac color-warning">Advertencia</h2>                                
                                     <h2 class="bg-info rounded p-2 text-ac color-info">Información</h2>                                    
-                                </div>                
-                                <div class="border-t p-2">
+                            </div>                
+                            <div class="border-t p-2">
                                 HTML
-                                </div>
-                                <div class="pre-pre2">
-                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
     &lt;h2 class="bg-success">Éxito&lt;/h2&gt;                                    
     &lt;h2 class="bg-danger"&gt;Peligro&lt;/h2&gt;                                    
     &lt;h2 class="bg-warning"&gt;Advertencia&lt;/h2&gt;                                
     &lt;h2 class="bg-info"&gt;Información&lt;/h2&gt;  
-                                    </code></pre>
-                                </div>                      
-                        </div>                                 
+                                </code></pre>
+                            </div>                      
+                        </div>                          
                     </section>                    
                     
 
                     <!-- COLORES ADICIONALES -->
-                    <section class="pt-3 px-5 pb-5">
+                    <section class="p-5 pm-2">
                         <h2 class="font-l font-s-2">300 Colores adicionales</h2>     
                         <p class="pb-2">Ponemos a tu disposición 300 colores, cada uno con su correspondiente clase para color y fondo. Ahora solo necesitas aplicar la clase correspondiente a cada color para utilizarlo, como se muestra en el siguiente ejemplo.</p>
-                        <div class="table-cont">  
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.color-Opción-N°</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Color-Opción-Número. Estas clases definen el color seguido de la opción, el nombre del color y, finalmente, el número del color según su intensidad, de mayor a menor. Cuanto menor sea el número, más intenso será el color.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.bg-Opción-N°</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Background-Opción-Número. Estas clases indican que la clase solo se puede usar para colores de fondo. Su nomenclatura se traduce en indicación de fondo, seguida de la opción de color y, finalmente, la intensidad del color.</div>
-                                </div>
-                            </div>                          
-                            <div class="border-x">
-                                <div class="p-5 grid item-3 g-5 ">   
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.color-Opción-N°</td>
+                                        <td class="w-auto bg-maya-blue-9">Color-Opción-Número. Estas clases definen el color seguido de la opción, el nombre del color y, finalmente, el número del color según su intensidad, de mayor a menor. Cuanto menor sea el número, más intenso será el color.</td>
+                                    </tr>        
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.bg-Opción-N°</td>
+                                        <td class="w-auto bg-maya-blue-9">Background-Opción-Número. Estas clases indican que la clase solo se puede usar para colores de fondo. Su nomenclatura se traduce en indicación de fondo, seguida de la opción de color y, finalmente, la intensidad del color.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                    
+                                </tbody>
+                            </table>
+                        </div>                        
+                        <div class="border rounded mt-2">
+                                <div class="p-5 pm-2 grid item-3 item-1 item-s-1 g-5 ">   
 
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Vivid Red</div>                        
                                         <div class="bg-vivid-red-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-vivid-red-1</div><div class="font-s-8">.bg-vivid-red-1</div></div></div>
                                         <div class="bg-vivid-red-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-vivid-red-2</div><div class="font-s-8">.bg-vivid-red-2</div></div></div>
@@ -266,7 +274,7 @@
                                         <div class="bg-vivid-red-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-vivid-red-10</div><div class="font-s-8">.bg-vivid-red-10</div></div></div>                                                                         
                                     </div>      
 
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Coral</div>                        
                                         <div class="bg-coral-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-coral-1</div><div class="font-s-8">.bg-coral-1</div></div></div>
                                         <div class="bg-coral-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-coral-2</div><div class="font-s-8">.bg-coral-2</div></div></div>
@@ -280,7 +288,7 @@
                                         <div class="bg-coral-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-coral-10</div><div class="font-s-8">.bg-coral-10</div></div></div>                                                                         
                                     </div>     
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Dandelion</div>                        
                                         <div class="bg-dandelion-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-dandelion-1</div><div class="font-s-8">.bg-dandelion-1</div></div></div>
                                         <div class="bg-dandelion-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-dandelion-2</div><div class="font-s-8">.bg-dandelion-2</div></div></div>
@@ -294,7 +302,7 @@
                                         <div class="bg-dandelion-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-dandelion-10</div><div class="font-s-8">.bg-dandelion-10</div></div></div>                                                                         
                                     </div>            
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Sun Yellow</div>                        
                                         <div class="bg-sun-yellow-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-sun-yellow-1</div><div class="font-s-8">.bg-sun-yellow-1</div></div></div>
                                         <div class="bg-sun-yellow-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-sun-yellow-2</div><div class="font-s-8">.bg-sun-yellow-2</div></div></div>
@@ -308,7 +316,7 @@
                                         <div class="bg-sun-yellow-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-sun-yellow-10</div><div class="font-s-8">.bg-sun-yellow-10</div></div></div>                                                                         
                                     </div>         
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Green Lime</div>                        
                                         <div class="bg-green-lime-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-green-lime-1</div><div class="font-s-8">.bg-green-lime-1</div></div></div>
                                         <div class="bg-green-lime-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-green-lime-2</div><div class="font-s-8">.bg-green-lime-2</div></div></div>
@@ -322,7 +330,7 @@
                                         <div class="bg-green-lime-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-green-lime-10</div><div class="font-s-8">.bg-green-lime-10</div></div></div>                                                                         
                                     </div>    
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Field Green</div>                        
                                         <div class="bg-field-green-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-field-green-1</div><div class="font-s-8">.bg-field-green-1</div></div></div>
                                         <div class="bg-field-green-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-field-green-2</div><div class="font-s-8">.bg-field-green-2</div></div></div>
@@ -336,7 +344,7 @@
                                         <div class="bg-field-green-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-field-green-10</div><div class="font-s-8">.bg-field-green-10</div></div></div>                                                                         
                                     </div>                                        
 
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Seafoam Green</div>                        
                                         <div class="bg-seafoam-green-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-seafoam-green-1</div><div class="font-s-8">.bg-seafoam-green-1</div></div></div>
                                         <div class="bg-seafoam-green-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-seafoam-green-2</div><div class="font-s-8">.bg-seafoam-green-2</div></div></div>
@@ -350,7 +358,7 @@
                                         <div class="bg-seafoam-green-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-seafoam-green-10</div><div class="font-s-8">.bg-seafoam-green-10</div></div></div>                                                                         
                                     </div>    
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Electric Blue</div>                        
                                         <div class="bg-electric-blue-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-electric-blue-1</div><div class="font-s-8">.bg-electric-blue-1</div></div></div>
                                         <div class="bg-electric-blue-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-electric-blue-2</div><div class="font-s-8">.bg-electric-blue-2</div></div></div>
@@ -364,7 +372,7 @@
                                         <div class="bg-electric-blue-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-electric-blue-10</div><div class="font-s-8">.bg-electric-blue-10</div></div></div>                                                                         
                                     </div>        
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Maya Blue</div>                        
                                         <div class="bg-maya-blue-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-maya-blue-1</div><div class="font-s-8">.bg-maya-blue-1</div></div></div>
                                         <div class="bg-maya-blue-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-maya-blue-2</div><div class="font-s-8">.bg-maya-blue-2</div></div></div>
@@ -378,7 +386,7 @@
                                         <div class="bg-maya-blue-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-maya-blue-10</div><div class="font-s-8">.bg-maya-blue-10</div></div></div>                                                                         
                                     </div>       
 
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Ultramarine Blue</div>                        
                                         <div class="bg-ultramarine-blue-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-ultramarine-blue-1</div><div class="font-s-8">.bg-ultramarine-blue-1</div></div></div>
                                         <div class="bg-ultramarine-blue-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-ultramarine-blue-2</div><div class="font-s-8">.bg-ultramarine-blue-2</div></div></div>
@@ -392,7 +400,7 @@
                                         <div class="bg-ultramarine-blue-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-ultramarine-blue-10</div><div class="font-s-8">.bg-ultramarine-blue-10</div></div></div>                                                                         
                                     </div>              
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Slate Blue</div>                        
                                         <div class="bg-slate-blue-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-slate-blue-1</div><div class="font-s-8">.bg-slate-blue-1</div></div></div>
                                         <div class="bg-slate-blue-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-slate-blue-2</div><div class="font-s-8">.bg-slate-blue-2</div></div></div>
@@ -406,7 +414,7 @@
                                         <div class="bg-slate-blue-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-slate-blue-10</div><div class="font-s-8">.bg-slate-blue-10</div></div></div>                                                                         
                                     </div>              
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Heliotrope</div>                        
                                         <div class="bg-heliotrope-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-heliotrope-1</div><div class="font-s-8">.bg-heliotrope-1</div></div></div>
                                         <div class="bg-heliotrope-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-heliotrope-2</div><div class="font-s-8">.bg-heliotrope-2</div></div></div>
@@ -420,7 +428,7 @@
                                         <div class="bg-heliotrope-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-heliotrope-10</div><div class="font-s-8">.bg-heliotrope-10</div></div></div>                                                                         
                                     </div>         
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Hot Pink</div>                        
                                         <div class="bg-hot-pink-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-hot-pink-1</div><div class="font-s-8">.bg-hot-pink-1</div></div></div>
                                         <div class="bg-hot-pink-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-hot-pink-2</div><div class="font-s-8">.bg-hot-pink-2</div></div></div>
@@ -434,7 +442,7 @@
                                         <div class="bg-hot-pink-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-hot-pink-10</div><div class="font-s-8">.bg-hot-pink-10</div></div></div>                                                                         
                                     </div>          
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Fuchsia Pink</div>                        
                                         <div class="bg-fuchsia-pink-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-fuchsia-pink-1</div><div class="font-s-8">.bg-fuchsia-pink-1</div></div></div>
                                         <div class="bg-fuchsia-pink-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-fuchsia-pink-2</div><div class="font-s-8">.bg-fuchsia-pink-2</div></div></div>
@@ -448,7 +456,7 @@
                                         <div class="bg-fuchsia-pink-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-fuchsia-pink-10</div><div class="font-s-8">.bg-fuchsia-pink-10</div></div></div>                                                                         
                                     </div>         
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Brilliant Rose</div>                        
                                         <div class="bg-brilliant-rose-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-brilliant-rose-1</div><div class="font-s-8">.bg-brilliant-rose-1</div></div></div>
                                         <div class="bg-brilliant-rose-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-brilliant-rose-2</div><div class="font-s-8">.bg-brilliant-rose-2</div></div></div>
@@ -462,7 +470,7 @@
                                         <div class="bg-brilliant-rose-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-brilliant-rose-10</div><div class="font-s-8">.bg-brilliant-rose-10</div></div></div>                                                                         
                                     </div>      
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Apple red</div>                        
                                         <div class="bg-apple-red-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-apple-red-1</div><div class="font-s-8">.bg-apple-red-1</div></div></div>
                                         <div class="bg-apple-red-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-apple-red-2</div><div class="font-s-8">.bg-apple-red-2</div></div></div>
@@ -476,7 +484,7 @@
                                         <div class="bg-apple-red-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-apple-red-10</div><div class="font-s-8">.bg-apple-red-10</div></div></div>                                                                         
                                     </div>     
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Burnt Sienna</div>                        
                                         <div class="bg-burnt-sienna-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-burnt-sienna-1</div><div class="font-s-8">.bg-burnt-sienna-1</div></div></div>
                                         <div class="bg-burnt-sienna-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-burnt-sienna-2</div><div class="font-s-8">.bg-burnt-sienna-2</div></div></div>
@@ -490,7 +498,7 @@
                                         <div class="bg-burnt-sienna-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-burnt-sienna-10</div><div class="font-s-8">.bg-burnt-sienna-10</div></div></div>                                                                         
                                     </div>         
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Dark Tamgerine</div>                        
                                         <div class="bg-dark-tangerine-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-dark-tangerine-1</div><div class="font-s-8">.bg-lemon-yellow-1</div></div></div>
                                         <div class="bg-dark-tangerine-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-dark-tangerine-2</div><div class="font-s-8">.bg-dark-tangerine-2</div></div></div>
@@ -504,7 +512,7 @@
                                         <div class="bg-dark-tangerine-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-dark-tangerine-10</div><div class="font-s-8">.bg-dark-tangerine-10</div></div></div>                                                                         
                                     </div>       
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Lemon Yellow</div>                        
                                         <div class="bg-lemon-yellow-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-lemon-yellow-1</div><div class="font-s-8">.bg-lemon-yellow-1</div></div></div>
                                         <div class="bg-lemon-yellow-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-lemon-yellow-2</div><div class="font-s-8">.bg-lemon-yellow-2</div></div></div>
@@ -518,7 +526,7 @@
                                         <div class="bg-lemon-yellow-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-lemon-yellow-10</div><div class="font-s-8">.bg-lemon-yellow-10</div></div></div>                                                                         
                                     </div>        
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Spring Bud</div>                        
                                         <div class="bg-spring-bud-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-spring-bud-1</div><div class="font-s-8">.bg-spring-bud-1</div></div></div>
                                         <div class="bg-spring-bud-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-spring-bud-2</div><div class="font-s-8">.bg-spring-bud-2</div></div></div>
@@ -532,7 +540,7 @@
                                         <div class="bg-spring-bud-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-spring-bud-10</div><div class="font-s-8">.bg-spring-bud-10</div></div></div>                                                                         
                                     </div>     
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Bright Green</div>                        
                                         <div class="bg-bright-green-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-bright-green-1</div><div class="font-s-8">.bg-bright-green-1</div></div></div>
                                         <div class="bg-bright-green-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-bright-green-2</div><div class="font-s-8">.bg-bright-green-2</div></div></div>
@@ -546,7 +554,7 @@
                                         <div class="bg-bright-green-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-bright-green-10</div><div class="font-s-8">.bg-bright-green-10</div></div></div>                                                                         
                                     </div>        
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Sea Green</div>                        
                                         <div class="bg-sea-green-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-sea-green-1</div><div class="font-s-8">.bg-sea-green-1</div></div></div>
                                         <div class="bg-sea-green-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-sea-green-2</div><div class="font-s-8">.bg-sea-green-2</div></div></div>
@@ -560,7 +568,7 @@
                                         <div class="bg-sea-green-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-sea-green-10</div><div class="font-s-8">.bg-sea-green-10</div></div></div>                                                                         
                                     </div>      
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Aqua</div>                        
                                         <div class="bg-aqua-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-aqua-1</div><div class="font-s-8">.bg-aqua-1</div></div></div>
                                         <div class="bg-aqua-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-aqua-2</div><div class="font-s-8">.bg-aqua-2</div></div></div>
@@ -574,7 +582,7 @@
                                         <div class="bg-aqua-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-aqua-10</div><div class="font-s-8">.bg-aqua-10</div></div></div>                                                                         
                                     </div>     
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Royal Blue</div>                        
                                         <div class="bg-royal-blue-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-royal-blue-1</div><div class="font-s-8">.bg-royal-blue-1</div></div></div>
                                         <div class="bg-royal-blue-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-royal-blue-2</div><div class="font-s-8">.bg-royal-blue-2</div></div></div>
@@ -588,7 +596,7 @@
                                         <div class="bg-royal-blue-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-royal-blue-10</div><div class="font-s-8">.bg-royal-blue-10</div></div></div>                                                                         
                                     </div>          
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Midnight Blue</div>                        
                                         <div class="bg-midnight-blue-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-midnight-blue-1</div><div class="font-s-8">.bg-midnight-blue-1</div></div></div>
                                         <div class="bg-midnight-blue-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-midnight-blue-2</div><div class="font-s-8">.bg-midnight-blue-2</div></div></div>
@@ -602,7 +610,7 @@
                                         <div class="bg-midnight-blue-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-midnight-blue-10</div><div class="font-s-8">.bg-midnight-blue-10</div></div></div>                                                                         
                                     </div>        
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Indigo</div>                        
                                         <div class="bg-indigo-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-indigo-1</div><div class="font-s-8">.bg-indigo-1</div></div></div>
                                         <div class="bg-indigo-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-indigo-2</div><div class="font-s-8">.bg-indigo-2</div></div></div>
@@ -616,7 +624,7 @@
                                         <div class="bg-indigo-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-indigo-10</div><div class="font-s-8">.bg-indigo-10</div></div></div>                                                                         
                                     </div>            
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Electric Purple</div>                        
                                         <div class="bg-electric-purple-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-electric-purple-1</div><div class="font-s-8">.bg-electric-purple-1</div></div></div>
                                         <div class="bg-electric-purple-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-electric-purple-2</div><div class="font-s-8">.bg-electric-purple-2</div></div></div>
@@ -630,7 +638,7 @@
                                         <div class="bg-electric-purple-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-electric-purple-10</div><div class="font-s-8">.bg-electric-purple-10</div></div></div>                                                                         
                                     </div> 
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Deep Magenta</div>                        
                                         <div class="bg-deep-magenta-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-deep-magenta-1</div><div class="font-s-8">.bg-deep-magenta-1</div></div></div>
                                         <div class="bg-deep-magenta-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-deep-magenta-2</div><div class="font-s-8">.bg-deep-magenta-2</div></div></div>
@@ -644,7 +652,7 @@
                                         <div class="bg-deep-magenta-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-deep-magenta-10</div><div class="font-s-8">.bg-deep-magenta-10</div></div></div>                                                                         
                                     </div>         
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Deep Pink</div>                        
                                         <div class="bg-deep-pink-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-deep-pink-1</div><div class="font-s-8">.bg-deep-pink-1</div></div></div>
                                         <div class="bg-deep-pink-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-deep-pink-2</div><div class="font-s-8">.bg-deep-pink-2</div></div></div>
@@ -658,7 +666,7 @@
                                         <div class="bg-deep-pink-10 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-deep-pink-10</div><div class="font-s-8">.bg-deep-pink-10</div></div></div>                                                                         
                                     </div>      
                                     
-                                    <div class="grid g-1">   
+                                    <div class="grid item-1 g-1">   
                                         <div class="font-b color-gray font-s-3">Crimson Red</div>                        
                                         <div class="bg-crimson-red-1 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-crimson-red-1</div><div class="font-s-8">.bg-crimson-red-1</div></div></div>
                                         <div class="bg-crimson-red-2 rounded text-c-white block"><div class="bg-gray p-1 rounded-l block-i"><div class="font-s-8">.color-crimson-red-2</div><div class="font-s-8">.bg-crimson-red-2</div></div></div>
@@ -676,7 +684,7 @@
                                 <div class="block border-y p-2">
                                     <p>Ejemplo</p>
                                 </div>  
-                                <div class="hatched-1 p-5 grid item-4 g-5 text-ac">   
+                                <div class="hatched-1 p-5 pm-2 grid item-4 g-5 text-ac scroll-a">   
                                     <h2 class="bg-maya-blue-7 rounded p-2 color-midnight-blue-1">Título</h2>
                                     <h2 class="bg-deep-magenta-9 rounded p-2 color-deep-magenta-3">Título</h2>
                                     <h2 class="bg-aqua-9 rounded p-2 color-aqua-1">Título</h2>

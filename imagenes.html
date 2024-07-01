@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="./img/ico.png">
   <link rel="stylesheet" href="./css/quickly.css">
   <link rel="stylesheet" href="./css/app.css">
-  <script src="./js/quickly.js" defer></script>
+  <script src="./js/quicklyComp.js" defer></script>
   <script src="./js/app.js" defer></script>
   <link rel="stylesheet" href="./prism/prism.css">
   <script src="./prism/prism.js" defer></script>
@@ -20,113 +20,112 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DZQS41TB5G');
 </script>
 
 </head>
 <body>
     <div id="headerContent"></div>
-    <section class="cont">
+    <section class="cont cont-m">
         <aside id="menuContent"></aside> 
-        <main class="bg-white-2 pt-5">  
-            <div class="cont-80 py-5"> 
+        <main class="bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5"> 
                 
                 <!-- IMAGENES -->
                 <section class="border rounded bg-color-1">        
-                    <div class="p-5 bg-white-1 rounded-t border-b">
+                    <div class="p-5 pm-2 bg-white-1 rounded-t border-b">
                         <h1 class="font-l">Imagenes</h1>
                         <p class="font-l font-s-4">La clase "img-fluid" de <strong class="text-quickly" >Quickly</strong> te permite crear imágenes que se adaptan sin esfuerzo a cualquier tamaño de pantalla. Con esta clase, tus imágenes mantendrán su calidad y proporciones en todos los dispositivos. Simplifica tu trabajo y garantiza una experiencia visual perfecta en tu sitio web con Quickly.</p>
                     </div>
                 
                     <!-- img-fluid -->
-                    <section class="pt-3 px-5">
+                    <section class="p-5 pm-2">
                         <h3 class="font-l font-s-2">.img-fluid</h3>
-                        <div class="table-cont">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.img-fluid</div>
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.img-fluid</td>
+                                        <td class="w-auto bg-maya-blue-9">ajusta una imagen para que tenga un ancho máximo del 100% del contenedor, manteniendo su altura proporcional y mostrándola como un elemento de bloque.</td>
+                                    </tr>                                                                                                                                                                                                                                                                  
+                                </tbody>
+                            </table>
+                        </div>   
+                        <div class="border rounded mt-2">                          
+                            <div class="block border-b p-2">
+                                <p>Imagen fluida</p>
+                            </div>  
+                            <div class="grid item-auto-fill hatched-1 align-cc g-5 p-5 stretch">   
+                                <div class="align-cc">
+                                    <img class="img-fluid rounded-2" src="./img/16-9.webp"> 
                                 </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">ajusta una imagen para que tenga un ancho máximo del 100% del contenedor, manteniendo su altura proporcional y mostrándola como un elemento de bloque.</div>
+                                <div class="align-cc">
+                                    <img class="img-fluid rounded-2" src="./img/1-1.webp"> 
                                 </div>
-                            </div>    
-                            <div class="border-l border-r">
-                                <div class="block border-b p-2">
-                                    <p>Imagen fluida</p>
-                                </div>  
-                                <div class="grid item-2 hatched-1 align-cc g-5 p-5 stretch">   
-                                    <div class="align-cc">
-                                        <img class="img-fluid rounded-2" src="./img/16-9.webp"> 
-                                    </div>
-                                    <div class="align-cc">
-                                        <img class="img-fluid rounded-2" src="./img/1-1.webp"> 
-                                    </div>
-                                </div>                   
-                                <div class="border-t p-2">
+                            </div>                   
+                            <div class="border-t p-2">
                                 HTML
-                                </div>
-                                <div class="pre-pre2">
-                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
-            &lt;div class="grid item-2 hatched-1 align-cc g-5 p-5 stretch"&gt;   
-                &lt;div class="align-cc"&gt;
-                    &lt;img class="img-fluid" src="..."&gt; 
-                &lt;/div&gt;
-                &lt;div class="align-cc"&gt;
-                    &lt;img class="img-fluid" src="..."&gt; 
-                &lt;/div&gt;
-            &lt;/div&gt;
-                                    </code></pre>
-                                </div>                      
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;div class="align-cc"&gt;
+        &lt;img class="img-fluid" src="..."&gt; 
+    &lt;/div&gt;
+    &lt;div class="align-cc"&gt;
+        &lt;img class="img-fluid" src="..."&gt; 
+    &lt;/div&gt;
+                                </code></pre>
+                            </div>                      
                         </div>                                 
                     </section>      
                     
                     <!-- Imagenes con caption -->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                         <h2 class="font-l font-s-2">Maximiza el Impacto Visual: Añade Contexto con figcaption</h2>
-                        <p class="font-l pb-2">Si deseas agregar un título descriptivo a tu imagen, puedes lograrlo utilizando la etiqueta HTML &lt;figure&gt; junto con &lt;figcaption&gt;. A continuación, te mostramos cómo hacerlo: </h3>
-                        <div class="table-cont border-t">                          
-                            <div class="border-l border-r mb-5">
-                                <div class="block border-b p-2">
-                                    <p>Imagen con titulo</p>
-                                </div>  
-                                <div class="grid item-3 hatched-1 align-cc g-5 p-5 stretch">  
-                                    <figure class="div1 rounded-1">
-                                        <img class="img-fluid rounded-t-1" src="./img/16-9.webp" alt="Descripción de la imagen">
-                                        <figcaption class="text-al p-1">Figura 1.</figcaption>
-                                    </figure>
-                                    <figure class="div1 rounded-1">
-                                        <img class="img-fluid rounded-t-1" src="./img/16-9.webp" alt="Descripción de la imagen">
-                                        <figcaption class="text-ac p-1">Figura 2.</figcaption>
-                                    </figure>
-                                    <figure class="div1 rounded-1">
-                                        <img class="img-fluid rounded-t-1" src="./img/16-9.webp" alt="Descripción de la imagen">
-                                        <figcaption class="text-ar p-1">Figura 3.</figcaption>
-                                    </figure>                                                        
-                                </div>                   
-                                <div class="border-t p-2">
+                        <p class="mt-2 font-l pb-2">Si deseas agregar un título descriptivo a tu imagen, puedes lograrlo utilizando la etiqueta HTML &lt;figure&gt; junto con &lt;figcaption&gt;. A continuación, te mostramos cómo hacerlo: </h3>
+                        <div class="border rounded mt-1">
+                            <div class="block border-b p-2">
+                                <p>Imagen con titulo</p>
+                            </div>  
+                            <div class="grid item-auto-fill hatched-1 align-cc g-5 p-5 pm-2 stretch">  
+                                <figure class="bg-white-2 shadow-s rounded-1">
+                                    <img class="img-fluid rounded-t-1" src="./img/16-9.webp" alt="Descripción de la imagen">
+                                    <figcaption class="text-al p-1">Figura 1.</figcaption>
+                                </figure>
+                                <figure class="bg-white-2 shadow-s rounded-1">
+                                    <img class="img-fluid rounded-t-1" src="./img/16-9.webp" alt="Descripción de la imagen">
+                                    <figcaption class="text-ac p-1">Figura 2.</figcaption>
+                                </figure>
+                                <figure class="bg-white-2 shadow-s rounded-1">
+                                    <img class="img-fluid rounded-t-1" src="./img/16-9.webp" alt="Descripción de la imagen">
+                                    <figcaption class="text-ar p-1">Figura 3.</figcaption>
+                                </figure>                                                        
+                            </div>                   
+                            <div class="border-t p-2">
                                 HTML
-                                </div>
-                                <div class="pre-pre2">
-                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
-            &lt;div class="grid item-3 hatched-1 align-cc g-5 p-5 stretch"&gt;  
-                &lt;figure class="rounded-1"&gt;
-                    &lt;img class="img-fluid rounded-t-1" src="..." alt="Descripción de la imagen"&gt;
-                    &lt;figcaption class="text-al p-1"&gt;Figura 1.&lt;/figcaption&gt;
-                &lt;/figure&gt;
-                &lt;figure class="rounded-1"&gt;
-                    &lt;img class="img-fluid rounded-t-1" src="..." alt="Descripción de la imagen"&gt;
-                    &lt;figcaption class="text-ac p-1"&gt;Figura 2.&lt;/figcaption&gt;
-                &lt;/figure&gt;
-                &lt;figure class="rounded-1"&gt;
-                    &lt;img class="img-fluid rounded-t-1" src="..." alt="Descripción de la imagen"&gt;
-                    &lt;figcaption class="text-ar p-1"&gt;Figura 3.&lt;/figcaption&gt;
-                &lt;/figure&gt;                                                        
-            &lt;/div&gt;
-                                    </code></pre>
-                                </div>                      
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;figure class="bg-white-2 shadow-s rounded-1"&gt;
+        &lt;img class="img-fluid rounded-t-1" src="..." alt="Descripción de la imagen"&gt;
+        &lt;figcaption class="text-al p-1"&gt;Figura 1.&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;figure class="bg-white-2 shadow-s rounded-1"&gt;
+        &lt;img class="img-fluid rounded-t-1" src="..." alt="Descripción de la imagen"&gt;
+        &lt;figcaption class="text-ac p-1"&gt;Figura 2.&lt;/figcaption&gt;
+    &lt;/figure&gt;
+    &lt;figure class="bg-white-2 shadow-s rounded-1"&gt;
+        &lt;img class="img-fluid rounded-t-1" src="..." alt="Descripción de la imagen"&gt;
+        &lt;figcaption class="text-ar p-1"&gt;Figura 3.&lt;/figcaption&gt;
+    &lt;/figure&gt;                                                        
+                                </code></pre>
+                            </div>                      
                         </div>                                 
                     </section>                                   
                 </section>               

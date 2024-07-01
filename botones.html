@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="./img/ico.png">
   <link rel="stylesheet" href="./css/quickly.css">
   <link rel="stylesheet" href="./css/app.css">
-  <script src="./js/quickly.js" defer></script>
+  <script src="./js/quicklyComp.js" defer></script>
   <script src="./js/app.js" defer></script>
   <link rel="stylesheet" href="./prism/prism.css">
   <script src="./prism/prism.js" defer></script>
@@ -20,451 +20,410 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DZQS41TB5G');
 </script>
 
 </head>
 <body>
     <div id="headerContent"></div>
-    <section class="cont">
+    <section class="cont cont-m">
         <aside id="menuContent"></aside> 
-        <main class="bg-white-2 pt-5">  
-            <div class="cont-80 py-5"> 
+        <main class="bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5"> 
                 
                 <!-- BOTONES -->
                 <section class="border rounded bg-color-1">
-                    <div class="p-5 item-1 bg-white-1 rounded-t border-b">
+                    <div class="p-5 pm-2 item-1 bg-white-1 rounded-t border-b">
                         <h1 class="font-l">Botones</h1>
                         <p class="font-l font-s-4">Explore la variedad de estilos de botones personalizados de <strong class="text-quickly" >Quickly</strong> para diversas acciones y funcionalidades en formularios y diálogos, con soporte para tamaños y estados diversos.</p>
                     </div>
                 
                     <!-- BTN -->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                         <h2 class="font-l font-s-2">Botón básico</h2>
                         <p class="pb-2">Esta es la forma más básica de definir un elemento como botón y asignarle propiedades. Es un estilo sencillo que puede ser personalizado y expandido según las necesidades específicas de diseño.</p>             
                         <h3 class="font-l font-s-2">.btn</h3>
-                        <div class="table-cont">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">La clase define un botón con un tamaño de relleno, bordes redondeados, cursor interactivo, sin borde visible y un fondo transparente.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-ico</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Botón de Icono: Representa la versión exclusiva de un botón en formato SVG diseñado para alojar un icono.</div>
-                                </div>
-                            </div>    
-                            <div class="border-x">
-                                <div class="block border-b p-2">
-                                    <p>Botón base</p>
-                                </div>  
-                                <div class="hatched-1 p-5">   
-                                    <button type="button" class="btn">Botón de Ejemplo Estándar</button>
-                                    <button type="button" class="btn btn-ico"><svg class="ico ico-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>
-                                </div>                   
-                                <div class="border-t p-2">
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn</td>
+                                        <td class="w-auto bg-maya-blue-9">La clase define un botón con un tamaño de relleno, bordes redondeados, cursor interactivo, sin borde visible y un fondo transparente.</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-ico</td>
+                                        <td class="w-auto bg-maya-blue-9">Botón de Icono: Representa la versión exclusiva de un botón en formato SVG diseñado para alojar un icono.</td>
+                                    </tr>                                                                                                                                                                                                                                                                
+                                </tbody>
+                            </table>
+                        </div>                      
+                        <div class="border rounded mt-2">
+                            <div class="block border-b p-2">
+                                <p>Botón base</p>
+                            </div>  
+                            <div class="hatched-1 p-5">   
+                                <button type="button" class="btn">Botón de Ejemplo Estándar</button>
+                                <button type="button" class="btn btn-ico"><svg class="ico ico-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>
+                            </div>                   
+                            <div class="border-t p-2">
                                 HTML
-                                </div>
-                                <div class="pre-pre2">
-                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="hatched-1 p-5"&gt;   
-        &lt;button type="button" class="btn"&gt;Botón de Ejemplo Estándar&lt;/button&gt;
-        &lt;button type="button" class="btn-ico"&gt;&lt;svg class="ico ico-dark".../&gt;&lt;/svg&gt;&lt;/button&gt;
-    &lt;/div&gt;
-                                    </code></pre>
-                                </div>                      
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x">
+                                    <code class="language-html">                                    
+    &lt;button type="button" class="btn"&gt;Botón de Ejemplo Estándar&lt;/button&gt;
+    &lt;button type="button" class="btn-ico"&gt;&lt;svg class="ico ico-dark".../&gt;&lt;/svg&gt;&lt;/button&gt;
+                                    </code>
+                                </pre>
+                            </div>                      
                         </div>                                 
                     </section>      
 
                     <!-- BTN VARIANTES -->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                         <h2 class="font-l font-s-2">Botón variantes</h2>
                         <p class="pb-2">Ofrece diversas variantes de botón, cada una con su propio propósito semántico, y además brinda algunas características adicionales para proporcionar un mayor control sobre su apariencia y comportamiento.</p>             
                         <h3 class="font-l font-s-2">.btn-(opción)</h3>
-                        <div class="table-cont">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-primary</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Esta clase define el estilo de un botón primario en un diseño.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-primary-alt</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Esta clase define el estilo de un botón primario alternativo en un diseño.</div>
-                                </div>  
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-secondary</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Esta clase define el estilo de un botón secundario en un diseño.</div>
-                                </div> 
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-secondary-alt</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Esta clase define el estilo de un botón secundario alternativo en un diseño.</div>
-                                </div>  
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-success</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Esta clase define el estilo de un botón de éxito en un diseño.</div>
-                                </div>    
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-danger</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Esta clase define el estilo de un botón de peligro en un diseño.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-warning</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Esta clase define el estilo de un botón de advertencia en un diseño.</div>
-                                </div>  
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-info</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Esta clase define el estilo de un botón de información en un diseño.</div>
-                                </div>       
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-light</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Esta clase define el estilo de un botón de luz en un diseño.</div>
-                                </div> 
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-dark</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Esta clase define el estilo de un botón oscuro en un diseño.</div>
-                                </div>         
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-link</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Esta clase define el estilo de un enlace de botón en un diseño.</div>
-                                </div>                   
-                            </div>    
-                            <div class="border-l border-r">
-                                <div class="block border-b p-2">
-                                    <p>Botón base</p>
-                                </div>  
-                                <div class="hatched-1 p-5">                               
-                                    <button type="button" class="btn btn-primary">Primary</button>                             
-                                    <button type="button" class="btn btn-primary-alt">Primary-alt</button>
-                                    <button type="button" class="btn btn-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-secondary-alt">Secondary-alt</button>
-                                    <button type="button" class="btn btn-success">Success</button>
-                                    <button type="button" class="btn btn-danger">Danger</button>
-                                    <button type="button" class="btn btn-warning">Warning</button>
-                                    <button type="button" class="btn btn-info">Info</button>
-                                    <button type="button" class="btn btn-light">Light</button>
-                                    <button type="button" class="btn btn-dark">Dark</button>
-                                    <button type="button" class="btn-link">Link</button>     
-                                </div>                   
-                                <div class="border-t p-2">
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-primary</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón primario en un diseño.</td>
+                                    </tr>      
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-primary-alt</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón primario alternativo en un diseño.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-secondary</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón secundario en un diseño.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-secondary-alt</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón secundario alternativo en un diseño.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-success</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón de éxito en un diseño.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-danger</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón de peligro en un diseño.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-warning</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón de advertencia en un diseño.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-info</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón de información en un diseño.</td>
+                                    </tr>     
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-light</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón de luz en un diseño.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-dark</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón oscuro en un diseño.</td>
+                                    </tr> 
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-link</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un enlace de botón en un diseño.</td>
+                                    </tr>                                                                                                                                                                                                                                                           
+                                </tbody>
+                            </table>
+                        </div>  
+                        <div class="border rounded mt-2">
+                            <div class="block border-b p-2">
+                                <p>Botón base</p>
+                            </div>  
+                            <div class="hatched-1 p-5 pm-2">                               
+                                <button type="button" class="btn btn-primary">Primary</button>                             
+                                <button type="button" class="btn btn-primary-alt">Primary-alt</button>
+                                <button type="button" class="btn btn-secondary">Secondary</button>
+                                <button type="button" class="btn btn-secondary-alt">Secondary-alt</button>
+                                <button type="button" class="btn btn-success">Success</button>
+                                <button type="button" class="btn btn-danger">Danger</button>
+                                <button type="button" class="btn btn-warning">Warning</button>
+                                <button type="button" class="btn btn-info">Info</button>
+                                <button type="button" class="btn btn-light">Light</button>
+                                <button type="button" class="btn btn-dark">Dark</button>
+                                <button type="button" class="btn-link">Link</button>     
+                            </div>                   
+                            <div class="border-t p-2">
                                 HTML
-                                </div>
-                                <div class="pre-pre2">
-                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="hatched-1 p-5"&gt;                               
-        &lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;                             
-        &lt;button type="button" class="btn btn-primary-alt"&gt;Primary-alt&lt;/button&gt;
-        &lt;button type="button" class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
-        &lt;button type="button" class="btn btn-secondary-alt"&gt;Secondary-alt&lt;/button&gt;
-        &lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
-        &lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
-        &lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
-        &lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
-        &lt;button type="button" class="btn btn-light"&gt;Light&lt;/button&gt;
-        &lt;button type="button" class="btn btn-dark"&gt;Dark&lt;/button&gt;
-        &lt;button type="button" class="btn-link"&gt;Link&lt;/button&gt;     
-    &lt;/div&gt;   
-                                    </code></pre>
-                                </div>                      
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;                             
+    &lt;button type="button" class="btn btn-primary-alt"&gt;Primary-alt&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary-alt"&gt;Secondary-alt&lt;/button&gt;
+    &lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+    &lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
+    &lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+    &lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+    &lt;button type="button" class="btn btn-light"&gt;Light&lt;/button&gt;
+    &lt;button type="button" class="btn btn-dark"&gt;Dark&lt;/button&gt;
+    &lt;button type="button" class="btn-link"&gt;Link&lt;/button&gt;     
+                                </code></pre>
+                            </div>                      
                         </div>                                 
                     </section>      
                     
                     <!-- BTN VARIANTES GHOST -->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                         <h2 class="font-l font-s-2">Botón fantasma</h2>
                         <p class="pb-2">Ofrece diversas variantes de botón, cada una con su propio propósito semántico, y además brinda algunas características adicionales para proporcionar un mayor control sobre su apariencia y comportamiento.</p>             
                         <h3 class="font-l font-s-2">.btn-(opción)</h3>
-                        <div class="table-cont">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-primary-outline</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Esta clase define el estilo de un botón primario en un diseño.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-primary-alt-outline</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Esta clase define el estilo de un botón primario alternativo en un diseño.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-secondary-outline</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Esta clase define el estilo de un botón secundario en un diseño.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-secondary-alt-outline</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Esta clase define el estilo de un botón secundario alternativo en un diseño.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-success-outline</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Esta clase define el estilo de un botón de éxito en un diseño.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-danger-outline</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Esta clase define el estilo de un botón de peligro en un diseño.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-warning-outline</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Esta clase define el estilo de un botón de advertencia en un diseño.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-info-outline</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Esta clase define el estilo de un botón de información en un diseño.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-light-outline</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Esta clase define el estilo de un botón de luz en un diseño.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-dark-outline</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Esta clase define el estilo de un botón oscuro en un diseño.</div>
-                                </div>   
-                            </div>    
-                            <div class="border-l border-r">
-                                <div class="block border-b p-2">
-                                    <p>Botón base</p>
-                                </div>  
-                                <div class="hatched-1 p-5">                               
-                                    <button type="button" class="btn btn-primary-outline">Primary</button>
-                                    <button type="button" class="btn btn-primary-alt-outline">Primary-alt</button>
-                                    <button type="button" class="btn btn-secondary-outline">Secondary</button>
-                                    <button type="button" class="btn btn-secondary-alt-outline">Secondary-alt</button>
-                                    <button type="button" class="btn btn-success-outline">Success</button>
-                                    <button type="button" class="btn btn-danger-outline">Danger</button>
-                                    <button type="button" class="btn btn-warning-outline">Warning</button>
-                                    <button type="button" class="btn btn-info-outline">Info</button>
-                                    <button type="button" class="btn btn-light-outline">Light</button>
-                                    <button type="button" class="btn btn-dark-outline">Dark</button>
-                                </div>                   
-                                <div class="border-t p-2">
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-primary-outline</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón primario en un diseño.</td>
+                                    </tr>         
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-primary-alt-outline</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón primario alternativo en un diseño.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-secondary-outline</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón secundario en un diseño.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-secondary-alt-outline</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón secundario alternativo en un diseño.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-success-outline</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón de éxito en un diseño.</td>
+                                    </tr>                   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-danger-outline</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón de peligro en un diseño.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-warning-outline</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón de advertencia en un diseño.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-info-outline</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón de información en un diseño.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-light-outline</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón de luz en un diseño.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-dark-outline</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase define el estilo de un botón oscuro en un diseño.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                
+                                </tbody>
+                            </table>
+                        </div>  
+                        <div class="border rounded mt-2">                          
+                            <div class="block border-b p-2">
+                                <p>Botón base</p>
+                            </div>  
+                            <div class="hatched-1 p-5 pm-2">                               
+                                <button type="button" class="btn btn-primary-outline">Primary</button>
+                                <button type="button" class="btn btn-primary-alt-outline">Primary-alt</button>
+                                <button type="button" class="btn btn-secondary-outline">Secondary</button>
+                                <button type="button" class="btn btn-secondary-alt-outline">Secondary-alt</button>
+                                <button type="button" class="btn btn-success-outline">Success</button>
+                                <button type="button" class="btn btn-danger-outline">Danger</button>
+                                <button type="button" class="btn btn-warning-outline">Warning</button>
+                                <button type="button" class="btn btn-info-outline">Info</button>
+                                <button type="button" class="btn btn-light-outline">Light</button>
+                                <button type="button" class="btn btn-dark-outline">Dark</button>
+                            </div>                   
+                            <div class="border-t p-2">
                                 HTML
-                                </div>
-                                <div class="pre-pre2">
-                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="hatched-1 p-5"&gt;
-        &lt;button type="button" class="btn btn-primary-outline"&gt;Primary&lt;/button&gt;
-        &lt;button type="button" class="btn btn-primary-alt-outline"&gt;Primary-alt&lt;/button&gt;
-        &lt;button type="button" class="btn btn-secondary-outline"&gt;Secondary&lt;/button&gt;
-        &lt;button type="button" class="btn btn-secondary-alt-outline"&gt;Secondary-alt&lt;/button&gt;
-        &lt;button type="button" class="btn btn-success-outline"&gt;Success&lt;/button&gt;
-        &lt;button type="button" class="btn btn-danger-outline"&gt;Danger&lt;/button&gt;
-        &lt;button type="button" class="btn btn-warning-outline"&gt;Warning&lt;/button&gt;
-        &lt;button type="button" class="btn btn-info-outline"&gt;Info&lt;/button&gt;
-        &lt;button type="button" class="btn btn-light-outline"&gt;Light&lt;/button&gt;
-        &lt;button type="button" class="btn btn-dark-outline"&gt;Dark&lt;/button&gt;
-        &lt;button type="button" class="btn btn-link-outline"&gt;Link&lt;/button&gt;
-    &lt;/div&gt;
-                                    </code></pre>
-                                </div>                      
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;button type="button" class="btn btn-primary-outline"&gt;Primary&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary-alt-outline"&gt;Primary-alt&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary-outline"&gt;Secondary&lt;/button&gt;
+    &lt;button type="button" class="btn btn-secondary-alt-outline"&gt;Secondary-alt&lt;/button&gt;
+    &lt;button type="button" class="btn btn-success-outline"&gt;Success&lt;/button&gt;
+    &lt;button type="button" class="btn btn-danger-outline"&gt;Danger&lt;/button&gt;
+    &lt;button type="button" class="btn btn-warning-outline"&gt;Warning&lt;/button&gt;
+    &lt;button type="button" class="btn btn-info-outline"&gt;Info&lt;/button&gt;
+    &lt;button type="button" class="btn btn-light-outline"&gt;Light&lt;/button&gt;
+    &lt;button type="button" class="btn btn-dark-outline"&gt;Dark&lt;/button&gt;
+    &lt;button type="button" class="btn btn-link-outline"&gt;Link&lt;/button&gt;
+                                </code></pre>
+                            </div>                      
                         </div>                                 
                     </section>        
                     
                     <!-- BTN TAMAÑOS -->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                         <h2 class="font-l font-s-2">Opciones de tamaños</h2>
                         <p class="pb-2">Puedes optar por tres tamaños de botones: el estándar, que es el predeterminado, junto con el pequeño y el grande. Cambiar entre ellos es fácil, solo necesitas sustituir la clase ".btn" por la que desees utilizar.</p>             
                         <h3 class="font-l font-s-2">.btn-(opción)</h3>
-                        <div class="table-cont">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-s</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.Boton-Small. Define el tamaño más reducido de un botón, disminuyendo tanto el tamaño del texto como las proporciones xy.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.Boton Estandar. Representa la versión predeterminada del botón.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.btn-l</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.Boton-Large. Corresponde a la versión ampliada del botón, que aumenta tanto el tamaño del texto como las proporciones xy.</div>
-                                </div>   
-                            </div>    
-                            <div class="border-l border-r">
-                                <div class="block border-b p-2">
-                                    <p>Botón base</p>
-                                </div>  
-                                <div class="hatched-1 p-5 text-ac">     
-                                    <button type="button" class="btn-s btn-primary">Botón Pequeño</button>                          
-                                    <button type="button" class="btn btn-primary">Botón Normal</button>                            
-                                    <button type="button" class="btn-l btn-primary">Botón Grande</button>
-                                </div>
-                                <div class="border-t p-2">
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-s</td>
+                                        <td class="w-auto bg-maya-blue-9">.Boton-Small. Define el tamaño más reducido de un botón, disminuyendo tanto el tamaño del texto como las proporciones xy.</td>
+                                    </tr>         
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn</td>
+                                        <td class="w-auto bg-maya-blue-9">.Boton Estandar. Representa la versión predeterminada del botón.</td>
+                                    </tr>      
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.btn-l</td>
+                                        <td class="w-auto bg-maya-blue-9">.Boton-Large. Corresponde a la versión ampliada del botón, que aumenta tanto el tamaño del texto como las proporciones xy.</td>
+                                    </tr>                                                                                                                                                                                                                                                                
+                                </tbody>
+                            </table>
+                        </div> 
+                        <div class="border rounded mt-2">                           
+                            <div class="block border-b p-2">
+                                <p>Botón base</p>
+                            </div>  
+                            <div class="hatched-1 p-5 pm-2 text-ac">     
+                                <button type="button" class="btn-s btn-primary">Botón Pequeño</button>                          
+                                <button type="button" class="btn btn-primary">Botón Normal</button>                            
+                                <button type="button" class="btn-l btn-primary">Botón Grande</button>
+                            </div>
+                            <div class="border-t p-2">
                                 HTML
-                                </div>
-                                <div class="pre-pre2">
-                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="hatched-1 p-5 text-ac"&gt;     
-        &lt;button type="button" class="btn-s btn-primary"&gt;Botón Pequeño&lt;/button&gt;                          
-        &lt;button type="button" class="btn btn-primary"&gt;Botón Normal&lt;/button&gt;                            
-        &lt;button type="button" class="btn-l btn-primary"&gt;Botón Grande&lt;/button&gt;
-    &lt;/div&gt;
-                                    </code></pre>
-                                </div>                      
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;button type="button" class="btn-s btn-primary"&gt;Botón Pequeño&lt;/button&gt;                          
+    &lt;button type="button" class="btn btn-primary"&gt;Botón Normal&lt;/button&gt;                            
+    &lt;button type="button" class="btn-l btn-primary"&gt;Botón Grande&lt;/button&gt;
+                                </code></pre>
+                            </div>                      
                         </div>                                 
                     </section>           
                     
                     <!-- BTN DISTINTAS ETIQUETAS -->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                         <h2 class="font-l font-s-2">Botones en etiquetas</h2>
                         <p class="pb-2">Las clases .btn están diseñadas principalmente para ser utilizadas con la etiqueta &lt;button&gt;, pero también pueden aplicarse a elementos &lt;a&gt; o &lt;input&gt; (La representación visual puede variar en algunos navegadores).<br>
         Cuando emplees clases de botón en elementos &lt;a&gt; destinados a activar funciones dentro de la página, como la expansión de contenido, en lugar de enlazar con nuevas páginas o secciones dentro de la misma página, asegúrate de etiquetar estos enlaces con role="button". Esto garantizará una comunicación efectiva de su propósito a las tecnologías de asistencia, como los lectores de pantalla.</p>             
-                        <div class="table-cont">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Etiqueta</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">a</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Para enlazar un botón sin usar el atributo onclick en Bootstrap con la etiqueta &lt;button&gt;, puedes simplemente envolver el botón dentro de una etiqueta &lt;a&gt; y definir el enlace en el atributo "href" de la etiqueta &lt;a&gt;</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Button JS</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Accion mediante JavaScript, cambia la URL actual a '#' mediante JavaScript.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Button Submit</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Puedes representar un botón de envío (submit) con el estilo btn btn-primary.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">input</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Esta etiqueta define un botón con clase btn y btn-primary.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">input Submit</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Crea un botón de envío (submit) con el estilo btn btn-primary.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">input Reset</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">Crea un botón de restablecimiento con el estilo btn btn-primary</div>
-                                </div> 
-                            </div>    
-                            <div class="border-l border-r">
-                                <div class="block border-b p-2">
-                                    <p>Botón usos en etiquetas</p>
-                                </div>  
-                                <div class="hatched-1 p-5 text-ac">     
-                                    <a class="btn btn-primary" href="#" role="button">Enlace</a>
-                                    <button type="button" class="btn btn-primary" onclick="window.location.href='#'">Button JS</button>
-                                    <button class="btn btn-primary" type="submit">Button Submit</button>
-                                    <input class="btn btn-primary" type="button" value="Input">
-                                    <input class="btn btn-primary" type="submit" value="Submit">
-                                    <input class="btn btn-primary" type="reset" value="Reset">
-                                </div>
-                                <div class="border-t p-2">
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Etiqueta</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">a</td>
+                                        <td class="w-auto bg-maya-blue-9">Para enlazar un botón sin usar el atributo onclick en Bootstrap con la etiqueta &lt;button&gt;, puedes simplemente envolver el botón dentro de una etiqueta &lt;a&gt; y definir el enlace en el atributo "href" de la etiqueta &lt;a&gt;</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">Button JS</td>
+                                        <td class="w-auto bg-maya-blue-9">Accion mediante JavaScript, cambia la URL actual a '#' mediante JavaScript.</td>
+                                    </tr>      
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">Button Submit</td>
+                                        <td class="w-auto bg-maya-blue-9">Puedes representar un botón de envío (submit) con el estilo btn btn-primary.</td>
+                                    </tr>      
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">input</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta etiqueta define un botón con clase btn y btn-primary.</td>
+                                    </tr>      
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">input Submit</td>
+                                        <td class="w-auto bg-maya-blue-9">Crea un botón de envío (submit) con el estilo btn btn-primary.</td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">input Reset</td>
+                                        <td class="w-auto bg-maya-blue-9">Crea un botón de restablecimiento con el estilo btn btn-primary</td>
+                                    </tr>                                                                                                                                                                                                                                                                   
+                                </tbody>
+                            </table>
+                        </div>                  
+                        <div class="border rounded mt-2">
+                            <div class="block border-b p-2">
+                                <p>Botón usos en etiquetas</p>
+                            </div> 
+                            <div class="hatched-1 p-5 pm-2 text-ac">     
+                                <a class="btn btn-primary" href="#" role="button">Enlace</a>
+                                <button type="button" class="btn btn-primary" onclick="window.location.href='#'">Button JS</button>
+                                <button class="btn btn-primary" type="submit">Button Submit</button>
+                                <input class="btn btn-primary" type="button" value="Input">
+                                <input class="btn btn-primary" type="submit" value="Submit">
+                                <input class="btn btn-primary" type="reset" value="Reset">
+                            </div>
+                            <div class="border-t p-2">
                                 HTML
-                                </div>
-                                <div class="pre-pre2">
-                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="hatched-1 p-5 text-ac"&gt;     
-        &lt;a class="btn btn-primary" href="#" role="button"&gt;Enlace&lt;/a&gt;
-        &lt;button type="button" class="btn btn-primary" onclick="window.location.href='#'"&gt;Button JS&lt;/button&gt;
-        &lt;button class="btn btn-primary" type="submit"&gt;Button Submit&lt;/button&gt;
-        &lt;input class="btn btn-primary" type="button" value="Input"&gt;
-        &lt;input class="btn btn-primary" type="submit" value="Submit"&gt;
-        &lt;input class="btn btn-primary" type="reset" value="Reset"&gt;
-    &lt;/div&gt;
-                                    </code></pre>
-                                </div>                      
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;a class="btn btn-primary" href="#" role="button"&gt;Enlace&lt;/a&gt;
+    &lt;button type="button" class="btn btn-primary" onclick="window.location.href='#'"&gt;Button JS&lt;/button&gt;
+    &lt;button class="btn btn-primary" type="submit"&gt;Button Submit&lt;/button&gt;
+    &lt;input class="btn btn-primary" type="button" value="Input"&gt;
+    &lt;input class="btn btn-primary" type="submit" value="Submit"&gt;
+    &lt;input class="btn btn-primary" type="reset" value="Reset"&gt;
+                                </code></pre>
+                            </div>                      
                         </div>                                 
                     </section>      
                     
                     <!-- BTN CON ICONOS -->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2">
                         <h2 class="font-l font-s-2">Botones con iconos</h2>
                         <p class="pb-2">Para mejorar la atractividad de tus diseños, puedes incorporar fácilmente iconos en los botones en formato SVG. A continuación, te presentamos algunos ejemplos en el siguiente código.</p>             
                         <h3 class="font-l font-s-2">iconos</h3>
-                        <div class="border-t rounded  pb-5">                          
-                            <div class="border-l border-r">
-                                <div class="block border-b p-2">
-                                    <p>Botón con iconos</p>
-                                </div>  
-                                <div class="hatched-1 p-5 text-ac"> 
-                                    <button type="button" class="btn btn-primary-outline mx-1">Me gusta <svg class="ml-1 ico ico-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>                        
-                                    <button type="button" class="btn btn-primary mx-1">Me gusta <svg class="ml-1 ico ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>
-                                    <button type="button" class="btn-ico btn-primary-outline mx-1"><svg class="ico ico-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>                                                    
-                                    <button type="button" class="btn-ico btn-primary mx-1"><svg class="ico ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>
-                                </div>
-                                <div class="border-t p-2">
+                        <div class="border rounded">                          
+                            <div class="block border-b p-2">
+                                <p>Botón con iconos</p>
+                            </div>  
+                            <div class="hatched-1 p-5 pm-2 text-ac"> 
+                                <button type="button" class="btn btn-primary-outline mx-1">Me gusta <svg class="ml-1 ico ico-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>                        
+                                <button type="button" class="btn btn-primary mx-1">Me gusta <svg class="ml-1 ico ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>
+                                <button type="button" class="btn-ico btn-primary-outline mx-1"><svg class="ico ico-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>                                                    
+                                <button type="button" class="btn-ico btn-primary mx-1"><svg class="ico ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>
+                            </div>
+                            <div class="border-t p-2">
                                 HTML
-                                </div>
-                                <div class="pre-pre2">
-                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="hatched-1 p-5 text-ac"&gt; 
-        &lt;button type="button" class="btn btn-primary-outline"&gt;Me gusta &lt;svg class="ml-2 ico ico-primary".../&gt;&lt;/svg&gt;&lt;/button&gt;                        
-        &lt;button type="button" class="btn btn-primary"&gt;Me gusta &lt;svg class="ml-2 ico ico-white".../&gt;&lt;/svg&gt;&lt;/button&gt;
-        &lt;button type="button" class="btn-ico btn-primary"&gt;&lt;svg class="ico ico-white".../&gt;&lt;/svg&gt;&lt;/button&gt;
-        &lt;button type="button" class="btn-ico btn-primary-outline"&gt;&lt;svg class="ico ico-primary".../&gt;&lt;/svg&gt;&lt;/button&gt;                        
-    &lt;/div&gt;
-                                    </code></pre>
-                                </div>                      
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;button type="button" class="btn btn-primary-outline"&gt;Me gusta &lt;svg class="ml-2 ico ico-primary".../&gt;&lt;/svg&gt;&lt;/button&gt;                        
+    &lt;button type="button" class="btn btn-primary"&gt;Me gusta &lt;svg class="ml-2 ico ico-white".../&gt;&lt;/svg&gt;&lt;/button&gt;
+    &lt;button type="button" class="btn-ico btn-primary"&gt;&lt;svg class="ico ico-white".../&gt;&lt;/svg&gt;&lt;/button&gt;
+    &lt;button type="button" class="btn-ico btn-primary-outline"&gt;&lt;svg class="ico ico-primary".../&gt;&lt;/svg&gt;&lt;/button&gt;                        
+                                </code></pre>
+                            </div>                      
                         </div>                                 
                     </section>
                 </section>    

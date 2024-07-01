@@ -2773,7 +2773,7 @@ figure {margin: 0; padding: 0;}
     font-size: var(--font-size-1) !important;
     font-weight: normal !important;
     /*display: inline-flex !important;*/
-    /*margin: .25rem .125rem;*/
+    margin: .25rem .125rem;
     background-color: transparent;
     text-decoration: none;
     border: none;
