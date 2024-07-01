@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="./img/ico.png">
   <link rel="stylesheet" href="./css/quickly.css">
   <link rel="stylesheet" href="./css/app.css">
-  <script src="./js/quickly.js" defer></script>
+  <script src="./js/quicklyComp.js" defer></script>
   <script src="./js/app.js" defer></script>
   <script>var currentPage = 'posiciones';</script>
   
@@ -18,70 +18,65 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DZQS41TB5G');
 </script>
 
 </head>
 <body>
     <div id="headerContent"></div>
-    <section class="cont">
+    <section class="cont cont-m">
         <aside id="menuContent"></aside> 
-        <main class="bg-white-2 pt-5">  
-            <div class="cont-80 py-5 "> 
+        <main class="bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5 "> 
 
                 <!-- Posiciones -->
                 <section class="border rounded bg-color-1">      
-                    <div class="p-5 bg-white-1 rounded-t border-b">
+                    <div class="p-5 pm-2 bg-white-1 rounded-t border-b">
                         <h1 class="font-l">Posiciones en <strong class="text-quickly" >Quickly</strong></h1>
                         <p class="font-l font-s-4">Organiza los elementos en tu diseño utilizando clases de posicionamiento.</p>
                     </div>
                 
                     <!-- col-n  -->
-                    <section class="pt-3 pt-5 px-5">
+                    <section class="p-5 pm-2">
                         <h3 class="font-l font-s-2">Posiciones</h3>
                         <p>Puedes ubicar los elementos utilizando diferentes métodos de posicionamiento, como relativo, absoluto, fijo, estático y pegajoso.</p>             
                     </section>
 
                     <!-- Align vertical  -->
-                    <section class="pt-3 px-5">
+                    <section class="pt-0 p-5 pm-2 pmt-0">
                         <h3 class="font-l font-s-2">.position-X (Static, Relative, Absolute, Fixed, Sticky)</h3>
-                        <div class="table-cont-b mb-5">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.position-static</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Elemento posicionado de forma estática en el flujo normal del documento.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.position-relative</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td"> Elemento posicionado en relación con su posición original en el flujo normal del documento.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.position-absolute</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Elemento posicionado en relación con su primer ancestro posicionado (distinto de estático). </div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.position-fixed</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Elemento posicionado de forma fija con respecto a la ventana del navegador.</div>
-                                </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.position-sticky</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Elemento que se comporta como relativo hasta que alcanza una posición específica en la ventana del navegador, momento en el que se vuelve "pegajoso" y se fija en esa posición mientras se desplaza la página.</div>
-                                </div>
-                            </div>    
-                        </div>                                  
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.position-static</td>
+                                        <td class="w-auto bg-maya-blue-9">Elemento posicionado de forma estática en el flujo normal del documento.</td>
+                                    </tr>      
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.position-relative</td>
+                                        <td class="w-auto bg-maya-blue-9">Elemento posicionado en relación con su posición original en el flujo normal del documento.</td>
+                                    </tr>            
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.position-absolute</td>
+                                        <td class="w-auto bg-maya-blue-9">Elemento posicionado en relación con su primer ancestro posicionado (distinto de estático).</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.position-fixed</td>
+                                        <td class="w-auto bg-maya-blue-9">Elemento posicionado de forma fija con respecto a la ventana del navegador.</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.position-sticky</td>
+                                        <td class="w-auto bg-maya-blue-9">Elemento que se comporta como relativo hasta que alcanza una posición específica en la ventana del navegador, momento en el que se vuelve "pegajoso" y se fija en esa posición mientras se desplaza la página.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                   
+                                </tbody>
+                            </table>
+                        </div>                                 
                     </section>  
                 </section>  
 

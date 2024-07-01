@@ -1,62 +1,26 @@
 /////////////////////////////////////////////////////////
 /* CUT TEXT */
-// Función pra cortar texto 
-function recortarTexto() {
-  // Obtener todos los elementos con clase 'text-cut-150'
-  const elementos150 = document.querySelectorAll('.text-cut-150');
-  const elementos200 = document.querySelectorAll('.text-cut-200');
-  const elementos250 = document.querySelectorAll('.text-cut-250');
-  const elementos300 = document.querySelectorAll('.text-cut-300');
-  const elementos350 = document.querySelectorAll('.text-cut-350');
-  const elementos400 = document.querySelectorAll('.text-cut-400');
-
-  // Recorrer elementos con clase 'text-cut-150'
-  elementos150.forEach(elemento => {
-    let texto = elemento.textContent;
-    if (texto.length > 150) {
-      elemento.textContent = texto.slice(0, 150) + '...'; // Recortar texto y agregar tres puntos
+function recortarTexto(maxLongitud, clase) {
+  const elementos = document.querySelectorAll(clase);
+  const puntosSuspensivos = '...';
+  const longitudRecorte = maxLongitud - puntosSuspensivos.length;
+  elementos.forEach(elemento => {
+    let texto = elemento.textContent.trim();
+    if (texto.length > maxLongitud) {
+      elemento.textContent = texto.slice(0, longitudRecorte) + puntosSuspensivos;
     }
   });
-
-  // Recorrer elementos con clase 'text-cut-200'
-  elementos200.forEach(elemento => {
-    let texto = elemento.textContent;
-    if (texto.length > 200) {
-      elemento.textContent = texto.slice(0, 200) + '...'; // Recortar texto y agregar tres puntos
-    }
-  });
-
-  // Recorrer elementos con clase 'text-cut-250'
-  elementos250.forEach(elemento => {
-    let texto = elemento.textContent;
-    if (texto.length > 250) {
-      elemento.textContent = texto.slice(0, 250) + '...'; // Recortar texto y agregar tres puntos
-    }
-  });
-    // Recorrer elementos con clase 'text-cut-300'
-    elementos300.forEach(elemento => {
-      let texto = elemento.textContent;
-      if (texto.length > 300) {
-        elemento.textContent = texto.slice(0, 300) + '...'; // Recortar texto y agregar tres puntos
-      }
-    });
-    // Recorrer elementos con clase 'text-cut-350'
-    elementos350.forEach(elemento => {
-      let texto = elemento.textContent;
-      if (texto.length > 350) {
-        elemento.textContent = texto.slice(0, 350) + '...'; // Recortar texto y agregar tres puntos
-      }
-    });    
-    // Recorrer elementos con clase 'text-cut-400'
-    elementos400.forEach(elemento => {
-      let texto = elemento.textContent;
-      if (texto.length > 400) {
-        elemento.textContent = texto.slice(0, 400) + '...'; // Recortar texto y agregar tres puntos
-      }
-    });        
 }
-// Llamar a la función al cargar la página
-window.onload = recortarTexto;
+window.onload = () => {
+  recortarTexto(150, '.text-cut-150');
+  recortarTexto(200, '.text-cut-200');
+  recortarTexto(250, '.text-cut-250');
+  recortarTexto(300, '.text-cut-300');
+  recortarTexto(350, '.text-cut-350');
+  recortarTexto(400, '.text-cut-400');
+  recortarTexto(450, '.text-cut-450'); // Nueva llamada añadida
+};
+
 
 /////////////////////////////////////////////////////////
 /* ACORDION */
