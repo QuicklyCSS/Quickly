@@ -3426,6 +3426,7 @@ button,
     border-radius: var(--md-8);
     height: 100%;
     max-width: 100%;
+    border: 1px solid rgba(0,0,0,.1);
 }
 
 .card-cont {
@@ -3467,7 +3468,7 @@ button,
         margin: 0;
         line-height: 1.2;
         justify-self: start;
-        min-height: 5rem;
+        min-height: 0rem;
         padding-bottom: var(--md-16);
     }
 }
@@ -3492,6 +3493,7 @@ button,
     height: auto;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgba(0,0,0,.1);
 
 }
 
