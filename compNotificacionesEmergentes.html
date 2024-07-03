@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="./img/ico.png">
     <link rel="stylesheet" href="./css/quickly.css">
     <link rel="stylesheet" href="./css/app.css">
-    <script src="./js/quickly.js" defer></script>
+    <script src="./js/quicklyComp.js" defer></script>
     <script src="./js/app.js" defer></script>
     <link rel="stylesheet" href="./prism/prism.css">
     <script src="./prism/prism.js" defer></script>
@@ -20,28 +20,26 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DZQS41TB5G');
 </script>
 
 </head>
 <body>
     <div id="headerContent"></div>
-    <section class="cont">
+    <section class="cont cont-m">
         <aside id="menuContent"></aside> 
-        <main class="bg-white-2 pt-5">  
-            <div class="cont-80 py-5"> 
+        <main class="bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5"> 
                 
                 <!-- MODAL -->
                 <section class="border rounded bg-color-1">
-
-                    <div class="p-5 bg-white-1 rounded-t border-b">
+                    <div class="p-5 pm-2 bg-white-1 rounded-t border-b">
                         <h1 class="font-l">Notificaciones emergentes</h1>
                         <p class="font-l font-s-4">Las notificaciones emergentes son una solución efectiva para mantener a los usuarios informados sobre eventos importantes en la aplicación. Permiten la interacción directa del usuario con el contenido, mejorando así la comunicación y la experiencia del usuario.</p>
                     </div>
                 
                     <!-- NOTIFICACION -->
-                    <section class="pt-3 p-5 rounded-b">
+                    <section class="p-5 pm-2">
                         <h2 class="font-l font-s-2">Notificaciones </h2>
                         <p class="pb-2">Siguiendo el ejemplo proporcionado, puedes implementar fácilmente las notificaciones de Quickly, inspiradas en las alertas push comunes en los sistemas operativos. Estas notificaciones se cerrarán automáticamente después de 40 segundos, o puedes optar por cerrarlas manualmente haciendo clic en el botón X.</p>             
                         <h3 class="font-l font-s-2">.toast</h3>
@@ -49,7 +47,7 @@
                             <div class="border-b p-2">
                                 Ejemplo
                             </div>                        
-                            <div class="hatched-1 p-5 "> 
+                            <div class="hatched-1 p-5 pm-2"> 
   
                                 <!-- NOTIFICACION UNO -->  
                                 <!-- Botón para abrir la notificación -->
@@ -90,8 +88,11 @@
                                 HTML
                             </div>
                             <div class="pre-pre2">
-                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+                                <pre class="cont-100 scroll-x"><code class="language-html"> 
+    &lt;!-- BOTÓN --&gt;                                     
     &lt;button class="btn btn-primary" data-Qy-toggle="toastId"&gt;Abrir Notificación&lt;/button&gt;
+
+    &lt;!-- Toast --&gt;   
     &lt;div id="toastId" class="toast"&gt;
         &lt;div class="toast-content"&gt;
             &lt;div class="toast-header"&gt;

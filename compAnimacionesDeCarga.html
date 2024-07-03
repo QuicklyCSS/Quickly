@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="./img/ico.png">
   <link rel="stylesheet" href="./css/quickly.css">
   <link rel="stylesheet" href="./css/app.css">
-  <script src="./js/quickly.js" defer></script>
+  <script src="./js/quicklyComp.js" defer></script>
   <script src="./js/app.js" defer></script>
   <link rel="stylesheet" href="./prism/prism.css">
   <script src="./prism/prism.js" defer></script>
@@ -20,112 +20,102 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DZQS41TB5G');
 </script>
-
 </head>
 <body>
     <div id="headerContent"></div>
-    <section class="cont">
+    <section class="cont cont-m">
         <aside id="menuContent"></aside> 
-        <main class="bg-white-2 pt-5">  
-            <div class="cont-80 py-5 "> 
-                
+        <main class="bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5 ">                 
                 <!-- SPINNER -->
                 <section class="border rounded bg-color-1">
-                    <div class="p-5 bg-white-1 rounded-t border-b">
+                    <div class="p-5 pm-2 bg-white-1 rounded-t border-b">
                         <h1 class="font-l">Animaciones de Carga</h1>
                         <p class="font-l font-s-4">Con <strong class="text-quickly" >Quickly</strong>, puedes incorporar fácilmente secuencias de animaciones de carga, las cuales añaden dinamismo a tus sitios web. Explora una amplia variedad de estilos y efectos para dar vida a tus proyectos digitales. Con las animaciones de carga adecuadas, tendrás la capacidad de crear experiencias de usuario fluidas y memorables.</p>
                     </div>
                 
                     <!-- SPINNER -->
-                    <section class="pt-3 px-5">
+                    <section class="p-5 pm-2">
                         <h2 class="font-l font-s-2">Los spinners</h2>
                         <p class="pb-2">Disponemos de cinco tipos de spinners diferentes. Además, puedes ajustar sus dimensiones utilizando las clases 'wh-8', 'wh-16', 'wh-24', y así sucesivamente. Consulta nuestra sección de anchos y altos para obtener más información al respecto.</p>             
                         <h3 class="font-l font-s-2">.spinner-n° (1,2,3,4,5)</h3>
-                        <div class="table-cont">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.spinner-1</div>
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.spinner-1</td>
+                                        <td class="w-auto bg-maya-blue-9">Un cuarto de círculo en rotación.</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.spinner-2</td>
+                                        <td class="w-auto bg-maya-blue-9">Dos cuartos de círculo en rotación.</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.spinner-3</td>
+                                        <td class="w-auto bg-maya-blue-9">Anillo de círculos giratorio.</td>
+                                    </tr>         
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.spinner-4</td>
+                                        <td class="w-auto bg-maya-blue-9">Un semicírculo degradado.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.spinner-5</td>
+                                        <td class="w-auto bg-maya-blue-9">Un semicírculo en rotación.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                            
+                                </tbody>
+                            </table>
+                        </div> 
+                        <div class="border rounded mt-2">                           
+                            <div class="block border-b p-2">
+                                <p>Animaciones</p>
+                            </div>  
+                            <div class="hatched-1 p-5 grid item-5 g-5 text-ac scroll-a"> 
+                                <div class="grid align-cc">
+                                    <div class="spinner-1 wh-32"></div>
+                                    <div class="mt-1">Spinner-1</div>                                            
                                 </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Un cuarto de círculo en rotación.</div>
+                                <div class="grid align-cc">
+                                    <div class="spinner-2 wh-32"></div>
+                                    <div class="mt-1">Spinner-2</div>
                                 </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.spinner-2</div>
+                                <div class="grid align-cc">
+                                    <div class="spinner-3 wh-32"></div>
+                                    <div class="mt-1">Spinner-3</div>
                                 </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Dos cuartos de círculo en rotación.</div>
+                                <div class="grid align-cc">                                            
+                                    <div class="spinner-4 wh-32"></div>
+                                    <div class="mt-1">Spinner-4</div>
                                 </div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.spinner-3</div>
+                                <div class="grid align-cc">                                            
+                                    <div class="spinner-5 wh-32"></div>
+                                    <div class="mt-1">Spinner-5</div>
                                 </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Anillo de círculos giratorio.</div>
-                                </div>   
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.spinner-4</div>
+                            </div>                   
+                            <div class="border-t p-2">
+                                    HTML
                                 </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Un semicírculo degradado.</div>
-                                </div>       
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">.spinner-5</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Un semicírculo en rotación.</div>
-                                </div>                                                                                                                                       
-
-                            </div>    
-                            <div class="border-l border-r mb-5">
-                                <div class="block border-b p-2">
-                                    <p>Animaciones</p>
-                                </div>  
-
-                                <div class="hatched-1 p-5 grid item-1 g-5 text-ac"> 
-                                    <div class="grid item-5 align-cc">
-                                        <div class="grid align-cc">
-                                            <div class="spinner-1 wh-32"></div>
-                                            <div class="mt-1">Spinner-1</div>                                            
-                                        </div>
-                                        <div class="grid align-cc">
-                                            <div class="spinner-2 wh-32"></div>
-                                            <div class="mt-1">Spinner-2</div>
-                                        </div>
-                                        <div class="grid align-cc">
-                                            <div class="spinner-3 wh-32"></div>
-                                            <div class="mt-1">Spinner-3</div>
-                                        </div>
-                                        <div class="grid align-cc">                                            
-                                            <div class="spinner-4 wh-32"></div>
-                                            <div class="mt-1">Spinner-4</div>
-                                        </div>
-                                        <div class="grid align-cc">                                            
-                                            <div class="spinner-5 wh-32"></div>
-                                            <div class="mt-1">Spinner-5</div>
-                                        </div>
-                                    </div>                                                                              
-                                </div>                   
-                                <div class="border-t p-2">
-                                HTML
-                                </div>
-                                <div class="pre-pre2">
-                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
     &lt;div class="spinner-1 wh-32"&gt;&lt;/div&gt;
     &lt;div class="spinner-2 wh-32"&gt;&lt;/div&gt;
     &lt;div class="spinner-3 wh-32"&gt;&lt;/div&gt;
     &lt;div class="spinner-4 wh-32"&gt;&lt;/div&gt;
     &lt;div class="spinner-5 wh-32"&gt;&lt;/div&gt;
-                                    </code></pre>
-                                </div>                      
+                                </code></pre>
+                            </div>                      
                         </div>                                 
                     </section>   
                     
                     <!-- SPINNER COLORES -->
-                    <section class="px-5 pb-5">
+                    <section class="p-5 pm-2">
                         <h2 class="font-l font-s-2">Colores en spinner</h2>
                         <p class="pb-2">Puedes personalizar los colores de los spinners aplicando clases adicionales.</p>             
                         <div class="table-cont">                        
@@ -133,11 +123,10 @@
                                 <div class="block border-b p-2">
                                     <p>Colores aplicados</p>
                                 </div>  
-                                <div class="hatched-1 p-5 grid item-1 text-ac">
+                                <div class="hatched-1 p-5 pm-2 grid item-1 text-ac">
                                     <div class="text-al">Spinner tipo Uno</div>
-                                    <div class="grid item-7 align-cc border p-2 div1">
-                                        <!-- Spinner-1 color por defecto -->       
-                                        <div class="spinner-1 wh-32 opacity-100"></div>
+                                    <div class="grid item-6 g-2 align-cc border p-2 div1">
+                                        <!-- Spinner-1 color por defecto --> 
                                         <div class="spinner-1 wh-32 spinner-1-info"></div>
                                         <div class="spinner-1 wh-32 spinner-1-danger"></div>
                                         <div class="spinner-1 wh-32 spinner-1-warning"></div>
@@ -147,9 +136,8 @@
                                     </div>
 
                                     <div class="text-al pt-2">Spinner tipo Dos</div>
-                                    <div  class="grid item-7 align-cc  border p-2 div1">
+                                    <div  class="grid item-6 g-2 align-cc border p-2 div1">
                                         <!-- Spinner-2 -->
-                                        <div class="spinner-2 wh-32"></div>
                                         <div class="spinner-2 wh-32 spinner-2-info"></div>
                                         <div class="spinner-2 wh-32 spinner-2-danger"></div>
                                         <div class="spinner-2 wh-32 spinner-2-warning"></div>
@@ -159,9 +147,8 @@
                                     </div>
 
                                     <div class="text-al pt-2">Spinner tipo Tres</div>
-                                    <div  class="grid item-7 align-cc border p-2 div1">
+                                    <div  class="grid item-6 g-2 align-cc border p-2 div1">
                                         <!-- Spinner-3 -->
-                                        <div class="spinner-3 wh-32"></div>
                                         <div class="spinner-3 wh-32 spinner-3-info"></div>
                                         <div class="spinner-3 wh-32 spinner-3-danger"></div>
                                         <div class="spinner-3 wh-32 spinner-3-warning"></div>
@@ -171,9 +158,8 @@
                                     </div>
 
                                     <div class="text-al pt-2">Spinner tipo Cuatro</div>
-                                    <div  class="grid item-7 align-cc border p-2 div1">
+                                    <div  class="grid item-6 g-2 align-cc border p-2 div1">
                                         <!-- Spinner-4 -->
-                                        <div class="spinner-4 wh-32"></div>
                                         <div class="spinner-4 wh-32 spinner-4-info"></div>
                                         <div class="spinner-4 wh-32 spinner-4-danger"></div>
                                         <div class="spinner-4 wh-32 spinner-4-warning"></div>
@@ -183,9 +169,8 @@
                                     </div>
 
                                     <div class="text-al pt-2">Spinner tipo Cinco</div>
-                                    <div  class="grid item-7 align-cc border p-2 div1">
+                                    <div  class="grid item-6 g-2 align-cc border p-2 div1">
                                         <!-- Spinner-5 -->
-                                        <div class="spinner-5 wh-32"></div>
                                         <div class="spinner-5 wh-32 spinner-5-info"></div>
                                         <div class="spinner-5 wh-32 spinner-5-danger"></div>
                                         <div class="spinner-5 wh-32 spinner-5-warning"></div>
@@ -196,12 +181,11 @@
 
                                 </div>                   
                                 <div class="border-t p-2">
-                                HTML
+                                    HTML
                                 </div>
                                 <div class="pre-pre2">
                                     <pre class="cont-100 scroll-x"><code class="language-html">                                    
     &lt;!-- Spinner-1 color por defecto --&gt;
-    &lt;div class="spinner-1 wh-32"&gt;&lt;/div&gt;
     &lt;div class="spinner-1 wh-32 spinner-1-info"&gt;&lt;/div&gt;
     &lt;div class="spinner-1 wh-32 spinner-1-danger"&gt;&lt;/div&gt;
     &lt;div class="spinner-1 wh-32 spinner-1-warning"&gt;&lt;/div&gt;
@@ -210,7 +194,6 @@
     &lt;div class="spinner-1 wh-32 spinner-1-black"&gt;&lt;/div&gt;
 
     &lt;!-- Spinner-2 --&gt;
-    &lt;div class="spinner-2 wh-32"&gt;&lt;/div&gt;
     &lt;div class="spinner-2 wh-32 spinner-2-info"&gt;&lt;/div&gt;
     &lt;div class="spinner-2 wh-32 spinner-2-danger"&gt;&lt;/div&gt;
     &lt;div class="spinner-2 wh-32 spinner-2-warning"&gt;&lt;/div&gt;
@@ -219,7 +202,6 @@
     &lt;div class="spinner-2 wh-32 spinner-2-black"&gt;&lt;/div&gt;
 
     &lt;!-- Spinner-3 --&gt;
-    &lt;div class="spinner-3 wh-32"&gt;&lt;/div&gt;
     &lt;div class="spinner-3 wh-32 spinner-3-info"&gt;&lt;/div&gt;
     &lt;div class="spinner-3 wh-32 spinner-3-danger"&gt;&lt;/div&gt;
     &lt;div class="spinner-3 wh-32 spinner-3-warning"&gt;&lt;/div&gt;
@@ -228,7 +210,6 @@
     &lt;div class="spinner-3 wh-32 spinner-3-black"&gt;&lt;/div&gt;
 
     &lt;!-- Spinner-4 --&gt;
-    &lt;div class="spinner-4 wh-32"&gt;&lt;/div&gt;
     &lt;div class="spinner-4 wh-32 spinner-4-info"&gt;&lt;/div&gt;
     &lt;div class="spinner-4 wh-32 spinner-4-danger"&gt;&lt;/div&gt;
     &lt;div class="spinner-4 wh-32 spinner-4-warning"&gt;&lt;/div&gt;
@@ -237,7 +218,6 @@
     &lt;div class="spinner-4 wh-32 spinner-4-black"&gt;&lt;/div&gt;
 
     &lt;!-- Spinner-5 --&gt;
-    &lt;div class="spinner-5 wh-32"&gt;&lt;/div&gt;
     &lt;div class="spinner-5 wh-32 spinner-5-info"&gt;&lt;/div&gt;
     &lt;div class="spinner-5 wh-32 spinner-5-danger"&gt;&lt;/div&gt;
     &lt;div class="spinner-5 wh-32 spinner-5-warning"&gt;&lt;/div&gt;
@@ -251,39 +231,35 @@
                     </section>                  
                     
                     <!-- SPINNER APLICADOS -->
-                    <section class="px-5 pb-5">
+                    <section class="p-5 pm-2">
                         <h2 class="font-l font-s-2">Spinner en botones</h2>
-                        <p class="pb-2">Añade animaciones de carga a los botones para agregar más dinamismo a tu diseño.</p>             
-                        <div class="table-cont">                        
-                            <div class="border-x border-t rounded">
-                                <div class="block border-b p-2">
-                                    <p>Animaciones</p>
+                        <p class="">Añade animaciones de carga a los botones para agregar más dinamismo a tu diseño.</p>             
+                        <div class="border rounded mt-2">                        
+                            <div class="block border-b p-2">
+                                <p>Animaciones</p>
                                 </div>  
-                                <div class="hatched-1 p-5 grid align-content-hc">
-                                    <button type="button" class="btn btn-primary"><span class="wh-16 spinner-1 spinner-1-white mr-1"></span>Cargando</button>
+                            <div class="hatched-1 p-5 pm-2 grid item-5 scroll-a">
+                                <button type="button" class="btn btn-primary"><span class="wh-16 spinner-1 spinner-1-white mr-1"></span>Cargando</button>
                                     <button type="button" class="btn btn-primary"><span class="wh-16 spinner-2 spinner-2-white mr-1"></span>Cargando</button> 
                                     <button type="button" class="btn btn-primary"><span class="wh-16 spinner-3 spinner-3-white mr-1"></span>Cargando</button> 
                                     <button type="button" class="btn btn-primary"><span class="wh-16 spinner-4 spinner-4-white mr-1"></span>Cargando</button> 
                                     <button type="button" class="btn btn-primary"><span class="wh-16 spinner-5 spinner-5-white mr-1"></span>Cargando</button>                                                                          
                                 </div>                   
-                                <div class="border-t p-2">
+                            <div class="border-t p-2">
                                 HTML
-                                </div>
-                                <div class="pre-pre2">
-                                    <pre class="cont-100 scroll-x"><code class="language-html">                                    
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
     &lt;button type="button" class="btn btn-primary"&gt;&lt;span class="wh-16 spinner-1 spinner-1-white mr-1"&gt;&lt;/span&gt;Cargando&lt;/button&gt;
     &lt;button type="button" class="btn btn-primary"&gt;&lt;span class="wh-16 spinner-2 spinner-2-white mr-1"&gt;&lt;/span&gt;Cargando&lt;/button&gt;
     &lt;button type="button" class="btn btn-primary"&gt;&lt;span class="wh-16 spinner-3 spinner-3-white mr-1"&gt;&lt;/span&gt;Cargando&lt;/button&gt;
     &lt;button type="button" class="btn btn-primary"&gt;&lt;span class="wh-16 spinner-4 spinner-4-white mr-1"&gt;&lt;/span&gt;Cargando&lt;/button&gt;
     &lt;button type="button" class="btn btn-primary"&gt;&lt;span class="wh-16 spinner-5 spinner-5-white mr-1"&gt;&lt;/span&gt;Cargando&lt;/button&gt;
-                                    </code></pre>
-                                </div>
-                            </div>                     
+                                </code></pre>
+                            </div>
                         </div>                                 
-                    </section>                       
-                    
+                    </section>                                           
                 </section>               
-
             </div>
         </main>     
         <footer id="footerContent"></footer>    

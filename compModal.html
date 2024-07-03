@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="./img/ico.png">
     <link rel="stylesheet" href="./css/quickly.css">
     <link rel="stylesheet" href="./css/app.css">
-    <script src="./js/quickly.js" defer></script>
+    <script src="./js/quicklyComp.js" defer></script>
     <script src="./js/app.js" defer></script>
     <link rel="stylesheet" href="./prism/prism.css">
     <script src="./prism/prism.js" defer></script>
@@ -20,28 +20,27 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DZQS41TB5G');
 </script>
 
 </head>
 <body>
     <div id="headerContent"></div>
-    <section class="cont">
+    <section class="cont cont-m">
         <aside id="menuContent"></aside> 
-        <main class="bg-white-2 pt-5">  
-            <div class="cont-80 py-5"> 
+        <main class="bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5"> 
                 
                 <!-- MODAL -->
                 <section class="border rounded bg-color-1">
 
-                    <div class="p-5 bg-white-1 rounded-t border-b">
+                    <div class="p-5 pm-2 bg-white-1 rounded-t border-b">
                         <h1 class="font-l">Modal</h1>
                         <p class="font-l font-s-4">Puedes utilizar los modales de Quickly para incorporar ventanas emergentes en tu sitio web, ya sea para mostrar información destacada, alertas importantes para los usuarios o incluso para presentar contenido altamente personalizado de manera interactiva. ademas el contenido de las modales en el .modal-body tiene aplicado un alto maximo de 300px</p>
                     </div>
                 
                     <!-- MODAL UNO -->
-                    <section class="pt-3 p-5 rounded-b">
+                    <section class="p-5 pm-2">
                         <h2 class="font-l font-s-2">Modales </h2>
                         <p class="pb-2">Para implementar un modal, es esencial incluir en el código las etiquetas de atributo personalizado data-Qy-toggle="modal", junto con el identificador id="modal". Si planeas incorporar múltiples modales en tu sitio web o aplicación, necesitas agregar tanto el atributo personalizado como el ID con el mismo nombre y una secuencia numérica, por ejemplo, modal-1, modal-2, modal-3, etc., tal como se ilustra en los ejemplos a continuación.</p>             
                         <h3 class="font-l font-s-2">Modal Uno</h3>
@@ -49,7 +48,7 @@
                             <div class="border-b p-2">
                                 Ejemplo botones justificados a la derecha.
                             </div>                        
-                            <div class="hatched-1 p-5"> 
+                            <div class="hatched-1 p-5 pm-2"> 
   
                                 <!-- MODAL UNO -->  
                                 <!-- Botón para abrir el primer modal -->
@@ -76,7 +75,7 @@
                                     <div class="modal-content fadeIn">
                                         <div class="modal-header">
                                             <h3>Título de la modal Uno</h3>
-                                            <div class="close close-x"><svg class="ico-24 ico-gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg></div>
+                                            <div class="close"><svg class="ico-24 ico-gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg></div>
                                         </div>
                                         <div class="modal-body">
                                             <p>Este es un modal de ejemplo. Puedes poner aquí tu contenido personalizado. Este es un modal de ejemplo. Puedes poner aquí tu contenido personalizado. Este es un modal de ejemplo. Puedes poner aquí tu contenido personalizado.</p>
@@ -96,7 +95,8 @@
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
     &lt;!-- MODAL UNO --&gt;
     &lt;!-- Botón para abrir el primer modal --&gt;
-    &lt;button class="btn btn-primary" data-Qy-toggle="modal-1"&gt;Abrir Modal 1&lt;/button&gt;   
+    &lt;button class="btn btn-primary" data-Qy-toggle="modal-1"&gt;Abrir Modal 1&lt;/button&gt; 
+
     &lt;!-- Contenedor del primer modal --&gt;
     &lt;div id="modal-1" class="modal"&gt;
         &lt;div class="modal-content"&gt;
@@ -119,13 +119,13 @@
                     </section>      
 
                     <!-- MODAL DOS -->
-                    <section class="px-5 pb-5 rounded-b">
+                    <section class="p-5 pm-2">
                         <h3 class="font-l font-s-2">Modal Dos</h3>
                         <div class="table-cont border">  
                             <div class="border-b p-2">
                                 Ejemplo botones justificados a la izquierda.
                             </div>                        
-                            <div class="hatched-1 p-5"> 
+                            <div class="hatched-1 p-5 pm-2"> 
 
                                 <!-- MODAL DOS -->  
                                 <!-- Botón para abrir el segundo modal -->
@@ -176,6 +176,7 @@
     &lt;!-- MODAL DOS --&gt;  
     &lt;!-- Botón para abrir el segundo modal --&gt;
     &lt;button class="btn btn-primary" data-Qy-toggle="modal-2"&gt;Abrir Modal 2&lt;/button&gt;  
+
     &lt;!-- Contenedor del segundo modal --&gt;
     &lt;div id="modal-2" class="modal"&gt;
         &lt;div class="modal-content"&gt;
@@ -198,13 +199,13 @@
                     </section>   
                     
                     <!-- MODAL TRES -->
-                    <section class="px-5 pb-5 rounded-b">
+                    <section class="p-5 pm-2">
                         <h3 class="font-l font-s-2">Modal Tres</h3>
                         <div class="table-cont border">  
                             <div class="border-b p-2">
                                 Ejemplo contenido justificados al centro.
                             </div>                        
-                            <div class="hatched-1 p-5"> 
+                            <div class="hatched-1 p-5 pm-2"> 
 
                                 <!-- MODAL TRES -->  
                                 <!-- Botón para abrir el tercer modal -->
@@ -249,7 +250,8 @@
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
     &lt;!-- MODAL TRES --&gt;  
     &lt;!-- Botón para abrir el tercer modal --&gt;
-    &lt;button class="btn btn-primary" data-Qy-toggle="modal-3"&gt;Abrir Modal 3&lt;/button&gt;                                     
+    &lt;button class="btn btn-primary" data-Qy-toggle="modal-3"&gt;Abrir Modal 3&lt;/button&gt;     
+                                    
     &lt;!-- Contenedor del tercer modal --&gt;
     &lt;div id="modal-3" class="modal"&gt;
         &lt;div class="modal-content"&gt;

@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="./img/ico.png">
     <link rel="stylesheet" href="./css/quickly.css">
     <link rel="stylesheet" href="./css/app.css">
-    <script src="./js/quickly.js" defer></script>
+    <script src="./js/quicklyComp.js" defer></script>
     <script src="./js/app.js" defer></script>
     <link rel="stylesheet" href="./prism/prism.css">
     <script src="./prism/prism.js" defer></script>
@@ -20,34 +20,32 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DZQS41TB5G');
 </script>
 
 </head>
 <body>
     <div id="headerContent"></div>
-    <section class="cont">
+    <section class="cont cont-m">
         <aside id="menuContent"></aside> 
-        <main class="bg-white-2 pt-5">  
-            <div class="cont-80 py-5"> 
+        <main class="bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5"> 
                 
                 <!-- DESPLEGABLE -->
                 <section class="border rounded bg-color-1">
 
-                    <div class="p-5 bg-white-1 rounded-t border-b">
+                    <div class="p-5 pm-2 bg-white-1 rounded-t border-b">
                         <h1 class="font-l">Desplegable</h1>
                         <p class="font-l font-s-4">Descubre los desplegables de <strong class="text-quickly" >Quickly</strong> para mostrar listas de enlaces y más con superposiciones contextuales. Simplifica la navegación y la interacción del usuario en tus proyectos web.</p>
                     </div>
                 
                     <!-- DESPLEGABLE -->
-                    <section class="pt-3 p-5 rounded-b">
+                    <section class="p-5 pm-2">
                         <h2 class="font-l font-s-2">Desplegable </h2>
                         <p class="pb-2">Con esta simple combinación de etiquetas y atributos personalizados, puedes convertir cualquier botón en un menú desplegable. Utiliza el atributo data-Qy-toggle="dropdown" para implementar esta funcionalidad. Además, esta característica puede ser aplicada tanto a botones como a enlaces. A continuación, te mostramos cómo hacerlo. </p>             
                         <h3 class="font-l font-s-2">.dropdown</h3>
-                        <div class="table-cont border">                          
-                            <div class="hatched-1 p-5"> 
-  
+                        <div class="border rounded">                          
+                            <div class="hatched-1 p-5 pm-2">                                 
                                 <!-- DESPLEGABLE BOTÓN -->                                                                                     
                                 <div class="dropdown">
                                     <button class="btn btn-primary" type="button" data-Qy-toggle="dropdown" aria-expanded="false">
@@ -59,7 +57,6 @@
                                       <li><a class="dropdown-item" href="#">Item Tres</a></li>
                                     </ul>
                                   </div>
-
                                 <!-- DESPLEGABLE ENLACE -->                                                         
                                 <div class="dropdown">
                                     <a class="btn btn-secondary" href="#" role="button" data-Qy-toggle="dropdown" aria-expanded="false">
@@ -70,8 +67,7 @@
                                       <li><a class="dropdown-item" href="#">Item Dos</a></li>
                                       <li><a class="dropdown-item" href="#">Item Tres</a></li>
                                     </ul>
-                                </div>
-                                                                 
+                                </div>                                                                 
                             </div>                   
                             <div class="border-t p-2">
                                 HTML
