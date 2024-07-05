@@ -8,7 +8,8 @@
   <link rel="icon" type="image/png" href="./img/ico.png">
   <link rel="stylesheet" href="./css/quickly.css">
   <link rel="stylesheet" href="./css/app.css">
-  <script src="./js/quickly.js" defer></script>
+  <script src="./js/quicklyComp.js" defer></script>
+  <script src="./js/quicklyForm.js" defer></script>
   <script src="./js/app.js" defer></script>
   <link rel="stylesheet" href="./prism/prism.css">
   <script src="./prism/prism.js" defer></script>
@@ -20,27 +21,26 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DZQS41TB5G');
 </script>
 
 </head>
 <body>
     <div id="headerContent"></div>
-    <section class="cont">
+    <section class="cont cont-m">
         <aside id="menuContent"></aside> 
-        <main class="bg-white-2 pt-5">  
-            <div class="cont-80 py-5"> 
+        <main class="bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5"> 
                 
                 <!-- FORMULARIO -->
                 <section class="border rounded bg-color-1">
-                    <div class="p-5 item-1 bg-white-1 rounded-t border-b">
+                    <div class="p-5 pm-2 item-1 bg-white-1 rounded-t border-b">
                         <h1 class="font-l">Validación de formulario</h1>
                         <p class="font-l font-s-4">Explora ejemplos y directrices para aplicar estilos a los controles de formularios con <strong class="text-quickly" >Quickly</strong>, opciones de diseño y componentes personalizados, permitiéndote crear una amplia gama de formularios adaptados a tus necesidades.</p>
                     </div>
                 
                     <!-- FORMULARIO VALIDACIÓN -->
-                    <section class="pt-3 px-5">
+                    <section class="p-5 pm-2">
                         <h2 class="font-l font-s-2">Formulario básico</h2>
                         <p>El formulario básico incluye validación a través de JavaScript para varios tipos de campos, como texto, fecha, selección, dirección de correo electrónico, áreas de texto, números de teléfono, números, casillas de verificación y botones de opción.</p>
                         <p class="py-1">¿Cómo funciona?</p>  
@@ -63,43 +63,47 @@
                                 </li>
                             </ol>
                         </div>                            
-                        <div class="table-cont">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Atributo</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">novalidate</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Si prefieres no utilizar la validación de los campos y habilitar el boton de envio en este formulario, simplemente agrega el atributo novalidate en la etiqueta form.</div>
-                                </div>       
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">required</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Para activar la validación de los campos, debes especificar el atributo.</div>
-                                </div>  
-                            </div>
-                            <div class="border-x">                      
+
+                        <div class="table">
+                                <table class="table-container">
+                                    <thead class="table-header bg-skyblue-4">
+                                        <tr>
+                                            <th class="w-100 bg-maya-blue-5">Atributo</th>
+                                            <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-body">
+                                        <tr>
+                                            <td class="bg-maya-blue-9">novalidate</td>
+                                            <td class="bg-maya-blue-9">Si prefieres no utilizar la validación de los campos y habilitar el boton de envio en este formulario, simplemente agrega el atributo novalidate en la etiqueta form.</td>
+                                        </tr>       
+                                        <tr>
+                                            <td class="bg-maya-blue-9">required</td>
+                                            <td class="bg-maya-blue-9">Para activar la validación de los campos, debes especificar el atributo.</td>
+                                        </tr>                                                                                                                                                                                    
+                                    </tbody>
+                                </table>
+                        </div>                          
+                        <div class="border rounded mt-2">                      
                                 <div class="border-b p-2">
                                     <p>Ejemplo</p>
                                 </div>  
-                                <div class="hatched-1 p-5"> 
-                                    <form id="form" class="form" aria-labelledby="formulario-titulo" role="form">
+                                <div class="hatched-1 p-5 pm-2"> 
+                                    <form id="form" class="form p-2" aria-labelledby="formulario-titulo" role="form">
                                         <h2 id="formulario-titulo">Formulario con validación</h2>
                                         <p class="mb-2 border-b">Todos los campos son requeridos</p>
-                                        <div class="grid item-3 g-2">                                 
+                                        <div class="grid item-3 item-s-1 g-2">                                 
                                             <div class="form-group">
                                                 <label for="nombre" class="form-label">Nombre</label>
                                                 <input type="text" class="form-control" id="nombre" value="" placeholder="Ingresa tu nombre" name="nombre" required aria-required="true" aria-describedby="nombre-instruccion">
                                                 <div class="valid-feedback">¡Se ve bien!</div>
-                                                <div class="invalid-feedback">¡Por favor, asegúrate de introducir únicamente letras y un mínimo de tres caracteres!</div>
+                                                <div class="invalid-feedback">¡Por favor, ingresa únicamente letras y un mínimo de tres caracteres!</div>
                                             </div>                                    
                                             <div class="form-group">
                                                 <label for="apellido" class="form-label">Apellido</label>
                                                 <input type="text" class="form-control" id="apellido" value="" placeholder="Ingresa tu apellido" name="apellido" required aria-required="true" aria-describedby="apellido-instruccion">
                                                 <div class="valid-feedback">¡Se ve bien!</div>
-                                                <div class="invalid-feedback">¡Por favor, asegúrate de introducir únicamente letras y un mínimo de tres caracteres!</div>
+                                                <div class="invalid-feedback">¡Por favor, ingresa únicamente letras y un mínimo de tres caracteres!</div>
                                             </div>                                               
                                             <div class="form-group">
                                                 <label for="fecha" class="form-label">Fecha Nacimiento</label>
@@ -108,18 +112,18 @@
                                                 <div class="invalid-feedback">¡Por favor, debes seleccionar una fecha!</div>
                                             </div>                                            
                                         </div>                                        
-                                        <div class="grid item-4 g-2"> 
-                                            <div class="form-group grid col-2 no-stretch-v">
+                                        <div class="grid item-3 item-s-1 g-2"> 
+                                            <div class="form-group">
                                                 <label for="email" class="form-label">Email</label>
                                                 <input type="email" class="form-control" id="email" value="" name="email" placeholder="jhondoe@gmail.com" required aria-required="true" aria-describedby="email-instruccion">
                                                 <div class="valid-feedback">¡Se ve bien!</div>
-                                                <div class="invalid-feedback">¡Por favor, introduce una dirección de correo electrónico válida!</div>
+                                                <div class="invalid-feedback">¡Por favor, ingresa una dirección de correo electrónico válida!</div>
                                             </div>  
                                             <div class="form-group">
                                                 <label for="telefono" class="form-label">Teléfono</label>
                                                 <input type="tel" class="form-control" id="telefono" value="" placeholder="ej: 991112233" name="telefono" required aria-required="true" aria-describedby="telefono-instruccion">
                                                 <div class="valid-feedback">¡Se ve bien!</div>
-                                                <div class="invalid-feedback">¡Por favor, asegúrate de ingresar solamente números!</div>
+                                                <div class="invalid-feedback">¡Por favor, ingresar solamente números!</div>
                                             </div>                                                                              
                                             <div class="form-group">
                                                 <label for="select" class="form-label">Sexo</label>
@@ -133,12 +137,12 @@
                                                 <div class="invalid-feedback">¡Debes seleccionar una opción!</div>
                                             </div>                                  
                                         </div>  
-                                        <div class="grid item-4 g-2"> 
-                                            <div class="form-group grid col-3 no-stretch-v">
+                                        <div class="grid item-2 item-s-1 g-2"> 
+                                            <div class="form-group">
                                                 <label for="apellido" class="form-label">Dirección</label>
                                                 <input type="text" class="form-control" id="apellido" value="" placeholder="Ingresa tu apellido" name="apellido" required aria-required="true" aria-describedby="apellido-instruccion">
                                                 <div class="valid-feedback">¡Se ve bien!</div>
-                                                <div class="invalid-feedback">¡Por favor, asegúrate de introducir únicamente letras y un mínimo de tres caracteres!</div>
+                                                <div class="invalid-feedback">¡Por favor, ingresa únicamente letras, y un mínimo de tres caracteres!</div>
                                             </div>   
                                             <div class="form-group">
                                                 <label for="steps" class="form-label">Número</label>
@@ -147,7 +151,7 @@
                                                 <div class="invalid-feedback">¡Por favor, debes ingresar un número!</div>
                                             </div>  
                                         </div>                                                                                
-                                        <div class="grid item-3 g-2">
+                                        <div class="grid item-3 item-s-1 item-m-1 g-2">
                                             <div class="form-group">
                                                 <fieldset>
                                                     <legend>Aceptar las condiciones</legend>
@@ -157,7 +161,7 @@
                                                 <div class="invalid-feedback">¡Debes aceptar las condiciones!</div>
                                             </div>
                                             <div class="form-group">
-                                                <fieldset class="grid item-2">
+                                                <fieldset class="grid item-s-1">
                                                     <legend>Elige una opción</legend>
                                                     <label><input type="radio" name="opcion" value="opcion1" required> Opción 1</label>
                                                     <label><input type="radio" name="opcion" value="opcion2" required> Opción 2</label>
@@ -175,16 +179,16 @@
                                                 <div class="valid-feedback">¡Archivo seleccionado correctamente!</div>
                                                 <div class="invalid-feedback">¡Debes seleccionar un archivo!</div>                                                
                                             </div>                                            
-                                        </div>                                                                                
+                                        </div>                            
                                         <div class="form-group">
                                             <label for="textarea" class="form-label">Consulta</label>
                                             <textarea class="form-control" id="textarea" value="" name="textarea" placeholder="Escribe tu consulta aquí" required aria-required="true" aria-describedby="textarea-instruccion"></textarea>
                                             <div class="valid-feedback">¡Se ve bien!</div>
-                                            <div class="invalid-feedback">¡Por favor, Debes ingresar como mínimo 20 caracteres!</div>
+                                            <div class="invalid-feedback">¡Por favor, ingresa como mínimo 20 caracteres!</div>
                                         </div>                                                                                                                        
                                         <div class="form-group grid align-content-hr m-0">
-                                            <button class="btn btn-secondary mr-2" type="reset">Borrar <svg class="ml-1 ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M5.662 23l-5.369-5.365c-.195-.195-.293-.45-.293-.707 0-.256.098-.512.293-.707l14.929-14.928c.195-.194.451-.293.707-.293.255 0 .512.099.707.293l7.071 7.073c.196.195.293.451.293.708 0 .256-.097.511-.293.707l-11.216 11.219h5.514v2h-12.343zm3.657-2l-5.486-5.486-1.419 1.414 4.076 4.072h2.829zm.456-11.429l-4.528 4.528 5.658 5.659 4.527-4.53-5.657-5.657z"/></svg></button>
-                                            <button class="btn btn-primary" type="submit" value="enviar" aria-describedby="submit-instruccion">Enviar <svg class="ml-1 ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg></button>
+                                            <button class="btn btn-secondary" type="reset">Borrar <svg class="ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"><path d="M5.662 23l-5.369-5.365c-.195-.195-.293-.45-.293-.707 0-.256.098-.512.293-.707l14.929-14.928c.195-.194.451-.293.707-.293.255 0 .512.099.707.293l7.071 7.073c.196.195.293.451.293.708 0 .256-.097.511-.293.707l-11.216 11.219h5.514v2h-12.343zm3.657-2l-5.486-5.486-1.419 1.414 4.076 4.072h2.829zm.456-11.429l-4.528 4.528 5.658 5.659 4.527-4.53-5.657-5.657z"/></svg></button>
+                                            <button class="btn btn-primary" type="submit" value="enviar" aria-describedby="submit-instruccion">Enviar <svg class="ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg></button>
                                         </div>   
                                     </form>                                                                                                                                                                                    
                                 </div>                   
@@ -193,21 +197,21 @@
                                 </div>
                                 <div class="pre-pre2">
                                     <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;form id="form" class="form" aria-labelledby="formulario-titulo" role="form"&gt;
+    &lt;form id="form" class="form p-2" aria-labelledby="formulario-titulo" role="form"&gt;
         &lt;h2 id="formulario-titulo"&gt;Formulario con validación&lt;/h2&gt;
         &lt;p class="mb-2 border-b"&gt;Todos los campos son requeridos&lt;/p&gt;
-        &lt;div class="grid item-3 g-2"&gt;                                 
+        &lt;div class="grid item-3 item-s-1 g-2"&gt;                                 
             &lt;div class="form-group"&gt;
                 &lt;label for="nombre" class="form-label"&gt;Nombre&lt;/label&gt;
                 &lt;input type="text" class="form-control" id="nombre" value="" placeholder="Ingresa tu nombre" name="nombre" required aria-required="true" aria-describedby="nombre-instruccion"&gt;
                 &lt;div class="valid-feedback"&gt;¡Se ve bien!&lt;/div&gt;
-                &lt;div class="invalid-feedback"&gt;¡Por favor, asegúrate de introducir únicamente letras y un mínimo de tres caracteres!&lt;/div&gt;
+                &lt;div class="invalid-feedback"&gt;¡Por favor, ingresa únicamente letras y un mínimo de tres caracteres!&lt;/div&gt;
             &lt;/div&gt;                                    
             &lt;div class="form-group"&gt;
                 &lt;label for="apellido" class="form-label"&gt;Apellido&lt;/label&gt;
                 &lt;input type="text" class="form-control" id="apellido" value="" placeholder="Ingresa tu apellido" name="apellido" required aria-required="true" aria-describedby="apellido-instruccion"&gt;
                 &lt;div class="valid-feedback"&gt;¡Se ve bien!&lt;/div&gt;
-                &lt;div class="invalid-feedback"&gt;¡Por favor, asegúrate de introducir únicamente letras y un mínimo de tres caracteres!&lt;/div&gt;
+                &lt;div class="invalid-feedback"&gt;¡Por favor, ingresa únicamente letras y un mínimo de tres caracteres!&lt;/div&gt;
             &lt;/div&gt;                                               
             &lt;div class="form-group"&gt;
                 &lt;label for="fecha" class="form-label"&gt;Fecha Nacimiento&lt;/label&gt;
@@ -216,56 +220,56 @@
                 &lt;div class="invalid-feedback"&gt;¡Por favor, debes seleccionar una fecha!&lt;/div&gt;
             &lt;/div&gt;                                            
         &lt;/div&gt;                                        
-        &lt;div class="grid item-4 g-2"&gt; 
-            &lt;div class="form-group grid col-2 no-stretch-v"&gt;
+        &lt;div class="grid item-3 item-s-1 g-2"&gt; 
+            &lt;div class="form-group"&gt;
                 &lt;label for="email" class="form-label"&gt;Email&lt;/label&gt;
                 &lt;input type="email" class="form-control" id="email" value="" name="email" placeholder="jhondoe@gmail.com" required aria-required="true" aria-describedby="email-instruccion"&gt;
                 &lt;div class="valid-feedback"&gt;¡Se ve bien!&lt;/div&gt;
-                &lt;div class="invalid-feedback"&gt;¡Por favor, introduce una dirección de correo electrónico válida!&lt;/div&gt;
+                &lt;div class="invalid-feedback"&gt;¡Por favor, ingresa una dirección de correo electrónico válida!&lt;/div&gt;
             &lt;/div&gt;  
             &lt;div class="form-group"&gt;
                 &lt;label for="telefono" class="form-label"&gt;Teléfono&lt;/label&gt;
                 &lt;input type="tel" class="form-control" id="telefono" value="" placeholder="ej: 991112233" name="telefono" required aria-required="true" aria-describedby="telefono-instruccion"&gt;
                 &lt;div class="valid-feedback"&gt;¡Se ve bien!&lt;/div&gt;
-                &lt;div class="invalid-feedback"&gt;¡Por favor, asegúrate de ingresar solamente números!&lt;/div&gt;
+                &lt;div class="invalid-feedback"&gt;¡Por favor, ingresar solamente números!&lt;/div&gt;
             &lt;/div&gt;                                                                              
             &lt;div class="form-group"&gt;
-                &lt;label for="select"&gt;Sexo&lt;/label&gt;
+                &lt;label for="select" class="form-label"&gt;Sexo&lt;/label&gt;
                 &lt;select class="form-control" id="select" name="select" required aria-required="true" aria-describedby="select-instruccion"&gt;
                     &lt;option value="" selected hidden disabled&gt;Opciones&lt;/option&gt;
                     &lt;option value="opcion1"&gt;Hombre&lt;/option&gt;
                     &lt;option value="opcion2"&gt;Mujer&lt;/option&gt;
                     &lt;option value="opcion3"&gt;No informo&lt;/option&gt;
                 &lt;/select&gt;
-                &lt;div class="valid-feedback"&gt;¡Muy bien, has seleccionado una opción!&lt;/div&gt;
+                &lt;div class="valid-feedback"&gt;¡Se ve bien!&lt;/div&gt;
                 &lt;div class="invalid-feedback"&gt;¡Debes seleccionar una opción!&lt;/div&gt;
             &lt;/div&gt;                                  
         &lt;/div&gt;  
-        &lt;div class="grid item-4 g-2"&gt; 
-            &lt;div class="form-group grid col-3 no-stretch-v"&gt;
+        &lt;div class="grid item-2 item-s-1 g-2"&gt; 
+            &lt;div class="form-group"&gt;
                 &lt;label for="apellido" class="form-label"&gt;Dirección&lt;/label&gt;
                 &lt;input type="text" class="form-control" id="apellido" value="" placeholder="Ingresa tu apellido" name="apellido" required aria-required="true" aria-describedby="apellido-instruccion"&gt;
                 &lt;div class="valid-feedback"&gt;¡Se ve bien!&lt;/div&gt;
-                &lt;div class="invalid-feedback"&gt;¡Por favor, asegúrate de introducir únicamente letras y un mínimo de tres caracteres!&lt;/div&gt;
+                &lt;div class="invalid-feedback"&gt;¡Por favor, ingresa únicamente letras, y un mínimo de tres caracteres!&lt;/div&gt;
             &lt;/div&gt;   
             &lt;div class="form-group"&gt;
-                &lt;label for="steps"&gt;Número&lt;/label&gt;
+                &lt;label for="steps" class="form-label"&gt;Número&lt;/label&gt;
                 &lt;input type="number" id="steps" name="steps" min="1" max="" step="1" aria-valuemin="1" required aria-valuemax=""&gt;
                 &lt;div class="valid-feedback"&gt;¡Muy bien!&lt;/div&gt;
                 &lt;div class="invalid-feedback"&gt;¡Por favor, debes ingresar un número!&lt;/div&gt;
             &lt;/div&gt;  
         &lt;/div&gt;                                                                                
-        &lt;div class="grid item-3 g-2"&gt;
+        &lt;div class="grid item-3 item-s-1 g-2"&gt;
             &lt;div class="form-group"&gt;
                 &lt;fieldset&gt;
                     &lt;legend&gt;Aceptar las condiciones&lt;/legend&gt;
                     &lt;label&gt;&lt;input type="checkbox" name="" value="" required&gt; Acepto&lt;/label&gt;
                 &lt;/fieldset&gt;
-                &lt;div class="valid-feedback"&gt;¡Muy bien, has seleccionado una opción!&lt;/div&gt;
+                &lt;div class="valid-feedback"&gt;¡Muy bien, has aceptado!&lt;/div&gt;
                 &lt;div class="invalid-feedback"&gt;¡Debes aceptar las condiciones!&lt;/div&gt;
             &lt;/div&gt;
             &lt;div class="form-group"&gt;
-                &lt;fieldset class="grid item-2"&gt;
+                &lt;fieldset&gt;
                     &lt;legend&gt;Elige una opción&lt;/legend&gt;
                     &lt;label&gt;&lt;input type="radio" name="opcion" value="opcion1" required&gt; Opción 1&lt;/label&gt;
                     &lt;label&gt;&lt;input type="radio" name="opcion" value="opcion2" required&gt; Opción 2&lt;/label&gt;
@@ -283,21 +287,20 @@
                 &lt;div class="valid-feedback"&gt;¡Archivo seleccionado correctamente!&lt;/div&gt;
                 &lt;div class="invalid-feedback"&gt;¡Debes seleccionar un archivo!&lt;/div&gt;                                                
             &lt;/div&gt;                                            
-        &lt;/div&gt;                                                                                
+        &lt;/div&gt;                            
         &lt;div class="form-group"&gt;
             &lt;label for="textarea" class="form-label"&gt;Consulta&lt;/label&gt;
             &lt;textarea class="form-control" id="textarea" value="" name="textarea" placeholder="Escribe tu consulta aquí" required aria-required="true" aria-describedby="textarea-instruccion"&gt;&lt;/textarea&gt;
             &lt;div class="valid-feedback"&gt;¡Se ve bien!&lt;/div&gt;
-            &lt;div class="invalid-feedback"&gt;¡Por favor, Debes ingresar como mínimo 20 caracteres!&lt;/div&gt;
+            &lt;div class="invalid-feedback"&gt;¡Por favor, ingresa como mínimo 20 caracteres!&lt;/div&gt;
         &lt;/div&gt;                                                                                                                        
         &lt;div class="form-group grid align-content-hr m-0"&gt;
-            &lt;button class="btn btn-secondary mr-2" type="reset"&gt;Borrar &lt;svg class="ml-1 ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"&gt;&lt;path d="M5.662 23l-5.369-5.365c-.195-.195-.293-.45-.293-.707 0-.256.098-.512.293-.707l14.929-14.928c.195-.194.451-.293.707-.293.255 0 .512.099.707.293l7.071 7.073c.196.195.293.451.293.708 0 .256-.097.511-.293.707l-11.216 11.219h5.514v2h-12.343zm3.657-2l-5.486-5.486-1.419 1.414 4.076 4.072h2.829zm.456-11.429l-4.528 4.528 5.658 5.659 4.527-4.53-5.657-5.657z"/&gt;&lt;/svg&gt;&lt;/button&gt;
-            &lt;button class="btn btn-primary" type="submit" value="enviar" aria-describedby="submit-instruccion"&gt;Enviar &lt;svg class="ml-1 ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/&gt;&lt;/svg&gt;&lt;/button&gt;
+            &lt;button class="btn btn-secondary" type="reset"&gt;Borrar &lt;svg class="ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd"&gt;&lt;path d="M5.662 23l-5.369-5.365c-.195-.195-.293-.45-.293-.707 0-.256.098-.512.293-.707l14.929-14.928c.195-.194.451-.293.707-.293.255 0 .512.099.707.293l7.071 7.073c.196.195.293.451.293.708 0 .256-.097.511-.293.707l-11.216 11.219h5.514v2h-12.343zm3.657-2l-5.486-5.486-1.419 1.414 4.076 4.072h2.829zm.456-11.429l-4.528 4.528 5.658 5.659 4.527-4.53-5.657-5.657z"/&gt;&lt;/svg&gt;&lt;/button&gt;
+            &lt;button class="btn btn-primary" type="submit" value="enviar" aria-describedby="submit-instruccion"&gt;Enviar &lt;svg class="ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/&gt;&lt;/svg&gt;&lt;/button&gt;
         &lt;/div&gt;   
     &lt;/form&gt;              
                                     </code></pre>
                                 </div>
-                            </div>
                         </div>                                 
                     </section>    
                             

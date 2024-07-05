@@ -6,11 +6,12 @@
   <title>Formulario con Entradas de Datos tipo Archivo | Estilo y Funcionalidad</title>
   <meta name="description" content="Optimiza la usabilidad de tus formularios con entradas de tipo archivo utilizando Quickly. Nuestra biblioteca de estilos está diseñada para mejorar la apariencia y funcionalidad de tus formularios, asegurando que los archivos se suban correctamente. Personaliza y optimiza tus formularios web para una interacción fluida y eficiente con los usuarios, resaltando la importancia de la validación y formato de los archivos subidos.">
   <link rel="stylesheet" href="./css/quickly.css">  <link rel="stylesheet" href="./css/app.css">
-  <script src="./js/quickly.js" defer></script>
+  <script src="./js/quicklyComp.js" defer></script>
+  <script src="./js/quicklyForm.js" defer></script>
   <script src="./js/app.js" defer></script>
   <link rel="stylesheet" href="./prism/prism.css">
   <script src="./prism/prism.js" defer></script>
-  <script>var currentPage = 'formEntradaTextArea';</script>
+  <script>var currentPage = 'formEntradaFile';</script>
   
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZQS41TB5G"></script>
@@ -18,7 +19,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-DZQS41TB5G');
 </script>
 
@@ -26,47 +26,49 @@
 <body>
     
     <div id="headerContent"></div>
-    <section class="cont">
+    <section class="cont cont-m">
         <aside id="menuContent"></aside> 
-        <main class="bg-white-2 pt-5">  
-            <div class="cont-80 py-5"> 
+        <main class="bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5"> 
                 
                 <!-- FORMULARIO -->
                 <section class="border rounded bg-color-1">
-                    <div class="p-5 item-1 bg-white-1 rounded-t border-b">
+                    <div class="p-5 pm-2 item-1 bg-white-1 rounded-t border-b">
                         <h1 class="font-l">Entradas de datos (Input File)</h1>
                         <p class="font-l font-s-4">Descubre la simplicidad y flexibilidad de <strong class="text-quickly">Quickly</strong> para diseñar formularios con entradas de tipo archivo personalizadas. Aplica estilos y personalízalas fácilmente para que se adapten a tu diseño de manera intuitiva y atractiva. Nuestra biblioteca de estilos garantiza que los campos de archivo sean visualmente consistentes y funcionalmente precisos, facilitando la subida de documentos, imágenes, videos y mejorando la experiencia del usuario.</p>
                     </div>
                 
                     <!-- Input tipo Text -->
-                    <section class="pt-3 px-5">
+                    <section class="p-5 pm-2">
                         <h2 class="font-l font-s-2">Entrada Tipo Archivo</h2>
-                        <p class="pb-2">Las entradas de tipo archivo están diseñadas específicamente para aceptar y manejar archivos subidos por los usuarios. Utiliza estas entradas para recolectar documentos, imágenes, videos y cualquier otro tipo de archivo necesario. La validación adecuada asegura que los archivos subidos cumplan con los requisitos establecidos, mejorando la precisión y utilidad de los datos recolectados.
-                        </p>                           
-                        <div class="table-cont">                        
-                            <div class="table-grid grid">
-                                <div class="table-item-th bg-table-h font-b">Atributo / Clase</div>
-                                <div class="table-item-th bg-table-h font-b">Descripción</div>    
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">required</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Para activar la validación de los campos, debes especificar el atributo.</div>
-                                </div>  
-                                <div class="bg-table-f grid">
-                                    <div class="table-item-td">disabled / .disabled</div>
-                                </div>
-                                <div class="bg-table-f grid">                            
-                                    <div class="table-item-td">Para deshabilitar el campo, debes especificar el atributo correspondiente o la clase.</div>
-                                </div>  
-                            </div>
-                            <div class="border-x mb-5">                      
+                        <p class="pb-2">Las entradas de tipo archivo están diseñadas específicamente para aceptar y manejar archivos subidos por los usuarios. Utiliza estas entradas para recolectar documentos, imágenes, videos y cualquier otro tipo de archivo necesario. La validación adecuada asegura que los archivos subidos cumplan con los requisitos establecidos, mejorando la precisión y utilidad de los datos recolectados.</p>                           
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Atributo / Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="bg-maya-blue-9">required</td>
+                                        <td class="bg-maya-blue-9">Para activar la validación de los campos, debes especificar el atributo.</td>
+                                    </tr>       
+                                    <tr>
+                                        <td class="bg-maya-blue-9">disabled / .disabled</td>
+                                        <td class="bg-maya-blue-9">Para deshabilitar el campo, debes especificar el atributo correspondiente o la clase.</td>
+                                    </tr>                                                                                                                                                                                    
+                                </tbody>
+                            </table>
+                        </div>
+                            <div class="border rounded mt-2">                      
                                 <div class="border-b p-2">
                                     <p>Ejemplo</p>
                                 </div>  
-                                <div class="hatched-1 p-5"> 
-                                    <form id="form" class="form">
-                                        <div class="grid item-1 g-2">                                                                             
+                                <div class="hatched-1 p-5 pm-2"> 
+                                    <form id="form" class="form pm-2">
+                                        <div class="grid item-1 item-s-1 g-2">                                                                             
                                             <div class="form-group">
                                                 <fieldset>
                                                     <legend>Archivo (Requerido)</legend>
@@ -148,7 +150,6 @@
                                     </code></pre>
                                 </div>
                             </div>
-                        </div>                                 
                     </section>    
                           
                     

@@ -524,12 +524,11 @@
 html {
     scroll-behavior: smooth;
     line-height: 1.36 !important;
-    font-size: var(--font-size-1);
-    font-family: var(--font-1) !important;
 }
 
 body {
-    font-size: 1rem !important;
+    font-size: var(--font-size-1) !important;
+    font-family: var(--font-1) !important;
     margin: 0px !important;
     padding: 0px !important;
     color: var(--color-gray);
@@ -5068,7 +5067,6 @@ input[type="file"]{
     border: 1px solid rgba(0,0,0,.08);
     border-radius: 8px;
     background: white;  
-    padding: 2rem;
 }
 
 .form-group {
@@ -5083,8 +5081,12 @@ input[type="file"]{
 .form-input,
 .form-select,
 label,
+input,
+fieldset,
+textarea,
 select{
-    font-size: var(--font-size-1) !important;
+    font: inherit; /* Hereda las propiedades de fuente del body */
+    font-size: inherit;
 }
 
 .form-label {
@@ -5096,17 +5098,46 @@ legend{
     padding: 0 8px;
 }
 
-fieldset{
-    padding: 8px 16px;
+fieldset {
+    width: 100% !important;
+    padding: 8px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+fieldset input[type="file"]{
+    padding: 0px 8px;
+    border: 1px solid #ccc;
 }
 
-input, select, fieldset {
+fieldset input,
+fieldset select,
+fieldset textarea {
+            width: 100%; /* Ajusta el ancho al 100% del fieldset */
+            box-sizing: border-box; /* Incluye padding y border en el ancho total */
+            /*margin-bottom: 0.5rem;*/ /* Espacio entre elementos */
+        }
+ 
+@media (max-width: 576px) {
+    fieldset{
+        width: 100% !important;
+        padding: 8px 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="file"]{
+        width: 100% !important;
+        padding: 8px 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+}
+
+input, select {
     width: auto !important;
     padding: .5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-family: var(--font-1);
-    font-size: var(--font-size-1);
 }
 
 textarea {
@@ -5118,10 +5149,7 @@ textarea {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-family: var(--font-1);
-    font-size: var(--font-size-1);
 }
-
 
 input::placeholder{
     color: rgba(0,0,0,.5);
@@ -5416,9 +5444,11 @@ select {
 }
 .invalid-feedback {
     background-color: var(--danger);
+
 }
 .valid-feedback {
     background-color: var(--success);
+
 }
 
 .is-valid {
@@ -5429,18 +5459,3 @@ select {
     border: 1px solid var(--danger) !important;
     border-radius: 4px 4px 4px 0px !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
