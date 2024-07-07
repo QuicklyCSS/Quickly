@@ -44,52 +44,7 @@
                         <p>Puedes separar objetos según el tipo de espaciado que desees. Por defecto, Quickly ofrece una secuencia de espacios de 8px, siendo el más pequeño el g-1, equivalente a 8px, y alcanzando un nivel g-5, equivalente a 40px.</p>             
                     </section>
 
-                    <!-- GUTTER 0  -->
-                    <section class="pt-0 p-5 pm-2">
-                        <h3 class="font-l font-s-2">.gutter-0</h3>
-                        <div class="table">
-                            <table class="table-container">
-                                <thead class="table-header bg-skyblue-4">
-                                    <tr>
-                                        <th class="w-100 bg-maya-blue-5">Clase</th>
-                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="table-body">
-                                    <tr>
-                                        <td class="w-auto bg-maya-blue-9">.g-0</td>
-                                        <td class="w-auto bg-maya-blue-9">.Gutter-0. Quita los espacios entre elementos del contendor.</td>
-                                    </tr>                                                                                                                                                                                                                                                                                                                                                                                                                
-                                </tbody>
-                            </table>
-                        </div>                                           
-                        <div class="border rounded mt-2">
-                            <div class="block border-b p-2">
-                                <p>Gutter 0</p>
-                            </div>
-                            <div class="p-5 pm-2 hatched-1 grid item-2 g-0">                          
-                                <div class="div1 p-2 text-ac">g-0</div>       
-                                <div class="div1 p-2 text-ac">g-0</div> 
-                                <div class="div1 p-2 text-ac">g-0</div>       
-                                <div class="div1 p-2 text-ac">g-0</div>                                                                                                                                                      
-                            </div>
-                            <div class="border-t p-2">
-                                HTML
-                            </div>
-                            <div class="pre-pre2">
-                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="p-5 m-5"&gt;
-        &lt;div class="p-5 hatched-1 grid item-2 g-0"&gt;
-        &lt;div class="p-2 text-ac"&gt;g-0&lt;/div&gt;
-        &lt;div class="p-2 text-ac"&gt;g-0&lt;/div&gt;
-        &lt;div class="p-2 text-ac"&gt;g-0&lt;/div&gt;
-        &lt;div class="p-2 text-ac"&gt;g-0&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-                                </code></pre>
-                            </div> 
-                        </div>                
-                    </section>   
+
 
                     <!-- GUTTER 1 AL 5  -->
                     <section class="pt-0 p-5 pm-2">
@@ -103,6 +58,10 @@
                                     </tr>
                                 </thead>
                                 <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.g-0</td>
+                                        <td class="w-auto bg-maya-blue-9">.Gutter-0. Quita las separacion horizontal y vertical entre elementos.</td>
+                                    </tr>  
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.g-1</td>
                                         <td class="w-auto bg-maya-blue-9">.Gutter-1. Agrega una separacion horizontal y vertical entre elementos de 8px.</td>
@@ -131,13 +90,13 @@
                                 <p>Gutters del 1 y 5</p>
                             </div>
                             <div class="hatched-1 scroll-a">
-                                <div class="gy-5 p-5 pm-2 grid item-2 g-1">
+                                <div class="g-1 p-5 pb-0 pm-2 grid item-2">
                                     <div class="div1 p-2 text-ac">g-1</div>       
                                     <div class="div1 p-2 text-ac">g-1</div> 
                                     <div class="div1 p-2 text-ac">g-1</div>       
                                     <div class="div1 p-2 text-ac">g-1</div>                                                                                                                             
                                 </div>
-                                <div class="gy-5 p-5 pm-2 grid item-2 g-5">
+                                <div class="g-5 p-5 pm-2 grid item-2">
                                     <div class="div1 p-2 text-ac">g-5</div>       
                                     <div class="div1 p-2 text-ac">g-5</div> 
                                     <div class="div1 p-2 text-ac">g-5</div>       
@@ -149,13 +108,13 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="gy-5 p-5 grid item-2 g-1"&gt;
+    &lt;div class="g-1 grid item-2"&gt;
         &lt;div class="p-2 text-ac"&gt;g-1&lt;/div&gt;
         &lt;div class="p-2 text-ac"&gt;g-1&lt;/div&gt;
         &lt;div class="p-2 text-ac"&gt;g-1&lt;/div&gt;
         &lt;div class="p-2 text-ac"&gt;g-1&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="gy-5 p-5 grid item-2 g-5"&gt;
+    &lt;div class="g-5 grid item-2"&gt;
         &lt;div class="p-2 text-ac"&gt;g-5&lt;/div&gt;
         &lt;div class="p-2 text-ac"&gt;g-5&lt;/div&gt;
         &lt;div class="p-2 text-ac"&gt;g-5&lt;/div&gt;
@@ -209,18 +168,18 @@
                                 <div class="div1 p-2 text-ac">gx-2</div>       
                                 <div class="div1 p-2 text-ac">gx-2</div> 
                                 <div class="div1 p-2 text-ac">gx-2</div>       
-                                <div class="div1 p-2 text-ac">gx-2</div>                                                                                                                              
+                                <div class="div1 p-2 text-ac">gx-2</div>     
                             </div>
                             <div class="border-t p-2">
                                 HTML
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="p-5 grid item-2 gx-2"&gt;
-        &lt;div class="p-2 text-ac"&gt;gy-2&lt;/div&gt;
-        &lt;div class="p-2 text-ac"&gt;gy-2&lt;/div&gt;
-        &lt;div class="p-2 text-ac"&gt;gy-2&lt;/div&gt;
-        &lt;div class="p-2 text-ac"&gt;gy-2&lt;/div&gt;
+    &lt;div class="grid item-2 gx-2"&gt;
+        &lt;div&gt;gy-2&lt;/div&gt;
+        &lt;div&gt;gy-2&lt;/div&gt;
+        &lt;div&gt;gy-2&lt;/div&gt;
+        &lt;div&gt;gy-2&lt;/div&gt;
     &lt;/div&gt;
                                 </code></pre>
                             </div> 
@@ -277,11 +236,11 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="p-5 grid item-2 gy-2 hatched-1"&gt;
-        &lt;div class="p-2 text-ac"&gt;gy-2&lt;/div&gt;
-        &lt;div class="p-2 text-ac"&gt;gy-2&lt;/div&gt;
-        &lt;div class="p-2 text-ac"&gt;gy-2&lt;/div&gt;
-        &lt;div class="p-2 text-ac"&gt;gy-2&lt;/div&gt;
+    &lt;div class="grid item-2 gy-2"&gt;
+        &lt;div&gt;gy-2&lt;/div&gt;
+        &lt;div&gt;gy-2&lt;/div&gt;
+        &lt;div&gt;gy-2&lt;/div&gt;
+        &lt;div&gt;gy-2&lt;/div&gt;
     &lt;/div&gt;
                                 </code></pre>
                             </div> 
@@ -341,12 +300,12 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="p-5 grid item-5 g-3 text-ac hatched-1"&gt; 
-        &lt;div class="p-1 border stretch-h no-stretch-v hatched-1"&gt;&lt;div class="no-stretch-vs border"&gt;p-1&lt;/div&gt;&lt;/div&gt;  
-        &lt;div class="p-2 border stretch-h no-stretch-v hatched-1"&gt;&lt;div class="no-stretch-vs border"&gt;p-2&lt;/div&gt;&lt;/div&gt; 
-        &lt;div class="p-3 border stretch-h no-stretch-v hatched-1"&gt;&lt;div class="no-stretch-vs border"&gt;p-3&lt;/div&gt;&lt;/div&gt; 
-        &lt;div class="p-4 border stretch-h no-stretch-v hatched-1"&gt;&lt;div class="no-stretch-vs border"&gt;p-4&lt;/div&gt;&lt;/div&gt; 
-        &lt;div class="p-5 border stretch-h no-stretch-v hatched-1"&gt;&lt;div class="no-stretch-vs border"&gt;p-5&lt;/div&gt;&lt;/div&gt; 
+    &lt;div class="grid item-5 g-3 text-ac"&gt; 
+        &lt;div class="p-1 border"&gt;p-1&lt;/div&gt;  
+        &lt;div class="p-2 border"&gt;p-2&lt;/div&gt; 
+        &lt;div class="p-3 border"&gt;p-3&lt;/div&gt; 
+        &lt;div class="p-4 border"&gt;p-4&lt;/div&gt; 
+        &lt;div class="p-5 border"&gt;p-5&lt;/div&gt; 
     &lt;/div&gt;
                                 </code></pre>
                             </div> 
@@ -403,11 +362,11 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="p-5 grid item-4 g-3 hatched-1 text-ac"&gt; 
-        &lt;div class="pt-5 border stretch-h hatched-1"&gt;&lt;div class="no-stretch-v stretch-h border"&gt;pt-5&lt;/div&gt;&lt;/div&gt; 
-        &lt;div class="pr-5 border stretch-h no-stretch-v hatched-1"&gt;&lt;div class="stretch-h border"&gt;pr-5&lt;/div&gt;&lt;/div&gt; 
-        &lt;div class="pb-5 border stretch-h hatched-1"&gt;&lt;div class="no-stretch-v stretch-h border"&gt;pb-5&lt;/div&gt;&lt;/div&gt;  
-        &lt;div class="pl-5 border stretch-h no-stretch-v hatched-1"&gt;&lt;div class="no-stretch-v stretch-h border"&gt;pl-5&lt;/div&gt;&lt;/div&gt; 
+    &lt;div class="grid item-4 g-3 text-ac"&gt; 
+        &lt;div class="pt-5 border"&gt;pt-5&lt;/div&gt; 
+        &lt;div class="pr-5 border"&gt;pr-5&lt;/div&gt; 
+        &lt;div class="pb-5 border"&gt;pb-5&lt;/div&gt;  
+        &lt;div class="pl-5 border"&gt;pl-5&lt;/div&gt;
     &lt;/div&gt;
                                 </code></pre>
                             </div> 
@@ -467,12 +426,12 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html"> 
-    &lt;div class="p-5 grid item-5 g-3 text-ac no-stretch-vs hatched-1"&gt;   
-        &lt;div class="border hatched-1"&gt;&lt;div class="m-1 p-2"&gt;m-1&lt;/div&gt;&lt;/div&gt;   
-        &lt;div class="border hatched-1"&gt;&lt;div class="m-2 p-2"&gt;m-2&lt;/div&gt;&lt;/div&gt;  
-        &lt;div class="border hatched-1"&gt;&lt;div class="m-3 p-2"&gt;m-3&lt;/div&gt;&lt;/div&gt;  
-        &lt;div class="border hatched-1"&gt;&lt;div class="m-4 p-2"&gt;m-4&lt;/div&gt;&lt;/div&gt;  
-        &lt;div class="border hatched-1"&gt;&lt;div class="m-5 p-2"&gt;m-5&lt;/div&gt;&lt;/div&gt;  
+    &lt;div class="p-5 grid item-5 g-3 text-ac"&gt;   
+        &lt;div class="border m-1"&gt;m-1&lt;/div&gt;   
+        &lt;div class="border m-2"&gt;m-2&lt;/div&gt;  
+        &lt;div class="border m-3"&gt;m-3&lt;/div&gt;  
+        &lt;div class="border m-4"&gt;m-4&lt;/div&gt;  
+        &lt;div class="border m-5"&gt;m-5&lt;/div&gt; 
     &lt;/div&gt;
                         </code></pre>
                             </div> 
@@ -529,11 +488,11 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="p-5 grid item-4 hatched-1 g-3"&gt;   
-        &lt;div class="border stretch hatched-1"&gt;&lt;div class="mt-4 p-2"&gt;mt-4&lt;/div&gt;&lt;/div&gt;  
-        &lt;div class="border no-stretch-v hatched-1"&gt;&lt;div class="mr-4 p-2"&gt;mr-4&lt;/div&gt;&lt;/div&gt;   
-        &lt;div class="border stretch hatched-1"&gt;&lt;div class="mb-4 p-2"&gt;mb-4&lt;/div&gt;&lt;/div&gt;  
-        &lt;div class="border no-stretch-v hatched-1"&gt;&lt;div class="ml-4 p-2"&gt;ml-4&lt;/div&gt;&lt;/div&gt;  
+    &lt;div class="p-5 grid item-4 g-3"&gt;   
+        &lt;div class="border mt-4"&gt;mt-4&lt;/div&gt;  
+        &lt;div class="border mr-4"&gt;mr-4&lt;/div&gt;   
+        &lt;div class="border mb-4"&gt;mb-4&lt;/div&gt;  
+        &lt;div class="border ml-4"&gt;ml-4&lt;/div&gt;  
     &lt;/div&gt;
                         </code></pre>
                             </div> 

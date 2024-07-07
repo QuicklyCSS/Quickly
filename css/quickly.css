@@ -1491,6 +1491,10 @@ mark {
 .h-500 {height: 500px}
 .h-550 {height: 550px}
 .h-600 {height: 600px}
+.h-700 {height: 700px}
+.h-800 {height: 800px}
+.h-900 {height: 900px}
+.h-1000 {height: 1000px}
 .h-auto {height: auto}
 
 /* Anchos de columnas PX */
@@ -1516,6 +1520,10 @@ mark {
 .w-500 {width: 500px}
 .w-550 {width: 550px}
 .w-600 {width: 600px}
+.w-700 {width: 700px}
+.w-800 {width: 800px}
+.w-900 {width: 900px}
+.w-1000 {width: 1000px}
 .w-auto {width: auto}
 
 /* SECUENCIA FIBONACHI ALTURAS */
@@ -1991,6 +1999,7 @@ mark {
 .g-5 {gap: var(--md-40);}
 
 /* Clase para gutter en el eje X */
+.gx-0 {column-gap: 0px;}
 .gx-1 {column-gap: var(--md-8);}
 .gx-2 {column-gap: var(--md-16);}
 .gx-3 {column-gap: var(--md-24);}
@@ -1998,6 +2007,7 @@ mark {
 .gx-5 {column-gap: var(--md-40);}
 
 /* Clase para gutter en el eje Y */
+.gy-0 {row-gap: 0px;}
 .gy-1 {row-gap: var(--md-8);}
 .gy-2 {row-gap: var(--md-16);}
 .gy-3 {row-gap: var(--md-24);}

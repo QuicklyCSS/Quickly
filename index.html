@@ -12,7 +12,7 @@
   <script src="./js/app.js" defer></script>
   <link rel="stylesheet" href="./prism/prism.css">
   <script src="./prism/prism.js" defer></script>
-  <script>var currentPage = 'comenzar';</script>
+  <script>var currentPage = 'index';</script>
   
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZQS41TB5G"></script>
@@ -41,25 +41,28 @@
                     <div class="pt-3 px-5 pm-2">
                         <section>
                             <h3 class="font-l font-s-2">Enlace al CDN</h3>
-                            <p class="pb-2">A continuación, te proporcionamos los enlaces principales de nuestra CDN para que los puedas utilizar.</p>                                              
+                            <p class="pb-2">A continuación, te proporcionamos los enlaces principales de nuestra CDN para que los utilices. Hemos separado los archivos JavaScript en dos unidades: una para componentes y otra para formularios. Si solo necesitas utilizar el JavaScript estándar que incluye componentes, simplemente haz la llamada a quicklyComp.js. Si necesitas ambos, componentes y formularios, realiza las dos llamadas correspondientes a quicklyComp.js y quicklyForm.js.</p>                                              
                             <div class="table">
                                 <table class="table-container">
                                     <thead class="table-header bg-skyblue-4">
                                         <tr>
-                                            <th class="w-100 bg-maya-blue-5">Detalle</th>
+                                            <th class="w-150 bg-maya-blue-5">Detalle</th>
                                             <th class="w-auto bg-maya-blue-5">CDN URL</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-body">
                                         <tr>
-                                            <td class="bg-maya-blue-9">CSS</td>
+                                            <td class="bg-maya-blue-9">CSS general</td>
                                             <td class="bg-maya-blue-9">https://quicklycss.github.io/Quickly/css/quickly.css</td>
                                         </tr>
                                         <tr>
-                                            <td class="bg-maya-blue-9">JS</td>
-                                            <td class="bg-maya-blue-9">https://quicklycss.github.io/Quickly/js/quickly.js</td>
-                                        </tr>                                    
-    
+                                            <td class="bg-maya-blue-9">JS Componentes</td>
+                                            <td class="bg-maya-blue-9">https://quicklycss.github.io/Quickly/js/quicklyComp.js</td>
+                                        </tr>                                                    
+                                        <tr>
+                                            <td class="bg-maya-blue-9">JS Formulario</td>
+                                            <td class="bg-maya-blue-9">https://quicklycss.github.io/Quickly/js/quicklyForm.js</td>
+                                        </tr>           
                                     </tbody>
                                 </table>
                             </div>                           
@@ -87,8 +90,12 @@
             &lt;!-- Normalize --&gt;
             &lt;link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"&gt;
             &lt;!-- CDN Quickly --&gt;
+            &lt;!-- Llamada para CSS --&gt;
             &lt;link href="https://quicklycss.github.io/Quickly/css/quickly.css" rel="stylesheet"&gt;
-            &lt;script src="https://quicklycss.github.io/Quickly/js/quickly.js">&lt;/script&gt;
+            &lt;!-- Llamada para Javascript de componentes --&gt;
+            &lt;script src="https://quicklycss.github.io/Quickly/js/quicklyComp.js">&lt;/script&gt;
+            &lt;!-- Llamada para Javascript de Formularios --&gt;
+            &lt;script src="https://quicklycss.github.io/Quickly/js/quicklyForm.js">&lt;/script&gt;
             &lt;!-- Coloca aquí tu CSS personalizado --&gt;
             &lt;link href="&lt;!-- Aquí --&gt;" rel="stylesheet"&gt;
             &lt;title&gt;Quickly Demo&lt;/title&gt;
