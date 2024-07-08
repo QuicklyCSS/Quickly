@@ -1,119 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quickly: Framework CSS con CSS Grid | Desarrollo Web Rápido y Eficiente</title>
-  <meta name="description" content="Quickly: El framework CSS potenciado por CSS Grid que agiliza el desarrollo web con su enfoque modular y flexible. Crea diseños modernos y responsivos de manera rápida y eficiente.">
-  <link rel="icon" type="image/png" href="./img/ico.png">
-  <link rel="stylesheet" href="./css/quickly.css">
-  <link rel="stylesheet" href="./css/app.css">
-  <script src="./js/quicklyComp.js" defer></script>
-  <script src="./js/app.js" defer></script>
-  <link rel="stylesheet" href="./prism/prism.css">
-  <script src="./prism/prism.js" defer></script>
-  <script>var currentPage = 'index';</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Quickly: El Framework de Rejillas Fácil y Rápido</title>
+    <meta name="description" content="CSS Grid Quickly: Construye rejillas para la web de manera fácil, rápida y eficiente con este framework intuitivo y poderoso.">
+    <link rel="icon" type="image/png" href="./img/ico.png">
+    <link href="./css/quickly.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="./js/app.js" defer></script>
   
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DZQS41TB5G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-DZQS41TB5G');
-</script>
-
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZQS41TB5G"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DZQS41TB5G');
+    </script>
 </head>
-<body>
-    <div id="headerContent"></div>
-    <section class="cont cont-m">
-        <aside id="menuContent"></aside> 
-        <main class="bg-white-2 pt-5 pm-2">
-            <div class="cont-80 cont-m py-5 ">        
-                <section class="border rounded bg-color-1">
-                    <div class="p-5 pm-2 bg-white-1 rounded-t border-b">
-                        <h1 class="font-l"><span>Descubre <strong class="text-quickly" >Quickly</strong>. </span><br> El sistema de diseño creado con CSS Grid.</h1>
-                        <h2 class="font-l">Con Quickly, puedes comenzar integrando fácilmente el CSS y JavaScript en tu proyecto a través de CDN. Esta opción te libera de la necesidad de realizar pasos de compilación, permitiéndote iniciar tu proyecto rápidamente. Así, puedes concentrarte en lo que realmente importa: desarrollar tu aplicación de manera eficiente y sin complicaciones.</h2>
-                        <p class="font-s-2 border-t pt-2 mt-2 font-l">Inicia rápidamente</p>
-                        <p class="font-l">Comienza integrando fácilmente el CSS y JavaScript listos para producción de Quickly a través de CDN. Con esta opción, evitas la necesidad de realizar pasos de compilación, lo que te permite comenzar rápidamente con tu proyecto y enfocarte en lo que realmente importa: desarrollar tu aplicación de manera eficiente y sin complicaciones.</p>
-                    </div>
-
-                    <div class="pt-3 px-5 pm-2">
-                        <section>
-                            <h3 class="font-l font-s-2">Enlace al CDN</h3>
-                            <p class="pb-2">A continuación, te proporcionamos los enlaces principales de nuestra CDN para que los utilices. Hemos separado los archivos JavaScript en dos unidades: una para componentes y otra para formularios. Si solo necesitas utilizar el JavaScript estándar que incluye componentes, simplemente haz la llamada a quicklyComp.js. Si necesitas ambos, componentes y formularios, realiza las dos llamadas correspondientes a quicklyComp.js y quicklyForm.js.</p>                                              
-                            <div class="table">
-                                <table class="table-container">
-                                    <thead class="table-header bg-skyblue-4">
-                                        <tr>
-                                            <th class="w-150 bg-maya-blue-5">Detalle</th>
-                                            <th class="w-auto bg-maya-blue-5">CDN URL</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="table-body">
-                                        <tr>
-                                            <td class="bg-maya-blue-9">CSS general</td>
-                                            <td class="bg-maya-blue-9">https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quickly.css</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="bg-maya-blue-9">JS Componentes</td>
-                                            <td class="bg-maya-blue-9">https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.js</td>
-                                        </tr>                                                    
-                                        <tr>
-                                            <td class="bg-maya-blue-9">JS Formulario</td>
-                                            <td class="bg-maya-blue-9">https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyForm.js</td>
-                                        </tr>           
-                                    </tbody>
-                                </table>
-                            </div>                           
-                        </section>  
-                    </div>   
-                    
-                    <div class="px-5 pb-5 pt-3 pm-2">
-                        <section>
-                            <div class="pb-2">
-                                <h3 class="font-l font-s-2">Implementación rápida y simple</h3>
-                                <p class="pb-2">Para comenzar, crea un nuevo archivo index.html en la carpeta raíz de tu proyecto.</p>
-                                <p>Copia y pega este HTML inicial, el cual incluye todos los elementos necesarios para comenzar tu proyecto con Quickly. Recuerda siempre colocar tus estilos CSS después de los de Quickly para asegurar que tengan prioridad.</p>       
-                                <p>Recomendamos incluir Normalize a tu proyecto para evitar inconsistencias en los estilos entre navegadores.</p>
-                            </div>
-                        
-                            <div class="pre-pre">
-                                <pre class="cont-100 scroll-x"><code class="language-html">                  
-    &lt;!DOCTYPE html&gt;
-    &lt;html lang=&quot;es&quot;&gt;
-        &lt;head&gt;
-            &lt;meta charset=&quot;UTF-8&quot;&gt;
-            &lt;!-- Coloca aquí tu ICO --&gt;
-            &lt;link rel="icon" href="&lt;!-- Aquí --&gt;"&gt;
-            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-            &lt;!-- Normalize --&gt;
-            &lt;link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"&gt;
-            &lt;!-- CDN Quickly --&gt;
-            &lt;!-- Llamada para CSS --&gt;
-            &lt;link href="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quickly.css" rel="stylesheet"&gt;
-            &lt;!-- Llamada para Javascript de componentes --&gt;
-            &lt;script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.js">&lt;/script&gt;
-            &lt;!-- Llamada para Javascript de Formularios solo si es necesario --&gt;
-            &lt;script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyForm.js">&lt;/script&gt;
-            &lt;!-- Coloca aquí tu CSS personalizado --&gt;
-            &lt;link href="&lt;!-- Aquí --&gt;" rel="stylesheet"&gt;
-            &lt;title&gt;Quickly Demo&lt;/title&gt;
-        &lt;/head&gt;
-        &lt;body&gt;   
-            &lt;h1&gt;Hello, world!&lt;/h1&gt;
-        &lt;/body&gt;
-    &lt;/html&gt;
-                                </code></pre>
-                            </div>                
-                        </section>   
-                    </div>
-                </section>
-
+<body class="body">
+    <div class="cont-80 cont-m grid align-cc vh-100">
+        <div class="grid align-cc g-2 animated-div pm-2">
+            <div>
+                <img src="./img/home-logo.png" class="img-fluid pxm-5">
             </div>
-        </main>     
-        <footer id="footerContent"></footer>    
-    </section>
-
+            <h1 class="mt-2 font-b dis-s-1 text-ac line-h-2 color-lightblue">
+                Sistema de <br>diseño con 
+                <div class="color-purple">CSS Grid</div>
+            </h1>
+            <h2 class="mt-2 font-l text-ac">
+                Disfruta de una construcción fácil <br>y sencilla en HTML para sus <br>proyectos web.
+            </h2>
+            <a class="mt-5 btn btn-primary" href="comenzar.html" target="_self">Documentación</a>
+        </div>
+    </div>
 </body>
 </html>

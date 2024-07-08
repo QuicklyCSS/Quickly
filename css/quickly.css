@@ -548,8 +548,10 @@ body {
 	* BACKGROUND COLOR *
 ==================== */
 /* COLORS */
-.bg-purple { background-color: var(--color-purple); }
-.bg-lightblue { background-color: var(--color-lightBlue); }
+.color-purple{color: var(--color-purple);}
+.bg-purple { background-color: var(--color-purple);}
+.color-lightblue{color: var(--color-lightBlue);}
+.bg-lightblue { background-color: var(--color-lightBlue);}
 .bg-white { background-color: var(--color-white); }
 .bg-black { background-color: var(--color-black); }
 .bg-gray   {background-color: var(--color-gray);}
@@ -1464,6 +1466,64 @@ mark {
 .dis-s-5 {font-size: 3rem}
 .dis-s-6 {font-size: 2.75rem}
 
+/* ALTURAS DE INTERLINEADO */
+.line-h-1 {line-height: .75;}
+.line-h-2 {line-height: 1;}
+.line-h-3 {line-height: 1.25;}
+.line-h-4 {line-height: 1.5;}
+.line-h-5 {line-height: 1.75;}
+
+@media (max-width: 576px) {
+    body{
+        overflow: hidden;        
+    }
+    .dis-s-1 {font-size: 3.5rem}
+    .dis-s-2 {font-size: 3.25rem}
+    .dis-s-3 {font-size: 3rem}
+    .dis-s-4 {font-size: 2.75rem}
+    .dis-s-5 {font-size: 2.5rem}
+    .dis-s-6 {font-size: 2.25rem}
+
+    .font-s-1 {font-size: 2rem;}
+    .font-s-2 {font-size: 1.75rem;}
+    .font-s-3 {font-size: 1.5rem;}
+    .font-s-4 {font-size: 1.25rem;}
+    .font-s-5 {font-size: 1.2rem;}
+    .font-s-6 {font-size: 1.12rem;}
+    .font-s-7 {font-size: .8rem;}
+    .font-s-8 {font-size: .6rem;}
+
+    h1,
+    .h1 {
+        font-size: 1.5rem;
+    }
+
+    h2,
+    .h2 {
+        font-size: 1.25rem;
+    }
+
+    h3,
+    .h3 {
+        font-size: 1rem;
+    }
+
+    h4,
+    .h4 {
+        font-size: .8rem;
+    }
+
+    h5,
+    .h5 {
+        font-size: .7rem;
+    }
+
+    h6,
+    .h6 {
+        font-size: .6rem;
+    }
+}
+
 /* ====================
     * HEIGHT & WIDTH *
 ==================== */
@@ -1821,8 +1881,6 @@ mark {
     .pmr-5 {padding-right: var(--md-40)}
     .pml-5 {padding-left: var(--md-40)}
     .pmb-5 {padding-bottom: var(--md-40)}
-
-
 }
 
 .mx-1 {margin: 0 var(--md-8)}
@@ -1830,6 +1888,7 @@ mark {
 .mx-3 {margin: 0 var(--md-24)}
 .mx-4 {margin: 0 var(--md-32)}
 .mx-5 {margin: 0 var(--md-40)}
+
 
 .m-0 {margin: 0px !important;}
 .m-1 {margin: var(--md-8)}

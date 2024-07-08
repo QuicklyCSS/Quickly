@@ -1,4 +1,52 @@
-body {min-height: 100vh; overflow: hidden;}
+@keyframes tunnelEffect {
+    0% {
+        transform: scale(2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes tunnelEffect2 {
+    0% {
+        transform: translateY(25%) scale(1); /* Comienza desde abajo y a tamaño normal */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scale(1); /* Se mueve hacia arriba y aumenta el tamaño */
+        opacity: 1; /* Desaparece gradualmente */
+    }
+}
+.animated-div {
+    animation: tunnelEffect2 3.5s ease-in-out forwards; /* Aplica la animación */
+}
+
+.body {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    background-color: #fff; /* Color de fondo de respaldo */
+}
+
+.body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg-Quickly.png);
+    background-size: cover; /* Mantiene el aspecto de la imagen */
+    background-position: top center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    animation: tunnelEffect 2.5s ease-in-out forwards; /* Aplicar animación */
+    z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+}
+
+
+
 header{
     background-color: rgba(221, 226, 238, .2) !important;
     -webkit-backdrop-filter: blur(8px);
