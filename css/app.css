@@ -29,7 +29,15 @@
     margin: 0;
     background-color: #fff; /* Color de fondo de respaldo */
 }
-
+@media (max-width: 992px) {
+    .body {
+        min-height: 100vh;
+        overflow: hidden !important;
+        position: relative;
+        margin: 0;
+        background-color: #fff; /* Color de fondo de respaldo */
+    }
+}
 .body::before {
     content: "";
     position: absolute;
