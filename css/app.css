@@ -37,6 +37,21 @@
         margin: 0;
         background-color: #fff; /* Color de fondo de respaldo */
     }
+    .body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/bg-Quickly.png);
+        background-size: cover; /* Mantiene el aspecto de la imagen */
+        background-position: top center; /* Centra la imagen */
+        background-repeat: no-repeat; /* No repite la imagen */
+        animation: tunnelEffect 2.5s ease-in-out forwards; /* Aplicar animación */
+        z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+        overflow: hidden !important;
+    }
 }
 .body::before {
     content: "";
