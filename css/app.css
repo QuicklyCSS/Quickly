@@ -30,6 +30,10 @@
     background-color: #fff; /* Color de fondo de respaldo */
 }
 @media (max-width: 992px) {
+    html,
+    body{
+        overflow-x: hidden !important; 
+    }
     .body {
         min-height: 100vh;
         overflow: hidden !important;
