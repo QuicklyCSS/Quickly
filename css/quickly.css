@@ -2073,6 +2073,37 @@ mark {
 .gy-4 {row-gap: var(--md-32);}
 .gy-5 {row-gap: var(--md-40);}
 
+
+@media (max-width: 992px) {
+    /* ====================
+	* GUTTERS *
+    ==================== */
+    /* Clase para gutter en ambos ejes X e Y */
+    .gm-0 {gap: 0px;}
+    .gm-1 {gap: var(--md-8);}
+    .gm-2 {gap: var(--md-16);}
+    .gm-3 {gap: var(--md-24);}
+    .gm-4 {gap: var(--md-32);}
+    .gm-5 {gap: var(--md-40);}
+
+    /* Clase para gutter en el eje X */
+    .gxm-0 {column-gap: 0px;}
+    .gxm-1 {column-gap: var(--md-8);}
+    .gxm-2 {column-gap: var(--md-16);}
+    .gxm-3 {column-gap: var(--md-24);}
+    .gxm-4 {column-gap: var(--md-32);}
+    .gxm-5 {column-gap: var(--md-40);}
+
+    /* Clase para gutter en el eje Y */
+    .gym-0 {row-gap: 0px;}
+    .gym-1 {row-gap: var(--md-8);}
+    .gym-2 {row-gap: var(--md-16);}
+    .gym-3 {row-gap: var(--md-24);}
+    .gym-4 {row-gap: var(--md-32);}
+    .gym-5 {row-gap: var(--md-40);}
+}
+
+
 /* ====================
 	* CENTRAR VERTICAL HORIZONTAL *
 ==================== */
