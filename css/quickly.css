@@ -2907,6 +2907,7 @@ button,
     text-align: center;
     vertical-align: middle;
     /*align-items: center;*/
+    width: fit-content !important;
 }
 
 .btn-s {
@@ -2924,6 +2925,7 @@ button,
     text-align: center;
     vertical-align: middle;
     /*align-items: center;*/
+    width: fit-content !important;
 }
 
 .btn-l {
@@ -2941,6 +2943,7 @@ button,
     text-align: center;
     vertical-align: middle;
     /*align-items: center;*/
+    width: fit-content !important;
 }
 
 /* NORMAL BUTTON */
