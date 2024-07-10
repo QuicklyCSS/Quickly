@@ -75,6 +75,7 @@
         background-repeat: no-repeat; /* No repite la imagen */
         animation: tunnelEffect 2.5s ease-in-out forwards; /* Aplicar animación */
         z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+        overflow: hidden !important; 
     }
     .cont-m-90 {
         max-width: 100%;
