@@ -24,7 +24,7 @@
 
 .body {
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
     margin: 0;
     background-color: #fff; /* Color de fondo de respaldo */
@@ -52,7 +52,7 @@
     }
     html,
     body{
-        overflow-x: hidden !important; 
+        overflow-x: hidden !important;
         overflow-y: auto !important;
     }
     .body {

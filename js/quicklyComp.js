@@ -21,7 +21,6 @@ window.onload = () => {
   recortarTexto(450, '.text-cut-450'); // Nueva llamada añadida
 };
 
-
 /////////////////////////////////////////////////////////
 /* ACORDION */
 document.addEventListener("DOMContentLoaded", function() {
@@ -54,91 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 /////////////////////////////////////////////////////////
-/* CAROUSEL 1 
-document.addEventListener("DOMContentLoaded", function() {
-  const carouselContainer = document.getElementById("carousel-container");
-  const carousel = document.getElementById("carouselId");
-  const buttonLeft = document.getElementById("button-left");
-  const buttonRight = document.getElementById("button-right");
-  const carouselItem = document.querySelectorAll(".carousel_item");
-  const rootStyles = document.documentElement.style;
-  let carouselCounter = 0;
-  let isInTransition = false;
-  const DIRECTION = {
-    RIGHT: "RIGHT",
-    LEFT: "LEFT",
-  };
-
-  const getTransformValue = () =>
-    Number(rootStyles.getPropertyValue("--carousel-transform").replace("px", ""));
-  const reorderCarosuel = () => {
-    const transformValue = getTransformValue();
-    rootStyles.setProperty("--transition", "none");
-    if (carouselCounter === carouselItem.length - 1) {
-      carousel.appendChild(carousel.firstElementChild);
-      rootStyles.setProperty(
-        "--carousel-transform",
-        `${transformValue + carouselItem[carouselCounter].scrollWidth}px`
-      );
-      carouselCounter--;
-    } else if (carouselCounter === 0) {
-      carousel.prepend(carousel.lastElementChild);
-      rootStyles.setProperty(
-        "--carousel-transform",
-        `${transformValue - carouselItem[carouselCounter].scrollWidth}px`
-      );
-      carouselCounter++;
-    }
-    isInTransition = false;
-  };
-
-  const moveCarousel = (direction) => {
-    if (isInTransition) return;
-    const transformValue = getTransformValue();
-    rootStyles.setProperty("--transition", "transform 1s");
-    isInTransition = true;
-    if (direction === DIRECTION.LEFT) {
-      rootStyles.setProperty(
-        "--carousel-transform",
-        `${transformValue + carouselItem[carouselCounter].scrollWidth}px`
-      );
-      carouselCounter--;
-    } else if (direction === DIRECTION.RIGHT) {
-      rootStyles.setProperty(
-        "--carousel-transform",
-        `${transformValue - carouselItem[carouselCounter].scrollWidth}px`
-      );
-      carouselCounter++;
-    }
-  };
-
-  buttonRight.addEventListener("click", () => moveCarousel(DIRECTION.RIGHT));
-  buttonLeft.addEventListener("click", () => moveCarousel(DIRECTION.LEFT));
-  carousel.addEventListener("transitionend", reorderCarosuel);
-  reorderCarosuel();
-
-  const initCarouselAutoPlay = () => {
-    const isAutoPlay = carouselContainer.classList.contains("auto-play");
-    let autoplayInterval;
-    if (isAutoPlay) {
-      autoplayInterval = setInterval(() => {
-        moveCarousel(DIRECTION.RIGHT);
-      }, 3000);
-
-      carouselContainer.addEventListener("mouseenter", () => {
-        clearInterval(autoplayInterval);
-      });
-      carouselContainer.addEventListener("mouseleave", () => {
-        autoplayInterval = setInterval(() => {
-          moveCarousel(DIRECTION.RIGHT);
-        }, 3000); 
-      });
-    }
-  };
-
-  initCarouselAutoPlay();
-});*/
-
+/* CAROUSEL 1 */
 document.addEventListener("DOMContentLoaded", function() {
   // Obtener los elementos del carrusel
   const carouselContainer = document.getElementById("carousel-container");
@@ -146,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const buttonLeft = document.getElementById("button-left");
   const buttonRight = document.getElementById("button-right");
   const carouselItem = document.querySelectorAll(".carousel_item");
-  const rootStyles = document.documentElement.style;
+  const containerStyles = carouselContainer.style;
   let carouselCounter = 0;
   let isInTransition = false;
   const DIRECTION = {
@@ -160,21 +75,21 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   const getTransformValue = () =>
-      Number(rootStyles.getPropertyValue("--carousel-transform").replace("px", ""));
+      Number(containerStyles.getPropertyValue("--carousel-transform").replace("px", ""));
   
-  const reorderCarosuel = () => {
+  const reorderCarousel = () => {
       const transformValue = getTransformValue();
-      rootStyles.setProperty("--transition", "none");
+      containerStyles.setProperty("--transition", "none");
       if (carouselCounter === carouselItem.length - 1) {
           carousel.appendChild(carousel.firstElementChild);
-          rootStyles.setProperty(
+          containerStyles.setProperty(
               "--carousel-transform",
               `${transformValue + carouselItem[carouselCounter].scrollWidth}px`
           );
           carouselCounter--;
       } else if (carouselCounter === 0) {
           carousel.prepend(carousel.lastElementChild);
-          rootStyles.setProperty(
+          containerStyles.setProperty(
               "--carousel-transform",
               `${transformValue - carouselItem[carouselCounter].scrollWidth}px`
           );
@@ -186,16 +101,16 @@ document.addEventListener("DOMContentLoaded", function() {
   const moveCarousel = (direction) => {
       if (isInTransition) return;
       const transformValue = getTransformValue();
-      rootStyles.setProperty("--transition", "transform 1s");
+      containerStyles.setProperty("--transition", "transform 1s");
       isInTransition = true;
       if (direction === DIRECTION.LEFT) {
-          rootStyles.setProperty(
+          containerStyles.setProperty(
               "--carousel-transform",
               `${transformValue + carouselItem[carouselCounter].scrollWidth}px`
           );
           carouselCounter--;
       } else if (direction === DIRECTION.RIGHT) {
-          rootStyles.setProperty(
+          containerStyles.setProperty(
               "--carousel-transform",
               `${transformValue - carouselItem[carouselCounter].scrollWidth}px`
           );
@@ -205,8 +120,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   buttonRight.addEventListener("click", () => moveCarousel(DIRECTION.RIGHT));
   buttonLeft.addEventListener("click", () => moveCarousel(DIRECTION.LEFT));
-  carousel.addEventListener("transitionend", reorderCarosuel);
-  reorderCarosuel();
+  carousel.addEventListener("transitionend", reorderCarousel);
+  reorderCarousel();
 
   const initCarouselAutoPlay = () => {
       const isAutoPlay = carouselContainer.classList.contains("auto-play");

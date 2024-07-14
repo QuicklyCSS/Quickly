@@ -532,6 +532,7 @@ body {
     margin: 0px !important;
     padding: 0px !important;
     color: var(--color-gray);
+    
 }
 
 /* ====================
@@ -1364,6 +1365,54 @@ body {
 /* ====================
 	* TAGS HTML *
 ==================== */
+@media (max-width: 576px) {
+    .dis-s-1 {font-size: 3.5rem}
+    .dis-s-2 {font-size: 3.25rem}
+    .dis-s-3 {font-size: 3rem}
+    .dis-s-4 {font-size: 2.75rem}
+    .dis-s-5 {font-size: 2.5rem}
+    .dis-s-6 {font-size: 2.25rem}
+
+    .font-s-1 {font-size: 2rem;}
+    .font-s-2 {font-size: 1.75rem;}
+    .font-s-3 {font-size: 1.5rem;}
+    .font-s-4 {font-size: 1.25rem;}
+    .font-s-5 {font-size: 1.2rem;}
+    .font-s-6 {font-size: 1.12rem;}
+    .font-s-7 {font-size: .8rem;}
+    .font-s-8 {font-size: .6rem;}
+
+    h1,
+    .h1 {
+        font-size: 1.75rem;
+    }
+
+    h2,
+    .h2 {
+        font-size: 1.5rem;
+    }
+
+    h3,
+    .h3 {
+        font-size: 1.25rem;
+    }
+
+    h4,
+    .h4 {
+        font-size: 1rem;
+    }
+
+    h5,
+    .h5 {
+        font-size: .75rem;
+    }
+
+    h6,
+    .h6 {
+        font-size: .5rem;
+    }
+}
+
 h1,
 h2,
 h3,
@@ -1472,57 +1521,6 @@ mark {
 .line-h-3 {line-height: 1.25;}
 .line-h-4 {line-height: 1.5;}
 .line-h-5 {line-height: 1.75;}
-
-@media (max-width: 576px) {
-    body{
-        overflow: hidden;        
-    }
-    .dis-s-1 {font-size: 3.5rem}
-    .dis-s-2 {font-size: 3.25rem}
-    .dis-s-3 {font-size: 3rem}
-    .dis-s-4 {font-size: 2.75rem}
-    .dis-s-5 {font-size: 2.5rem}
-    .dis-s-6 {font-size: 2.25rem}
-
-    .font-s-1 {font-size: 2rem;}
-    .font-s-2 {font-size: 1.75rem;}
-    .font-s-3 {font-size: 1.5rem;}
-    .font-s-4 {font-size: 1.25rem;}
-    .font-s-5 {font-size: 1.2rem;}
-    .font-s-6 {font-size: 1.12rem;}
-    .font-s-7 {font-size: .8rem;}
-    .font-s-8 {font-size: .6rem;}
-
-    h1,
-    .h1 {
-        font-size: 1.5rem;
-    }
-
-    h2,
-    .h2 {
-        font-size: 1.25rem;
-    }
-
-    h3,
-    .h3 {
-        font-size: 1rem;
-    }
-
-    h4,
-    .h4 {
-        font-size: .8rem;
-    }
-
-    h5,
-    .h5 {
-        font-size: .7rem;
-    }
-
-    h6,
-    .h6 {
-        font-size: .6rem;
-    }
-}
 
 /* ====================
     * HEIGHT & WIDTH *
@@ -1667,6 +1665,32 @@ mark {
 .hp-90 {height: 90%}
 .hp-100 {height: 100%}
 
+@media screen and (max-width: 992px) {
+    /* Anchos de columnas % */
+    .wpm-10 {width: 10%}
+    .wpm-20 {width: 20%}
+    .wpm-30 {width: 30%}
+    .wpm-40 {width: 40%}
+    .wpm-50 {width: 50%}
+    .wpm-60 {width: 60%}
+    .wpm-70 {width: 70%}
+    .wpm-80 {width: 80%}
+    .wpm-90 {width: 90%}
+    .wpm-100 {width: 100%}
+
+    /* Alturas de columnas % */
+    .hpm-10 {height: 10%}
+    .hpm-20 {height: 20%}
+    .hpm-30 {height: 30%}
+    .hpm-40 {height: 40%}
+    .hpm-50 {height: 50%}
+    .hpm-60 {height: 60%}
+    .hpm-70 {height: 70%}
+    .hpm-80 {height: 80%}
+    .hpm-90 {height: 90%}
+    .hpm-100 {height: 100%}
+}
+
 /* Ancho y alto iguales */
 .wh-8 {width: 8px; height: 8px !important}
 .wh-16 {width: 16px; height: 16px !important;}
@@ -1786,13 +1810,31 @@ mark {
 .pl-5 {padding-left: var(--md-40)}
 .pb-5 {padding-bottom: var(--md-40)}
 
-.my-1 {margin: var(--md-8) 0px}
-.my-2 {margin: var(--md-16) 0px}
-.my-3 {margin: var(--md-24) 0px}
-.my-4 {margin: var(--md-32) 0px}
-.my-5 {margin: var(--md-40) 0px}
-
 @media (max-width: 992px) {
+    /* ====================
+	* PADDING AND MARGIN *
+==================== */
+    .px-1,.px-2,.px-3.px-4,.px-5,
+    .py-1,.py-2,.py-3,.py-4,.py-5,
+    .p-0,.p-1,.p-2,.p-3,.p-4,.p-5,
+    .pt-0,.pr-0,.pl-0,.pb-0,
+    .pt-1,.pr-1,.pl-1,.pb-1,
+    .pt-2,.pr-2,.pl-2,.pb-2,
+    .pt-3,.pr-3,.pl-3,.pb-3,
+    .pt-4,.pr-4,.pl-4,.pb-4, 
+    .pt-5,.pr-5,.pl-5,.pb-5{padding: 0px;}
+
+    .mx-1,.mx-2,.mx-3.mx-4,.mx-5,
+    .my-1,.my-2,.my-3,.my-4,.my-5,
+    .m-0,.m-1,.m-2,.m-3,.m-4,.m-5,
+    .mt-0,.mr-0,.ml-0,.mb-0,
+    .mt-1,.mr-1,.ml-1,.mb-1,
+    .mt-2,.mr-2,.ml-2,.mb-2,
+    .mt-3,.mr-3,.ml-3,.mb-3,
+    .mt-4,.mr-4,.ml-4,.mb-4, 
+    .mt-5,.mr-5,.ml-5,.mb-5{margin: 0px;}
+}
+    @media (max-width: 992px) {
     /* ====================
 	* PADDING AND MARGIN *
     ==================== */
@@ -1808,6 +1850,12 @@ mark {
     .mmy-3 {margin-top: var(--md-24); margin-bottom: var(--md-24)}
     .mmy-4 {margin-top: var(--md-32); margin-bottom: var(--md-32)}
     .mmy-5 {margin-top: var(--md-40); margin-bottom: var(--md-40)}
+
+    .mmx-1 {margin-top: var(--md-8); margin-bottom: var(--md-8)}
+    .mmx-2 {margin-top: var(--md-16); margin-bottom: var(--md-16)}
+    .mmx-3 {margin-top: var(--md-24); margin-bottom: var(--md-24)}
+    .mmx-4 {margin-top: var(--md-32); margin-bottom: var(--md-32)}
+    .mmx-5 {margin-top: var(--md-40); margin-bottom: var(--md-40)}
 
     .mmt-0 {margin-top: 0px}
     .mmr-0 {margin-right: 0px}
@@ -1852,6 +1900,12 @@ mark {
     .pmx-4 {padding-left: var(--md-32); padding-right: var(--md-32)}
     .pmx-5 {padding-left: var(--md-40); padding-right: var(--md-40)}
 
+    .pmy-1 {padding-left: var(--md-8); padding-right: var(--md-8)}
+    .pmy-2 {padding-left: var(--md-16); padding-right: var(--md-16)}
+    .pmy-3 {padding-left: var(--md-24); padding-right: var(--md-24)}
+    .pmy-4 {padding-left: var(--md-32); padding-right: var(--md-32)}
+    .pmy-5 {padding-left: var(--md-40); padding-right: var(--md-40)}
+
     .pmt-0 {padding-top: 0px}
     .pmr-0 {padding-right: 0px}
     .pml-0 {padding-left: 0px}
@@ -1883,12 +1937,18 @@ mark {
     .pmb-5 {padding-bottom: var(--md-40)}
 }
 
+.m-auto{margin: 0 auto;}
+.my-1 {margin: var(--md-8) 0px}
+.my-2 {margin: var(--md-16) 0px}
+.my-3 {margin: var(--md-24) 0px}
+.my-4 {margin: var(--md-32) 0px}
+.my-5 {margin: var(--md-40) 0px}
+
 .mx-1 {margin: 0 var(--md-8)}
 .mx-2 {margin: 0 var(--md-16)}
 .mx-3 {margin: 0 var(--md-24)}
 .mx-4 {margin: 0 var(--md-32)}
 .mx-5 {margin: 0 var(--md-40)}
-
 
 .m-0 {margin: 0px !important;}
 .m-1 {margin: var(--md-8)}
@@ -1930,6 +1990,7 @@ mark {
 /* ====================
 	* BORDER & BORDER-RADIUS*
 ==================== */
+.border-n{border: 0px !important;}
 .border {border: 1px solid var(--border-1);}
 .border-x {border-left: 1px solid var(--border-1); border-right: 1px solid var(--border-1);}
 .border-y {border-top: 1px solid var(--border-1); border-bottom: 1px solid var(--border-1);}
@@ -2441,6 +2502,9 @@ figure {margin: 0; padding: 0;}
 .col-11 {grid-column: span 11;}
 .col-12 {grid-column: span 12;}
 
+.span-l{margin-left: span 1;
+
+}
 
 /* ====================
 	* HIDDEN - SHOW *
@@ -3519,6 +3583,44 @@ button,
     border: 2px solid #23C8FA; 
 }
 
+/*  /////////////////////////////////////////////////////////////////////////////// */
+/* COMP CARD TEAM */
+/* ///////////////////////////////////////////////////////////////////////////////  */
+.card-team {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* Una fila para la imagen, una para el contenido y una para el botón */
+    border: 1px solid var(--bg-color-gray-1);
+    border-radius: var(--md-8);
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+@media screen and (max-width: 576px) {
+    .card-team{
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        /* Una fila para la imagen, una para el contenido y una para el botón */
+        border: 1px solid var(--bg-color-gray-1);
+        border-radius: var(--md-8);
+        height: 100%;
+        width: 280px;
+        border: 1px solid rgba(0,0,0,.1);
+    }
+}
+@media screen and (max-width: 992px) {
+    .card-team{
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        /* Una fila para la imagen, una para el contenido y una para el botón */
+        border: 1px solid var(--bg-color-gray-1);
+        border-radius: var(--md-8);
+        height: 100%;
+        width: 280px;
+        border: 1px solid rgba(0,0,0,.1);
+    }
+}
 
 /*  /////////////////////////////////////////////////////////////////////////////// */
 /* COMP CARD */
@@ -3530,8 +3632,32 @@ button,
     border: 1px solid var(--bg-color-gray-1);
     border-radius: var(--md-8);
     height: 100%;
-    max-width: 100%;
+    width: 100%;
     border: 1px solid rgba(0,0,0,.1);
+}
+@media screen and (max-width: 576px) {
+    .card {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        /* Una fila para la imagen, una para el contenido y una para el botón */
+        border: 1px solid var(--bg-color-gray-1);
+        border-radius: var(--md-8);
+        height: 100%;
+        width: 280px;
+        border: 1px solid rgba(0,0,0,.1);
+    }
+}
+@media screen and (max-width: 992px) {
+    .card {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        /* Una fila para la imagen, una para el contenido y una para el botón */
+        border: 1px solid var(--bg-color-gray-1);
+        border-radius: var(--md-8);
+        height: 100%;
+        width: 280px;
+        border: 1px solid rgba(0,0,0,.1);
+    }
 }
 
 .card-cont {
@@ -3733,6 +3859,7 @@ button,
     height: 0;
     padding: 0 var(--md-16);
     overflow: hidden;
+    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     opacity: 0;
     background-color: var(--bg-color-white-1);
@@ -3756,6 +3883,7 @@ button,
 .accordion-block svg {
     transform: rotate(0deg);
     transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
     /* Agregar una transición suave */
 }
 
@@ -3763,6 +3891,7 @@ button,
 .accordion-block:not(.active):hover svg {
     transform: rotate(180deg) !important;
     transition: transform 0.4s ease;
+    -webkit-transition: transform .4s ease;
     /* Agregar una transición suave */
 }
 
@@ -3855,11 +3984,27 @@ button,
     height: auto;
     position: relative;
   }
+  @media screen and (max-width: 992px) and (orientation: landscape){
+    .carousel-container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        height: auto;
+        position: relative;
+      }
+      .carousel {
+        display: flex;
+        transform: translateX(var(--carousel-transform));
+        transition: var(--transition);
+        height: auto;
+      }
+  }
 
   @media (max-width: 576px) {
     .caption-carousel{
         position: absolute;
-        z-index: 2;
+        z-index: 0;
         bottom: 0px;
         width: 100%;
         padding: 0 5rem 0rem !important;
@@ -3872,11 +4017,18 @@ button,
         background: linear-gradient(to bottom, rgba(0,0,0,0) 35%, rgba(0,0,0,0) 35%, rgba(0,0,0,0.35) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
       }
+      .carousel_item {
+        min-width: 100%;
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+        width:fit-content;
+      }
   }
 
   .caption-carousel{
     position: absolute;
-    z-index: 2;
+    z-index: 0;
     bottom: 0px;
     width: 100%;
     padding: 3rem 5rem;
@@ -3912,7 +4064,7 @@ button,
     margin-left: auto;
     margin-right: auto;
     top: 45%;
-    z-index: 2;
+    z-index: 1;
   }
   
   .carousel-buttons .button {
@@ -4897,6 +5049,7 @@ button,
     position: relative;
     float: left; /* Añadido float: left; */
     list-style-type: none;
+    z-index: 10 !important;
 }
 
 .navbar-nav a {
