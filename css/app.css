@@ -29,6 +29,9 @@
     margin: 0;
     background-color: #fff; /* Color de fondo de respaldo */
 }
+header{
+    padding: 0 16px !important;
+}
 @media (max-width: 992px) and (orientation: landscape) {
     @keyframes tunnelEffect {
         0% {
@@ -172,7 +175,10 @@ header{
 }
 
 /* Media query para smartphones (ancho máximo de 480px) */
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
+    main{
+        padding-top: 60px !important;
+    }
     .cont {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto 1fr;
@@ -213,7 +219,10 @@ header{
 }
 
 /* Media query para tablets (ancho máximo de 768px) */
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
+    main{
+        padding-top: 80px !important;
+    }
     .cont {
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr auto;
