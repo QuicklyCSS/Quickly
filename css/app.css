@@ -1,10 +1,10 @@
 @keyframes tunnelEffect {
     0% {
-        transform: scale(2);
+        transform: scale(2.5);
         opacity: 0;
     }
     100% {
-        transform: scale(1);
+        transform: scale(1.18);
         opacity: 1;
     }
 }
@@ -17,6 +17,10 @@
         transform: translateY(0) scale(1); /* Se mueve hacia arriba y aumenta el tamaño */
         opacity: 1; /* Desaparece gradualmente */
     }
+}
+
+body{
+    overflow: hidden;
 }
 .animated-div {
     animation: tunnelEffect2 3.5s ease-in-out forwards; /* Aplica la animación */
@@ -99,7 +103,7 @@ header{
 @media (max-width: 576px) {
     html,
     body{
-        overflow-x: hidden !important; 
+        overflow: hidden !important; 
     }
     .body {
         min-height: 100vh;
@@ -138,8 +142,6 @@ header{
     animation: tunnelEffect 2.5s ease-in-out forwards; /* Aplicar animación */
     z-index: -1; /* Asegura que el fondo esté detrás del contenido */
 }
-
-
 
 header{
     background-color: rgba(221, 226, 238, .2) !important;
