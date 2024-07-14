@@ -2523,32 +2523,27 @@ figure {margin: 0; padding: 0;}
 /* ====================
 	* HIDDEN - SHOW *
 ==================== */
-.hide {
-    display: none !important;
-}
-
+.hide {display: none !important;}
 .show {
     display: block !important;
-    visibility: visible !important;
+    visibility: visible;
 }
+.hide-s{display: none;}
+.hide-m{display: none;}
 
 @media (max-width: 992px) {
-    .hide-m {
-        display: none !important;
-    }
+    .hide-m {display: none !important;}
     .show-m {
         display: block !important;
-        visibility: visible !important;
+        visibility: visible;
     }
 }
 
 @media (max-width: 576px) {
-    .hide-s {
-        display: none !important;
-    }
+    .hide-s {display: none !important;}
     .show-s {
         display: block !important;
-        visibility: visible !important;
+        visibility: visible;
     }
 }
 
