@@ -2533,18 +2533,19 @@ figure {margin: 0; padding: 0;}
 }
 
 @media (max-width: 992px) {
-    .hide-m {display: none !important;}
-    .hide-s {display: none !important;}
+    .hide-m {
+        display: none !important;
+    }
     .show-m {
         display: block !important;
         visibility: visible !important;
     }
 }
 
-
 @media (max-width: 576px) {
-    .hide-m {display: none !important;}
-    .hide-s {display: none !important;}
+    .hide-s {
+        display: none !important;
+    }
     .show-s {
         display: block !important;
         visibility: visible !important;
