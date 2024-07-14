@@ -2523,13 +2523,11 @@ figure {margin: 0; padding: 0;}
 /* ====================
 	* HIDDEN - SHOW *
 ==================== */
+
 .hide {display: none !important;}
 .show {
     display: block !important;
-    visibility: visible;
-}
-.hide-s{display: none;}
-.hide-m{display: none;}
+    visibility: visible;}
 
 @media (max-width: 992px) {
     .hide-m {display: none !important;}
