@@ -2521,31 +2521,6 @@ figure {margin: 0; padding: 0;}
 }
 
 /* ====================
-	* HIDDEN - SHOW *
-==================== */
-
-.hide {display: none !important;}
-.show {
-    display: block !important;
-    visibility: visible;}
-
-@media (max-width: 992px) {
-    .hide-m {display: none !important;}
-    .show-m {
-        display: block !important;
-        visibility: visible;
-    }
-}
-
-@media (max-width: 576px) {
-    .hide-s {display: none !important;}
-    .show-s {
-        display: block !important;
-        visibility: visible;
-    }
-}
-
-/* ====================
 	* MEDIUN TABLETS *
 ==================== */
 @media (max-width: 992px) {
@@ -5722,4 +5697,30 @@ select {
 .is-invalid {
     border: 1px solid var(--danger) !important;
     border-radius: 4px 4px 4px 0px !important;
+}
+
+
+/* ====================
+	* HIDDEN - SHOW *
+==================== */
+
+.hide {display: none !important;}
+.show {
+    display: block !important;
+    visibility: visible;}
+
+@media (max-width: 992px) {
+    .hide-m {display: none !important;}
+    .show-m {
+        display: block !important;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 576px) {
+    .hide-s {display: none !important;}
+    .show-s {
+        display: block !important;
+        visibility: visible;
+    }
 }
