@@ -179,7 +179,7 @@ header{
 /* Media query para smartphones (ancho máximo de 480px) */
 @media (max-width: 576px) {
     main{
-        padding-top: 60px !important;
+        padding: 60px 0 !important;
     }
     .cont {
         grid-template-columns: 1fr;
