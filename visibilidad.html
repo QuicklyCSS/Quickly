@@ -35,12 +35,12 @@
                 <section class="border rounded bg-color-1">
                     <div class="p-5 pm-2 bg-white-1 rounded-t border-b">
                         <h1 class="font-l">Visibilidad</h1>
-                        <p class="font-l font-s-4">Para lograr un progreso más veloz y una experiencia móvil más agradable, emplee clases de visualización adaptable para exhibir u ocultar elementos según el dispositivo. Evite generar múltiples versiones del sitio, optando en su lugar por la ocultación selectiva de elementos según el tamaño de pantalla.</p>
+                        <h2 class="font-l font-s-4">Para lograr un progreso más veloz y una experiencia móvil más agradable, emplee clases de visualización adaptable para exhibir u ocultar elementos según el dispositivo. Evite generar múltiples versiones del sitio, optando en su lugar por la ocultación selectiva de elementos según el tamaño de pantalla.</h2>
                     </div>
                 
                     <!-- hidden -->
                     <section class="p-5 pm-2">
-                        <h3 class="font-l font-s-2">.hide</h3>
+                        <h3 class="font-l">.hide</h3>
                         <div class="table">
                             <table class="table-container">
                                 <thead class="table-header bg-skyblue-4">
@@ -51,15 +51,15 @@
                                 </thead>
                                 <tbody class="table-body">
                                     <tr>
-                                        <td class="w-auto bg-maya-blue-9">.hidden</td>
+                                        <td class="w-auto bg-maya-blue-9">.hide</td>
                                         <td class="w-auto bg-maya-blue-9">(&gt;992px). El elemento se oculta visualmente en la página para todas las resoluciones.</td>
                                     </tr> 
                                     <tr>
-                                        <td class="w-auto bg-maya-blue-9">.hidden-m</td>
+                                        <td class="w-auto bg-maya-blue-9">.hide-m</td>
                                         <td class="w-auto bg-maya-blue-9">(&gt;576px y &lt;992px). El elemento se oculta visualmente en la página para resoluciones entre 576px y 992px.</td>
                                     </tr>     
                                     <tr>
-                                        <td class="w-auto bg-maya-blue-9">.hidden-s</td>
+                                        <td class="w-auto bg-maya-blue-9">.hide-s</td>
                                         <td class="w-auto bg-maya-blue-9">(&lt;576px). El elemento se oculta visualmente en la página para resoluciones inferiores a 576px.</td>
                                     </tr>                                                                                                                                                                                                                                                                                                                                                                                                                 
                                 </tbody>
@@ -68,8 +68,8 @@
                     </section>
 
                     <!-- show -->
-                    <section class="pt-0 p-5 pm-2">
-                        <h3 class="font-l font-s-2">.show</h3>
+                    <section class="p-5 pt-0 pm-2">
+                        <h3 class="font-l">.show</h3>
                         <div class="table">
                             <table class="table-container">
                                 <thead class="table-header bg-skyblue-4">
@@ -99,19 +99,19 @@
                                 <p>Visible y Oculto</p>
                             </div>            
                             <div class="p-5 pm-2 text-l hatched-1 grid item-1 g-2 scroll-a"> 
-                                <div class="border p-1 hide-m show-s"><small>El elemento N° 1 solo será visible en resoluciones de tamaño mediano (&gt;576px y &lt;992px).</small></div>
-                                <div class="div1 p-1 hide hide-s show-m">N° 1<br>El elemento solo será visible en resoluciones de tamaño mediano (&gt;576px y &lt;992px).</div>  
-                                <div class="div1 p-1 hide-m show-s">N° 2<br>El elemento se ocultara para tamaños medianos (&gt;576px y &lt;992px).</div>                        
-                                <div class="div1 p-1 hide-s">N° 3<br>El elemento se ocultara para tamaños pequeños (&lt;576px).</div>                  
+                                <div class="div1 rounded border p-1 hide-m show-s"><small>El elemento N° 1 solo será visible en resoluciones de tamaño mediano (&gt;576px y &lt;992px).</small></div>
+                                <div class="bg-white rounded p-1 hide hide-s show-m">N° 1<br>El elemento solo será visible en resoluciones de tamaño mediano (&gt;576px y &lt;992px).</div>  
+                                <div class="bg-white rounded p-1 hide-m show-s">N° 2<br>El elemento se ocultara para tamaños medianos (&gt;576px y &lt;992px).</div>                        
+                                <div class="bg-white rounded p-1 hide-s">N° 3<br>El elemento se ocultara para tamaños pequeños (&lt;576px).</div>                  
                             </div>
                             <div class="border-t p-2">
                                 HTML
                             </div>
                             <div class="pre-pre2">
                                     <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="p-1 hide show-m"&gt;N° 1 - El elemento solo será visible en resoluciones de tamaño mediano (&gt;576px y &lt;992px).&lt;/div&gt;   
-    &lt;div class="p-1 hide-m"&gt;N° 2 - El elemento se ocultara para tamaños medianos (&gt;576px y &lt;992px).&lt;/div&gt;
-    &lt;div class="p-1 hide-s"&gt;N° 3 - El elemento se ocultara para tamaños pequeños (&lt;576px).&lt;/div&gt;  
+    &lt;div class="hide show-m"&gt;N° 1 - El elemento solo será visible en resoluciones de tamaño mediano (&gt;576px y &lt;992px).&lt;/div&gt;   
+    &lt;div class="hide-m"&gt;N° 2 - El elemento se ocultara para tamaños medianos (&gt;576px y &lt;992px).&lt;/div&gt;
+    &lt;div class="hide-s"&gt;N° 3 - El elemento se ocultara para tamaños pequeños (&lt;576px).&lt;/div&gt;  
                                     </code></pre>
                             </div> 
                         </div>                                                          

@@ -1509,11 +1509,12 @@ mark {
 .dis-s-6 {font-size: 2.75rem}
 
 /* ALTURAS DE INTERLINEADO */
-.line-h-1 {line-height: .75;}
-.line-h-2 {line-height: 1;}
-.line-h-3 {line-height: 1.25;}
-.line-h-4 {line-height: 1.5;}
-.line-h-5 {line-height: 1.75;}
+.line-h-1 {line-height: 1.25;}
+.line-h-2 {line-height: 1.50;}
+.line-h-3 {line-height: 1.75;}
+.line-h-4 {line-height: 1.8;}
+.line-h-5 {line-height: 2;}
+.line-h-6 {line-height: 2.25;}
 
 /* ====================
     * HEIGHT & WIDTH *
@@ -2044,7 +2045,7 @@ mark {
     text-align: center;
     text-decoration: none;
     border-radius: 9999px;
-    min-width: 150px
+    min-width: 150px;
 }
 
 /* Rounded egde */
@@ -3825,7 +3826,7 @@ button,
     border-bottom: 1px solid rgba(0, 0, 0, .05);
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    background-color: var(--bg-color-white-1);
+    background-color: var(--bg-white-1);
 }
 
 .accordion .accordion-header {
@@ -3835,17 +3836,17 @@ button,
     transition: all 0.4s ease;
     cursor: pointer;
     border-bottom: 1px solid rgba(0, 0, 0, .05);
-    background-color: var(--bg-color-white-2);
+    background-color: var(--bg-white-2);
 }
 
 .accordion .accordion-header:hover {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    background-color: var(--bg-color-4);
+    background-color: var(--bg-white-4);
 }
 
 .accordion .accordion-block.active:hover .accordion-header {
-    background-color: var(--bg-color-white-1) !important;
+    background-color: var(--bg-white-1) !important;
     cursor: default;
 }
 
@@ -3856,7 +3857,7 @@ button,
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     opacity: 0;
-    background-color: var(--bg-color-white-1);
+    background-color: var(--bg-white-1);
 }
 
 .accordion .accordion-block.active .accordion-body {
@@ -3867,7 +3868,7 @@ button,
 }
 
 .accordion .accordion-block.active .accordion-header {
-    background-color: var(--bg-color-white-1);
+    background-color: var(--bg-white-1);
 }
 
 .accordion-block.active svg {

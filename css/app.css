@@ -180,7 +180,6 @@ header{
 @media (max-width: 576px) {
     main{
         padding-top: 60px !important;
-        padding-bottom: 40px !important;
     }
     .cont {
         grid-template-columns: 1fr;
@@ -225,7 +224,6 @@ header{
 @media (max-width: 992px) {
     main{
         padding-top: 60px !important;
-        padding-bottom: 40px !important;
     }
     .cont {
         grid-template-columns: 1fr;
