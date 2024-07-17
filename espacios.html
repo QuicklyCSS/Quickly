@@ -40,8 +40,8 @@
                 
                     <!-- Gutters -->
                     <section class="p-5 pb-1 pm-2">
-                        <h3 class="font-l">Gutter entre elementos</h3>
-                        <p>Puedes separar objetos según el tipo de espaciado que desees. Por defecto, Quickly ofrece una secuencia de espacios de 8px, siendo el más pequeño el g-1, equivalente a 8px, y alcanzando un nivel g-5, equivalente a 40px.</p>             
+                        <h3 class="font-l">Control total de espacios entre elementos</h3>
+                        <p>Puedes separar objetos según el tipo de espaciado que desees. Por defecto, Quickly ofrece una secuencia de espacios de 8px, comenzando con el g-1, equivalente a 8px, y alcanzando hasta el g-5, equivalente a 40px. Además, se incluyen clases especiales para la versión móvil que afectarán a todo por debajo de 992px, desactivando las clases normales. Con esto, tendrás un mayor control en los espaciados en versiones móviles.</p>             
                     </section>
 
                     <!-- GUTTER 1 AL 5  -->
@@ -51,33 +51,40 @@
                             <table class="table-container">
                                 <thead class="table-header bg-skyblue-4">
                                     <tr>
-                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-100 bg-maya-blue-5">Clase normal</th>
+                                        <th class="w-100 bg-maya-blue-5">Clase móvil</th>
                                         <th class="w-auto bg-maya-blue-5">Descripción</th>
                                     </tr>
                                 </thead>
                                 <tbody class="table-body">
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.g-0</td>
+                                        <td class="w-auto bg-maya-blue-9">.gm-0</td>
                                         <td class="w-auto bg-maya-blue-9">.Gutter-0. Quita las separacion horizontal y vertical entre elementos.</td>
                                     </tr>  
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.g-1</td>
+                                        <td class="w-auto bg-maya-blue-9">.gm-1</td>
                                         <td class="w-auto bg-maya-blue-9">.Gutter-1. Agrega una separacion horizontal y vertical entre elementos de 8px.</td>
                                     </tr>  
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.g-2</td>
+                                        <td class="w-auto bg-maya-blue-9">.gm-2</td>
                                         <td class="w-auto bg-maya-blue-9">.Gutter-2. Agrega una separacion horizontal y vertical entre elementos de 16px.</td>
                                     </tr>      
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.g-3</td>
+                                        <td class="w-auto bg-maya-blue-9">.gm-3</td>
                                         <td class="w-auto bg-maya-blue-9">.Gutter-3. Agrega una separacion horizontal y vertical entre elementos de 24px.</td>
                                     </tr>    
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.g-4</td>
+                                        <td class="w-auto bg-maya-blue-9">.gm-4</td>
                                         <td class="w-auto bg-maya-blue-9">.Gutter-4. Agrega una separacion horizontal y vertical entre elementos de 32px.</td>
                                     </tr>    
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.g-5</td>
+                                        <td class="w-auto bg-maya-blue-9">.gm-5</td>
                                         <td class="w-auto bg-maya-blue-9">.Gutter-5. Agrega una separacion horizontal y vertical entre elementos de 40px.</td>
                                     </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
                                 </tbody>
@@ -89,16 +96,16 @@
                             </div>
                             <div class="hatched-1 scroll-a">
                                 <div class="g-1 p-5 pb-0 pm-2 grid item-2">
-                                    <div class="div1 p-2 text-ac">g-1</div>       
-                                    <div class="div1 p-2 text-ac">g-1</div> 
-                                    <div class="div1 p-2 text-ac">g-1</div>       
-                                    <div class="div1 p-2 text-ac">g-1</div>                                                                                                                             
+                                    <div class="bg-white rounded border p-2 text-ac">g-1</div>       
+                                    <div class="bg-white rounded border p-2 text-ac">g-1</div> 
+                                    <div class="bg-white rounded border p-2 text-ac">g-1</div>       
+                                    <div class="bg-white rounded border p-2 text-ac">g-1</div>                                                                                                                             
                                 </div>
                                 <div class="g-5 p-5 pm-2 grid item-2">
-                                    <div class="div1 p-2 text-ac">g-5</div>       
-                                    <div class="div1 p-2 text-ac">g-5</div> 
-                                    <div class="div1 p-2 text-ac">g-5</div>       
-                                    <div class="div1 p-2 text-ac">g-5</div>                                                                                                                             
+                                    <div class="bg-white rounded border p-2 text-ac">g-5</div>       
+                                    <div class="bg-white rounded border p-2 text-ac">g-5</div> 
+                                    <div class="bg-white rounded border p-2 text-ac">g-5</div>       
+                                    <div class="bg-white rounded border p-2 text-ac">g-5</div>                                                                                                                             
                                 </div>
                             </div>
                             <div class="border-t p-2">
@@ -125,34 +132,42 @@
 
                     <!-- GUTTER EJE X 1 AL 5  -->
                     <section class="pt-0 p-5 pm-2">
+                        <h3 class="font-l">Espacios en eje horizontal</h3>
+                        <p>Para lograr un mejor control en la separación entre elementos en el eje X, se pueden emplear clases de espaciado horizontal. Estas clases permiten ajustar los márgenes y el relleno horizontal entre los objetos, proporcionando una disposición más coherente y precisa.</p>
                         <h4 class="font-l">.gutterx-n°</h4>
                         <div class="table">
                             <table class="table-container">
                                 <thead class="table-header bg-skyblue-4">
                                     <tr>
-                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-100 bg-maya-blue-5">Clase normal</th>
+                                        <th class="w-100 bg-maya-blue-5">Clase móvil</th>
                                         <th class="w-auto bg-maya-blue-5">Descripción</th>
                                     </tr>
                                 </thead>
                                 <tbody class="table-body">
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.gx-1</td>
+                                        <td class="w-auto bg-maya-blue-9">.gxm-1</td>
                                         <td class="w-auto bg-maya-blue-9">.Gutterx-1. Agrega una separacion entre elementos horizontal de 8px.</td>
                                     </tr>  
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.gx-2</td>
+                                        <td class="w-auto bg-maya-blue-9">.gxm-2</td>
                                         <td class="w-auto bg-maya-blue-9">.Gutterx-2. Agrega una separacion entre elementos horizontal de 16px.</td>
                                     </tr>      
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.gx-3</td>
+                                        <td class="w-auto bg-maya-blue-9">.gxm-3</td>
                                         <td class="w-auto bg-maya-blue-9">.Gutterx-3. Agrega una separacion entre elementos horizontal de 24px.</td>
                                     </tr>    
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.gx-4</td>
+                                        <td class="w-auto bg-maya-blue-9">.gxm-4</td>
                                         <td class="w-auto bg-maya-blue-9">.Gutterx-4. Agrega una separacion entre elementos horizontal de 32px.</td>
                                     </tr>    
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.gx-5</td>
+                                        <td class="w-auto bg-maya-blue-9">.gxm-5</td>
                                         <td class="w-auto bg-maya-blue-9">.Gutterx-5. Agrega una separacion entre elementos horizontal de 40px.</td>
                                     </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
                                 </tbody>
@@ -163,10 +178,10 @@
                                 <p>Gutter horizontal</p>
                             </div>
                             <div class="p-5 pm-2 grid item-2 gx-2 hatched-1">
-                                <div class="div1 p-2 text-ac">gx-2</div>       
-                                <div class="div1 p-2 text-ac">gx-2</div> 
-                                <div class="div1 p-2 text-ac">gx-2</div>       
-                                <div class="div1 p-2 text-ac">gx-2</div>     
+                                <div class="bg-white border rounded p-2 text-ac">gx-2</div>       
+                                <div class="bg-white border rounded p-2 text-ac">gx-2</div> 
+                                <div class="bg-white border rounded p-2 text-ac">gx-2</div>       
+                                <div class="bg-white border rounded p-2 text-ac">gx-2</div>     
                             </div>
                             <div class="border-t p-2">
                                 HTML
@@ -186,34 +201,42 @@
                     
                     <!-- GUTTER EJE Y 1 AL 5  -->
                     <section class="pt-0 p-5 pm-2">
+                        <h3 class="font-l">Espacios en eje vertical</h3>
+                        <p>Para tener un mayor control sobre la separación entre elementos en el eje Y, puedes utilizar clases de espaciado vertical específicas. Estas clases permiten ajustar los márgenes y el relleno vertical entre los objetos, logrando una disposición más precisa y uniforme.</p>
                         <h4 class="font-l">.guttery-n°</h4>
                         <div class="table">
                             <table class="table-container">
                                 <thead class="table-header bg-skyblue-4">
                                     <tr>
-                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-100 bg-maya-blue-5">Clase normal</th>
+                                        <th class="w-100 bg-maya-blue-5">Clase móvil</th>
                                         <th class="w-auto bg-maya-blue-5">Descripción</th>
                                     </tr>
                                 </thead>
                                 <tbody class="table-body">
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.gy-1</td>
+                                        <td class="w-auto bg-maya-blue-9">.gym-1</td>
                                         <td class="w-auto bg-maya-blue-9">.Guttery-1. Agrega una separacion entre elementos vetical de 8px.</td>
                                     </tr>  
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.gy-2</td>
+                                        <td class="w-auto bg-maya-blue-9">.gym-2</td>
                                         <td class="w-auto bg-maya-blue-9">.Guttery-2. Agrega una separacion entre elementos vetical de 16px.</td>
                                     </tr>      
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.gy-3</td>
+                                        <td class="w-auto bg-maya-blue-9">.gym-3</td>
                                         <td class="w-auto bg-maya-blue-9">.Guttery-3. Agrega una separacion entre elementos vetical de 24px.</td>
                                     </tr>    
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.gy-4</td>
+                                        <td class="w-auto bg-maya-blue-9">.gym-4</td>
                                         <td class="w-auto bg-maya-blue-9">.Guttery-4. Agrega una separacion entre elementos vetical de 32px.</td>
                                     </tr>    
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.gy-5</td>
+                                        <td class="w-auto bg-maya-blue-9">.gym-5</td>
                                         <td class="w-auto bg-maya-blue-9">.Guttery-5. Agrega una separacion entre elementos vetical de 40px.</td>
                                     </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
                                 </tbody>
@@ -224,10 +247,10 @@
                                 <p>Gutter vertical</p>
                             </div>
                             <div class="p-5 pm-2 grid item-2 gy-2 hatched-1">
-                                    <div class="div1 p-2 text-ac">gy-2</div>       
-                                    <div class="div1 p-2 text-ac">gy-2</div> 
-                                    <div class="div1 p-2 text-ac">gy-2</div>       
-                                    <div class="div1 p-2 text-ac">gy-2</div>                                                                                                                               
+                                    <div class="bg-white border rounded p-2 text-ac">gy-2</div>       
+                                    <div class="bg-white border rounded p-2 text-ac">gy-2</div> 
+                                    <div class="bg-white border rounded p-2 text-ac">gy-2</div>       
+                                    <div class="bg-white border rounded p-2 text-ac">gy-2</div>                                                                                                                               
                             </div>
                             <div class="border-t p-2">
                                 HTML
@@ -254,29 +277,35 @@
                             <table class="table-container">
                                 <thead class="table-header bg-skyblue-4">
                                     <tr>
-                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-100 bg-maya-blue-5">Clase normal</th>
+                                        <th class="w-100 bg-maya-blue-5">Clase móvil</th>
                                         <th class="w-auto bg-maya-blue-5">Descripción</th>
                                     </tr>
                                 </thead>
                                 <tbody class="table-body">
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.p-1</td>
+                                        <td class="w-auto bg-maya-blue-9">.pm-1</td>
                                         <td class="w-auto bg-maya-blue-9">.Padding-1. Agrega un espaciado interno del elementos de 8px.</td>
                                     </tr>  
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.p-2</td>
+                                        <td class="w-auto bg-maya-blue-9">.pm-2</td>
                                         <td class="w-auto bg-maya-blue-9">.Padding-2. Agrega un espaciado interno del elementos de 16px.</td>
                                     </tr>      
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.p-3</td>
+                                        <td class="w-auto bg-maya-blue-9">.pm-3</td>
                                         <td class="w-auto bg-maya-blue-9">.Padding-3. Agrega un espaciado interno del elementos de 24px.</td>
                                     </tr>    
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.p-4</td>
+                                        <td class="w-auto bg-maya-blue-9">.pm-4</td>
                                         <td class="w-auto bg-maya-blue-9">.Padding-4. Agrega un espaciado interno del elementos de 32px.</td>
                                     </tr>    
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.p-5</td>
+                                        <td class="w-auto bg-maya-blue-9">.pm-5</td>
                                         <td class="w-auto bg-maya-blue-9">.Padding-5. Agrega un espaciado interno del elementos de 40px.</td>
                                     </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
                                 </tbody>
@@ -286,25 +315,26 @@
                             <div class="block border-b p-2">
                                 <p>Espaciados del 1 y 5</p>
                             </div>
-                            <div class="p-5 pm-2 grid item-5 g-3 text-ac hatched-1 scroll-a"> 
-                                <div class="p-1 border stretch-h no-stretch-v div1 hatched-1"><div class="div1 no-stretch-vs border">p-1</div></div>  
-                                <div class="p-2 border stretch-h no-stretch-v div1 hatched-1"><div class="div1 no-stretch-vs border">p-2</div></div> 
-                                <div class="p-3 border stretch-h no-stretch-v div1 hatched-1"><div class="div1 no-stretch-vs border">p-3</div></div> 
-                                <div class="p-4 border stretch-h no-stretch-v div1 hatched-1"><div class="div1 no-stretch-vs border">p-4</div></div> 
-                                <div class="p-5 border stretch-h no-stretch-v div1 hatched-1"><div class="div1 no-stretch-vs border">p-5</div></div> 
+                            <div class="p-5 pm-2 text-ac hatched-1 scroll-a"> 
+                                <div class="grid item-5 g-5 wm-800">
+                                    <div class="p-1 no-stretch-v div1 hatched-1"><div class="bg-white border p-1">p-1</div></div>  
+                                    <div class="p-2 no-stretch-v div1 hatched-1"><div class="bg-white border p-1">p-2</div></div> 
+                                    <div class="p-3 no-stretch-v div1 hatched-1"><div class="bg-white border p-1">p-3</div></div> 
+                                    <div class="p-4 no-stretch-v div1 hatched-1"><div class="bg-white border p-1">p-4</div></div> 
+                                    <div class="p-5 no-stretch-v div1 hatched-1"><div class="bg-white border p-1">p-5</div></div> 
+                                </div>
+
                             </div>
                             <div class="border-t p-2">
                                 HTML
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="grid item-5 g-3 text-ac"&gt; 
-        &lt;div class="p-1 border"&gt;p-1&lt;/div&gt;  
-        &lt;div class="p-2 border"&gt;p-2&lt;/div&gt; 
-        &lt;div class="p-3 border"&gt;p-3&lt;/div&gt; 
-        &lt;div class="p-4 border"&gt;p-4&lt;/div&gt; 
-        &lt;div class="p-5 border"&gt;p-5&lt;/div&gt; 
-    &lt;/div&gt;
+    &lt;div class="p-1"&gt;p-1&lt;/div&gt;  
+    &lt;div class="p-2"&gt;p-2&lt;/div&gt; 
+    &lt;div class="p-3"&gt;p-3&lt;/div&gt; 
+    &lt;div class="p-4"&gt;p-4&lt;/div&gt; 
+    &lt;div class="p-5"&gt;p-5&lt;/div&gt; 
                                 </code></pre>
                             </div> 
                         </div>                
@@ -321,25 +351,30 @@
                             <table class="table-container">
                                 <thead class="table-header bg-skyblue-4">
                                     <tr>
-                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-100 bg-maya-blue-5">Clase normal</th>
+                                        <th class="w-100 bg-maya-blue-5">Clase móvil</th>
                                         <th class="w-auto bg-maya-blue-5">Descripción</th>
                                     </tr>
                                 </thead>
                                 <tbody class="table-body">
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.pt-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">.pmt-n°</td>
                                         <td class="w-auto bg-maya-blue-9">.Padding-Top-Numero. Agrega un espacio superior al elemento. El valor del número determina el tamaño del espacio, que puede ser de 8px, 16px, 24px, 32px o 40px.</td>
                                     </tr>  
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.pr-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">.pmr-n°</td>
                                         <td class="w-auto bg-maya-blue-9">.Padding-Right-Numero. Agrega un espacio derecho al elemento. El valor del número determina el tamaño del espacio, que puede ser de 8px, 16px, 24px, 32px o 40px.</td>
                                     </tr>      
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.pb-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">.pmb-n°</td>
                                         <td class="w-auto bg-maya-blue-9">.Padding-bottom-Numero. Agrega un espacio inferior al elemento. El valor del número determina el tamaño del espacio, que puede ser de 8px, 16px, 24px, 32px o 40px.</td>
                                     </tr>    
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.pl-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">.pml-n°</td>
                                         <td class="w-auto bg-maya-blue-9">.Padding-left-Numero. Agrega un espacio izquierdo al elemento. El valor del número determina el tamaño del espacio, que puede ser de 8px, 16px, 24px, 32px o 40px.</td>
                                     </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
                                 </tbody>
@@ -349,23 +384,23 @@
                             <div class="block border-b p-2">
                                 <p>Espaciados selectivos</p>
                             </div>
-                            <div class="p-5 pm-2 grid item-4 g-3 hatched-1 text-ac scroll-a"> 
-                                <div class="pt-5 border div1 stretch-h hatched-1"><div class="div1 no-stretch-v stretch-h border">pt-5</div></div> 
-                                <div class="pr-5 border div1 stretch-h no-stretch-v hatched-1"><div class="div1 stretch-h border">pr-5</div></div> 
-                                <div class="pb-5 border div1 stretch-h hatched-1"><div class="div1 no-stretch-v stretch-h border">pb-5</div></div>  
-                                <div class="pl-5 border div1 stretch-h no-stretch-v hatched-1"><div class="div1 no-stretch-v stretch-h border">pl-5</div></div> 
+                            <div class="p-5 pm-2 hatched-1 text-ac scroll-a"> 
+                                <div class="grid item-4 g-5 wm-600">
+                                <div class="pt-5 div1 hatched-1"><div class="bg-white no-stretch-v border p-1">pt-5</div></div> 
+                                <div class="pr-5 div1 no-stretch-v hatched-1"><div class="bg-white border p-1">pr-5</div></div> 
+                                <div class="pb-5 div1 hatched-1"><div class="bg-white no-stretch-v border p-1">pb-5</div></div>  
+                                <div class="pl-5 div1 no-stretch-v hatched-1"><div class="bg-white no-stretch-v border p-1">pl-5</div></div> 
+                                </div>
                             </div>
                             <div class="border-t p-2">
                                 HTML
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="grid item-4 g-3 text-ac"&gt; 
-        &lt;div class="pt-5 border"&gt;pt-5&lt;/div&gt; 
-        &lt;div class="pr-5 border"&gt;pr-5&lt;/div&gt; 
-        &lt;div class="pb-5 border"&gt;pb-5&lt;/div&gt;  
-        &lt;div class="pl-5 border"&gt;pl-5&lt;/div&gt;
-    &lt;/div&gt;
+    &lt;div class="pt-5"&gt;pt-5&lt;/div&gt; 
+    &lt;div class="pr-5"&gt;pr-5&lt;/div&gt; 
+    &lt;div class="pb-5"&gt;pb-5&lt;/div&gt;  
+    &lt;div class="pl-5"&gt;pl-5&lt;/div&gt;
                                 </code></pre>
                             </div> 
                         </div>                
@@ -380,29 +415,40 @@
                             <table class="table-container">
                                 <thead class="table-header bg-skyblue-4">
                                     <tr>
-                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-100 bg-maya-blue-5">Clase normal</th>
+                                        <th class="w-100 bg-maya-blue-5">Clase móvil</th>
                                         <th class="w-auto bg-maya-blue-5">Descripción</th>
                                     </tr>
                                 </thead>
                                 <tbody class="table-body">
                                     <tr>
+                                        <td class="w-auto bg-maya-blue-9">.m-auto</td>
+                                        <td class="w-auto bg-maya-blue-9">.m-auto</td>
+                                        <td class="w-auto bg-maya-blue-9">.Margin-auto. centra el elemento, debe tener un ancho definido.</td>
+                                    </tr>  
+                                    <tr>
                                         <td class="w-auto bg-maya-blue-9">.m-1</td>
+                                        <td class="w-auto bg-maya-blue-9">.mm-1</td>
                                         <td class="w-auto bg-maya-blue-9">.Margin-1. Agrega un espaciado externo al elementos de 8px.</td>
                                     </tr>  
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.m-2</td>
+                                        <td class="w-auto bg-maya-blue-9">.mm-2</td>
                                         <td class="w-auto bg-maya-blue-9">.Margin-2. Agrega un espaciado externo al elementos de 16px.</td>
                                     </tr>      
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.m-3</td>
+                                        <td class="w-auto bg-maya-blue-9">.mm-3</td>
                                         <td class="w-auto bg-maya-blue-9">.Margin-3. Agrega un espaciado externo al elementos de 24px.</td>
                                     </tr>    
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.m-4</td>
+                                        <td class="w-auto bg-maya-blue-9">.mm-4</td>
                                         <td class="w-auto bg-maya-blue-9">.Margin-4. Agrega un espaciado externo al elementos de 32px.</td>
                                     </tr>   
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.m-5</td>
+                                        <td class="w-auto bg-maya-blue-9">.mm-5</td>
                                         <td class="w-auto bg-maya-blue-9">.Margin-5. Agrega un espaciado externo al elementos de 40px.</td>
                                     </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
                                 </tbody>
@@ -413,24 +459,22 @@
                                 <p>Márgenes del 1 y 5</p>
                             </div>
                             <div class="p-5 pm-2 grid item-5 g-3 text-ac no-stretch-vs hatched-1 scroll-a">   
-                                <div class="border hatched-1 div1"><div class="div1 m-1 p-2">m-1</div></div>   
-                                <div class="border hatched-1 div1"><div class="div1 m-2 p-2">m-2</div></div>  
-                                <div class="border hatched-1 div1"><div class="div1 m-3 p-2">m-3</div></div>  
-                                <div class="border hatched-1 div1"><div class="div1 m-4 p-2">m-4</div></div>  
-                                <div class="border hatched-1 div1"><div class="div1 m-5 p-2">m-5</div></div>  
+                                <div class=" hatched-1 div1 no-stretch"><div class="bg-white border m-1 p-2">m-1</div></div>   
+                                <div class=" hatched-1 div1 no-stretch"><div class="bg-white border m-2 p-2">m-2</div></div>  
+                                <div class=" hatched-1 div1 no-stretch"><div class="bg-white border m-3 p-2">m-3</div></div>  
+                                <div class=" hatched-1 div1 no-stretch"><div class="bg-white border m-4 p-2">m-4</div></div>  
+                                <div class=" hatched-1 div1 no-stretch"><div class="bg-white border m-5 p-2">m-5</div></div>  
                             </div>
                             <div class="border-t p-2">
                                 HTML
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html"> 
-    &lt;div class="p-5 grid item-5 g-3 text-ac"&gt;   
-        &lt;div class="border m-1"&gt;m-1&lt;/div&gt;   
-        &lt;div class="border m-2"&gt;m-2&lt;/div&gt;  
-        &lt;div class="border m-3"&gt;m-3&lt;/div&gt;  
-        &lt;div class="border m-4"&gt;m-4&lt;/div&gt;  
-        &lt;div class="border m-5"&gt;m-5&lt;/div&gt; 
-    &lt;/div&gt;
+    &lt;div class="m-1"&gt;m-1&lt;/div&gt;   
+    &lt;div class="m-2"&gt;m-2&lt;/div&gt;  
+    &lt;div class="m-3"&gt;m-3&lt;/div&gt;  
+    &lt;div class="m-4"&gt;m-4&lt;/div&gt;  
+    &lt;div class="m-5"&gt;m-5&lt;/div&gt; 
                         </code></pre>
                             </div> 
                         </div>                
@@ -447,25 +491,30 @@
                             <table class="table-container">
                                 <thead class="table-header bg-skyblue-4">
                                     <tr>
-                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-100 bg-maya-blue-5">Clase normal</th>
+                                        <th class="w-100 bg-maya-blue-5">Clase móvil</th>
                                         <th class="w-auto bg-maya-blue-5">Descripción</th>
                                     </tr>
                                 </thead>
                                 <tbody class="table-body">
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.mt-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">.mmt-n°</td>
                                         <td class="w-auto bg-maya-blue-9">.Margin-Top-Numero. Agrega un margen superior al elemento. El valor del número determina el tamaño del margen, que puede ser de 8px, 16px, 24px, 32px o 40px.</td>
                                     </tr>  
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.mr-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">.mmr-n°</td>
                                         <td class="w-auto bg-maya-blue-9">.Margin-Right-Numero. Agrega un margen derecho al elemento. El valor del número determina el tamaño del margen, que puede ser de 8px, 16px, 24px, 32px o 40px.</td>
                                     </tr>      
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.mb-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">.mmb-n°</td>
                                         <td class="w-auto bg-maya-blue-9">.Margin-bottom-Numero. Agrega un margen inferior al elemento. El valor del número determina el tamaño del margen, que puede ser de 8px, 16px, 24px, 32px o 40px.</td>
                                     </tr>    
                                     <tr>
                                         <td class="w-auto bg-maya-blue-9">.ml-n°</td>
+                                        <td class="w-auto bg-maya-blue-9">.mml-n°</td>
                                         <td class="w-auto bg-maya-blue-9">.Margin-left-Numero. Agrega un margen izquierdo al elemento. El valor del número determina el tamaño del margen, que puede ser de 8px, 16px, 24px, 32px o 40px.</td>
                                     </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
                                 </tbody>
@@ -475,24 +524,24 @@
                             <div class="block border-b p-2">
                                 <p>Margenes selectivos</p>
                             </div>
-                            <div class="p-5 pm-2 grid item-4 hatched-1 g-3 scroll-a">   
-                                <div class="border stretch div1 hatched-1"><div class="div1 mt-4 p-2">mt-4</div></div>  
-                                <div class="border no-stretch-v div1 hatched-1"><div class="div1 mr-4 p-2">mr-4</div></div>   
-                                <div class="border stretch div1 hatched-1"><div class="div1 mb-4 p-2">mb-4</div></div>  
-                                <div class="border no-stretch-v div1 hatched-1"><div class="div1 ml-4 p-2">ml-4</div></div>  
+                            <div class="p-5 pm-2 hatched-1 g-3 scroll-a">  
+                                <div class="grid item-4 g-4 wm-700">
+                                <div class=" stretch div1 hatched-1"><div class="bg-white border mt-4 p-2">mt-4</div></div>  
+                                <div class=" no-stretch-v div1 hatched-1"><div class="bg-white border mr-4 p-2">mr-4</div></div>   
+                                <div class=" stretch div1 hatched-1"><div class="bg-white border mb-4 p-2">mb-4</div></div>  
+                                <div class=" no-stretch-v div1 hatched-1"><div class="bg-white border ml-4 p-2">ml-4</div></div> 
+                            </div>  
                             </div>
                             <div class="border-t p-2">
                                 HTML
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="p-5 grid item-4 g-3"&gt;   
-        &lt;div class="border mt-4"&gt;mt-4&lt;/div&gt;  
-        &lt;div class="border mr-4"&gt;mr-4&lt;/div&gt;   
-        &lt;div class="border mb-4"&gt;mb-4&lt;/div&gt;  
-        &lt;div class="border ml-4"&gt;ml-4&lt;/div&gt;  
-    &lt;/div&gt;
-                        </code></pre>
+    &lt;div class="mt-4"&gt;mt-4&lt;/div&gt;  
+    &lt;div class="mr-4"&gt;mr-4&lt;/div&gt;   
+    &lt;div class="mb-4"&gt;mb-4&lt;/div&gt;  
+    &lt;div class="ml-4"&gt;ml-4&lt;/div&gt;  
+                                </code></pre>
                             </div> 
                         </div>                
                     </section>                  

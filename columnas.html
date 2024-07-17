@@ -44,47 +44,48 @@
                         <section>
                             <h3 class="font-l">Domina la Gestión de Columnas con .col-n°</h3>
                             <p class="pb-2">Descubre de forma rápida cómo gestionar las columnas dentro de un item. Nuestra configuración estándar de anchos de columnas permite dividir cada item en un máximo de 12 columnas utilizando la clase .col-n°. Esto te brinda la flexibilidad para ajustar y organizar el contenido según tus necesidades, independientemente del tamaño del navegador.</p>
+                            
                             <div class="border rounded">
                                 <div class="p-2 border-b">
                                     Grilla 12 item y 12 columnas.
                                 </div>
-                                <div class="p-5 pm-2 hatched-1">
+                                <div class="p-4 pm-2 hatched-1">
                                     <div class="grid item-1 g-2 ">
                                         <div class="grid item-12 text-ac">
-                                            <div class="col-1 div1">col-1</div>
+                                            <div class="col-1 bg-white border rounded p-1">col-1</div>
                                         </div>
                                         <div class="grid item-12 text-ac">
-                                            <div class="col-2 div1">col-2</div>
+                                            <div class="col-2 bg-white border rounded p-1">col-2</div>
                                         </div>
                                         <div class="grid item-12 text-ac">
-                                            <div class="col-3 div1">col-3</div>
+                                            <div class="col-3 bg-white border rounded p-1">col-3</div>
                                         </div>     
                                         <div class="grid item-12 text-ac">
-                                            <div class="col-4 div1">col-4</div>
+                                            <div class="col-4 bg-white border rounded p-1">col-4</div>
                                         </div>   
                                         <div class="grid item-12 text-ac">
-                                            <div class="col-5 div1">col-5</div>
+                                            <div class="col-5 bg-white border rounded p-1">col-5</div>
                                         </div>      
                                         <div class="grid item-12 text-ac">
-                                            <div class="col-6 div1">col-6</div>
+                                            <div class="col-6 bg-white border rounded p-1">col-6</div>
                                         </div>    
                                         <div class="grid item-12 text-ac">
-                                            <div class="col-7 div1">col-7</div>
+                                            <div class="col-7 bg-white border rounded p-1">col-7</div>
                                         </div>        
                                         <div class="grid item-12 text-ac">
-                                            <div class="col-8 div1">col-8</div>
+                                            <div class="col-8 bg-white border rounded p-1">col-8</div>
                                         </div>       
                                         <div class="grid item-12 text-ac">
-                                            <div class="col-9 div1">col-9</div>
+                                            <div class="col-9 bg-white border rounded p-1">col-9</div>
                                         </div>        
                                         <div class="grid item-12 text-ac">
-                                            <div class="col-10 div1">col-10</div>
+                                            <div class="col-10 bg-white border rounded p-1">col-10</div>
                                         </div>          
                                         <div class="grid item-12 text-ac">
-                                            <div class="col-11 div1">col-11</div>
+                                            <div class="col-11 bg-white border rounded p-1">col-11</div>
                                         </div>   
                                         <div class="grid item-12 text-ac">
-                                            <div class="col-12 div1">col-12</div>
+                                            <div class="col-12 bg-white border rounded p-1">col-12</div>
                                         </div>    
                                     </div>      
                                 </div>  
@@ -112,12 +113,12 @@
                                         <tr>
                                             <td class="bg-maya-blue-9">Mediano</td>
                                             <td class="bg-maya-blue-9">.col-m-n°</td>
-                                            <td class="bg-maya-blue-9">Menos de 992px · Para teléfonos móviles o tabletas en orientación vertical.</td>                                
+                                            <td class="bg-maya-blue-9">Menos de 992px · Para teléfonos móviles o tabletas.</td>                                
                                         </tr> 
                                         <tr>
                                             <td class="bg-maya-blue-9">Pequeño</td>
                                             <td class="bg-maya-blue-9">.col-s-n°</td>
-                                            <td class="bg-maya-blue-9">Menor a 576px · Para teléfonos móviles en modo vertical.</td>                                
+                                            <td class="bg-maya-blue-9">Menor a 576px · Para teléfonos móviles.</td>                                
                                         </tr>                                                                                                                                                                                    
                                     </tbody>
                                 </table>
@@ -127,6 +128,8 @@
                         <section class="pt-3">
                             <h3 class="font-l">¿Y cómo se utiliza la clase .col?</h3>
                             <p class="pb-2">La clase .col es esencial en el desarrollo web para crear diseños adaptables. Al aplicarla a elementos HTML, como divs, podemos dividir el espacio disponible en columnas proporcionales dentro de un contenedor principal. Esto facilita la creación de diseños responsivos que se ajustan automáticamente a diferentes tamaños de pantalla, garantizando una experiencia de usuario óptima en dispositivos móviles y de escritorio. A continuación, presentamos una demostración de cómo aplicar las clases .col.</p>
+                            <p><strong>Importante</strong><br>
+                            .col: Se utiliza en elementos hijos de un contenedor de cuadrícula GRID para que el elemento abarque el espacio determinado en una columna (Item).</p>
                             <div class="table">
                                 <table class="table-container">
                                     <thead class="table-header bg-skyblue-4">
@@ -149,20 +152,19 @@
                                 </div>
                                 <div class="grid item-3 text-ac p-5 pm-2 hatched-1">                
                                     <div class="col-2">                                    
-                                        <div class="div1 pt-1">
+                                        <div class="bg-white pt-1">
                                             <div class="grid item-2">
                                                 <div class="border-r"> item 1</div><div>item 2</div>  
                                             </div>                                         
-                                            <div class="block div2 col-1 py-1 mt-1">Columna ocupa 2 item
+                                            <div class="block bg-white-4 py-1 mt-1 border-y">Col-2 ocupa 2 Item
                                                 <div class="my-1 grid item-2">                                            
-                                                    <div class="col-1 div2 p-1 hatched-1">Col 1 </div>
-                                                    <div class="col-1 div2 p-1 hatched-1">Col 2 </div>
+                                                    <div class="col-2 bg-white p-1 border">Col-2 </div>
                                                 </div>
                                             </div>                                       
                                         </div>                            
                                     </div>
-                                    <div class="grid div1 p-2 align-cc">item 3</div>   
-                                </div>  
+                                    <div class="grid bg-white-1 p-2 border align-cc col-1">item 3</div>   
+                                </div>
                                 <div class="border-t p-2">
                                     HTML
                                 </div>
@@ -172,7 +174,7 @@
         &lt;div class="col-2"&gt;                                    
             Columna ocupa 2 item                                                        
         &lt;/div&gt;
-        &lt;div class="align-cc"&gt;item 3&lt;/div&gt;   
+        &lt;div class="col-1"&gt;item 3&lt;/div&gt;   
     &lt;/div&gt;  
                                     </code></pre>
                                 </div> 
