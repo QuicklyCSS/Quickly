@@ -2910,8 +2910,18 @@ figure {margin: 0; padding: 0;}
 /* ====================
 	* POSITION *
 ==================== */
-.position-fixed {position: fixed;}
+.fixed-t {position: fixed; top: 0px;}
+.fixed-b {position: fixed; bottom: 0px;}
+.fixed-lb {position: fixed; left: 0px; bottom: 0px;}
+.fixed-lt {position: fixed; left: 0px; top: 0px;}
+.fixed-rb {position: fixed; right: 0px; bottom: 0px;}
+.fixed-rt {position: fixed; right: 0px; top: 0px;}
 
+.sticky-t{position: sticky; top:0px}
+.sticky-b{position: sticky; bottom:0px}
+
+.relative{position: relative;}
+.absolute{position: absolute;}
 
 /* ====================
 	* BUTTON *
@@ -4595,10 +4605,6 @@ button,
 
 .progress-container {
     width: 100%;
-    background-color: var(--bg-white-1);
-    padding: var(--md-24);
-    border-radius: var(--md-8);
-    border: 1px solid rgba(0,0,0,.1);
     display: flex; 
     align-items: center;
     justify-content: space-between;

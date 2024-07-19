@@ -45,15 +45,83 @@
                         <p>Recuerda siempre anteponer la clase .grid al utilizar las clases de alineación, es un detalle importante a tener en cuenta.</p>
                     </section>
 
+                    <!-- Alineación center center -->
+                    <section class="pt-0 p-5 pm-2">
+                        <h3 class="font-l">Alineación center center</h3>      
+                        <p class="pb-2">Para centrar un elemento en el medio del contenedor, utiliza la clase "align-cc".</p>          
+                        <h4 class="font-l">.align-cc</h4>
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.align-cc</td>
+                                        <td class="w-auto bg-maya-blue-9">Align-center-center. Alinea los elementos verticalmente y orizontalmente al centro del contenedor.</td>
+                                    </tr>                                                                                                                                                                                                                                                                    
+                                </tbody>
+                            </table>
+                        </div>  
+                        <div class="border rounded mt-2">
+                            <div class="block border-b  p-2">
+                                <p>Alineación centro centro</p>
+                            </div>
+                            <div class="grid item-1 h-200 hatched-1 scroll-a">
+                                <div class="grid align-cc">               
+                                    <div class="bg-white border rounded p-2 text-ac">align-cc</div>                               
+                                </div>
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;div class="grid align-cc"&gt;
+        &lt;div class="p-2 text-ac"&gt;item 1&lt;/div&gt;
+    &lt;/div&gt;
+                                </code></pre>
+                            </div> 
+                        </div>                
+                    </section> 
+
                     <!-- Alineación vertical por item -->
                     <section class="pt-0 p-5 pm-2">
                         <h3 class="font-l">Alineación vertical por item</h3>      
                         <p class="pb-2">También tienes la opción de ajustar la alineación de cada item (columna) de manera individual utilizando cualquiera de las clases responsivas disponibles. </p>          
-                        <div class="border rounded">
+                        <h4 class="font-l">.align-h</h4>
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.align-vs</td>
+                                        <td class="w-auto bg-maya-blue-9">Align-vertical-start. Alinea los elementos verticalmente al principio del contenedor.</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.align-vc</td>
+                                        <td class="w-auto bg-maya-blue-9">Align-vertical-center. Alinea los elementos al centro verticalmente dentro del contenedor.</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.align-ve</td>
+                                        <td class="w-auto bg-maya-blue-9">Align-vertical-end. Alinea los elementos verticalmente en el extremo derecho del contenedor.</td>
+                                    </tr>                                                                                                                                                                                                                                                                 
+                                </tbody>
+                            </table>
+                        </div>  
+                        <div class="border rounded mt-2">
                             <div class="block border-b  p-2">
                                 <p>Alineación vertical por item, inicio, centro y fin </p>
                             </div>
-                            <div class="grid item-3 h-200 hatched-1 scroll-a">
+                            <div class="grid item-3 h-200 g-4 hatched-1 scroll-a p-4 pm-2">
                                 <div class="grid align-vs">               
                                     <div class="bg-white border rounded p-2 text-ac">align-vs</div>                               
                                 </div>
@@ -496,15 +564,15 @@
                                 <p>Espacios iguales entre los elementos</p>
                             </div>
                             <div class="grid item-1 hatched-1 scroll-a">
-                                <div class="grid space-hb pm-2 wm-1000 p-4 pm-2">               
+                                <div class="grid space-hb pm-2 wm-1000 p-4 pmx-2">               
                                     <div class="bg-white border rounded p-2 text-ac">Space-Between-Horizontal 1</div> 
                                     <div class="bg-white border rounded p-2 text-ac">Space-Between-Horizontal 2</div>     
                                     <div class="bg-white border rounded p-2 text-ac">Space-Between-Horizontal 3</div>                                    
                                 </div>    
-                                <div class="grid space-vb border-t h-250 pm-2 p-4 pmx-2 align-hc">               
+                                <div class=" border-t pm-2 p-4 pmx-2 align-cc grid space-vb h-250"> 
                                     <div class="bg-white border rounded p-2 text-ac grid no-stretch">Space-Between-Vertical 1</div> 
                                     <div class="bg-white border rounded p-2 text-ac grid no-stretch">Space-Between-Vertical 2</div>     
-                                    <div class="bg-white border rounded p-2 text-ac grid no-stretch">Space-Between-Vertical 3</div>                       
+                                    <div class="bg-white border rounded p-2 text-ac grid no-stretch">Space-Between-Vertical 3</div>  
                                 </div>                                                                                       
                             </div>
                             <div class="border-t p-2">

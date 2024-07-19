@@ -11,6 +11,8 @@
   <script src="./js/quicklyComp.js" defer></script>
   <script src="./js/app.js" defer></script>
   <script>var currentPage = 'posiciones';</script>
+  <link rel="stylesheet" href="./prism/prism.css">
+  <script src="./prism/prism.js" defer></script>
   
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZQS41TB5G"></script>
@@ -33,51 +35,173 @@
                 <section class="border rounded bg-color-1">      
                     <div class="p-5 pm-2 bg-white-1 rounded-t border-b">
                         <h1 class="font-l">Posiciones en <strong class="text-quickly">Quickly</strong></h1>
-                        <h2 class="font-l font-s-4">Organiza los elementos en tu diseño utilizando clases de posicionamiento.</h2>
-                    </div>
+                            <h2 class="font-l font-s-4">Configura la disposición de tus elementos con precisión con <strong class="text-quickly" >Quickly</strong> usando nuestras clases de posicionamiento. Controla la ubicación con fixed, sticky, relative y absolute y obten un control total de la distribución de los elementos.</h2>
+                        </div>
                 
-                    <!-- col-n  -->
+                    <!-- Posicionamiento Fijo -->
                     <section class="p-5 pb-1 pm-2">
-                        <h3 class="font-l">Posiciones</h3>
-                        <p>Puedes ubicar los elementos utilizando diferentes métodos de posicionamiento, como relativo, absoluto, fijo, estático y pegajoso.</p>             
+                        <h3 class="font-l">Posicionamiento Fijo</h3>
+                        <p>Estas reglas te permiten mantener elementos en una posición específica en la ventana del navegador, sin importar el desplazamiento de la página.</p>             
                     </section>
 
-                    <!-- Align vertical  -->
+                    <!-- Fixed  -->
                     <section class="pt-0 p-5 pm-2 pmt-0">
-                        <h4 class="font-l">.position-X (Static, Relative, Absolute, Fixed, Sticky)</h4>
+                        <h4 class="font-l">.fixed</h4>
                         <div class="table">
                             <table class="table-container">
                                 <thead class="table-header bg-skyblue-4">
                                     <tr>
-                                        <th class="w-200 bg-maya-blue-5">Clase</th>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
                                         <th class="w-auto bg-maya-blue-5">Descripción</th>
                                     </tr>
                                 </thead>
                                 <tbody class="table-body">
                                     <tr>
-                                        <td class="w-auto bg-maya-blue-9">.position-static</td>
-                                        <td class="w-auto bg-maya-blue-9">Elemento posicionado de forma estática en el flujo normal del documento.</td>
-                                    </tr>      
-                                    <tr>
-                                        <td class="w-auto bg-maya-blue-9">.position-relative</td>
-                                        <td class="w-auto bg-maya-blue-9">Elemento posicionado en relación con su posición original en el flujo normal del documento.</td>
-                                    </tr>            
-                                    <tr>
-                                        <td class="w-auto bg-maya-blue-9">.position-absolute</td>
-                                        <td class="w-auto bg-maya-blue-9">Elemento posicionado en relación con su primer ancestro posicionado (distinto de estático).</td>
+                                        <td class="w-auto bg-maya-blue-9">.fixed-t</td>
+                                        <td class="w-auto bg-maya-blue-9">Fixed-Top. Fija el elemento en la parte superior de la ventana, asegurando que siempre esté visible sin importar cómo se desplace la página.</td>
                                     </tr>    
                                     <tr>
-                                        <td class="w-auto bg-maya-blue-9">.position-fixed</td>
-                                        <td class="w-auto bg-maya-blue-9">Elemento posicionado de forma fija con respecto a la ventana del navegador.</td>
-                                    </tr>    
+                                        <td class="w-auto bg-maya-blue-9">.fixed-b</td>
+                                        <td class="w-auto bg-maya-blue-9">Fixed-Bottom. Coloca el elemento en la parte inferior de la ventana, manteniéndolo siempre visible en la parte baja de la pantalla.</td>
+                                    </tr>  
                                     <tr>
-                                        <td class="w-auto bg-maya-blue-9">.position-sticky</td>
-                                        <td class="w-auto bg-maya-blue-9">Elemento que se comporta como relativo hasta que alcanza una posición específica en la ventana del navegador, momento en el que se vuelve "pegajoso" y se fija en esa posición mientras se desplaza la página.</td>
-                                    </tr>                                                                                                                                                                                                                                                                                                                                                                   
+                                        <td class="w-auto bg-maya-blue-9">.fixed-lb</td>
+                                        <td class="w-auto bg-maya-blue-9">Fixed-LeftBottom. Fija el elemento en la esquina inferior izquierda, perfecto para menús o botones de acceso rápido.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.fixed-lt</td>
+                                        <td class="w-auto bg-maya-blue-9">Fixed-LeftTop. Coloca el elemento en la esquina superior izquierda, ideal para encabezados o logotipos que deben estar siempre visibles.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.fixed-rb</td>
+                                        <td class="w-auto bg-maya-blue-9">Fixed-RigthBottom. Sitúa el elemento en la esquina inferior derecha, útil para elementos de acción o notificaciones.</td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.fixed-rt</td>
+                                        <td class="w-auto bg-maya-blue-9">Fixed-RightTop. Fija el elemento en la esquina superior derecha, excelente para barras de herramientas o botones de perfil.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                     
                                 </tbody>
                             </table>
-                        </div>                                 
-                    </section>  
+                        </div>    
+                        <div class="border rounded mt-2">
+                            <div class="block border-b p-2">
+                                <p>Ejemplos</p>
+                            </div>
+                            <div class="p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;body&gt;               
+        &lt;div class="fixed-t"&gt;fixed-t&lt;/div&gt; 
+        &lt;div class="fixed-b"&gt;fixed-b&lt;/div&gt;     
+        &lt;div class="fixed-lb"&gt;fixed-lb&lt;/div&gt;   
+        &lt;div class="fixed-lt"&gt;fixed-lt&lt;/div&gt; 
+        &lt;div class="fixed-rb"&gt;fixed-rb&lt;/div&gt; 
+        &lt;div class="fixed-rt"&gt;fixed-rt&lt;/div&gt;                                  
+    &lt;/body&gt;                                                                               
+                                </code></pre>
+                            </div> 
+                        </div>                      
+                    </section>
+
+                    <!-- Posicionamiento Pegajoso -->
+                    <section class="p-5 pt-0 pb-1 pm-2">
+                        <h3 class="font-l">Posicionamiento Pegajoso</h3>
+                        <p>Estas reglas permiten que un elemento se "pegue" a una posición específica dentro de su contenedor al desplazarse, ofreciendo una experiencia de usuario interactiva y dinámica.</p>             
+                    </section>
+
+                    <!-- Sticky -->
+                    <section class="pt-0 p-5 pm-2 pmt-0">
+                        <h4 class="font-l">.sticky</h4>
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.sticky-t</td>
+                                        <td class="w-auto bg-maya-blue-9">Sticky-Top. Mantiene el elemento pegado en la parte superior de su contenedor cuando se desplaza hacia él, ideal para barras de navegación o encabezados de secciones.</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.sticky-b</td>
+                                        <td class="w-auto bg-maya-blue-9">Sticky-Bottom. Fija el elemento en la parte inferior de su contenedor, manteniéndolo visible mientras se desplaza hacia él, perfecto para notas de pie de página o acciones persistentes.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                       
+                                </tbody>
+                            </table>
+                        </div>    
+                        <div class="border rounded mt-2">
+                            <div class="block border-b p-2">
+                                <p>Ejemplos</p>
+                            </div>
+                            <div class="p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;body&gt;               
+        &lt;div class="sticky-t"&gt;fixed-t&lt;/div&gt; 
+        &lt;div class="sticky-b"&gt;fixed-b&lt;/div&gt;                                  
+    &lt;/body&gt;                                                                               
+                                </code></pre>
+                            </div> 
+                        </div>                      
+                    </section>   
+                    
+                    <!-- Posicionamiento Pegajoso -->
+                    <section class="p-5 pt-0 pb-1 pm-2">
+                        <h3 class="font-l">Posicionamiento Relativo y Absoluto</h3>
+                        <p>Optimiza tu diseño web con las clases relative y absolute. Usa .relative para ajustes sutiles sin alterar el flujo, y .absolute para un control total sobre la ubicación de los elementos.</p>             
+                    </section>
+
+                    <!-- Absolute -->
+                    <section class="pt-0 p-5 pm-2 pmt-0">
+                        <div class="table">
+                            <table class="table-container">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-150 bg-maya-blue-5">Clase</th>
+                                        <th class="w-auto bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.relative</td>
+                                        <td class="w-auto bg-maya-blue-9">Permite posicionar un elemento en relación con su posición original en el flujo del documento. Esto significa que puedes moverlo desde su lugar de partida sin afectar el flujo de otros elementos en la página.</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.absolute</td>
+                                        <td class="w-auto bg-maya-blue-9">Permite posicionar un elemento en relación con el contenedor más cercano que tenga una posición distinta de static (o con el área visible del navegador si no hay tal contenedor). Esto proporciona un control total sobre la ubicación exacta del elemento en la página.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                                                                                       
+                                </tbody>
+                            </table>
+                        </div>    
+                        <div class="border rounded mt-2">
+                            <div class="block border-b p-2">
+                                <p>Ejemplos</p>
+                            </div>
+                            <div class="p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;body&gt;               
+        &lt;div class="relative"&gt;relative&lt;/div&gt; 
+        &lt;div class="absolute"&gt;absolute&lt;/div&gt;                                  
+    &lt;/body&gt;                                                                               
+                                </code></pre>
+                            </div> 
+                        </div>                      
+                    </section>                     
+                    
+                    
+
+
+
                 </section>  
 
             </div>
