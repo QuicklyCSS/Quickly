@@ -12,11 +12,11 @@ Quickly es un framework CSS innovador y moderno, diseñado para facilitar el des
 - **Inicio del Proyecto (26-03-2024):** 
 Quickly nació como una respuesta a la necesidad de un framework CSS ligero y altamente personalizable. Desde sus inicios, el equipo de desarrollo se centró en crear un conjunto de herramientas que no solo fueran fáciles de usar, sino también robustas y escalables.
 
-- **Actualización y Versión Alfa 1.0.0 (05-04-2024):** 
+- **Actualización y Versión Alfa 1.1.0 (05-04-2024):** 
 En menos de dos semanas desde su concepción, Quickly alcanzó su primera versión alfa. La versión Alfa 1.0.0 incluye una colección esencial de componentes y utilidades CSS que cubren las necesidades básicas de la mayoría de los proyectos web. A pesar de estar en su fase alfa, el framework ha sido diseñado con un alto estándar de calidad, asegurando que incluso en sus etapas iniciales, proporcione una base sólida para el desarrollo.
 
 ### Quickly: Un Framework Basado en CSS Grid
-Quickly es un framework de trabajo CSS basado en CSS Grid que te permite crear rápidamente diseños modernos y receptivos para tus proyectos web.
+Quickly es un framework de trabajo CSS basado en CSS Grid, HTML y Javascript que te permite crear rápidamente diseños modernos y receptivos para tus proyectos web.
 
 ### Características
     - **Basado en CSS Grid:** 
@@ -57,4 +57,4 @@ Para obtener más información y empezar a utilizar Quickly, visita nuestro siti
 ¡Esperamos que disfrutes usando Quickly y que te ayude a llevar tus proyectos al siguiente nivel! Si tienes alguna pregunta o sugerencia, no dudes en contactarme.
 Para más información escribenos a: getquicklycss@gmail.com
 
-Diseñado y construido por Alex Osses ❤️ desde Chile
+Diseñado y construido por Alex Osses ❤️ desde Chile.
