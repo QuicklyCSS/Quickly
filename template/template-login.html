@@ -1,0 +1,58 @@
+                  
+    <!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <link rel="icon" type="image/png" href="../img/ico.png">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quickly.min.css">  
+            <script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyForm.min.js" defer></script>
+            <title>Quickly: Presentación Plantilla Login</title>
+            <meta name="description" content="Quickly: El framework CSS potenciado por CSS Grid que agiliza el desarrollo web con su enfoque modular y flexible. Crea diseños modernos y responsivos de manera rápida y eficiente.">
+        </head>
+        <body id="inicio" class="vh-100 hatched-10 grid align-cc">
+            <div class="vh-100 vw-100 bg-lightblue z-b1 opacity-90 grid align-cc"></div> 
+            <div class="cont-60 cont-m-90 shadow-s border rounded bg-white-1">                                                                                        
+                <div class="p-4 pm-2 grid item-2 item-s-1 ">
+                    <div class="grid col-s-12 align-vc align-hc mmt-2">
+                        <img src="../img/Logo-Quickly.png" class="w-200" alt="">
+                    </div>
+                    <div class="grid col-s-12 mmt-2">
+                        <form id="form" class="form" aria-labelledby="formulario-titulo" role="form" novalidate>
+                            <h1 id="formulario-titulo" class="font-s-2">Inicio Sesión</h1>
+                            <div class="grid item-1 item-s-1">                                 
+                                <div class="form-group">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="password" class="form-control" id="nombre" value="" placeholder="Ingresa tu nombre" name="nombre" aria-required="true" aria-describedby="nombre-instruccion">
+                                    <div class="valid-feedback">¡Se ve bien!</div>
+                                    <div class="invalid-feedback">¡Por favor, ingresa únicamente letras y un mínimo de tres caracteres!</div>
+                                </div>                                                                              
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" value="" name="email" placeholder="jhondoe@gmail.com" aria-required="true" aria-describedby="email-instruccion">
+                                    <div class="valid-feedback">¡Se ve bien!</div>
+                                    <div class="invalid-feedback">¡Por favor, ingresa una dirección de correo electrónico válida!</div>
+                                </div> 
+                                <div class="form-group">
+                                    <fieldset>
+                                        <legend>Recuérdame.</legend>
+                                        <label><input type="checkbox" name="" value=""> Acepto</label>
+                                    </fieldset>
+                                    <div class="valid-feedback">¡Muy bien, has aceptado!</div>
+                                    <div class="invalid-feedback">¡Debes aceptar las condiciones!</div>
+                                </div>
+                                <div class="text-al">
+                                    <a class="btn-link mb-2">No recuerda su contraseña</a> 
+                                </div>                                
+                                <div class="form-group mt-2 text-ar">
+                                    <button class="btn btn-primary" type="submit" value="enviar" aria-describedby="submit-instruccion">Iniciar sesión</button>
+                                </div>                                   
+                            </div>                                                                                                                                                                                                                               
+                        </form>                                                                    
+                    </div>                   
+                    <small class="col-2 text-ac">© 2024 Quickly CSS GRID</small>  
+                </div>             
+            </div>                      
+        </body>
+    </html>
+                                
