@@ -40,9 +40,9 @@ Añade el siguiente enlace en la sección `<head>` de tu archivo HTML:<br>
 
 #### JS
 Añade el siguiente enlace antes del cierre de la etiqueta `<body>` de tu archivo HTML:
-#### JS Componentes
+#### JS Componentes<br>
 &lt;script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.min.js"&gt; &lt;/script&gt;
-#### JS Formulario
+#### JS Formulario<br>
 &lt;script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyForm.min.js"&gt; &lt;/script&gt;
 
 ### Futuro del Proyecto
@@ -57,4 +57,4 @@ Para obtener más información y empezar a utilizar Quickly, visita nuestro siti
 ¡Esperamos que disfrutes usando Quickly y que te ayude a llevar tus proyectos al siguiente nivel! Si tienes alguna pregunta o sugerencia, no dudes en contactarme.
 Para más información escribenos a: getquicklycss@gmail.com
 
-Diseñado y construido por Alexander Osses ❤️
+Diseñado y construido por Alex Osses ❤️ desde Chile
