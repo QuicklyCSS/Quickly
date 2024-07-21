@@ -35,12 +35,15 @@ Quickly es un framework de trabajo CSS basado en CSS Grid que te permite crear r
 Para empezar a usar Quickly en tu proyecto, simplemente incluye los archivos CSS y JS en tu proyecto HTML.
 
 #### CSS
-Añade el siguiente enlace en la sección `<head>` de tu archivo HTML:
-&lt;link rel="stylesheet" href="https://quicklycss.github.io/Quickly/css/quickly.css"&gt;
+Añade el siguiente enlace en la sección `<head>` de tu archivo HTML:<br>
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quickly.min.css"&gt;
 
 #### JS
 Añade el siguiente enlace antes del cierre de la etiqueta `<body>` de tu archivo HTML:
-&lt;script src="https://quicklycss.github.io/Quickly/js/quickly.js"&gt; &lt;/script&gt;
+#### JS Componentes
+&lt;script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.min.js"&gt; &lt;/script&gt;
+#### JS Formulario
+&lt;script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyForm.min.js"&gt; &lt;/script&gt;
 
 ### Futuro del Proyecto
 El equipo de Quickly está comprometido con la mejora continua y la expansión del framework. Las próximas versiones se centrarán en la adición de nuevos componentes, mejoras de rendimiento y características avanzadas que facilitarán aún más el desarrollo web. Con una comunidad creciente y activa, Quickly está destinado a convertirse en una herramienta esencial para desarrolladores de todo el mundo.
