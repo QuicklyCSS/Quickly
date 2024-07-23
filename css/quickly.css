@@ -2912,7 +2912,10 @@ figure {margin: 0; padding: 0;}
 /* ====================
 	* POSITION *
 ==================== */
-.unfixed-m{position: static !important;}
+@media screen and (max-width: 992px) {
+    .unfixed-m{position: static !important;}
+    .unsticky-m{position: static !important;}
+}
 .fixed-t {position: fixed; top: 0px;}
 .fixed-b {position: fixed; bottom: 0px;}
 .fixed-lb {position: fixed; left: 0px; bottom: 0px;}
@@ -2920,7 +2923,6 @@ figure {margin: 0; padding: 0;}
 .fixed-rb {position: fixed; right: 0px; bottom: 0px;}
 .fixed-rt {position: fixed; right: 0px; top: 0px;}
 
-.unsticky-m{position: static !important;}
 .sticky-t{position: sticky; top:0px}
 .sticky-b{position: sticky; bottom:0px}
 
