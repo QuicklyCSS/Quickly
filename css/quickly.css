@@ -2912,7 +2912,7 @@ figure {margin: 0; padding: 0;}
 /* ====================
 	* POSITION *
 ==================== */
-.fixed{position: fixed !important;}
+.unfixed-m{position: static !important;}
 .fixed-t {position: fixed; top: 0px;}
 .fixed-b {position: fixed; bottom: 0px;}
 .fixed-lb {position: fixed; left: 0px; bottom: 0px;}
@@ -2920,6 +2920,7 @@ figure {margin: 0; padding: 0;}
 .fixed-rb {position: fixed; right: 0px; bottom: 0px;}
 .fixed-rt {position: fixed; right: 0px; top: 0px;}
 
+.unsticky-m{position: static !important;}
 .sticky-t{position: sticky; top:0px}
 .sticky-b{position: sticky; bottom:0px}
 
@@ -3634,7 +3635,7 @@ button,
     /* Una fila para la imagen, una para el contenido y una para el botón */
     border: 1px solid var(--bg-color-gray-1);
     border-radius: var(--md-8);
-    height: 100%;
+    /*height: 100%;*/
     width: 100% !important;
     min-width: 260px;
     border: 1px solid rgba(0,0,0,.1);
@@ -4354,11 +4355,9 @@ button,
 /* ///////////////////////////////////////////////////////////////////////////////  */
 .collection{
     background-color: var(--color-white);
-    border-radius: var(--md-8);
-    border: 1px solid rgba(0, 0, 0, .1);
     overflow: hidden;
     width: 100%;
-    min-width: 300px;
+    min-width: 200px;
 }
 .collection .collection-item{
     border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -4372,8 +4371,10 @@ button,
     justify-content: space-between;
 }
 .collection .collection-item:hover{
-    background-color: var(--bg-color-gray-4);
+    background-color: var(--bg-gray-4);
 }
+.collection ul li {list-style: none;}
+
 
 /*  /////////////////////////////////////////////////////////////////////////////// */
 /* COMP DROPDOWN */
@@ -5122,7 +5123,7 @@ button,
 @media (max-width: 768px) {
 
     .navbar {
-        background-color: #333;
+        /*background-color: #333;*/
         color: #fff;
         height: auto;
     }
