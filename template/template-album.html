@@ -1,0 +1,284 @@
+                  
+    <!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <link rel="icon" type="image/png" href="../img/ico.png">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quickly.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.min.js"></script>
+            <title>Quickly: Plantilla Página de aterrizaje</title>
+            <meta name="description" content="Quickly: El framework CSS potenciado por CSS Grid que agiliza el desarrollo web con su enfoque modular y flexible. Crea diseños modernos y responsivos de manera rápida y eficiente.">
+        </head>
+        <body id="inicio" class="grid g-5 gm-2">                                                                                          
+            <!-- MENÚ -->
+            <nav class="navbar bg-gray border-b wp-100 shadow-l border-b" >
+                <div class="navbar-container grid space-hb" id="navbar4">
+                    <div class="navbar-header grid space-hb">
+                        <button class="navbar-toggle mml-1" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>            
+                        <svg class="ico-primary  mr-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 15c0-.552.448-1 1.001-1s.999.448.999 1-.446 1-.999 1-1.001-.448-1.001-1zm6.2 0l-1.7 2.6-1.3-1.6-3.2 4h10l-3.8-5zm7.8-5v14h-18v-14h18zm-2 2h-14v10h14v-10zm-6.462-9.385l2.244 5.385h2.167l-3.334-8-16.615 6.923 4 9.663v-5.265l-1.384-3.321 12.922-5.385z"/></svg>
+                        <a href="#" class="navbar-brand mmr-2"><img src="../img/Logo-Quickly.png" title="Logo" class="w-100 mr-1"></a>
+                    </div>
+                    <div class="navbar-collapse" id="navbar-collapse4">
+                        <ul class="navbar-nav">
+                            <li><a href="#">Inicio</a></li>
+                            <li>
+                                <a href="#" aria-haspopup="true" aria-expanded="false">Verano <svg class="ml-1 ico-8 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg></a>
+                                <ul>
+                                    <li><a href="#">Verano 1</a></li>
+                                    <li><a href="#">Verano 2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" aria-haspopup="true" aria-expanded="false">Primavera <svg class="ml-1 ico-8 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg></a>
+                                <ul>
+                                    <li><a href="#">Primavera 1</a></li>
+                                    <li><a href="#">Primavera 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="hide-s hide-m mt-1">
+                        <a href="#" title="..." class="mr-1">
+                            <svg class="ico-24 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg>
+                        </a>
+                        <a href="#" title="..." class="mr-1">
+                            <svg class="ico-24 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.082c1.602 0 1.792.006 2.425.035 1.627.074 2.385.845 2.46 2.459.028.633.034.822.034 2.424s-.006 1.792-.034 2.424c-.075 1.613-.832 2.386-2.46 2.46-.633.028-.822.035-2.425.035-1.602 0-1.792-.006-2.424-.035-1.63-.075-2.385-.849-2.46-2.46-.028-.632-.035-.822-.035-2.424s.007-1.792.035-2.424c.074-1.615.832-2.386 2.46-2.46.632-.029.822-.034 2.424-.034zm0-1.082c-1.63 0-1.833.007-2.474.037-2.18.1-3.39 1.309-3.49 3.489-.029.641-.036.845-.036 2.474 0 1.63.007 1.834.036 2.474.1 2.179 1.31 3.39 3.49 3.49.641.029.844.036 2.474.036 1.63 0 1.834-.007 2.475-.036 2.176-.1 3.391-1.309 3.489-3.49.029-.64.036-.844.036-2.474 0-1.629-.007-1.833-.036-2.474-.098-2.177-1.309-3.39-3.489-3.489-.641-.03-.845-.037-2.475-.037zm0 2.919c-1.701 0-3.081 1.379-3.081 3.081s1.38 3.081 3.081 3.081 3.081-1.379 3.081-3.081c0-1.701-1.38-3.081-3.081-3.081zm0 5.081c-1.105 0-2-.895-2-2 0-1.104.895-2 2-2 1.104 0 2.001.895 2.001 2s-.897 2-2.001 2zm3.202-5.922c-.397 0-.72.322-.72.72 0 .397.322.72.72.72.398 0 .721-.322.721-.72 0-.398-.322-.72-.721-.72z"/></svg>        
+                        </a>
+                        <a href="#" title="...">
+                            <svg class="ico-24 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg>        
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- TITULO SECCIÓN -->
+            <section class="cont-90 cont-s-100 cont-m-100 grid pm-2 pmb-0">
+                <div class="grid item-5 item-s-1 g-5 gm-2">
+                    <div class="col-3 col-s-1 col-m-3 align-vc grid g-2 p-4 bg-gray rounded text-c-white">
+                        <div class="grid">
+                            <h1 class="font-b">Título álbum</h1>
+                            <p class="text-cut-m-80">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>                        
+                            <div class="mmt-1">
+                                <button class="btn btn-light-outline">Botón uno</button>
+                                <button class="btn btn-secondary-alt-outline">Botón dos</button>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-2 col-s-1 col-m-2">
+                        <img src="../img/png/500x500.png" alt="Imagen de la tarjeta" class="img-fluid bg-gray opacity-60 rounded">                                                                                 
+                    </div> 
+                </div>
+            </section>          
+
+            <!-- CARD -->
+            <section class="cont-90 cont-s-100 cont-m-100 grid pm-2 pmt-0">  
+                <div class="grid item-auto-fit item-s-1 item-m-3 g-5 gm-2">                           
+                    <article class="card bg-white-2">
+                        <img src="../img/png/500x500.png" alt="Imagen de la tarjeta" class="bg-gray opacity-60">
+                        <div class="card-cont">
+                            <div class="card-body">
+                                <h3 class="font-n">Título</h3> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.</p>
+                                <small>12-04-2024</small>
+                            </div>  
+                            <div class="card-footer grid mt-1">
+                                <div class="grid space-hb">
+                                    <button type="button" class="btn-ico btn-dark"><svg class="ico-16 ico-white" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero"/></svg></button>                                    
+                                    <button type="button" class="btn-ico btn-dark-outline"><svg class="ico-16 ico-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>                                    
+                                </div>  
+                            </div>
+                        </div>                                                                                   
+                    </article> 
+                    <article class="card bg-white-2">
+                        <img src="../img/png/500x500.png" alt="Imagen de la tarjeta" class="bg-gray opacity-60">
+                        <div class="card-cont">
+                            <div class="card-body">
+                                <h3 class="font-n">Título</h3> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.</p>
+                                <small>12-04-2024</small>
+                            </div>  
+                            <div class="card-footer grid mt-1">
+                                <div class="grid space-hb">
+                                    <button type="button" class="btn-ico btn-dark"><svg class="ico-16 ico-white" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero"/></svg></button>                                    
+                                    <button type="button" class="btn-ico btn-dark-outline"><svg class="ico-16 ico-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>                                    
+                                </div>  
+                            </div>
+                        </div>                                                                                   
+                    </article> 
+                    <article class="card bg-white-2">
+                        <img src="../img/png/500x500.png" alt="Imagen de la tarjeta" class="bg-gray opacity-60">
+                        <div class="card-cont">
+                            <div class="card-body">
+                                <h3 class="font-n">Título</h3> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.</p>
+                                <small>12-04-2024</small>
+                            </div>  
+                            <div class="card-footer grid mt-1">
+                                <div class="grid space-hb">
+                                    <button type="button" class="btn-ico btn-dark"><svg class="ico-16 ico-white" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero"/></svg></button>                                    
+                                    <button type="button" class="btn-ico btn-dark-outline"><svg class="ico-16 ico-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>                                    
+                                </div>  
+                            </div>
+                        </div>                                                                                   
+                    </article> 
+                    <article class="card bg-white-2">
+                        <img src="../img/png/500x500.png" alt="Imagen de la tarjeta" class="bg-gray opacity-60">
+                        <div class="card-cont">
+                            <div class="card-body">
+                                <h3 class="font-n">Título</h3> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.</p>
+                                <small>12-04-2024</small>
+                            </div>  
+                            <div class="card-footer grid mt-1">
+                                <div class="grid space-hb">
+                                    <button type="button" class="btn-ico btn-dark"><svg class="ico-16 ico-white" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero"/></svg></button>                                    
+                                    <button type="button" class="btn-ico btn-dark-outline"><svg class="ico-16 ico-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>                                    
+                                </div>  
+                            </div>
+                        </div>                                                                                   
+                    </article> 
+                    <article class="card bg-white-2">
+                        <img src="../img/png/500x500.png" alt="Imagen de la tarjeta" class="bg-gray opacity-60">
+                        <div class="card-cont">
+                            <div class="card-body">
+                                <h3 class="font-n">Título</h3> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.</p>
+                                <small>12-04-2024</small>
+                            </div>  
+                            <div class="card-footer grid mt-1">
+                                <div class="grid space-hb">
+                                    <button type="button" class="btn-ico btn-dark"><svg class="ico-16 ico-white" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero"/></svg></button>                                    
+                                    <button type="button" class="btn-ico btn-dark-outline"><svg class="ico-16 ico-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>                                    
+                                </div>  
+                            </div>
+                        </div>                                                                                   
+                    </article> 
+                    <article class="card bg-white-2">
+                        <img src="../img/png/500x500.png" alt="Imagen de la tarjeta" class="bg-gray opacity-60">
+                        <div class="card-cont">
+                            <div class="card-body">
+                                <h3 class="font-n">Título</h3> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.</p>
+                                <small>12-04-2024</small>
+                            </div>  
+                            <div class="card-footer grid mt-1">
+                                <div class="grid space-hb">
+                                    <button type="button" class="btn-ico btn-dark"><svg class="ico-16 ico-white" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero"/></svg></button>                                    
+                                    <button type="button" class="btn-ico btn-dark-outline"><svg class="ico-16 ico-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>                                    
+                                </div>  
+                            </div>
+                        </div>                                                                                   
+                    </article> 
+                    <article class="card bg-white-2">
+                        <img src="../img/png/500x500.png" alt="Imagen de la tarjeta" class="bg-gray opacity-60">
+                        <div class="card-cont">
+                            <div class="card-body">
+                                <h3 class="font-n">Título</h3> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.</p>
+                                <small>12-04-2024</small>
+                            </div>  
+                            <div class="card-footer grid mt-1">
+                                <div class="grid space-hb">
+                                    <button type="button" class="btn-ico btn-dark"><svg class="ico-16 ico-white" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero"/></svg></button>                                    
+                                    <button type="button" class="btn-ico btn-dark-outline"><svg class="ico-16 ico-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>                                    
+                                </div>  
+                            </div>
+                        </div>                                                                                   
+                    </article> 
+                    <article class="card bg-white-2">
+                        <img src="../img/png/500x500.png" alt="Imagen de la tarjeta" class="bg-gray opacity-60">
+                        <div class="card-cont">
+                            <div class="card-body">
+                                <h3 class="font-n">Título</h3> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.</p>
+                                <small>12-04-2024</small>
+                            </div>  
+                            <div class="card-footer grid mt-1">
+                                <div class="grid space-hb">
+                                    <button type="button" class="btn-ico btn-dark"><svg class="ico-16 ico-white" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero"/></svg></button>                                    
+                                    <button type="button" class="btn-ico btn-dark-outline"><svg class="ico-16 ico-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>                                    
+                                </div>  
+                            </div>
+                        </div>                                                                                   
+                    </article> 
+                    <article class="card bg-white-2">
+                        <img src="../img/png/500x500.png" alt="Imagen de la tarjeta" class="bg-gray opacity-60">
+                        <div class="card-cont">
+                            <div class="card-body">
+                                <h3 class="font-n">Título</h3> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.</p>
+                                <small>12-04-2024</small>
+                            </div>  
+                            <div class="card-footer grid mt-1">
+                                <div class="grid space-hb">
+                                    <button type="button" class="btn-ico btn-dark"><svg class="ico-16 ico-white" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero"/></svg></button>                                    
+                                    <button type="button" class="btn-ico btn-dark-outline"><svg class="ico-16 ico-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>                                    
+                                </div>  
+                            </div>
+                        </div>                                                                                   
+                    </article> 
+                    <article class="card bg-white-2">
+                        <img src="../img/png/500x500.png" alt="Imagen de la tarjeta" class="bg-gray opacity-60">
+                        <div class="card-cont">
+                            <div class="card-body">
+                                <h3 class="font-n">Título</h3> 
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo.</p>
+                                <small>12-04-2024</small>
+                            </div>  
+                            <div class="card-footer grid mt-1">
+                                <div class="grid space-hb">
+                                    <button type="button" class="btn-ico btn-dark"><svg class="ico-16 ico-white" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero"/></svg></button>                                    
+                                    <button type="button" class="btn-ico btn-dark-outline"><svg class="ico-16 ico-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg></button>                                    
+                                </div>  
+                            </div>
+                        </div>                                                                                   
+                    </article> 
+                 </div>
+            </section>
+
+            <!-- PAGINADOR -->
+            <nav class="pagination-container grid align-hc" aria-label="...">
+                <ul class="pagination">
+                    <li class="pagination-item-arrow">
+                        <a class="pagination-link-off" href="#" >
+                            <svg class="ico-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
+                        </a>
+                    </li>
+                    <li class="pagination-item"><a class="pagination-link-active" href="#">1</a></li>
+                    <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
+                    <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+                    <li class="pagination-item-arrow">
+                        <a class="pagination-link" href="#">
+                            <svg class="ico-16 ico-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>  
+
+            <!-- FOOTER -->
+            <footer class="cont pm-2 bg-gray-5 border-t mt-5">
+                <section class="my-2 mmy-2">
+                    <div class="grid text-ac">
+                        <div> 
+                            <a href="#inicio" target="_self" class="button" role="button" aria-label="Subir">
+                                <svg class="ico-24 ico-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-labelledby="title">
+                                    <title id="title">Icono de Subir</title>
+                                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z"/>
+                                </svg>
+                            </a>
+                        </div>                                                  
+                        <div>
+                            <small class="text-ac my-2 text-c-black"><strong class="text-quickly" >Quickly</strong> 2024 Licenciado bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank"><strong class="text-c-black">CC BY-SA 4.0</strong></a> Creative Commons </small>                     
+                        </div>
+                    </div>                
+                </section>
+            </footer>                         
+        </body>
+    </html>
+                                
