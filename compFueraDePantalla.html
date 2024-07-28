@@ -6,6 +6,7 @@
     <title>Quickly: Componente Fuera de Pantalla o OffCanvas | Expande tu Experiencia de Usuario</title>
     <meta name="description" content="Explora el componente de navegación Fuera de Pantalla o OffCanvas. Diseñado para mejorar la experiencia del usuario, nuestro componente ofrece una forma efectiva de mostrar contenido adicional sin abrumar la interfaz principal. Descubre cómo integrarlo para brindar una navegación fluida y eficiente en tu sitio web.">    
     <link rel="icon" type="image/png" href="./img/ico.png">
+    <link rel="stylesheet" href="./dist/v-1/css/quickly.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quickly.min.css">
     <link rel="stylesheet" href="./css/app.min.css">
     <script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.min.js" defer></script>
@@ -47,20 +48,28 @@
                             <div class="border-b p-2">
                                 Ejemplo apertura izquierda
                             </div>                        
-                            <div class="hatched-1 p-5 pm-2"> 
+                            <div class="hatched-1 p-5 pm-2 grid g-5 gm-2"> 
 
                                 <!-- OFFCANVAS -->                                  
-                                <div class="mb-5">
-                                    <!-- Botón para abrir el offcanvas con button -->
-                                    <button class="btn btn-primary" data-Qy-toggle="offcanvas-1">Abrir con botón</button>  
-                                    <!-- Botón para abrir el offcanvas con link --> 
-                                    <a class="btn btn-primary" data-Qy-toggle="offcanvas-2" href="#" role="button" aria-controls="offcanvasExample">
-                                        Abrir con enlace
-                                    </a>
-                                    <!-- Botón para abrir el offcanvas con button ico -->
-                                    <button data-Qy-toggle="offcanvas-3" type="button" class="btn-ico btn-primary">
-                                        <svg class="ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
-                                    </button> 
+                                <div class="grid item-12">
+                                    <div class="col-6 col-s-12 grid g-2 align-content-hl">
+                                        <div class="col-2">
+                                            <!-- Botón para abrir el offcanvas con button -->
+                                            <button class="btn btn-primary" data-Qy-toggle="offcanvas-1">Abrir con botón</button>  
+                                        </div>
+                                        <div class="col-2">
+                                            <!-- Botón para abrir el offcanvas con link --> 
+                                            <a class="btn btn-primary" data-Qy-toggle="offcanvas-2" href="#" role="button" aria-controls="offcanvasExample">
+                                                Abrir con enlace
+                                            </a>
+                                        </div>
+                                        <div class="col-2 align-cc grid">
+                                            <!-- Botón para abrir el offcanvas con button ico -->
+                                            <button data-Qy-toggle="offcanvas-3" type="button" class="btn-ico btn-primary">
+                                                <svg class="ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+                                            </button> 
+                                        </div>
+                                    </div>
                                 </div>                                                          
 
                                 <div class="offcanvas-ejemplo">
@@ -216,90 +225,98 @@
                             <div class="border-b p-2">
                                 Ejemplo apertura derecha
                             </div>                        
-                            <div class="hatched-1 p-5 pm-2"> 
+                            <div class="hatched-1 p-5 pm-2 grid g-5 gm-2"> 
 
-<!-- OFFCANVAS -->                                  
-<div class="mb-5">
-    <!-- Botón para abrir el offcanvas con button -->
-    <button class="btn btn-primary" data-Qy-toggle="offcanvas-4">Abrir con botón</button>  
-    <!-- Botón para abrir el offcanvas con link --> 
-    <a class="btn btn-primary" data-Qy-toggle="offcanvas-5" href="#" role="button" aria-controls="offcanvasExample">
-        Abrir con enlace
-    </a>
-    <!-- Botón para abrir el offcanvas con button ico -->
-    <button data-Qy-toggle="offcanvas-6" type="button" class="btn-ico btn-primary">
-        <svg class="ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
-    </button> 
-</div>                                                          
+                                <div class="grid item-12">
+                                    <div class="col-6 col-s-12 grid g-2 align-content-hl">
+                                        <!-- OFFCANVAS -->                                  
+                                        <div class="col-2">                                       
+                                            <!-- Botón para abrir el offcanvas con button -->
+                                            <button class="btn btn-primary" data-Qy-toggle="offcanvas-4">Abrir con botón</button>  
+                                        </div>
+                                        <div class="col-2"> 
+                                            <!-- Botón para abrir el offcanvas con link --> 
+                                            <a class="btn btn-primary" data-Qy-toggle="offcanvas-5" href="#" role="button" aria-controls="offcanvasExample">
+                                                Abrir con enlace
+                                            </a>
+                                        </div>
+                                        <div class="col-2 align-cc grid">  
+                                            <!-- Botón para abrir el offcanvas con button ico -->
+                                            <button data-Qy-toggle="offcanvas-6" type="button" class="btn-ico btn-primary">
+                                                <svg class="ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+                                            </button> 
+                                        </div>                                        
+                                    </div>                                                         
+                                </div> 
 
-<div class="offcanvas-ejemplo">
-    <div class="offcanvas-content-ejemplo-r">
-        <div class="offcanvas-header">
-            <h3>Título</h3>
-            <div class="close close-x"><svg class="ico-24 ico-gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg></div>
-        </div>
-        <div class="offcanvas-body">
-            <p>Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado.</p>
-        </div>
-        <div class="offcanvas-footer text-ar">
-            <button class="btn btn-secondary close">Cerrar</button>
-            <button class="btn btn-primary">Aceptar</button>
-        </div>                                        
-    </div>                                    
-</div>    
+                                <div class="offcanvas-ejemplo">
+                                        <div class="offcanvas-content-ejemplo-r">
+                                            <div class="offcanvas-header">
+                                                <h3>Título</h3>
+                                                <div class="close close-x"><svg class="ico-24 ico-gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg></div>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <p>Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado.</p>
+                                            </div>
+                                            <div class="offcanvas-footer text-ar">
+                                                <button class="btn btn-secondary close">Cerrar</button>
+                                                <button class="btn btn-primary">Aceptar</button>
+                                            </div>                                        
+                                        </div>                                    
+                                </div>    
 
-<!-- Contenedor del offcanvas con botón -->
-<div id="offcanvas-4" class="offcanvas">
-    <div class="offcanvas-content-r">
-        <div class="offcanvas-header">
-            <h3>Título / Abierto con el botón</h3>
-            <div class="close close-x"><svg class="ico-24 ico-gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg></div>
-        </div>
-        <div class="offcanvas-body">
-            <p>Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado. Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado. Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado.</p>
-        </div>
-        <div class="offcanvas-footer text-ar">
-            <button class="btn btn-secondary close">Cerrar</button>
-            <button class="btn btn-primary">Aceptar</button>
-        </div>                                        
-    </div>                                    
-</div>        
+                                <!-- Contenedor del offcanvas con botón -->
+                                <div id="offcanvas-4" class="offcanvas">
+                                        <div class="offcanvas-content-r">
+                                            <div class="offcanvas-header">
+                                                <h3>Título / Abierto con el botón</h3>
+                                                <div class="close close-x"><svg class="ico-24 ico-gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg></div>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <p>Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado. Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado. Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado.</p>
+                                            </div>
+                                            <div class="offcanvas-footer text-ar">
+                                                <button class="btn btn-secondary close">Cerrar</button>
+                                                <button class="btn btn-primary">Aceptar</button>
+                                            </div>                                        
+                                        </div>                                    
+                                </div>        
 
-<!-- Contenedor del offcanvas con botón enlace -->
-<div id="offcanvas-5" class="offcanvas">
-    <div class="offcanvas-content-r">
-        <div class="offcanvas-header">
-            <h3>Título / Abierto con el enlace</h3>
-            <div class="close close-x"><svg class="ico-24 ico-gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg></div>
-        </div>
-        <div class="offcanvas-body">
-            <p>Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado. Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado. Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado.</p>
-        </div>
-        <div class="offcanvas-footer text-ar">
-            <button class="btn btn-secondary close">Cerrar</button>
-            <button class="btn btn-primary">Aceptar</button>
-        </div>                                        
-    </div>                                    
-</div>   
+                                <!-- Contenedor del offcanvas con botón enlace -->
+                                <div id="offcanvas-5" class="offcanvas">
+                                        <div class="offcanvas-content-r">
+                                            <div class="offcanvas-header">
+                                                <h3>Título / Abierto con el enlace</h3>
+                                                <div class="close close-x"><svg class="ico-24 ico-gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg></div>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <p>Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado. Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado. Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado.</p>
+                                            </div>
+                                            <div class="offcanvas-footer text-ar">
+                                                <button class="btn btn-secondary close">Cerrar</button>
+                                                <button class="btn btn-primary">Aceptar</button>
+                                            </div>                                        
+                                        </div>                                    
+                                </div>   
 
-<!-- Contenedor del offcanvas con botón ico -->
-<div id="offcanvas-6" class="offcanvas">
-    <div class="offcanvas-content-r">
-        <div class="offcanvas-header">
-            <h3>Título / Abierto con el botón icono</h3>
-            <div class="close close-x"><svg class="ico-24 ico-gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg></div>
-        </div>
-        <div class="offcanvas-body">
-            <p>Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado. Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado. Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado.</p>
-        </div>
-        <div class="offcanvas-footer text-ar">
-            <button class="btn btn-secondary close">Cerrar</button>
-            <button class="btn btn-primary">Aceptar</button>
-        </div>                                        
-    </div>                                    
-</div>                                  
-
-                            </div>                   
+                                <!-- Contenedor del offcanvas con botón ico -->                                
+                                <div id="offcanvas-6" class="offcanvas">
+                                        <div class="offcanvas-content-r">
+                                            <div class="offcanvas-header">
+                                                <h3>Título / Abierto con el botón icono</h3>
+                                                <div class="close close-x"><svg class="ico-24 ico-gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg></div>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <p>Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado. Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado. Este es un offcanvas de ejemplo. Puedes poner aquí tu contenido personalizado.</p>
+                                            </div>
+                                            <div class="offcanvas-footer text-ar">
+                                                <button class="btn btn-secondary close">Cerrar</button>
+                                                <button class="btn btn-primary">Aceptar</button>
+                                            </div>                                        
+                                        </div>                                    
+                                </div>                                  
+                            </div>
+                                              
                             <div class="border-t p-2">
                                 HTML
                             </div>
