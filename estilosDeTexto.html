@@ -699,6 +699,10 @@
                                 </thead>
                                 <tbody class="table-body">
                                     <tr>
+                                        <td class="w-auto bg-maya-blue-9">.text-cut-60</td>
+                                        <td class="w-auto bg-maya-blue-9">Text-Cut-60. Limita el texto a 60 caracteres.</td>
+                                    </tr> 
+                                    <tr>
                                         <td class="w-auto bg-maya-blue-9">.text-cut-80</td>
                                         <td class="w-auto bg-maya-blue-9">Text-Cut-80. Limita el texto a 80 caracteres.</td>
                                     </tr> 
@@ -742,13 +746,13 @@
                                 <p>Ejemplo de reducción</p>
                             </div>
                             <div class="p-5 pm-2 grid item-1 item-s-1 g-2 hatched-1">           
-                                <div class="border p-2 text-tl bg-white rounded border">
-                                    <mark class="line-h-2">Texto reducido a 150 caracteres.</mark>
-                                    <p class="text-cut-150">
+                                <div class="border p-2 text-tl bg-white rounded">
+                                    <mark class="line-h-2">Texto reducido a 80 caracteres.</mark>
+                                    <p class="text-cut-60">
                                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
                                     </p> 
                                 </div>  
-                                <div class="border p-2 text-tl bg-white rounded border">
+                                <div class="border p-2 text-tl bg-white rounded">
                                     <mark class="line-h-2">Texto reducido a 250 caracteres.</mark>
                                     <p class="text-cut-250">
                                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
@@ -761,8 +765,8 @@
                             </div>
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
-    &lt;div class="text-cut-150"&gt;
-        Texto reducido a 150 caracteres...
+    &lt;div class="text-cut-80"&gt;
+        Texto reducido a 80 caracteres...
     &lt;/div&gt;       
     
     &lt;div class="text-cut-250"&gt;
@@ -772,6 +776,55 @@
                             </div> 
                         </div>                                   
                     </section> 
+
+                    <!-- Evitar desbordamiento de texto. -->
+                    <section class="p-5 pt-0 pm-2">
+                        <h3 class="font-l">Evita desbordamientos en textos extensos.</h3>
+                        <p class="pb-2">Para evitar el desbordamiento de texto largo dentro de un contenedor, utiliza la clase .text-wrap. Esta clase ajusta automáticamente el texto para que se divida en varias líneas cuando sea necesario, manteniendo todo dentro del contenedor. </p>             
+                        <h4 class="font-l">.text-wrap</h4>
+                        <div class="table">
+                            <table class="table-container wm-500">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase normal</th>
+                                        <th class="w-400 bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.text-wrap</td>
+                                        <td class="w-auto bg-maya-blue-9">Esta clase hace que el texto largo se ajuste correctamente y no cause desbordamiento del contenedor, manteniendo la apariencia del contenido dentro de los límites establecidos.</td>
+                                    </tr> 
+                                                                                                                                                                                                                                                                                                 
+                                </tbody>
+                            </table>
+                        </div>  
+                        <div class="border rounded mt-2">
+                            <div class="block border-b p-2">
+                                <p>Ejemplo de desbordamiento</p>
+                            </div>
+                            <div class="p-5 pm-2 grid item-2 item-s-1 g-2 hatched-1">           
+                                <div class="border p-2 bg-white rounded">
+                                    <p class="font-b">Con text-wrap</p>
+                                    <p class="text-wrap">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quickly.min.css"&gt;</p>
+                                </div>  
+                                <div class="border p-2 bg-white rounded scroll-a">
+                                    <p class="font-b">Sin text-wrap</p>
+                                    <p>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quickly.min.css"&gt;</p>
+                                </div>  
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;div class="text-cut-80"&gt;
+        Texto reducido a 150 caracteres...
+    &lt;/div&gt;       
+                                </code></pre>
+                            </div> 
+                        </div>                                   
+                    </section>                     
                 </section>               
 
             </div>
