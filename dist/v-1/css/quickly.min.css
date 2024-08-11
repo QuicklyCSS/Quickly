@@ -10517,7 +10517,7 @@ select {
 }
 
 .text-wrap {
-    overflow-wrap: break-word; /* Permite que las palabras largas se dividan y ajusten */
-    word-wrap: break-word; /* Para compatibilidad con navegadores más antiguos */
-    white-space: pre-wrap; /* Mantiene los espacios y saltos de línea, y ajusta el texto */
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    white-space: pre-wrap; 
 }
