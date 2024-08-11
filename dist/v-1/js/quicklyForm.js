@@ -1,6 +1,6 @@
 /* /////////////////////////////////////////////////// */
-/* © 2024 Quickly CSS GRID v-2-0-0                     */
-/* Formularios minimizado                              */
+/* © 2024 Quickly CSS GRID v-2-0-1                     */
+/* JS minimizado                                       */
 /* Por Alex Osses                                      */
 /* Documentación https://quicklycss.github.io/Quickly/ */
 /* /////////////////////////////////////////////////// */

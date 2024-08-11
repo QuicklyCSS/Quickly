@@ -10,6 +10,8 @@
     <script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.min.js" defer></script>
     <link rel="stylesheet" href="./css/app.min.css">
     <script src="./js/app.min.js" defer></script>
+    <link rel="stylesheet" href="./prism/prism.css">
+    <script src="./prism/prism.js" defer></script>
   
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZQS41TB5G"></script>
@@ -20,90 +22,413 @@
     gtag('config', 'G-DZQS41TB5G');
     </script>
 </head>
-<body class="body g-5">
-    <div class="m-5 mm-1">
-        <div class="cont-60 cont-m-90 glass-effect p-5 pm-2 grid g-5 gm-2 rounded animated-div">
-
-            <div class="grid item-12 item-s-12 item-s-12 g-5 gm-2">
-                <div class="col-12 col-s-12">
-                    <div class="m-auto wm-200 w-350">
-                        <img src="./img/Logo-Quickly.png" class="img-fluid" alt="Logo Framework Quickly">
-                    </div>
-                </div>
-                <h1 class="col-12 col-s-12 font-l text-ac font-s-2 color-purple border-y py-4 pmy-2">
-                    Un framework de desarrollo web de código abierto que facilita la creación de sitios y aplicaciones web. Construido con <span class="font-b color-lightblue">HTML</span>, <span class="font-b color-lightblue">CSS Grid</span> y <strong class="font-b color-lightblue">JavaScript</strong>.
-                </h1>
-            </div>
-
-            <div class="grid item-12 g-2 gm-2">
-                <div class="col-12 grid align-hc">
-                    <h2 class="wp-80 wmp-100 font-l text-ac font-s-4">
-                        Disfruta de una construcción fácil en HTML para sus proyectos web
-                    </h2>
-                </div>
-                <div class="col-12 m-auto">
-                    <a class="btn btn-primary" href="comenzar.html" target="_self">Documentación</a>
-                    <a class="btn btn-primary-alt" href="https://github.com/QuicklyCSS/Quickly/tree/main/dist/QuicklyCss-v1.zip" target="_blank">Descargar <svg class="ml-1 ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 2v11h2.51l-4.51 5.01-4.51-5.01h2.51v-11h4zm2-2h-8v11h-5l9 10 9-10h-5v-11zm3 19v3h-14v-3h-2v5h18v-5h-2z"/></svg></a>
-                </div>
-            </div>
-
-            <div class="grid item-12 bg-maya-blue-8 align-vc rounded p-4 pm-2 g-5 gm-2">
-                <p class="col-6 col-s-12 font-l font-s-6 text-ac">
-                    Revisa nuestras plantillas de prueba y descubre lo que <span class="font-b text-quickly">Quickly</span> CSS Grid puede hacer.
-                </p>
-                <div class="col-6 col-s-12 m-auto">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary" type="button" data-Qy-toggle="dropdown" aria-expanded="false">
-                             Seleccione<svg class="ml-2 ico ico-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg> 
-                        </button>
-                        <ul class="dropdown-menu text-al">                        
-                            <li><a class="dropdown-item" href="https://quicklycss.github.io/Quickly/template/template-login.html" target="_blank">Inicio Sesión</a></li>
-                            <li><a class="dropdown-item" href="https://quicklycss.github.io/Quickly/template/template-cover.html" target="_blank">Portada</a></li>
-                            <li><a class="dropdown-item" href="https://quicklycss.github.io/Quickly/template/template-landing.html" target="_blank">Página de aterrizaje</a></li>                        
-                            <li><a class="dropdown-item" href="https://quicklycss.github.io/Quickly/template/template-blog.html" target="_blank">Blog</a></li>
-                            <li><a class="dropdown-item" href="https://quicklycss.github.io/Quickly/template/template-album.html" target="_blank">Álbum</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid item-12 grid g-4 gm-2">
-                <div class="col-12 grid g-2 align-content-vc text-ac">
-                    <h4 class="col-12 font-s-5">Tecnologías</h4>
-                    <div class="col-12 align-content-hc grid g-2">
-                        <svg class="ico-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
-                            <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
-                            <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
-                            <path fill="#ecedee" d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"/>
-                            <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"/>
-                        </svg>
-                        <svg class="ico-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 630">
-                            <rect width="630" height="630" fill="#f7df1e"/>
-                            <path d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"/>
-                        </svg>
-                        <svg class="ico-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
-                            <path fill="#0c73b8" d="M41 460L0 0h451l-41 460-185 52"/>
-                            <path fill="#30a9dc" d="M226 472l149-41 35-394H226"/>
-                            <path fill="#ecedee" d="M226 208H94l5 57h127zm0-114H84l5 56h137zm0 261l-124-33 7 60 117 32z"/>
-                            <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 26-288H226v56h80l-6 58h-74z"/>
-                        </svg>
-                    </div>                
-                </div>
-            </div>
-            <div class="grid item-12 grid g-4 gm-2">
-                <div class="col-12 m-auto grid align-content-hc">
-                    <a class="btn btn-primary-alt-outline" href="https://github.com/QuicklyCSS/Quickly" target="_blank">
-                        Repositorio <svg class="ml-1 ico-16 ico-primary-alt" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+<body class="grid g-5 gm-2 cont-100" id="inicio">
+                                                                           
+    <!-- Menú -->
+    <div class="cont-100 sticky-t bg-resolutionBlue shadow-l">
+        <nav class="cont-90 cont-s-100 navbar">
+            <div class="navbar-container grid space-hb" id="navbar4">
+                <div class="navbar-header grid space-hb">
+                    <button class="navbar-toggle mml-1" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>            
+                    <a href="#" class="navbar-brand mmr-2">
+                        <img src="./img/Logo-Quickly.png" class="w-100" alt="Logo Framework Quickly">
                     </a>
                 </div>
-                <div class="col-12 text-ac border-t pt-2">
-                    <small><span class="font-b text-quickly" >Quickly</span> 2024 Licenciado bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank"><span class="font-b text-c-black">CC BY-SA 4.0</span></a> Creative Commons </small>
+                <div class="navbar-collapse" id="navbar-collapse4">
+                    <ul class="navbar-nav">
+                        <li><a href="#" class="hover">Inicio</a></li>
+                        <li>
+                            <a href="./comenzar.html" aria-haspopup="true" aria-expanded="false">Documentación </a>
+                        </li>
+                        <li>
+                            <a href="#instalacion" aria-haspopup="true" aria-expanded="false">Instalación</a>
+                        </li>
+                        <li>
+                            <a href="#inicio_rapido" aria-haspopup="true" aria-expanded="false">Inicio rápido</a>
+                        </li>
+                        <li>
+                            <a href="#caracteristicas" aria-haspopup="true" aria-expanded="false">Características</a>
+                        </li>
+                        <li>
+                            <a href="#plantillas" aria-haspopup="true" aria-expanded="false">Plantillas</a>
+                        </li>
+                        <li class="hide show-s show-m">
+                            <a href="https://github.com/QuicklyCSS/Quickly" aria-haspopup="true" aria-expanded="false">GitHub</a>
+                        </li>
+                        <!--li><a href="#" title="Ayúdame a financiar el proyecto" class="bg-apple-red-1 font-b">invítame<svg class="ml-1 ico-16 mb-1 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 20h-7c-2.174-3.004-4-6.284-4-12h15c0 5.667-1.88 9.089-4 12zm5.119-10c-.057.701-.141 1.367-.252 2h1.55c-.449 1.29-1.5 2.478-2.299 2.914-.358 1.038-.787 1.981-1.26 2.852 3.274-1.143 5.846-4.509 6.142-7.766h-3.881zm-7.745-3.001c4.737-4.27-.98-4.044.117-6.999-3.783 3.817 1.409 3.902-.117 6.999zm-2.78.001c3.154-2.825-.664-3.102.087-5.099-2.642 2.787.95 2.859-.087 5.099zm9.406 15h-15v2h15v-2z"/></svg></a></li-->
+                    </ul>
+                </div>
+                <div class="hide-m grid align-content-hc">   
+                    <small class="mr-1"> V. Alfa 2.0.0</small>            
+                    <a href="https://github.com/QuicklyCSS/Quickly" role="button" title="Ir a github" target="_blank" rel="noopener noreferrer" aria-label="Ir a la página de GitHub de QuicklyCSS">
+                        <svg class="ico-24 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
                 </div>
             </div>
-
-
+        </nav>
+    </div>
+    
+    <!-- Bloque 1 -->
+    <section class="cont-80 cont-s-90 cont-m-90 text-ac grid align-hc py-5">
+        <div class="img-fit w-400 wm-auto m-auto mb-1">
+            <img src="./img/Logo-Quickly.png" class="img-fluid" alt="Logo Quickly CSS Grid">
         </div>
+        <h2 class="dis-s-4 font-l line-h-1 color-resolutionBlue line-h-2">El marco de trabajo CSS Grid<br>
+
+            <!--span class="text-quickly font-b dis-s-2">Quickly</span><span class="dis-s-4 font-b"> CSS Grid</span--> </h2>
+        <p class="font-s-5 wp-60 wmp-90">
+            Un framework de desarrollo web de código abierto que facilita la creación de sitios y aplicaciones web. Construido con <span class="font-b color-resolutionBlue">HTML</span> , <span class="font-b color-resolutionBlue">CSS Grid</span> y <span class="font-b color-resolutionBlue">JavaScript</span>. 
+        </p>
+    </section>
+
+    <!--Bloque 2 ligero y rapido -->
+    <section class="cont-80 cont-s-90 cont-m-90 grid gy-5 pb-2">
+        <article class="grid item-12 bg-r-lightblue border rounded"> 
+            <div class="col-6 col-m-12 img-fit">
+                <img src="./img/index/ligero.jpg" alt="Descripción de la imagen" class="rounded-l ">     
+            </div>                                                      
+            <div class="col-6 col-m-12 p-4 grid align-cc">
+                <div class="col-12 col-m-12 text-al color-white">
+                    <h2 class="font-l dis-s-4 line-h-2">Ligero y rápido 🕊️</h2>        
+                    <p>Ligero como un pájaro y sorprendentemente rápido, <span class="font-b color-white">Quickly</span> es tu nuevo <span class="font-b color-white">framework CSS GRID</span>. Perfecto para desarrollar diseños ágilmente sin sacrificar rendimiento. Dale a tus proyectos la velocidad y flexibilidad que merecen con Quickly. </p>
+                    <p class="font-b pb-4">🌟💨¡Transforma tu desarrollo web hoy!</p>                                                                                        
+                    <a class="btn btn-light-outline" href="https://quicklycss.github.io/Quickly/comenzar.html" target="_blank" rel="noopener noreferrer" title="Leer Documentación">
+                        <span class="font-b">DOCUMENTACIÓN</span>  
+                        <svg class="ml-1 ico-24 ico-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M23 5v13.883l-1 .117v-16c-3.895.119-7.505.762-10.002 2.316-2.496-1.554-6.102-2.197-9.998-2.316v16l-1-.117v-13.883h-1v15h9.057c1.479 0 1.641 1 2.941 1 1.304 0 1.461-1 2.942-1h9.06v-15h-1zm-12 13.645c-1.946-.772-4.137-1.269-7-1.484v-12.051c2.352.197 4.996.675 7 1.922v11.613zm9-1.484c-2.863.215-5.054.712-7 1.484v-11.613c2.004-1.247 4.648-1.725 7-1.922v12.051z"/>
+                        </svg>
+                      </a>
+                </div>
+            </div>                                 
+        </article>
+        <article class="grid item-3 rounded bg-resolutionBlue border g-2">                                               
+            <div class="col-2 col-s-12 grid align-vc align-content-hr">
+                <div class="text-ar color-white align-hr w-800 wmp-100 pm-2">
+                    <h2 class="font-l dis-s-4 line-h-2 pb-2">Solamente 204 kb</h2>        
+                    <p><span class="font-l color-white">Quickly</span> ofrece una implementación increíblemente compacta de solo 204kb. Diseñado para que tu desarrollo web sea rápido y eficiente sin comprometer la calidad. Dale a tus proyectos la potencia y agilidad que necesitan.</p>
+                    <p class="font-b">¡Empieza a crear con rapidez y ligereza hoy mismo!</p>                                                                                     
+                </div>                                
+            </div>   
+            <div class="col-1 col-s-12 rounded-r grid align-ve">
+                <div class="perspective-container-2 p-4 h-300 hide-s">
+                    <span class="perspective-text-r white-rgb">
+                        <span class="color-1">.cont-m</span> <span class="color-2">.gym-2.hide-s</span><span class="color-3">.unsticky-m</span><span class="color-3">.cont-s-80</span> <span class="color-4">.cont-s-60</span> 
+                        <span class="color-4">.text-cut-m-80 </span> <span class="color-1">.item-m-5</span> <span class="color-2">.unfixed-m </span><span class="color-2">.cont-m-60</span> <span class="color-3">.gxm-2</span>
+                        <span class="color-3">--font-size-0: 12px !important;</span> <span class="color-4">.item-s-11</span> <span class="color-1">.cont-s-50 </span><span class="color-3">.gym-2</span> <span class="color-4">.hide-s</span> 
+                        <span class="color-2">.show-s</span> <span class="color-2">.cont-m-90</span> <span class="color-3">.gm-1</span> <span class="color-4">.item-m-2</span> 
+                        <span class="color-1">.cont-m-80</span> <span class="color-2">.item-m-11</span> <span class="color-3">.gm-4</span> <span class="color-4">.cont-m-70 </span>
+                        <span class="color-1">.gxm-0</span> <span class="color-2">.cont-m-60</span> <span class="color-3">.gxm-2</span> <span class="color-4">.cont-m-50</span> 
+                        <span class="color-1">.cont-s-100</span> <span class="color-2">.cont-s-90</span> <span class="color-3">.cont-s-80</span> <span class="color-4">.cont-s-60</span> 
+                        <span class="color-1">.cont-s-50</span> <span class="color-2">.cont-m</span> <span class="color-3">.gym-2</span> <span class="color-4">.hide-s</span> 
+                        <span class="color-1">.unsticky-m</span> <span class="color-2">.text-cut-m-80</span> <span class="color-3">.item-m-5</span> <span class="color-4">.unfixed-m</span> <span class="color-1">.item-s-11</span> <span class="color-2">.cont-s-50</span> <span class="color-3">.show-s </span> <span class="color-4">.cont-m-90</span>
+                    </span> 
+                </div>  
+            </div>   
+        </article>
+    </section>
+
+    <!-- Bloque 3 instalacion -->
+    <section class="cont-80 cont-s-90 cont-m-90 text-ac grid align-hc mmy-4" id="instalacion">
+        <h2 class="dis-s-4 font-l color-resolutionBlue">Instalación</h2>
+        <p class="font-s-5 wp-80">Puedes incluir Quickly en tu proyecto mediante un CDN o descargar los archivos del framework directamente desde la sección de instalación manual.</p>
+    </section>
+
+    <!-- Bloque 4 Instalación CDN y Manual -->
+    <section class="cont-80 cont-s-90 cont-m-90 grid item-12 g-5 gm-2 pb-2">
+            <div class="grid col-6 col-m-12 col-s-12 g-2 bg-resolutionBlue rounded color-white p-4 pm-2">
+                <h1 class="col-12 font-b dis-s-4 line-h-2">🚀 Inicia con CDN jsdelivr</h1>                
+                <div class="col-12 grid g-2">
+                    <div class="col-12 border-b pb-2">
+                        <p class="font-l font-s-5 font-b color-lightblue">CDN CSS</p>   
+                        <p>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quickly.min.css"&gt;</p>   
+                    </div>
+                    <div class="col-12 border-b pb-2">
+                        <p class="font-l font-s-5 font-b color-lightblue">CDN JS Componentes</p>   
+                        <p>&lt;script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.min.js" defer&gt;</p>   
+                    </div>
+                    <div class="col-12 pb-2">
+                        <p class="font-l font-s-5 font-b color-lightblue">CDN JS Formulario</p>   
+                        <p>&lt;script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.min.js" defer&gt;</p>   
+                    </div>
+                </div>                  
+            </div>
+            <div class="grid col-6 col-m-12 col-s-12 g-2 bg-lightblue rounded color-white p-4 pm-2">
+                <h1 class="col-12 font-b dis-s-4 line-h-2">Instalación manual 😊</h1>   
+                <div class="col-12 grid g-2">
+                    <div class="col-12 border-b pb-2">
+                        <p class="font-l font-s-5 font-b color-resolutionBlue">CSS</p>   
+                        <p>&lt;link rel="stylesheet" href="css/quickly.min.css"&gt;</p> 
+                    </div>
+                    <div class="col-12 border-b pb-2">
+                        <p class="font-l font-s-5 font-b color-resolutionBlue">JS Componentes</p>   
+                        <p>&lt;script src="js/quicklyComp.min.js" defer&gt;&lt;/script&gt;</p>   
+                    </div>
+                    <div class="col-12 pb-2">
+                        <p class="font-l font-s-5 font-b color-resolutionBlue">JS Formulario</p>   
+                        <p>&lt;script src="js/quicklyForm.min.js" defer&gt;&lt;/script&gt; </p>   
+                    </div>
+                    <div class="col-12 text-ac">
+                        <a class="btn btn-primary-alt" href="https://github.com/QuicklyCSS/Quickly/tree/main/dist/QuicklyCss-v1.zip" target="_blank">
+                            <span class="font-b">DESCARGAR</span> 
+                            <svg class="ml-1 ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 2v11h2.51l-4.51 5.01-4.51-5.01h2.51v-11h4zm2-2h-8v11h-5l9 10 9-10h-5v-11zm3 19v3h-14v-3h-2v5h18v-5h-2z"/></svg>
+                        </a>
+                    </div>
+                </div>                  
+            </div>
+    </section>
+    
+    <!-- Bloque 5 Inicio rápido -->
+    <section class="cont-80 cont-s-90 cont-m-90 text-ac grid align-hc mmy-4" id="inicio_rapido">
+        <h2 class="dis-s-4 font-l color-resolutionBlue">Inicio rápido</h2>
+        <p class="font-s-5 wp-80">Enfócate en lo que realmente importa, desarrolla tu aplicación de manera eficiente y sin complicaciones para alcanzar tus objetivos.
+    </section>
+
+    <!-- Boque 6 Copiar pegar -->
+    <section class="cont-80 cont-s-90 cont-m-90">
+        <div class="grid item-12 bg-gray rounded">
+            <div class="col-6 col-s-12 color-white p-4 pm-2 text-al grid align-vc">
+                <div class="g-2 grid">
+                    <h2 class="dis-s-4 line-h-2 font-b color-lightblue">📝 Copia y pega el código para un inicio rápido de tu proyecto.</h2> 
+                    <p class="font-l font-l">
+                        Para comenzar, crea un nuevo archivo index.html en la carpeta raíz de tu proyecto. Copia y pega este HTML inicial, el cual incluye todos los elementos necesarios para comenzar tu proyecto con Quickly.
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 col-s-12 pre-pre rounded-n">
+                <pre class="cont-100 scroll-a"><code class="language-html">                  
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;es&quot;&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;!-- Coloca aquí tu ICO --&gt;
+            &lt;link rel="icon" href="&lt;!-- Aquí --&gt;"&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;!-- Normalize --&gt;
+            &lt;link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"&gt;
+            &lt;!-- CDN Quickly --&gt;
+            &lt;!-- Llamada para CSS --&gt;
+            &lt;link href="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quickly.min.css" rel="stylesheet"&gt;
+            &lt;!-- Llamada para Javascript de componentes --&gt;
+            &lt;script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.min.js">&lt;/script&gt;
+            &lt;!-- Llamada para Javascript de Formularios solo si es necesario --&gt;
+            &lt;script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyForm.min.js">&lt;/script&gt;
+            &lt;!-- Coloca aquí tu CSS personalizado --&gt;
+            &lt;link href="&lt;!-- Aquí --&gt;" rel="stylesheet"&gt;
+            &lt;title&gt;Quickly Demo&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;   
+            &lt;h1&gt;Hola, mundo :)!&lt;/h1&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+                </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloque 7 Carácteristicas -->
+    <div class="cont-80 cont-s-100 cont-m-90 text-ac grid align-hc mmy-4" id="caracteristicas">
+        <h2 class="dis-s-4 font-l w-800 wmp-100 line-h-2 color-resolutionBlue">Algunas características de <span class="text-quickly font-b">Quickly</span><span class="dis-s-5 font-b"> CSS Grid</span> </h2>
     </div>
 
+    <!--Bloque 8-->
+    <div class="cont-80 cont-s-90 cont-m-90 border">
+        <article class="card-h card-hr-50 bg-white-2 rounded-s-b"> 
+            <div class="dis-s-1 font-b bg-r-purple-35 h-350 grid align-vc color-white rounded-s-a line-h-1">
+                <div class="perspective-container p-4">                   
+                    <span class="perspective-text-l white-rgb"><span class="color-1">@import</span> <span class="color-2">url</span><span class="color-4">('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');</span> <span class="color-1">@import</span>  <span class="color-2">url</span><span class="color-4">('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');</span> <span class="color-1">@import</span> <span class="color-2">url</span><span class="color-3">('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');</span> <span class="color-1">@import</span><span class="color-2">url</span><span class="color-3">('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap')</span> ;</span> 
+                </div>                
+            </div>                                                      
+            <div class="card-h-cont">
+                <div class="text-al">
+                    <h2 class="font-l dis-s-5 line-h-2 pb-2 color-lightblue">Listo para implementar hasta <span class="font-b color-resolutionBlue">4 </span>tipos de fuentes.</h2>        
+                    <p>Con Quickly, puedes implementar hasta 4 fuentes tipográficas diferentes y personalizar tu diseño con facilidad gracias al uso de variables flexibles.
+                        ¡Transforma tu desarrollo web con rapidez y flexibilidad hoy mismo! 😊
+                    </p>                                                                                        
+                </div>                                
+            </div>                                 
+        </article>
+
+        <article class="card-h card-hl-50 bg-white-2">                                               
+            <div class="card-h-cont">
+                <div class="text-ar">
+                    <h2 class="font-l dis-s-5 line-h-2 color-lightblue pb-2">Control total sobre versiones <span class="font-b color-resolutionBlue">móviles</span>.</h2>        
+                    <p>Quickly es extremadamente versátil cuando se trata de controlar versiones móviles de tu proyecto. Con sus clases personalizadas para dispositivos móviles y un enfoque flexible en CSS, te permite tener el control total sobre el diseño en cualquier momento. Ajusta y optimiza cada aspecto para garantizar que tu sitio se vea perfecto en todos los tamaños de pantalla.</p> 
+                </div>                                
+            </div>  
+            <div class="dis-s-1 font-b bg-r-purple-125 h-350 grid align-vc color-white line-h-1 hide-s">
+                <div class="perspective-container p-4">
+                    <span class="perspective-text-r white-rgb">
+                        <span class="color-1">.cont-m</span> <span class="color-2">.gym-2.hide-s</span><span class="color-3">.unsticky-m</span>
+                        <span class="color-4">.text-cut-m-80 </span> <span class="color-1">.item-m-5</span> <span class="color-2">.unfixed-m </span>
+                        <span class="color-3">--font-size-0: 12px !important;</span> <span class="color-4">.item-s-11</span> <span class="color-1">.cont-s-50 </span>
+                        <span class="color-2">.show-s</span> <span class="color-2">.cont-m-90</span> <span class="color-3">.gm-1</span> <span class="color-4">.item-m-2</span> 
+                        <span class="color-1">.cont-m-80</span> <span class="color-2">.item-m-11</span> <span class="color-3">.gm-4</span> <span class="color-4">.cont-m-70 </span>
+                        <span class="color-1">.gxm-0</span> <span class="color-2">.cont-m-60</span> <span class="color-3">.gxm-2</span> <span class="color-4">.cont-m-50</span> 
+                        <span class="color-1">.cont-s-100</span> <span class="color-2">.cont-s-90</span> <span class="color-3">.cont-s-80</span> <span class="color-4">.cont-s-60</span> 
+                        <span class="color-1">.cont-s-50</span> <span class="color-2">.cont-m</span> <span class="color-3">.gym-2</span> <span class="color-4">.hide-s</span> 
+                        <span class="color-1">.unsticky-m</span> <span class="color-2">.text-cut-m-80</span> <span class="color-3">.item-m-5</span> <span class="color-4">.unfixed-m</span> <span class="color-1">.item-s-11</span> <span class="color-2">.cont-s-50</span> <span class="color-3">.show-s </span> <span class="color-4">.cont-m-90</span>
+                    </span> 
+                </div>                
+            </div>                
+        </article>
+
+        <article class="card-h card-hr-50 bg-white-2"> 
+            <div class="dis-s-1 font-b bg-r-purple-35 h-350 grid align-vc color-white  line-h-1 hide-s">
+                <div class="perspective-container p-4 ">
+                    <span class="perspective-text-l white-rgb">
+                        <span class="color-1">--color-purple: #312782;</span> <span class="color-2">--font-1: "Open Sans",</span> <span class="color-3">--color-green: #00b500;</span> <span class="color-4">--weight-7: 700;</span> <span class="color-1">sans-serif !important;</span> 
+                        <span class="color-1">--font-1: "Open Sans",</span> <span class="color-2">sans-serif !important;</span>  <span class="color-3">--height-233: 233px;</span> <span class="color-4">--md-32: 32px; </span> <span class="color-1">--color-green-lime-7: #e4ffbb;</span> 
+                        <span class="color-1">--thickness-2: 2px;</span> <span class="color-2">--height-8: 8px;</span> <span class="color-3">--bg-white-4: #f5f5f5;</span>
+                    </span> 
+                </div>                
+            </div>                                                      
+            <div class="card-h-cont">
+                <div class="text-al">
+                    <h2 class="font-l dis-s-4 color-lightblue pb-2 line-h-2">CSS <span class="font-b color-resolutionBlue">Variables</span>.</h2>        
+                    <p>Quickly utiliza múltiples variables en su hoja de estilo CSS para ofrecerte una flexibilidad total en el diseño. Cambiarlas es muy fácil, lo que te permite ajustar tipografías, altos, radios, anchos y más, para que los estilos se adapten perfectamente a tus necesidades.</p>                                                                                        
+                </div>                                
+            </div>                                 
+        </article>
+
+        <article class="card-h card-hl-50 bg-white-2 rounded-b">                                               
+            <div class="card-h-cont">
+                <div class="text-ar">
+                    <h2 class="font-l dis-s-4 line-h-2 color-lightblue pb-2"><span class="font-b color-resolutionBlue">+300 clases <br></span> de colores.</h2>        
+                    <p>Más de 300 colores para aplicar en fondos y textos. La amplia paleta permite elegir y aplicar colores con facilidad, asegurando que tu diseño esté perfectamente alineado con tu visión.</p> 
+                </div>                                
+            </div>  
+            <div class="dis-s-1 font-b bg-r-purple-125 h-350 grid align-vc color-white line-h-1 rounded-s-c hide-s">
+                <div class="perspective-container p-4 ">
+                    <span class="perspective-text-r white-rgb">
+                        <span class="color-1">.bg-brilliant-rose-6</span> <span class="color-2">.bg-indigo-3</span> <span class="color-3">.bg-spring-bud-5</span> <span class="color-4">.color-apple-red-9</span>
+                        <span class="color-1">.bg-midnight-blue-1</span> <span class="color-2">.bg-apple-red-7</span> <span class="color-3">.bg-lemon-yellow-6 </span> <span class="color-4">.bg-dark-tangerine-4 </span>
+                        <span class="color-1">.color-bright-green-9</span> <span class="color-2">.bg-burnt-sienna-6</span> <span class="color-3">.color-dark-tangerine-8</span> <span class="color-4">.color-midnight-blue-2</span> 
+                        <span class="color-1">.bg-bright-green-8</span>  <span class="color-2">.bg-royal-blue-2</span> <span class="color-3">.bg-indigo-5</span> <span class="color-4">.bg-midnight-blue-5</span> <span class="color-1">.bg-aqua-7 </span>
+                        <span class="color-2">.color-electric-purple-1</span> <span class="color-3">.bg-sea-green-10</span> <span class="color-4">.color-sea-green-9</span> <span class="color-1">.color-electric-purple-5 </span>
+                    </span> 
+                </div>                
+            </div>                
+        </article>
+    </div>
+
+    <!-- Bloque 9 Plantillas -->
+    <section class="cont-80 cont-s-90 cont-m-90 const-s-90 mmy-4 pt-2" id="plantillas">
+        <div class="grid item-1 align-hc text-ac">
+        <h2 class="dis-s-4 font-l w-800 wmp-100 line-h-2 color-resolutionBlue pb-2">Plantillas de <span class="text-quickly font-b">Quickly</span></h2>
+        <p class="font-s-5 wp-80 wmp-90 mb-2">Puedes comenzar tu proyecto de inmediato utilizando cualquiera de nuestros ejemplos, que incluyen componentes y diseños totalmente personalizados.</p>
+        </div>
+        <div class="border-t">
+            <div class="grid item-5 g-5 scroll-a">
+                <div class="grid wm-250 g-2">
+                    <div>
+                        <h4 class="line-h-1 mt-2">
+                            <a class="btn-link mb-1" href="https://quicklycss.github.io/Quickly/template/template-cover.html" role="button" target="_blank">
+                                <span class="color-resolutionBlue mr-1">Portada</span> 
+                                <svg class="ico-16 ico-primary-alt" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 16v5l9-10.062-9-9.938v5c-14.069 1.711-19.348 15.107-10.606 16.981-3.804-2.936 3.251-7.441 10.606-6.981z"/></svg>
+                            </a>
+                        </h4> 
+                        <p>Diseñada para crear de manera sencilla y atractiva páginas de inicio.</p> 
+                        <a href="./template/zip/template-cover.zip" class="color-resolutionBlue font-b pb-1 btn-link"><span class="color-resolutionBlue">Descargar</span> <svg class="ml-1 ico-16 ico-primary-alt" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 2v11h2.51l-4.51 5.01-4.51-5.01h2.51v-11h4zm2-2h-8v11h-5l9 10 9-10h-5v-11zm3 19v3h-14v-3h-2v5h18v-5h-2z"/></svg></a>
+                        <img class="img-fluid rounded border" src="./img/template/tem-1.jpg" alt="Descripción de la imagen"> 
+                    </div>
+                </div>
+                <div class="grid wm-250 g-2">
+                    <div>    
+                        <h4 class="line-h-1 mt-2">
+                            <a class="btn-link mb-1" href="https://quicklycss.github.io/Quickly/template/template-landing.html" role="button" target="_blank">
+                                <span class="color-resolutionBlue mr-1">Empresa</span> 
+                                <svg class="ico-16 ico-primary-alt" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 16v5l9-10.062-9-9.938v5c-14.069 1.711-19.348 15.107-10.606 16.981-3.804-2.936 3.251-7.441 10.606-6.981z"/></svg>
+                            </a>
+                        </h4>                 
+                        <p>Página de empresa con un diseño detallado basado en cuadrículas.</p> 
+                        <a href="./template/zip/template-landing.zip" class="color-resolutionBlue font-b pb-1 btn-link"><span class="color-resolutionBlue">Descargar</span> <svg class="ml-1 ico-16 ico-primary-alt" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 2v11h2.51l-4.51 5.01-4.51-5.01h2.51v-11h4zm2-2h-8v11h-5l9 10 9-10h-5v-11zm3 19v3h-14v-3h-2v5h18v-5h-2z"/></svg></a>
+                        <img class="img-fluid rounded border" src="./img/template/tem-2.jpg" alt="Descripción de la imagen">          
+                    </div>
+                </div>     
+                <div class="grid wm-250 g-2">
+                    <div>
+                        <h4 class="line-h-1 mt-2">
+                            <a class="btn-link mb-1" href="https://quicklycss.github.io/Quickly/template/template-blog.html" role="button" target="_blank">
+                            <span class="color-resolutionBlue mr-1">Blog</span> 
+                            <svg class="ico-16 ico-primary-alt" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 16v5l9-10.062-9-9.938v5c-14.069 1.711-19.348 15.107-10.606 16.981-3.804-2.936 3.251-7.441 10.606-6.981z"/></svg>
+                            </a>
+                        </h4>                    
+                        <p>Plantilla que incluye lo necesario para implementar de forma rápida.</p> 
+                        <a href="./template/zip/template-blog.zip" class="color-resolutionBlue font-b pb-1 btn-link"><span class="color-resolutionBlue">Descargar</span> <svg class="ml-1 ico-16 ico-primary-alt" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 2v11h2.51l-4.51 5.01-4.51-5.01h2.51v-11h4zm2-2h-8v11h-5l9 10 9-10h-5v-11zm3 19v3h-14v-3h-2v5h18v-5h-2z"/></svg></a>
+                        <img class="img-fluid rounded border" src="./img/template/tem-3.jpg" alt="Descripción de la imagen"> 
+                    </div>
+                </div>        
+                <div class="grid wm-250 g-2">
+                    <div>
+                        <h4 class="line-h-1 mt-2">
+                            <a class="btn-link mb-1" href="https://quicklycss.github.io/Quickly/template/template-album.html" role="button" target="_blank">
+                                <span class="color-resolutionBlue mr-1">Álbum</span> 
+                                <svg class="ico-16 ico-primary-alt" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 16v5l9-10.062-9-9.938v5c-14.069 1.711-19.348 15.107-10.606 16.981-3.804-2.936 3.251-7.441 10.606-6.981z"/></svg>
+                            </a>
+                        </h4>                    
+                        <p>Galerías de fotos, portafolios y otros usos similares.</p> 
+                        <a href="./template/zip/template-album.zip" class="color-resolutionBlue font-b pb-1 btn-link"><span class="color-resolutionBlue">Descargar</span> <svg class="ml-1 ico-16 ico-primary-alt" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 2v11h2.51l-4.51 5.01-4.51-5.01h2.51v-11h4zm2-2h-8v11h-5l9 10 9-10h-5v-11zm3 19v3h-14v-3h-2v5h18v-5h-2z"/></svg></a>
+                        <img class="img-fluid rounded border" src="./img/template/tem-4.jpg" alt="Descripción de la imagen"> 
+                    </div>
+                </div>       
+                <div class="grid wm-250 g-2">
+                    <div>
+                        <h4 class="line-h-1 mt-2"> 
+                            <a class="btn-link mb-1" href="https://quicklycss.github.io/Quickly/template/template-login.html" role="button" target="_blank">
+                                <span class="color-resolutionBlue mr-1">Inicio Sesión</span>                            
+                                <svg class="ico-16 ico-primary-alt" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 16v5l9-10.062-9-9.938v5c-14.069 1.711-19.348 15.107-10.606 16.981-3.804-2.936 3.251-7.441 10.606-6.981z"/></svg>
+                            </a>
+                        </h4>                    
+                        <p>Sensillo y minimalista inicio de sesión para implementar en tu proyecto.</p> 
+                        <a href="./template/zip/template-login.zip" class="color-resolutionBlue font-b pb-1 btn-link"><span class="color-resolutionBlue">Descargar</span> <svg class="ml-1 ico-16 ico-primary-alt" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M14 2v11h2.51l-4.51 5.01-4.51-5.01h2.51v-11h4zm2-2h-8v11h-5l9 10 9-10h-5v-11zm3 19v3h-14v-3h-2v5h18v-5h-2z"/></svg></a>
+                        <img class="img-fluid rounded border" src="./img/template/tem-5.jpg" alt="Descripción de la imagen"> 
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!-- Bloque 10 Tecnologías -->
+    <section class="cont-80 cont-s-90 cont-m-90 text-ac">
+        <div class="col-12 font-s-5">Tecnologías</div> 
+        <div class="grid align-content-hc align-vc g-2">
+            <div class="dis-s-5 font-b color-resolutionBlue">{</div>
+            <div class="pt-1">
+            <img src="./img/Quickly.png" class="wh-32" alt="Logo Quickly">
+            <svg class="ico-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
+                <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
+                <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
+                <path fill="#ecedee" d="M226 208h-75l-5-58h80V94H84l15 171h127zm0 147l-64-17-4-45h-56l7 89 117 32z"/>
+                <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 16-174H226zm0-171v56h136l5-56z"/>
+            </svg>
+            <svg class="ico-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 630">
+                <rect width="630" height="630" fill="#f7df1e"/>
+                <path d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"/>
+            </svg>
+            <svg class="ico-32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
+                <path fill="#0c73b8" d="M41 460L0 0h451l-41 460-185 52"/>
+                <path fill="#30a9dc" d="M226 472l149-41 35-394H226"/>
+                <path fill="#ecedee" d="M226 208H94l5 57h127zm0-114H84l5 56h137zm0 261l-124-33 7 60 117 32z"/>
+                <path fill="#fff" d="M226 265h69l-7 73-62 17v59l115-32 26-288H226v56h80l-6 58h-74z"/>
+            </svg>    
+            </div>            
+            <div class="dis-s-5 font-b color-resolutionBlue">}</div>                       
+        </div>
+    </section>
+
+    <!-- Bloque 11 Footer -->
+    <footer class="cont-80 cont-s-90 py-2 border-t grid space-hb">
+        <small><span class="font-b text-quickly" >Quickly</span> 2024 Licenciado bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank"><span class="font-b text-c-black">CC BY-SA 4.0</span></a> Creative Commons </small>
+        <a href="#inicio" target="_self" class="button" role="button" aria-label="Subir">
+            <svg class="ico-24 ico-primary-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-labelledby="title">
+                <title id="title">Icono de Subir</title>
+                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.58l5.995 5.988-1.416 1.414-4.579-4.574-4.59 4.574-1.416-1.414 6.006-5.988z"/>
+            </svg>
+        </a>  
+    </footer>
 </body>
 </html>
