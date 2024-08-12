@@ -10517,7 +10517,7 @@ select {
 }
 
 .text-wrap {
-    overflow-wrap: break-word;
-    word-wrap: break-word; 
-    white-space: pre-wrap; 
+    overflow-wrap: break-word !important;
+    word-wrap: break-word !important; 
+    white-space: pre-wrap !important; 
 }
