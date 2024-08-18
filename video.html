@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quickly: Video, Embeds y Responsividad CSS | Gestión de Contenido Multimedia</title>
+  <meta name="description" content="Explora las imágenes, tamaños y responsividad CSS especializados para grillas en Quickly. Diseñados para gestionar el contenido visual de manera eficiente, nuestros estilos facilitan la creación de interfaces web con imágenes atractivas y responsivas. Descubre cómo utilizarlos para mejorar la presentación y el rendimiento de las imágenes en tus proyectos de desarrollo web.">
+    <link rel="icon" type="image/png" href="./img/ico.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quickly.min.css">
+    <link rel="stylesheet" href="./css/app.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.min.js" defer></script>
+    <script src="./js/app.min.js" defer></script>
+  <link rel="stylesheet" href="./prism/prism.css">
+  <script src="./prism/prism.js" defer></script>
+  <script>var currentPage = 'video';</script>
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DZQS41TB5G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DZQS41TB5G');
+</script>
+
+</head>
+<body>
+    <div id="headerContent"></div>
+    <section class="cont cont-m">
+        <aside id="menuContent"></aside> 
+        <main class="bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5"> 
+                
+                <!-- IMAGENES -->
+                <section class="border rounded bg-color-1">        
+                    <div class="p-5 pm-2 bg-white-1 rounded-t border-b">
+                        <h1 class="font-l">Video</h1>
+                        <h2 class="font-l font-s-4">La clase "video" de <strong class="text-quickly">Quickly</strong> te permite insertar videos que se adaptan automáticamente a cualquier tamaño de pantalla. Con esta clase, tus videos mantendrán su proporción y calidad en todos los dispositivos. Simplifica la integración multimedia y asegura una reproducción fluida y responsiva en tu sitio web.</h>
+                    </div>
+                
+                    <!-- Video Iframe -->
+                    <section class="p-5 pm-2">
+                        <h3 class="font-l">.video</h3>
+                        <div class="table">
+                            <table class="table-container wm-600">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-500 bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.video</td>
+                                        <td class="w-auto bg-maya-blue-9">La clase video debe aplicarse al contenedor del video, similar a cómo se utiliza la clase img-fit para imágenes. Esto asegura que el video mantenga una relación de aspecto y se ajuste al ancho de su contenedor, lo cual es ideal para conservar la apariencia del video en diferentes tamaños de pantalla.</td>
+                                    </tr>                                                                                                                                                                                                                                                                  
+                                </tbody>
+                            </table>
+                        </div>   
+                        <div class="border rounded mt-2">                          
+                            <div class="block border-b p-2">
+                                <p>Video Iframe</p>
+                            </div>  
+                            <div class="hatched-1 grid g-5 p-5 pm-2 grid item-1">
+                                <div class="video rounded border">
+                                    <iframe src="https://www.youtube.com/embed/98Tcz6PESaE?si=pbkyGvn_nEUO2BgD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                                
+                                </div>
+                            </div>                   
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;div class="video rounded border"&gt;
+        &lt;iframe src="https://www.youtube.com/embed/98Tcz6PESaE?si=pbkyGvn_nEUO2BgD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;                                
+    &lt;/div&gt;
+                                </code></pre>
+                            </div>                      
+                        </div>     
+                        <div class="border rounded mt-2">                          
+                            <div class="block border-b p-2">
+                                <p>Video con etiqueta video</p>
+                            </div>  
+                            <div class="hatched-1 grid g-5 p-5 pm-2 grid item-1 ">
+                                <div class="video rounded border">
+                                    <video controls>
+                                        <source src="./video/Quickly.mp4" type="video/mp4">
+                                        Su navegador no soporta la etiqueta de video.
+                                    </video>
+                                </div>
+                            </div>                   
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;div class="video rounded border"&gt;
+        &lt;video controls&gt;
+            &lt;source src="./video/Quickly.mp4" type="video/mp4"&gt;
+            Su navegador no soporta la etiqueta de video.
+        &lt;/video&gt;
+    &lt;/div&gt;
+                                </code></pre>
+                            </div>                      
+                        </div>                               
+                    </section>      
+                                        
+
+                    
+                    
+
+
+
+
+                </section>               
+
+            </div>
+        </main>     
+        <footer id="footerContent"></footer>    
+    </section>
+</body>
+</html>
+
