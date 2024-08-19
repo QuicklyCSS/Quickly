@@ -1,7 +1,7 @@
 ## Quickly - Framework CSS
 **Inicio del Proyecto:** 26 de marzo de 2024  
-**Última Actualización:** 20 de Julio de 2024  
-**Versión Actual:** Alfa 1.1.0
+**Última Actualización:** 18 de Agosto de 2024  
+**Versión Actual:** Beta 1.1.0
 
 ---
 ### Descripción
