@@ -1,5 +1,5 @@
 /* /////////////////////////////////////////////////// */
-/* © 2024 Quickly CSS GRID v-2-0-1                     */
+/* © 2024 Quickly CSS GRID V. Beta 1.1.0               */
 /* JS minimizado                                       */
 /* Por Alex Osses                                      */
 /* Documentación https://quicklycss.github.io/Quickly/ */
