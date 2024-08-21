@@ -1,7 +1,7 @@
 ## Quickly - Framework CSS
 **Inicio del Proyecto:** 26 de marzo de 2024  
-**Última Actualización:** 20 de Julio de 2024  
-**Versión Actual:** Alfa 1.1.0
+**Última Actualización:** 19 de agosto de 2024  
+**Versión Actual:** Beta 1.1.0
 
 ---
 ### Descripción
@@ -14,6 +14,9 @@ Quickly nació como una respuesta a la necesidad de un framework CSS ligero y al
 
 - **Actualización y Versión Alfa 1.1.0 (05-04-2024):** 
 En menos de dos semanas desde su concepción, Quickly alcanzó su primera versión alfa. La versión Alfa 1.0.0 incluye una colección esencial de componentes y utilidades CSS que cubren las necesidades básicas de la mayoría de los proyectos web. A pesar de estar en su fase alfa, el framework ha sido diseñado con un alto estándar de calidad, asegurando que incluso en sus etapas iniciales, proporcione una base sólida para el desarrollo.
+
+- **Actualización y Versión Beta 1.1.0 (18-08-2024):**
+En esta nueva versión Beta, Quickly introduce la clase video, permitiendo una integración multimedia más fluida y adaptable a las necesidades de proyectos dinámicos. Además, se han realizado optimizaciones significativas en el rendimiento y en la documentación, mejorando la experiencia de desarrollo. Esta actualización refleja el compromiso continuo de Quickly con la innovación y la calidad, asegurando que los desarrolladores cuenten con herramientas cada vez más poderosas y fáciles de usar.
 
 ### Quickly: Un Framework Basado en CSS Grid
 Quickly es un framework de trabajo CSS basado en CSS Grid, HTML y Javascript que te permite crear rápidamente diseños modernos y receptivos para tus proyectos web.
