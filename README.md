@@ -21,6 +21,9 @@ En esta nueva versión Beta, Quickly introduce la clase video, permitiendo una i
 - **Actualización y Versión Beta 1.2.0 (20-08-2024):**
 En esta nueva versión Beta, Quickly introduce dos nuevas clases para una mejor integración multimedia: .video o .video-h para videos en formato horizontal 16:9, y .video-v para videos en formato vertical 9:16. Esto permite una mayor flexibilidad al adaptar videos a diferentes orientaciones de pantalla. Además, se han realizado mejoras en la documentación y optimizaciones de rendimiento, asegurando que los desarrolladores cuenten con herramientas más versátiles y eficientes.
 
+- **Actualización y Versión Beta 1.2.1 (22-08-2024):**
+En la versión Beta 1.2.1, se han realizado actualizaciones en la barra de navegación, eliminando la delimitación de ancho del navbar-container (90%) para ofrecer mayor flexibilidad en el diseño. Además, se ha actualizado la página de inicio con un nuevo template para videos y una sección de características para destacar el contenido audiovisual, junto con pequeños ajustes visuales que mejoran la presentación general del home. Estas mejoras optimizan la experiencia de usuario y la personalización, manteniendo la coherencia visual con versiones anteriores.
+
 ### Quickly: Un Framework Basado en CSS Grid
 Quickly es un framework de trabajo CSS basado en CSS Grid, HTML y Javascript que te permite crear rápidamente diseños modernos y receptivos para tus proyectos web.
 
