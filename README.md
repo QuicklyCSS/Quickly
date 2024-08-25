@@ -24,6 +24,9 @@ En esta nueva versión Beta, Quickly introduce dos nuevas clases para una mejor 
 - **Actualización y Versión Beta 1.2.1 (22-08-2024):**
 En la versión Beta 1.2.1, se han realizado actualizaciones en la barra de navegación, eliminando la delimitación de ancho del navbar-container (90%) para ofrecer mayor flexibilidad en el diseño. Además, se ha actualizado la página de inicio con un nuevo template para videos y una sección de características para destacar el contenido audiovisual, junto con pequeños ajustes visuales que mejoran la presentación general del home. Estas mejoras optimizan la experiencia de usuario y la personalización, manteniendo la coherencia visual con versiones anteriores.
 
+- **Actualización y Versión Beta 1.3.0 (24-08-2024):**
+En la actualización Beta 1.3.0, se ha agregado la nueva clase fixed a la documentación para mejorar la gestión de la posición fija de los elementos, se corrigieron las alturas de z-index para solucionar problemas de superposición y mejorar la disposición visual, y se incluyó un nuevo template de panel en el index, ofreciendo una opción adicional para la estructuración y diseño de los paneles en el proyecto. Asegúrate de actualizar tu proyecto para aprovechar estas mejoras y correcciones.
+
 ### Quickly: Un Framework Basado en CSS Grid
 Quickly es un framework de trabajo CSS basado en CSS Grid, HTML y Javascript que te permite crear rápidamente diseños modernos y receptivos para tus proyectos web.
 
