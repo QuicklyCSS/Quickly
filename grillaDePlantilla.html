@@ -42,7 +42,7 @@
                     <!-- Template 1 -->
                     <section class="p-5 pm-2">
                         <h3 class="font-l">Grilla de plantilla</h3>
-                        <p class="pb-2">Para aplicar correctamente las clases de la cuadrícula (template grid), es esencial que el contenido esté estructurado con las etiquetas semánticas apropiadas, como &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;aside&gt; y &lt;footer&gt;. Estas etiquetas semánticas proporcionan una estructura clara y significativa para el contenido de la página. Al envolver el contenido con estas etiquetas, las clases de cuadrícula definen cómo se distribuirán y organizarán visualmente estas secciones dentro del layout. Esto asegura una presentación coherente y accesible del contenido.</p>                            
+                        <p class="pb-2">Para aplicar correctamente las clases de la cuadrícula (template grid), es esencial que el contenido esté estructurado con las clases apropiadas, como "header", "nav", "main", "aside" y "footer". Estas clases proporcionan una estructura clara y significativa para el contenido de la página. Al envolver el contenido con estas clases, la cuadrícula definira cómo se distribuirán y organizarán visualmente estas secciones dentro del layout. Esto asegura una presentación coherente y accesible del contenido.</p>                            
                         <h4 class="font-l">.temp-g-1</h4>
                         <div class="table rounded border">
                             <table class="table-container wm-900">
@@ -70,11 +70,11 @@
                             </div>
                             <div class="p-5 pm-2 hatched-1">        
                                 <div class="temp-g-1 border rounded">    
-                                    <header class="bg-maya-blue-10 align-vc grid rounded-t item-1 p-2">Header</header>
-                                    <nav class="bg-maya-blue-7 align-vc grid pl-2 h-40">Nav</nav>
-                                    <main class="bg-maya-blue-9 h-200 align-vc grid pl-2">Main</main>
-                                    <aside class="bg-maya-blue-8 align-vc grid pl-2">Aside</aside>
-                                    <footer class="bg-maya-blue-10 pl-2 h-40 align-vc grid rounded-b">Footer</footer>
+                                    <header id="header" class="bg-maya-blue-10 align-vc grid rounded-t item-1 p-2">Header</header>
+                                    <nav id="nav" class="bg-maya-blue-7 align-vc grid pl-2 h-40">Nav</nav>
+                                    <main id="main" class="bg-maya-blue-9 h-200 align-vc grid pl-2">Main</main>
+                                    <aside id="aside" class="bg-maya-blue-8 align-vc grid pl-2">Aside</aside>
+                                    <footer id="footer" class="bg-maya-blue-10 pl-2 h-40 align-vc grid rounded-b">Footer</footer>
                                 </div>    
                             </div>
                             <div class="border-t p-2">
@@ -83,10 +83,11 @@
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
     &lt;div class="temp-g-1"&gt;    
-        &lt;header&gt;Header&lt;/header&gt;
-        &lt;main&gt;Main&lt;/main&gt;
-        &lt;aside&gt;Aside&lt;/aside&gt;
-        &lt;footer&gt;Footer&lt;/footer&gt;
+        &lt;header id="header"&gt;Header&lt;/header&gt;
+        &lt;nav id="nav"&gt;Main&lt;/nav&gt;
+        &lt;main id="main"&gt;Main&lt;/main&gt;
+        &lt;aside id="aside"&gt;Aside&lt;/aside&gt;
+        &lt;footer id="footer"&gt;Footer&lt;/footer&gt;
     &lt;/div&gt;  
                                 </code></pre>
                             </div> 
@@ -122,11 +123,11 @@
                             </div>
                             <div class="p-5 pm-2 hatched-1">        
                                 <div class="temp-g-2 border rounded">    
-                                    <header class="bg-maya-blue-10 align-vc grid p-2 rounded-t">Header</header>
-                                    <nav class="bg-maya-blue-7 align-vc grid pl-2">Nav</nav>
-                                    <main class="bg-maya-blue-8 h-200 align-vc grid pl-2">Main</main>
-                                    <aside class="bg-maya-blue-9 align-vc grid pl-2">Aside</aside>
-                                    <footer class="bg-maya-blue-10 pl-2 h-40 align-vc grid rounded-b">Footer</footer>
+                                    <header id="header" class="bg-maya-blue-10 align-vc grid p-2 rounded-t">Header</header>
+                                    <nav id="nav" class="bg-maya-blue-7 align-vc grid pl-2">Nav</nav>
+                                    <main id="main" class="bg-maya-blue-8 h-200 align-vc grid pl-2">Main</main>
+                                    <aside id="aside" class="bg-maya-blue-9 align-vc grid pl-2">Aside</aside>
+                                    <footer id="footer" class="bg-maya-blue-10 pl-2 h-40 align-vc grid rounded-b">Footer</footer>
                                 </div>    
                             </div>
                             <div class="border-t p-2">
@@ -135,11 +136,11 @@
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
     &lt;div class="temp-g-2"&gt;    
-        &lt;header&gt;Header&lt;/header&gt;
-        &lt;nav&gt;Nav&lt;/nav&gt;
-        &lt;main&gt;Main&lt;/main&gt;
-        &lt;aside&gt;Aside&lt;/aside&gt;
-        &lt;footer&gt;Footer&lt;/footer&gt;
+        &lt;header id="header"&gt;Header&lt;/header&gt;
+        &lt;nav id="nav"&gt;Nav&lt;/nav&gt;
+        &lt;main id="main"&gt;Main&lt;/main&gt;
+        &lt;aside id="aside"&gt;Aside&lt;/aside&gt;
+        &lt;footer id="footer"&gt;Footer&lt;/footer&gt;
     &lt;/div&gt;  
                                 </code></pre>
                             </div> 
@@ -175,11 +176,11 @@
                             </div>
                             <div class="p-5 pm-2 hatched-1">        
                                 <div class="temp-g-3 border rounded">    
-                                    <header class="bg-maya-blue-10 align-vc grid p-2 rounded-t">Header</header>
-                                    <nav class="bg-maya-blue-7 h-40 align-vc grid pl-2">Nav</nav>
-                                    <main class="bg-maya-blue-9 h-150 align-vc grid pl-2">Main</main>
-                                    <aside class="bg-maya-blue-8 h-40 align-vc grid pl-2">Aside</aside>
-                                    <footer class="bg-maya-blue-10 pl-2 h-40 align-vc grid rounded-b">Footer</footer>
+                                    <header id="header" class="bg-maya-blue-10 align-vc grid p-2 rounded-t">Header</header>
+                                    <nav id="nav" class="bg-maya-blue-7 h-40 align-vc grid pl-2">Nav</nav>
+                                    <main id="main" class="bg-maya-blue-9 h-150 align-vc grid pl-2">Main</main>
+                                    <aside id="aside" class="bg-maya-blue-8 h-40 align-vc grid pl-2">Aside</aside>
+                                    <footer id="footer" class="bg-maya-blue-10 pl-2 h-40 align-vc grid rounded-b">Footer</footer>
                                 </div>    
                             </div>
                             <div class="border-t p-2">
@@ -188,11 +189,11 @@
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
     &lt;div class="temp-g-3"&gt;    
-        &lt;header&gt;Header&lt;/header&gt;
-        &lt;nav&gt;Nav&lt;/nav&gt;
-        &lt;main&gt;Main&lt;/main&gt;
-        &lt;aside&gt;Aside&lt;/aside&gt;
-        &lt;footer&gt;Footer&lt;/footer&gt;
+        &lt;header id="header"&gt;Header&lt;/header&gt;
+        &lt;nav id="nav"&gt;Nav&lt;/nav&gt;
+        &lt;main id="main"&gt;Main&lt;/main&gt;
+        &lt;aside id="aside"&gt;Aside&lt;/aside&gt;
+        &lt;footer id="footer"&gt;Footer&lt;/footer&gt;
     &lt;/div&gt;   
                                 </code></pre>
                             </div> 
@@ -224,9 +225,9 @@
                             </div>
                             <div class="p-5 pm-2 hatched-1">        
                                 <div class="temp-g-4 border rounded">    
-                                    <header class="bg-maya-blue-10 align-vc grid p-2 rounded-t">Header</header>
-                                    <main class="bg-maya-blue-9 h-150 align-vc grid pl-2">Main</main>
-                                    <footer class="bg-maya-blue-10 pl-2 h-40 align-vc grid rounded-b">Footer</footer>
+                                    <header id="header" class="bg-maya-blue-10 align-vc grid p-2 rounded-t">Header</header>
+                                    <main id="main" class="bg-maya-blue-9 h-150 align-vc grid pl-2">Main</main>
+                                    <footer id="footer" class="bg-maya-blue-10 pl-2 h-40 align-vc grid rounded-b">Footer</footer>
                                 </div>    
                             </div>
                             <div class="border-t p-2">
@@ -235,9 +236,9 @@
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
     &lt;div class="temp-g-4 vh-100"&gt;    
-        &lt;header&gt;Header&lt;/header&gt;
-        &lt;main&gt;Main&lt;/main&gt;
-        &lt;footer&gt;Footer&lt;/footer&gt;
+        &lt;header id="header"&gt;Header&lt;/header&gt;
+        &lt;main id="main"&gt;Main&lt;/main&gt;
+        &lt;footer id="footer"&gt;Footer&lt;/footer&gt;
     &lt;/div&gt;   
                                 </code></pre>
                             </div> 
@@ -273,10 +274,10 @@
                             </div>
                             <div class="p-5 pm-2 hatched-1">        
                                 <div class="temp-g-5 border rounded">    
-                                    <header class="bg-maya-blue-10 align-vc grid rounded-t item-1 p-2">Header</header>
-                                    <nav class="bg-maya-blue-7 align-vc grid pl-2 rounded-s-d">Nav</nav>
-                                    <main class="bg-maya-blue-9 h-200 align-vc grid pl-2">Main</main>
-                                    <footer class="bg-maya-blue-10 pl-2 h-40 align-vc grid rounded-s-c">Footer</footer>
+                                    <header id="header" class="bg-maya-blue-10 align-vc grid rounded-t item-1 p-2">Header</header>
+                                    <nav id="nav" class="bg-maya-blue-7 align-vc grid pl-2 rounded-s-d">Nav</nav>
+                                    <main id="main" class="bg-maya-blue-9 h-200 align-vc grid pl-2">Main</main>
+                                    <footer id="footer" class="bg-maya-blue-10 pl-2 h-40 align-vc grid rounded-s-c">Footer</footer>
                                 </div>    
                             </div>
                             <div class="border-t p-2">
@@ -285,10 +286,10 @@
                             <div class="pre-pre2">
                                 <pre class="cont-100 scroll-x"><code class="language-html">                                    
     &lt;div class="temp-g-5"&gt;    
-        &lt;header&gt;Header&lt;/header&gt;
-        &lt;nav&gt;Nav&lt;/nav&gt;
-        &lt;main&gt;Main&lt;/main&gt;
-        &lt;footer&gt;Footer&lt;/footer&gt;
+        &lt;header id="header"&gt;Header&lt;/header&gt;
+        &lt;nav id="nav"&gt;Nav&lt;/nav&gt;
+        &lt;main id="main"&gt;Main&lt;/main&gt;
+        &lt;footer id="footer"&gt;Footer&lt;/footer&gt;
     &lt;/div&gt;  
                                 </code></pre>
                             </div> 
