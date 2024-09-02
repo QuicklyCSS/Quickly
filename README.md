@@ -1,8 +1,8 @@
-## Quickly - Framework CSS
+## Quickly - Framework CSS Grid
 **Inicio del Proyecto:** 26 de marzo de 2024  
-**Última Actualización:** 19 de agosto de 2024  
-**Versión Actual:** Beta 1.1.0
-
+**Última Actualización:** 26 de agosto de 2024  
+**Versión Actual:** Beta 1.3.0
+**Sitio Oficial** https://quicklycss.github.io/Quickly/
 ---
 ### Descripción
 
