@@ -25,70 +25,74 @@
 <body class="grid g-5 gm-2 cont-100" id="inicio">
                                                                            
     <!-- Menú -->
-    <header class="cont-100 sticky-t bg-resolutionBlue shadow-l pm-0">
+    <header class="cont-100 sticky-t bg-resolutionBlue border-b shadow-l pm-0">
+        <div class="bg-white-1 grid align-cc p-1 hide-s hide-m">        
+            <a href="#" class="navbar-brand mmr-2 grid item-1 align-cc">
+                <div>
+                
+                    <img src="./img/Logo-Quickly.png" class="logo" alt="Logo Framework Quickly">
+                   <span class="color-resolutionBlue font-l">|</span> <small class="text-quickly mt-1 font-s-6">Versión Oficial 1.0.0 <strong>Nougat</strong></small> <span class="font-s-6">🥳 🎉</span>
+                </div>
+                                  
+            </a>
+        </div>
         <nav class="cont-90 cont-s-100 navbar">
-            <div class="navbar-container grid space-hb" id="navbar4">
+            <div class="navbar-container align-content-hc grid" id="navbar4">
                 <div class="navbar-header grid space-hb">
+                    <a href="#" class="navbar-brand mmr-2 hide show-s show-m">
+                        <img src="./img/Logo-Quickly-opcion-2.png" class="logo" alt="Logo Framework Quickly"> <span class="font-s-6">🥳 🎉</span>
+                    </a>
                     <button class="navbar-toggle mml-1" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>            
-                    <a href="#" class="navbar-brand mmr-2">
-                        <img src="./img/Logo-Quickly.png" class="logo" alt="Logo Framework Quickly">
-                    </a>
                 </div>
                 <div class="navbar-collapse" id="navbar-collapse4">
-                    <ul class="navbar-nav">
-                        <li><a href="#" class="hover">Inicio</a></li>
-                        <li>
-                            <a href="./comenzar.html" aria-haspopup="true" aria-expanded="false">Documentación</a>
-                        </li>
-                        <li>
-                            <a href="#instalacion" aria-haspopup="true" aria-expanded="false">Instalación</a>
-                        </li>
-                        <li>
-                            <a href="#inicio_rapido" aria-haspopup="true" aria-expanded="false">Inicio rápido</a>
-                        </li>
-                        <li>
-                            <a href="#caracteristicas" aria-haspopup="true" aria-expanded="false">Características</a>
-                        </li>
-                        <li>
-                            <a href="#plantillas" aria-haspopup="true" aria-expanded="false">Plantillas</a>
-                        </li>
-                        <li class="hide show-s show-m">
-                            <a href="https://github.com/QuicklyCSS/Quickly" aria-haspopup="true" aria-expanded="false">GitHub</a>
-                        </li>
+                    <ul class="navbar-nav navbar-nav-op ">
+                            <li>
+                                <a href="#" aria-label="Ir a la página de inicio">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="./comenzar.html" aria-label="Ir a la sección de documentación">Documentación</a>
+                            </li>
+                            <li>
+                                <a href="#instalacion" aria-label="Ir a la sección de instalación">Instalación</a>
+                            </li>
+                            <li>
+                                <a href="#inicio_rapido" aria-label="Ir a la sección de inicio rápido">Inicio rápido</a>
+                            </li>
+                            <li>
+                                <a href="#caracteristicas" aria-label="Ir a la sección de características">Características</a>
+                            </li>
+                            <li>
+                                <a href="#plantillas" aria-label="Ir a la sección de plantillas">Plantillas</a>
+                            </li>
+                            <li class="align-vc">
+                                <a href="https://github.com/QuicklyCSS/Quickly" aria-label="Ir a la página de GitHub de Quickly CSS" target="_blank">
+                                    <svg class="ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/> </svg>
+                                    GitHub
+                                </a>
+                            </li>                   
                         <!--li><a href="#" title="Ayúdame a financiar el proyecto" class="bg-apple-red-1 font-b">invítame<svg class="ml-1 ico-16 mb-1 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 20h-7c-2.174-3.004-4-6.284-4-12h15c0 5.667-1.88 9.089-4 12zm5.119-10c-.057.701-.141 1.367-.252 2h1.55c-.449 1.29-1.5 2.478-2.299 2.914-.358 1.038-.787 1.981-1.26 2.852 3.274-1.143 5.846-4.509 6.142-7.766h-3.881zm-7.745-3.001c4.737-4.27-.98-4.044.117-6.999-3.783 3.817 1.409 3.902-.117 6.999zm-2.78.001c3.154-2.825-.664-3.102.087-5.099-2.642 2.787.95 2.859-.087 5.099zm9.406 15h-15v2h15v-2z"/></svg></a></li-->
                     </ul>
-                </div>
-                <div class="hide-m grid align-content-hc">   
-                    <small class="mr-1"> 🥳 🎉V. Beta 1.3.0</small>            
-                    <a href="https://github.com/QuicklyCSS/Quickly" role="button" title="Ir a github" target="_blank" rel="noopener noreferrer" aria-label="Ir a la página de GitHub de QuicklyCSS">
-                        <svg class="ico-24 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    </a>
                 </div>
             </div>
         </nav>
     </header>
-    
     <!-- Bloque 1 -->
-    <section class="cont-80 cont-s-90 cont-m-90 text-ac grid align-hc py-5">
-        <div class="img-fit w-400 wm-auto m-auto mb-1">
-            <img src="./img/Logo-Quickly.png" class="img-fluid" alt="Logo Quickly CSS Grid">
-        </div>
-        <h2 class="dis-s-5 font-l line-h-1 color-resolutionBlue">El marco de trabajo CSS Grid<br>
-
-            <!--span class="text-quickly font-b dis-s-2">Quickly</span><span class="dis-s-5 font-b"> CSS Grid</span--> </h2>
+    <section class="cont-80 cont-s-90 cont-m-90 text-ac grid align-hc py-2">        
+        <h2 class="dis-s-5 font-l line-h-1 color-resolutionBlue"><span class="text-quickly font-l">Quickly</span> es el marco de trabajo CSS Grid</h2>
         <p class="font-s-5 wp-60 wmp-90">
             Un framework de desarrollo web de código abierto que facilita la creación de sitios y aplicaciones web. Construido con <span class="font-b color-resolutionBlue">HTML</span> , <span class="font-b color-resolutionBlue">CSS Grid</span> y <span class="font-b color-resolutionBlue">JavaScript</span>. 
         </p>
+        <small class="text-quickly hide show-s show-m">Versión Oficial 1.0.0 <strong>Nougat</strong></small>
     </section>
 
     <!--Bloque 2 ligero y rapido -->
     <section class="cont-80 cont-s-90 cont-m-90 grid gy-5 pb-2">
         <article class="grid item-12 bg-r-lightblue border rounded"> 
-            <div class="col-6 col-m-12 img-fit">
+            <div class="col-6 col-m-12 img-fit-cover">
                 <img src="./img/index/ligero.jpg" alt="Descripción de la imagen" class="rounded-l ">     
             </div>                                                      
             <div class="col-6 col-m-12 p-4 grid align-cc">
@@ -323,7 +327,7 @@
     <!-- Bloque 9 Plantillas -->
     <section class="cont-80 cont-s-90 cont-m-90 const-s-90 mmy-4 pt-2" id="plantillas">
         <div class="grid item-1 align-hc text-ac">
-        <h2 class="dis-s-5 font-l w-800 wmp-100 line-h-1 color-resolutionBlue pb-2">Plantillas de <span class="text-quickly font-b">Quickly</span></h2>
+        <h2 class="dis-s-5 font-l w-800 wmp-100 line-h-1 color-resolutionBlue pb-2">Ejemplos de <span class="text-quickly font-l">Quickly</span></h2>
         <p class="font-s-5 wp-80 wmp-90 mb-2">🗂️ Puedes comenzar tu proyecto de inmediato utilizando cualquiera de nuestros ejemplos, que incluyen componentes y diseños totalmente personalizados.</p>
         </div>
         <div class="border-t">
@@ -454,7 +458,7 @@
 
     <!-- Bloque 11 Footer -->
     <footer class="cont-80 cont-s-90 py-2 border-t grid space-hb">
-        <small><span class="font-b text-quickly" >Quickly</span> 2024 Licenciado bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank"><span class="font-b text-c-black">CC BY-SA 4.0</span></a> Creative Commons </small>
+        <small><span class="font-b text-quickly" >Quickly</span> 2024 Licenciado bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank"><span class="font-b color-black">CC BY-SA 4.0</span></a> Creative Commons </small>
         <a href="#inicio" target="_self" class="button" role="button" aria-label="Subir">
             <svg class="ico-24 ico-primary-alt" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-labelledby="title">
                 <title id="title">Icono de Subir</title>

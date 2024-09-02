@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quickly: Plantilla de Grilla | Diseño Versátil y Escalable</title>
+  <meta name="description" content="Descubre las columnas CSS especializadas para grillas en Quickly. Diseñadas para proporcionar versatilidad y escalabilidad, nuestras columnas facilitan la creación de diseños web flexibles y adaptables. Aprende cómo utilizarlas para optimizar tus proyectos de desarrollo web.">  
+  <link rel="icon" type="image/png" href="./img/ico.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quickly.min.css">
+  <link rel="stylesheet" href="./css/app.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.min.js" defer></script>
+  <script src="./js/app.min.js" defer></script>
+  <link rel="stylesheet" href="./prism/prism.css">
+  <script src="./prism/prism.js" defer></script>
+  <script>var currentPage = 'grillaDePlantilla';</script>
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DZQS41TB5G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DZQS41TB5G');
+</script>
+
+</head>
+<body>
+    <div class="header" id="headerContent"></div>
+    <section class="cont cont-m">
+        <aside class="aside" id="menuContent"></aside> 
+        <main class="main bg-white-2 pt-5 pm-2">  
+            <div class="cont-80 cont-m py-5 "> 
+                
+                <!-- GRILLA -->
+                <section class="border rounded bg-color-1">            
+                    <!-- TITLE --> 
+                    <section class="p-5 pm-2 bg-white-1 rounded-t border-b">
+                        <h1 class="font-l">Template grid en <strong class="text-quickly" >Quickly</strong></h1>
+                        <h2 class="font-l font-s-4">Descubre nuestra sección de Template Grid, diseñada para ofrecer soluciones rápidas y eficientes a tus proyectos web. Con una variedad de layouts preconfigurados, los templates te permiten crear estructuras flexibles y responsivas con CSS Grid, adaptándose a cualquier tipo de sitio o aplicación. Desde distribuciones simples hasta diseños más complejos, estos ejemplos están pensados para facilitar el desarrollo, optimizando tanto el tiempo como la experiencia de usuario.</p>
+                    </section>
+
+                    <!-- Template 1 -->
+                    <section class="p-5 pm-2">
+                        <h3 class="font-l">Grilla de plantilla</h3>
+                        <p class="pb-2">Para aplicar correctamente las clases de la cuadrícula (template grid), es esencial que el contenido esté estructurado con las etiquetas semánticas apropiadas, como &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;aside&gt; y &lt;footer&gt;. Estas etiquetas semánticas proporcionan una estructura clara y significativa para el contenido de la página. Al envolver el contenido con estas etiquetas, las clases de cuadrícula definen cómo se distribuirán y organizarán visualmente estas secciones dentro del layout. Esto asegura una presentación coherente y accesible del contenido.</p>                            
+                        <h4 class="font-l">.temp-g-1</h4>
+                        <div class="table rounded border">
+                            <table class="table-container wm-900">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-800 bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="bg-maya-blue-9">.temp-g-1</td>
+                                        <td class="bg-maya-blue-9"><mark>Versión Escritorio</mark>. La clase organiza una cuadrícula de dos columnas y cuatro filas, con el header ocupando toda la primera fila. En la segunda fila el Nav, en la terecera fila el main está en la primera columna ajustándose al espacio disponible y el aside en la segunda con un ancho max de 250px. La tercera fila repite el aside en la primera columna y coloca el footer en la segunda, creando un layout con barra lateral fija y contenido flexible.</td>                                   
+                                    </tr>            
+                                    <tr>
+                                        <td class="bg-maya-blue-9"></td>
+                                        <td class="bg-maya-blue-9"><mark>Versión Móvil</mark>. La clase organiza todo el contenido en una sola columna, con el header ocupando la parte superior, seguido por el aside, luego el main, y finalmente el footer. Cada sección se apila verticalmente, ocupando el 100% del ancho de la pantalla, ajustando las alturas automáticamente según el contenido para una mejor visualización en dispositivos móviles.</td>                                    
+                                    </tr>                                                                                                                                                                                
+                                </tbody>
+                            </table>
+                        </div>                                                                      
+                        <div class="border rounded mt-2">
+                            <div class="block border-b p-2">
+                                <p>Establece una distribución de 2 columnas y 4 filas.</p>
+                            </div>
+                            <div class="p-5 pm-2 hatched-1">        
+                                <div class="temp-g-1 border rounded">    
+                                    <header class="bg-maya-blue-10 align-vc grid rounded-t item-1 p-2">Header</header>
+                                    <nav class="bg-maya-blue-7 align-vc grid pl-2 h-40">Nav</nav>
+                                    <main class="bg-maya-blue-9 h-200 align-vc grid pl-2">Main</main>
+                                    <aside class="bg-maya-blue-8 align-vc grid pl-2">Aside</aside>
+                                    <footer class="bg-maya-blue-10 pl-2 h-40 align-vc grid rounded-b">Footer</footer>
+                                </div>    
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;div class="temp-g-1"&gt;    
+        &lt;header&gt;Header&lt;/header&gt;
+        &lt;main&gt;Main&lt;/main&gt;
+        &lt;aside&gt;Aside&lt;/aside&gt;
+        &lt;footer&gt;Footer&lt;/footer&gt;
+    &lt;/div&gt;  
+                                </code></pre>
+                            </div> 
+                        </div>                
+                    </section>
+
+                    <!-- Template 2 -->
+                    <section class="p-5 pt-0 pm-2">
+                        <h4 class="font-l">.temp-g-2</h4>
+                        <div class="table rounded border">
+                            <table class="table-container wm-900">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-800 bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="bg-maya-blue-9">.temp-g-2</td>
+                                        <td class="bg-maya-blue-9"><mark>Versión Escritorio</mark>. La clase organiza el contenido en una cuadrícula de tres columnas y tres filas: el header ocupa toda la primera fila, el nav, main, y aside se distribuyen en la segunda fila, y el footer se extiende por toda la tercera fila.</td>                                   
+                                    </tr>            
+                                    <tr>
+                                        <td class="bg-maya-blue-9"></td>
+                                        <td class="bg-maya-blue-9"><mark>Versión Móvil</mark>. Presenta el contenido en una sola columna, con el header, nav, main, aside, y footer apilados verticalmente, ocupando una fila cada uno para una visualización clara y adaptativa en pantallas pequeñas.</td>                                    
+                                    </tr>                                                                                                                                                                                
+                                </tbody>
+                            </table>
+                        </div>                                                                      
+                        <div class="border rounded mt-2">
+                            <div class="block border-b p-2">
+                                <p>Establece una distribución de 3 columnas y 3 filas.</p>
+                            </div>
+                            <div class="p-5 pm-2 hatched-1">        
+                                <div class="temp-g-2 border rounded">    
+                                    <header class="bg-maya-blue-10 align-vc grid p-2 rounded-t">Header</header>
+                                    <nav class="bg-maya-blue-7 align-vc grid pl-2">Nav</nav>
+                                    <main class="bg-maya-blue-8 h-200 align-vc grid pl-2">Main</main>
+                                    <aside class="bg-maya-blue-9 align-vc grid pl-2">Aside</aside>
+                                    <footer class="bg-maya-blue-10 pl-2 h-40 align-vc grid rounded-b">Footer</footer>
+                                </div>    
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;div class="temp-g-2"&gt;    
+        &lt;header&gt;Header&lt;/header&gt;
+        &lt;nav&gt;Nav&lt;/nav&gt;
+        &lt;main&gt;Main&lt;/main&gt;
+        &lt;aside&gt;Aside&lt;/aside&gt;
+        &lt;footer&gt;Footer&lt;/footer&gt;
+    &lt;/div&gt;  
+                                </code></pre>
+                            </div> 
+                        </div>                
+                    </section>  
+                    
+                    <!-- Template 3 -->
+                    <section class="p-5 pt-0 pm-2">
+                        <h4 class="font-l">.temp-g-3</h4>
+                        <div class="table rounded border">
+                            <table class="table-container wm-900">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-800 bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="bg-maya-blue-9">.temp-g-3</td>
+                                        <td class="bg-maya-blue-9"><mark>Versión Escritorio</mark>. Organiza el diseño en una cuadrícula de una sola columna con cinco filas automáticas. Las áreas se distribuyen verticalmente en el siguiente orden: header, nav, main, aside, y footer, proporcionando una estructura clara y ordenada para pantallas grandes.</td>                                   
+                                    </tr>            
+                                    <tr>
+                                        <td class="bg-maya-blue-9"></td>
+                                        <td class="bg-maya-blue-9"><mark>Versión Móvil</mark>. También usa una sola columna con cinco filas automáticas. Las áreas se disponen verticalmente en el orden de header, nav, main, aside, y footer, asegurando una experiencia de usuario adaptada a pantallas más pequeñas.</td>                                    
+                                    </tr>                                                                                                                                                                                
+                                </tbody>
+                            </table>
+                        </div>                                                                      
+                        <div class="border rounded mt-2">
+                            <div class="block border-b p-2">
+                                <p>Establece una distribución de 1 columnas y 5 filas.</p>
+                            </div>
+                            <div class="p-5 pm-2 hatched-1">        
+                                <div class="temp-g-3 border rounded">    
+                                    <header class="bg-maya-blue-10 align-vc grid p-2 rounded-t">Header</header>
+                                    <nav class="bg-maya-blue-7 h-40 align-vc grid pl-2">Nav</nav>
+                                    <main class="bg-maya-blue-9 h-150 align-vc grid pl-2">Main</main>
+                                    <aside class="bg-maya-blue-8 h-40 align-vc grid pl-2">Aside</aside>
+                                    <footer class="bg-maya-blue-10 pl-2 h-40 align-vc grid rounded-b">Footer</footer>
+                                </div>    
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;div class="temp-g-3"&gt;    
+        &lt;header&gt;Header&lt;/header&gt;
+        &lt;nav&gt;Nav&lt;/nav&gt;
+        &lt;main&gt;Main&lt;/main&gt;
+        &lt;aside&gt;Aside&lt;/aside&gt;
+        &lt;footer&gt;Footer&lt;/footer&gt;
+    &lt;/div&gt;   
+                                </code></pre>
+                            </div> 
+                        </div>                
+                    </section>           
+                    
+                    <!-- Template 4 -->
+                    <section class="p-5 pt-0 pm-2">
+                        <h4 class="font-l">.temp-g-4</h4>
+                        <div class="table rounded border">
+                            <table class="table-container wm-900">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-800 bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="bg-maya-blue-9">.temp-g-4</td>
+                                        <td class="bg-maya-blue-9">Define un diseño de cuadrícula ideal para páginas como formularios de inicio de sesión u otras páginas similares. Utiliza una sola columna y tres filas: header en la parte superior, main en el centro para el contenido principal, y footer en la parte inferior. La configuración asegura que el área main ocupe el alto completo disponible entre header y footer, proporcionando una estructura clara y centrada que se adapta bien a páginas con un enfoque en contenido central y acciones específicas.</td>                                   
+                                    </tr>                                                                                                                                                                                          
+                                </tbody>
+                            </table>
+                        </div>                                                                      
+                        <div class="border rounded mt-2">
+                            <div class="block border-b p-2">
+                                <p>Establece una distribución de 1 columnas y 3 filas.</p>
+                            </div>
+                            <div class="p-5 pm-2 hatched-1">        
+                                <div class="temp-g-4 border rounded">    
+                                    <header class="bg-maya-blue-10 align-vc grid p-2 rounded-t">Header</header>
+                                    <main class="bg-maya-blue-9 h-150 align-vc grid pl-2">Main</main>
+                                    <footer class="bg-maya-blue-10 pl-2 h-40 align-vc grid rounded-b">Footer</footer>
+                                </div>    
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;div class="temp-g-4 vh-100"&gt;    
+        &lt;header&gt;Header&lt;/header&gt;
+        &lt;main&gt;Main&lt;/main&gt;
+        &lt;footer&gt;Footer&lt;/footer&gt;
+    &lt;/div&gt;   
+                                </code></pre>
+                            </div> 
+                        </div>                
+                    </section>    
+                    
+                    <!-- Template 5 -->
+                    <section class="p-5 pt-0 pm-2">
+                        <h4 class="font-l">.temp-g-5</h4>
+                        <div class="table rounded border">
+                            <table class="table-container wm-900">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-800 bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="bg-maya-blue-9">.temp-g-5</td>
+                                        <td class="bg-maya-blue-9"><mark>Versión Escritorio</mark>. Se define un layout de dos columnas y tres filas usando CSS Grid, con una primera columna flexible de hasta 250px y una segunda que ocupa el espacio restante. El header abarca el ancho completo en la primera fila, mientras que el nav ocupa la primera columna en las filas dos y tres, funcionando como una barra lateral. El main se sitúa en la segunda columna de la segunda fila, y el footer se extiende en la tercera fila a lo largo de ambas columnas. Es un diseño ideal para páginas con navegación lateral y contenido flexible</td>                                   
+                                    </tr>            
+                                    <tr>
+                                        <td class="bg-maya-blue-9"></td>
+                                        <td class="bg-maya-blue-9"><mark>Versión Móvil</mark>. Ajusta el layout a una sola columna, distribuyendo las áreas en filas consecutivas para optimizar la visualización en pantallas pequeñas. El header, nav, main, y footer se apilan verticalmente, ocupando cada uno el ancho completo del contenedor. Este diseño simplifica la estructura, eliminando el aside y asegurando una disposición clara y fácil de navegar, ideal para mejorar la experiencia del usuario en dispositivos móviles.</td>                                    
+                                    </tr>                                                                                                                                                                                
+                                </tbody>
+                            </table>
+                        </div>                                                                      
+                        <div class="border rounded mt-2">
+                            <div class="block border-b p-2">
+                                <p>Establece una distribución de 2 columnas y 3 filas.</p>
+                            </div>
+                            <div class="p-5 pm-2 hatched-1">        
+                                <div class="temp-g-5 border rounded">    
+                                    <header class="bg-maya-blue-10 align-vc grid rounded-t item-1 p-2">Header</header>
+                                    <nav class="bg-maya-blue-7 align-vc grid pl-2 rounded-s-d">Nav</nav>
+                                    <main class="bg-maya-blue-9 h-200 align-vc grid pl-2">Main</main>
+                                    <footer class="bg-maya-blue-10 pl-2 h-40 align-vc grid rounded-s-c">Footer</footer>
+                                </div>    
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;div class="temp-g-5"&gt;    
+        &lt;header&gt;Header&lt;/header&gt;
+        &lt;nav&gt;Nav&lt;/nav&gt;
+        &lt;main&gt;Main&lt;/main&gt;
+        &lt;footer&gt;Footer&lt;/footer&gt;
+    &lt;/div&gt;  
+                                </code></pre>
+                            </div> 
+                        </div>                
+                    </section>                    
+             
+                </section>               
+            </div>
+        </main>     
+        <footer class="footer" id="footerContent"></footer>   
+    </section>
+</body>
+</html>
+
+

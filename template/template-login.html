@@ -10,17 +10,16 @@
             <title>Quickly: Plantilla Inicio Sesión</title>
             <meta name="description" content="Quickly: El framework CSS potenciado por CSS Grid que agiliza el desarrollo web con su enfoque modular y flexible. Crea diseños modernos y responsivos de manera rápida y eficiente.">
         </head>
-        <body id="inicio" class="vh-100 grid align-cc">
-            <div class="vh-100 vw-100 bg-gray z-b1 grid align-cc"></div> 
+        <body id="inicio" class="temp-g-4 vh-100 grid align-cc bg-gray-4">
             <div class="cont-50 cont-m-90 shadow-s border rounded bg-white-1">                                                                                        
-                <div class="p-4 pm-2 grid item-2 item-s-1 ">
-                    <div class="grid col-s-12 align-vc align-hc mmt-2">
+                <div class="grid item-2 item-s-1">
+                    <div class="grid col-s-12 align-cc mmt-2">
                         <img src="../img/Logo-Quickly.png" class="w-200" alt="">
                     </div>
-                    <div class="grid col-s-12 mmt-2">
+                    <div class="grid col-s-12 mmt-2 p-4 pm-2">
                         <form id="form" class="form" aria-labelledby="formulario-titulo" role="form" novalidate>
-                            <h1 id="formulario-titulo" class="font-s-2">Inicio Sesión</h1>
-                            <div class="grid item-1 item-s-1">                                 
+                            <h1 id="formulario-titulo" class="font-s-2 color-gray-6 pb-2">Inicio Sesión</h1>
+                            <div class="grid item-1 item-s-1 g-1">                                 
                                 <div class="form-group">
                                     <label for="nombre" class="form-label">Nombre</label>
                                     <input type="password" class="form-control" id="nombre" value="" placeholder="Ingresa tu nombre" name="nombre" aria-required="true" aria-describedby="nombre-instruccion">
@@ -42,15 +41,15 @@
                                     <div class="invalid-feedback">¡Debes aceptar las condiciones!</div>
                                 </div>
                                 <div class="text-al">
-                                    <a class="btn-link mb-2">No recuerda su contraseña</a> 
+                                    <a class="btn-link"><span class="color-gray-4">No recuerda su contraseña</span></a> 
                                 </div>                                
                                 <div class="form-group mt-2 text-ar">
-                                    <button class="btn btn-primary" type="submit" value="enviar" aria-describedby="submit-instruccion">Iniciar sesión</button>
+                                    <button class="btn btn-dark-outline" type="submit" value="enviar" aria-describedby="submit-instruccion">Iniciar sesión</button>
                                 </div>                                   
                             </div>                                                                                                                                                                                                                               
                         </form>                                                                    
                     </div>                   
-                    <small class="col-2 text-ac text-c-black"><strong class="text-quickly" >Quickly</strong> 2024 Licenciado bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank"><strong class="text-c-black">CC BY-SA 4.0</strong></a> Creative Commons </small>                     
+                    <small class="col-2 text-ac color-black pb-2"><strong class="text-quickly" >Quickly</strong> 2024 Licenciado bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank"><strong class="color-black">CC BY-SA 4.0</strong></a> Creative Commons </small>                     
                 </div>             
             </div>                      
         </body>
