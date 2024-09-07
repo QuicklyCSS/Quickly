@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.min.js" defer></script>
     <link rel="stylesheet" href="./css/app.min.css">
     <script src="./js/app.min.js" defer></script>
+    <script src="./js/search.js" defer></script>
     <link rel="stylesheet" href="./prism/prism.css">
     <script src="./prism/prism.js" defer></script>
 
@@ -38,7 +39,7 @@
                 <div>                
                     <img src="./img/Logo-Quickly.png" class="logo" alt="Logo Framework Quickly">
                     <span class="color-resolutionBlue font-l">|</span> 
-                    <small class="text-quickly mt-1 font-s-6">Versión Oficial 1.0.0 <strong>Nougat</strong></small> 
+                    <small class="text-quickly mt-1 font-s-6">Versión Oficial 1.0.1 <strong>Nougat</strong></small> 
                     <span class="font-s-6">🥳 🎉</span>
                 </div>                                  
             </a>
@@ -56,7 +57,7 @@
                     </button>            
                 </div>
                 <div class="navbar-collapse" id="navbar-collapse4">
-                    <ul class="navbar-nav navbar-nav-op ">
+                    <ul class="navbar-nav navbar-nav-op">
                             <li>
                                 <a href="#" aria-label="Ir a la página de inicio">Inicio</a>
                             </li>
@@ -80,14 +81,18 @@
                                     <svg class="ico-16 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/> </svg>
                                     GitHub
                                 </a>
-                            </li>                   
-                        <!--li><a href="#" title="Ayúdame a financiar el proyecto" class="bg-apple-red-1 font-b">invítame<svg class="ml-1 ico-16 mb-1 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 20h-7c-2.174-3.004-4-6.284-4-12h15c0 5.667-1.88 9.089-4 12zm5.119-10c-.057.701-.141 1.367-.252 2h1.55c-.449 1.29-1.5 2.478-2.299 2.914-.358 1.038-.787 1.981-1.26 2.852 3.274-1.143 5.846-4.509 6.142-7.766h-3.881zm-7.745-3.001c4.737-4.27-.98-4.044.117-6.999-3.783 3.817 1.409 3.902-.117 6.999zm-2.78.001c3.154-2.825-.664-3.102.087-5.099-2.642 2.787.95 2.859-.087 5.099zm9.406 15h-15v2h15v-2z"/></svg></a></li-->
+                            </li> 
+                            <li class="ml-2">
+                                <input type="text" id="search-input" placeholder="Buscas algo..." onkeyup="buscar()" required>
+                                <button id="search-button" onclick="ir()" data-Qy-toggle="modal-1">Ir</button>
+                                <ul id="suggestions-list" class="shadow-m"></ul>    
+                            </li>          
+                            <!--li><a href="#" title="Ayúdame a financiar el proyecto" class="bg-apple-red-1 font-b">invítame<svg class="ml-1 ico-16 mb-1 ico-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 20h-7c-2.174-3.004-4-6.284-4-12h15c0 5.667-1.88 9.089-4 12zm5.119-10c-.057.701-.141 1.367-.252 2h1.55c-.449 1.29-1.5 2.478-2.299 2.914-.358 1.038-.787 1.981-1.26 2.852 3.274-1.143 5.846-4.509 6.142-7.766h-3.881zm-7.745-3.001c4.737-4.27-.98-4.044.117-6.999-3.783 3.817 1.409 3.902-.117 6.999zm-2.78.001c3.154-2.825-.664-3.102.087-5.099-2.642 2.787.95 2.859-.087 5.099zm9.406 15h-15v2h15v-2z"/></svg></a></li-->
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
     <!-- Bloque 1 -->
     <section class="cont-80 cont-s-90 cont-m-90 text-ac grid align-hc py-2">        
         <h2 class="dis-s-5 font-l line-h-1 color-resolutionBlue"><span class="text-quickly font-l">Quickly</span> es el marco de trabajo CSS Grid</h2>
@@ -480,5 +485,19 @@
             </svg>
         </a>  
     </footer>
+
+    <!-- Contenedor del primer modal -->
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-header"></h3>
+                <div class="close close-x"><svg class="ico-24 ico-gray" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg></div>
+            </div>
+            <div class="modal-body text-ac"  id="modal-body"></div>
+            <div class="modal-footer text-ac">
+                <button class="btn btn-primary-alt close">Cerrar</button>
+            </div>                                        
+        </div>
+    </div>
 </body>
 </html>

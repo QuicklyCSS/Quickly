@@ -30,6 +30,9 @@ En la actualización Beta 1.3.0, se ha agregado la nueva clase fixed a la docume
 - **Lanzamiento de la Versión Oficial 1.0.0 Nougat (01-09-2024):**
 En esta primera versión oficial de Quickly, 1.0.0 Nougat, se introduce el soporte completo para Template Grid, permitiendo una mayor flexibilidad y opciones de diseño en la creación de layouts mediante el uso de nuevas clases como .temp-g-5. Se han actualizado los ejemplos para reflejar las últimas mejoras en la organización de la cuadrícula, optimizando tanto para versiones de escritorio como móviles. Además, se incluyen varias optimizaciones de rendimiento y ajustes en la documentación, proporcionando una guía más clara y detallada para implementar rápidamente las funcionalidades del framework. ¡Actualiza tu proyecto para disfrutar de estas nuevas características y mejoras!
 
+- **Actualizacón y corrección de bug de la Versión Oficial 1.0.0 Nougat (06-09-2024):**
+Se corrigió un bug en la clase modal ajustando el nivel z-index de 10 a 20, mejorando la visualización. Además, se incorporó un buscador en el índice con soporte para términos en inglés y español, junto con una modal que ofrece respuestas según distintos casos de uso. También se actualizaron los términos del buscador para optimizar su precisión.
+
 ### Quickly: Un Framework Basado en CSS Grid
 Quickly es un framework de trabajo CSS basado en CSS Grid, HTML y Javascript que te permite crear rápidamente diseños modernos y receptivos para tus proyectos web.
 
