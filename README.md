@@ -33,6 +33,9 @@ En esta primera versión oficial de Quickly, 1.0.0 Nougat, se introduce el sopor
 - **Actualizacón y corrección de bug de la Versión Oficial 1.0.0 Nougat (06-09-2024):**
 Se corrigió un bug en la clase modal ajustando el nivel z-index de 10 a 20, mejorando la visualización. Además, se incorporó un buscador en el índice con soporte para términos en inglés y español, junto con una modal que ofrece respuestas según distintos casos de uso. También se actualizaron los términos del buscador para optimizar su precisión.
 
+- **Actualización y nuevas características de la Versión Oficial 1.1.0 Nougat (16-09-2024):**
+La versión se ha actualizado a Nougat 1.1.0, incorporando nuevas animaciones de entrada que se activan mediante los atributos [data-Qy-r] y [data-Qy-rb]. Estas clases permiten aplicar efectos como fade, flip y zoom en múltiples direcciones, lo que mejora la interactividad visual de manera significativa. Las transiciones han sido optimizadas para ofrecer una experiencia más fluida y personalizable. Además, se ha mejorado la estabilidad del sistema, garantizando un rendimiento más eficiente en la ejecución de las animaciones.
+
 ### Quickly: Un Framework Basado en CSS Grid
 Quickly es un framework de trabajo CSS basado en CSS Grid, HTML y Javascript que te permite crear rápidamente diseños modernos y receptivos para tus proyectos web.
 

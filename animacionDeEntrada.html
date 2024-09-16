@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickly: Animaciones de Entrada Automáticas | Diseño Detallado y Estilizado</title>
+    <meta name="description" content="Quickly: El framework CSS potenciado por CSS Grid que agiliza el desarrollo web con su enfoque modular y flexible. Ahora con nuevas animaciones de entrada automáticas, como fade, flip y zoom, que se activan al cargar la página, creando experiencias visuales dinámicas y atractivas.">
+    <link rel="icon" type="image/png" href="./img/ico.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quickly.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.min.js" defer></script>
+    <link rel="stylesheet" href="./css/app.min.css">
+    <script src="./js/app.min.js" defer></script>
+    <link rel="stylesheet" href="./prism/prism.css">
+    <script src="./prism/prism.js" defer></script>
+    <script>var currentPage = 'animacionDeEntrada';</script>  
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZQS41TB5G"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DZQS41TB5G');
+    </script>
+</head>
+<body>
+    <div class="header" id="headerContent"></div>
+    <section class="cont cont-m">
+        <aside class="aside" id="menuContent"></aside> 
+        <main class="main bg-white-2 pt-5 pm-2">
+            <div class="cont-80 cont-m py-5">        
+                <section class="border rounded bg-color-1">
+                    <section class="p-5 pm-2 bg-white-1 rounded-t border-b">
+                        <h1 class="font-l">Animaciones de Entrada</h1>
+                        <h2 class="font-l font-s-4">Descubre las Animaciones de Entrada automáticas en <strong class="text-quickly" >Quickly</strong>,, que se activan al cargar la página para transformar tu diseño con efectos visuales dinámicos como fade, flip y zoom. Implementadas fácilmente con los atributos [data-Qy-r] y [data-Qy-rb], estas animaciones añaden una capa de sofisticación a tu sitio, haciendo que cada transición sea suave y atractiva.</h2>
+                    </section>
+
+                    <section class="pt-3 px-5 pm-2">
+                            <h3 class="font-l">Enlace al CDN</h3>
+                            <p class="pb-2 pmb-2">Para integrar las animaciones de entrada en tu proyecto, deberás incluir los enlaces a los CDN correspondientes.</p>                                              
+                            <div class="table rounded border">
+                                <table class="table-container wm-1000">
+                                    <thead class="table-header bg-skyblue-4">
+                                        <tr>
+                                            <th class="w-200 bg-maya-blue-5">Detalle</th>
+                                            <th class="w-800 bg-maya-blue-5">CDN URL</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-body scroll-y">
+                                        <tr>  
+                                            <td class="bg-maya-blue-9">CSS Animación</td>
+                                            <td class="bg-maya-blue-9">https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quicklyAnimation.min.css</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-maya-blue-9">JS Animación</td>
+                                            <td class="bg-maya-blue-9">https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyAnimation.min.js</td>
+                                        </tr>                                                    
+          
+                                    </tbody>
+                                </table>
+                            </div>                           
+                    </section>   
+
+                    <section class="pt-3 px-5 pm-2">
+                            <h3 class="font-l">Animaciones Run y Run Back</h3>
+                            <p class="pb-2 pmb-2">Las animaciones de una sola ejecución, denominadas <span class="font-b">Run</span>, se activan cuando el objeto tiene un 10% de su contenido dentro del viewport y se controlan mediante el atributo `[data-Qy-r]`.</p>                                              
+                            <p class="pb-2 pmb-2">Las animaciones de ejecución múltiple, llamadas <span class="font-b">Run Back</span>, se activan mediante el atributo `[data-Qy-rb]` y se ejecutan de ida y vuelta al realizar scroll hacia arriba o abajo.</p>                                              
+                            <p class="pb-2 pmb-2">En tu proyecto, puedes combinar ambos tipos de atributos "Run y Run Back" con las clases para crear animaciones y lograr que tu diseño sea más dinámico.</p>                                              
+                            <h4 class="font-l">.fade-Opción</h4>
+                            <div class="table rounded border mb-2">
+                                <table class="table-container wm-1000">
+                                    <thead class="table-header bg-skyblue-4">
+                                        <tr>
+                                            <th class="w-200 bg-maya-blue-5">Clase</th>
+                                            <th class="w-800 bg-maya-blue-5">Descripción</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-body scroll-y">
+                                        <tr>  
+                                            <td class="w-auto bg-maya-blue-9">.fade-up</td>
+                                            <td class="w-auto bg-maya-blue-9">Aparece gradualmente mientras se mueve hacia arriba.</td>
+                                        </tr>         
+                                        <tr>  
+                                            <td class="w-auto bg-maya-blue-9">.fade-down</td>
+                                            <td class="w-auto bg-maya-blue-9">Aparece gradualmente mientras se mueve hacia abajo.</td>
+                                        </tr>      
+                                        <tr>  
+                                            <td class="w-auto bg-maya-blue-9">.fade-right</td>
+                                            <td class="w-auto bg-maya-blue-9"> Aparece gradualmente mientras se mueve hacia la derecha.</td>
+                                        </tr>        
+                                        <tr>  
+                                            <td class="w-auto bg-maya-blue-9">.fade-left</td>
+                                            <td class="w-auto bg-maya-blue-9"> Aparece gradualmente mientras se mueve hacia la izquierda.</td>
+                                        </tr>       
+                                        <tr>  
+                                            <td class="w-auto bg-maya-blue-9">.fade-up-right</td>
+                                            <td class="w-auto bg-maya-blue-9"> Aparece gradualmente mientras se mueve hacia arriba y a la derecha.</td>
+                                        </tr>  
+                                        <tr>  
+                                            <td class="w-auto bg-maya-blue-9">.fade-up-left</td>
+                                            <td class="w-auto bg-maya-blue-9"> Aparece gradualmente mientras se mueve hacia arriba y a la izquierda.</td>
+                                        </tr>   
+                                        <tr>  
+                                            <td class="w-auto bg-maya-blue-9">.fade-down-right</td>
+                                            <td class="w-auto bg-maya-blue-9"> Aparece gradualmente mientras se mueve hacia abajo y a la derecha.</td>
+                                        </tr>          
+                                        <tr>  
+                                            <td class="w-auto bg-maya-blue-9">.fade-down-left</td>
+                                            <td class="w-auto bg-maya-blue-9"> Aparece gradualmente mientras se mueve hacia abajo y a la izquierda.</td>
+                                        </tr>                                                                                                                                                     
+                                    </tbody>
+                                </table>
+                            </div>    
+                            <div class="border rounded-t mt-2 p-2">
+                                HTML
+                            </div>                                            
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                  
+    &lt;!-- Animación Run --&gt;
+    &lt;section data-Qy-r="fade-up"&gt;
+        &lt;h2&gt;Título&lt;/h2&gt; 
+    &lt;/section&gt;
+
+    &lt;!-- Animación Run Back --&gt;
+    &lt;section data-Qy-rb="fade-up"&gt;
+        &lt;h2&gt;Título&lt;/h2&gt; 
+    &lt;/section&gt;    
+                                </code></pre>
+                            </div>                
+                    </section>   
+
+                    <section class="pt-3 px-5 pm-2">
+                        <h4 class="font-l">.flip-Opción</h4>
+                        <div class="table rounded border mb-2">
+                            <table class="table-container wm-1000">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-200 bg-maya-blue-5">Clase</th>
+                                        <th class="w-800 bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body scroll-y">
+                                    <tr>  
+                                        <td class="w-auto bg-maya-blue-9">.flip-left</td>
+                                        <td class="w-auto bg-maya-blue-9">Rota el elemento 90 grados hacia la izquierda en el eje Y.</td>
+                                    </tr>         
+                                    <tr>  
+                                        <td class="w-auto bg-maya-blue-9">.flip-right</td>
+                                        <td class="w-auto bg-maya-blue-9">Rota el elemento 90 grados hacia la derecha en el eje Y.</td>
+                                    </tr>      
+                                    <tr>  
+                                        <td class="w-auto bg-maya-blue-9">.flip-up</td>
+                                        <td class="w-auto bg-maya-blue-9"> Rota el elemento 90 grados hacia arriba en el eje X.</td>
+                                    </tr>        
+                                    <tr>  
+                                        <td class="w-auto bg-maya-blue-9">.flip-down</td>
+                                        <td class="w-auto bg-maya-blue-9"> Rota el elemento 90 grados hacia abajo en el eje X</td>
+                                    </tr>                                                                                                                                                          
+                                </tbody>
+                            </table>
+                        </div>    
+                        <div class="border rounded-t mt-2 p-2">
+                            HTML
+                        </div>                                            
+                        <div class="pre-pre2">
+                            <pre class="cont-100 scroll-x"><code class="language-html">    
+    &lt;!-- Animación Run --&gt;                                              
+    &lt;section data-Qy-r="flip-left"&gt;
+        &lt;h2&gt;Título&lt;/h2&gt; 
+    &lt;/section&gt;
+
+    &lt;!-- Animación Run Back --&gt;
+    &lt;section data-Qy-rb="flip-left"&gt;
+        &lt;h2&gt;Título&lt;/h2&gt; 
+    &lt;/section&gt;    
+                            </code></pre>
+                        </div>                
+                    </section>        
+                    
+                    <section class="pt-3 p-5 pm-2">
+                        <h4 class="font-l">.zoom-Opción</h4>
+                        <div class="table rounded border mb-2">
+                            <table class="table-container wm-1000">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-200 bg-maya-blue-5">Clase</th>
+                                        <th class="w-800 bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body scroll-y">
+                                    <tr>  
+                                        <td class="w-auto bg-maya-blue-9">.zoom-in</td>
+                                        <td class="w-auto bg-maya-blue-9">Amplía el elemento mientras aumenta su tamaño.</td>
+                                    </tr>        
+                                    <tr>  
+                                        <td class="w-auto bg-maya-blue-9">.zoom-in-up</td>
+                                        <td class="w-auto bg-maya-blue-9">Amplía el elemento y lo mueve hacia arriba.</td>
+                                    </tr>    
+                                    <tr>  
+                                        <td class="w-auto bg-maya-blue-9">.zoom-in-down</td>
+                                        <td class="w-auto bg-maya-blue-9">Amplía el elemento y lo mueve hacia abajo.</td>
+                                    </tr>           
+                                    <tr>  
+                                        <td class="w-auto bg-maya-blue-9">.zoom-in-left</td>
+                                        <td class="w-auto bg-maya-blue-9">Amplía el elemento y lo mueve hacia la izquierda.</td>
+                                    </tr>               
+                                    <tr>  
+                                        <td class="w-auto bg-maya-blue-9">.zoom-in-right</td>
+                                        <td class="w-auto bg-maya-blue-9">Amplía el elemento y lo mueve hacia la derecha.</td>
+                                    </tr>       
+                                    <tr>  
+                                        <td class="w-auto bg-maya-blue-9">.zoom-out</td>
+                                        <td class="w-auto bg-maya-blue-9">Reduce el tamaño del elemento mientras lo aleja.</td>
+                                    </tr>    
+                                    <tr>  
+                                        <td class="w-auto bg-maya-blue-9">.zoom-out-up</td>
+                                        <td class="w-auto bg-maya-blue-9">Reduce el tamaño del elemento y lo mueve hacia arriba.</td>
+                                    </tr>            
+                                    <tr>  
+                                        <td class="w-auto bg-maya-blue-9">.zoom-out-down</td>
+                                        <td class="w-auto bg-maya-blue-9">Reduce el tamaño del elemento y lo mueve hacia abajo.</td>
+                                    </tr>           
+                                    <tr>  
+                                        <td class="w-auto bg-maya-blue-9">.zoom-out-left</td>
+                                        <td class="w-auto bg-maya-blue-9">Reduce el tamaño del elemento y lo mueve hacia la izquierda.</td>
+                                    </tr>  
+                                    <tr>  
+                                        <td class="w-auto bg-maya-blue-9">.zoom-out-right</td>
+                                        <td class="w-auto bg-maya-blue-9">Reduce el tamaño del elemento y lo mueve hacia la derecha.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                             
+                                                                                                                                                         
+                                </tbody>
+                            </table>
+                        </div>    
+                        <div class="border rounded-t mt-2 p-2">
+                            HTML
+                        </div>                                            
+                        <div class="pre-pre2">
+                            <pre class="cont-100 scroll-x"><code class="language-html">   
+    &lt;!-- Animación Run --&gt;                                               
+    &lt;section data-Qy-r="zoom-left"&gt;
+        &lt;h2&gt;Título&lt;/h2&gt; 
+    &lt;/section&gt;
+    
+    &lt;!-- Animación Run Back --&gt;
+    &lt;section data-Qy-r="zoom-left"&gt;
+        &lt;h2&gt;Título&lt;/h2&gt; 
+    &lt;/section&gt;    
+                            </code></pre>
+                        </div>                
+                    </section>                                               
+                </section>
+            </div>
+        </main>     
+        <footer class="footer" id="footerContent"></footer>    
+    </section>
+</body>
+</html>
