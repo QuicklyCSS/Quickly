@@ -39,6 +39,12 @@ La versión se ha actualizado a Nougat 1.1.0, incorporando nuevas animaciones de
 - **Actualización y corrección de errores de la Versión 1.1.1 Nougat (18-09-2024):**
 En esta versión se ha corregido un bug relacionado con las animaciones 'run back' en dispositivos móviles. Ahora, las animaciones se ejecutan de manera controlada tanto al hacer scroll hacia abajo como hacia arriba, garantizando una experiencia de usuario más fluida. Se ha optimizado el comportamiento del IntersectionObserver, evitando la activación repetitiva de las animaciones y mejorando el rendimiento en dispositivos móviles. Estos ajustes aseguran una mayor estabilidad en la ejecución de los efectos visuales, preservando la interactividad y personalización que caracteriza a las animaciones activadas por los atributos [data-Qy-r] y [data-Qy-rb].
 
+- **Actualización y corrección de errores de la Versión 1.1.2 Nougat (23-09-2024):**
+- Corregido el manejo de la visibilidad de elementos animados en la versión móvil.
+- Añadida la lógica para recoger elementos con atributos `data-Qy-r` y `data-Qy-rb`, mejorando el rendimiento en móviles.
+- Implementadas funciones para calcular posiciones de elementos en relación al viewport.
+- Optimizado el CSS para las animaciones, asegurando una transición suave de opacidad y transformaciones.
+
 
 ### Quickly: Un Framework Basado en CSS Grid
 Quickly es un framework de trabajo CSS basado en CSS Grid, HTML y Javascript que te permite crear rápidamente diseños modernos y receptivos para tus proyectos web.
