@@ -1,7 +1,7 @@
 ## Quickly - Framework CSS Grid
 **Inicio del Proyecto:** 26 de marzo de 2024  
-**Última Actualización:** 01 de septiembre de 2024  
-**Versión Actual:** Nougat 1.0.0
+**Última Actualización:** 04 de octubre de 2024  
+**Versión Actual:** Nougat 1.1.3
 **Sitio Oficial** https://quicklycss.github.io/Quickly/
 ---
 ### Descripción
@@ -45,6 +45,9 @@ En esta versión se ha corregido un bug relacionado con las animaciones 'run bac
 - Implementadas funciones para calcular posiciones de elementos en relación al viewport.
 - Optimizado el CSS para las animaciones, asegurando una transición suave de opacidad y transformaciones.
 
+- **Actualización y mejora para soporte futuro del menú para Wordpress:**
+- Mejora en el control del menú desplegable para dispositivos móviles.
+- Se solucionó el problema de cierre inesperado de submenús al interactuar en la versión móvil.
 
 ### Quickly: Un Framework Basado en CSS Grid
 Quickly es un framework de trabajo CSS basado en CSS Grid, HTML y Javascript que te permite crear rápidamente diseños modernos y receptivos para tus proyectos web.
