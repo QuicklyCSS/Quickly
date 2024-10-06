@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quickly: Alineaciones CSS para Grillas | Diseño Preciso y Organizado</title>
-  <meta name="description" content="Explora las alineaciones CSS especializadas para grillas en Quickly. Diseñadas para ofrecer precisión y organización en tus diseños, nuestras alineaciones facilitan la creación de interfaces web limpias y profesionales. Descubre cómo utilizarlas para mejorar la estructura visual de tus proyectos de desarrollo web.">  
-  <link rel="icon" type="image/png" href="./img/ico.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quickly.min.css">
-  <link rel="stylesheet" href="./css/app.min.css">
-  <script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.min.js" defer></script>
-  <script src="./js/app.min.js" defer></script>
-  <link rel="stylesheet" href="./prism/prism.css">
-  <script src="./prism/prism.js" defer></script>
-  <script>var currentPage = 'alineaciones';</script>
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DZQS41TB5G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-DZQS41TB5G');
-</script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickly: Alineaciones CSS para Grillas | Diseño Preciso y Organizado</title>
+    <meta name="description" content="Explora las alineaciones CSS especializadas para grillas en Quickly. Diseñadas para ofrecer precisión y organización en tus diseños, nuestras alineaciones facilitan la creación de interfaces web limpias y profesionales. Descubre cómo utilizarlas para mejorar la estructura visual de tus proyectos de desarrollo web.">  
+    <link rel="icon" type="image/png" href="./img/ico.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/css/quickly.min.css">
+    <link rel="stylesheet" href="./css/app.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/QuicklyCSS/Quickly@main/dist/v-1/js/quicklyComp.min.js" defer></script>
+    <script src="./js/app.min.js" defer></script>
+    <link rel="stylesheet" href="./prism/prism.css">
+    <script src="./prism/prism.js" defer></script>
+    <script>var currentPage = 'alineaciones';</script>  
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZQS41TB5G"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DZQS41TB5G');
+    </script>
 </head>
 <body>
     <div class="header" id="headerContent"></div>
@@ -42,13 +40,81 @@
                     <section class="p-5 pb-1 pm-2">
                         <h3 class="font-l">Alineaciones Simples y Efectivas</h3>
                         <p>En Quickly, implementar alineaciones para textos y objetos es rápido y sencillo. Con opciones para alinear textos a la izquierda, derecha o centrados, así como para posicionar objetos con precisión, podrás crear diseños visualmente atractivos en pocos pasos. Aprovecha nuestras herramientas intuitivas para lograr la alineación perfecta y destacar tu contenido de manera efectiva.</p>             
-                        <p>Recuerda siempre anteponer la clase .grid al utilizar las clases de alineación, es un detalle importante a tener en cuenta.</p>
                     </section>
+
+                    <!-- Alineación left center right -->
+                    <section class="pt-0 p-5 pm-2">
+                        <h3 class="font-l">Alineación left center right <mark class="font-b font-s-8 badge-col-success">Nuevo</mark></h3>      
+                        <p class="pb-2">Las clases `.left`, `.center` y `.right` te permiten alinear fácilmente texto, imágenes y otros elementos sin la necesidad de un contenedor grid. Logra una alineación perfecta a la izquierda, al centro o a la derecha de manera simple y eficiente, optimizando tanto la estética como la funcionalidad de tu proyecto.</p>          
+                        <h4 class="font-l">.left, .center, .right</h4>
+                        <div class="table rounded border">
+                            <table class="table-container wm-900">
+                                <thead class="table-header bg-skyblue-4">
+                                    <tr>
+                                        <th class="w-100 bg-maya-blue-5">Clase</th>
+                                        <th class="w-800 bg-maya-blue-5">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.left</td>
+                                        <td class="w-auto bg-maya-blue-9">Alinea el contenido a la izquierda del contenedor.</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.center</td>
+                                        <td class="w-auto bg-maya-blue-9">Centra el contenido al contenedor.</td>
+                                    </tr>    
+                                    <tr>
+                                        <td class="w-auto bg-maya-blue-9">.right</td>
+                                        <td class="w-auto bg-maya-blue-9">Alinea el contenido a la derecha del contenedor.</td>
+                                    </tr>                                                                                                                                                                                                                                                                                                       
+                                </tbody>
+                            </table>
+                        </div>  
+                        <div class="border rounded mt-2">
+                            <div class="block border-b  p-2">
+                                <p>Alineaciónes sin contenedor grid</p>
+                            </div>
+                            <div class="hatched-1 p-2 scroll-a">
+                                <div class="wm-600">
+                                    <div class="left p-1 wp-100">      
+                                        <span class="bg-white rounded border px-4 py-1">left | 
+                                        <img src="./img/Logo-Quickly-opcion-2.png" alt="" class="w-80"></span>                      
+                                    </div>
+                                    <div class="center p-1 wp-100">
+                                        <span class="bg-white rounded border px-4 py-1">center |  
+                                        <img src="./img/Logo-Quickly-opcion-2.png" alt="" class="w-80"></span>
+                                    </div>
+                                    <div class="right p-1 wp-100">      
+                                        <span class="bg-white rounded border px-4 py-1">right |
+                                        <img src="./img/Logo-Quickly-opcion-2.png" alt="" class="w-80"></span>                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-t p-2">
+                                HTML
+                            </div>
+                            <div class="pre-pre2">
+                                <pre class="cont-100 scroll-x"><code class="language-html">                                    
+    &lt;div class="left wp-100"&gt;      
+        &lt;span class="bg-white rounded border px-4 py-1"&gt;left&lt;/span&gt;                         
+    &lt;/div&gt;
+    &lt;div class="center wp-100"&gt;      
+        &lt;span class="bg-white rounded border px-4 py-1"&gt;center&lt;/span&gt;                         
+    &lt;/div&gt;
+    &lt;div class="right wp-100"&gt;      
+        &lt;span class="bg-white rounded border px-4 py-1"&gt;right&lt;/span&gt;                         
+    &lt;/div&gt;
+                                </code></pre>
+                            </div> 
+                        </div>                
+                    </section>                     
 
                     <!-- Alineación center center -->
                     <section class="pt-0 p-5 pm-2">
                         <h3 class="font-l">Alineación center center</h3>      
-                        <p class="pb-2">Para centrar un elemento en el medio del contenedor, utiliza la clase "align-cc".</p>          
+                        <p class="pb-2">Para centrar un elemento en el medio del contenedor, utiliza la clase "align-cc".</br>          
+                        Recuerda siempre anteponer la clase .grid al utilizar las clases de alineación, es un detalle importante a tener en cuenta.</p>
                         <h4 class="font-l">.align-cc</h4>
                         <div class="table rounded border">
                             <table class="table-container wm-900">

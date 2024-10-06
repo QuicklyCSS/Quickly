@@ -49,6 +49,14 @@ En esta versión se ha corregido un bug relacionado con las animaciones 'run bac
 - Mejora en el control del menú desplegable para dispositivos móviles.
 - Se solucionó el problema de cierre inesperado de submenús al interactuar en la versión móvil.
 
+- **Actualización y mejoras, pasamos a la version Nougat 1.2.0**
+- 1. Las clases `.z-below` y `.z-above` se optimizan para gestionar solo la elevación en el eje Z, eliminando el centrado.
+- 2. Las clases de posicionamiento Z para `top`, `center` y `bottom` pasan de `flex` a `grid` para una mayor eficiencia.
+- 3. Se agrega soporte para `iframe`, facilitando la integración de contenidos como mapas y páginas web.
+- 4. Nuevas clases permiten centrar texto, imágenes y otros elementos sin necesidad de un contenedor `grid`.
+- 5. La documentación se actualiza con la definición de `grid` en la sección de grillas.
+
+
 ### Quickly: Un Framework Basado en CSS Grid
 Quickly es un framework de trabajo CSS basado en CSS Grid, HTML y Javascript que te permite crear rápidamente diseños modernos y receptivos para tus proyectos web.
 
