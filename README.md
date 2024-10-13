@@ -1,7 +1,7 @@
 # 🚀 **Quickly - Framework CSS Grid**  
-[![Version](https://img.shields.io/badge/version-1.3.0-green.svg)(https://www.quicklycss.cl)] [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Website](https://img.shields.io/badge/website-live-brightgreen)](https://www.quicklycss.cl)
+[![Version](https://img.shields.io/badge/version-1.3.0-green.svg)](https://www.quicklycss.cl) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Website](https://img.shields.io/badge/website-live-brightgreen)](https://www.quicklycss.cl)
 
-![Quickly Banner](https://www.quicklycss.cl/img/banner-quickly.png)
+![Quickly Banner](https://www.quicklycss.cl/img/banner-quickly.png)git 
 
 **Inicio del Proyecto:** 26 de marzo de 2024  
 **Última Actualización:** 14 de octubre de 2024  
