@@ -4,8 +4,8 @@
 ![Quickly Banner](https://www.quicklycss.cl/img/banner-quickly.png)
 
 **Inicio del Proyecto:** 26 de marzo de 2024  
-**Última Actualización:** 14 de octubre de 2024  
-**Versión Actual:** Nougat 1.3.0  
+**Última Actualización:** 26 de abril de 2025  
+**Versión Actual:** Nougat 1.5.0  
 **Sitio Oficial:** [QuicklyCSS](https://www.quicklycss.cl)
 
 ---
@@ -27,18 +27,7 @@ Quickly CSS GRID, es un framework CSS ligero y flexible que facilita el diseño 
 ### 1️⃣ **Inicio del Proyecto (26-03-2024)**  
 Quickly nació para ser un framework CSS ligero, robusto y escalable.
 
-### 2️⃣ **Versión Alfa 1.0.0 (05-04-2024)**  
-Primer lanzamiento alfa con las herramientas esenciales para proyectos básicos.
-
-### 3️⃣ **Versión Beta 1.3.0 (24-08-2024)**  
-- Nueva clase `fixed` para gestionar elementos con posición fija.  
-- Corrección de errores en el z-index y nuevas plantillas de paneles.  
-- Mejora en el rendimiento y la flexibilidad del diseño.
-
-### 4️⃣ **Lanzamiento Versión Oficial 1.0.0 Nougat (01-09-2024)**  
-¡Quickly alcanza su primera versión estable con soporte completo para `Template Grid`!  
-
-## Historia y Evolución
+Detalle
 
 1. **Inicio del Proyecto (26-03-2024):** Quickly nació como una respuesta a la necesidad de un framework CSS ligero y altamente personalizable. Desde sus inicios, el equipo de desarrollo se centró en crear un conjunto de herramientas que no solo fueran fáciles de usar, sino también robustas y escalables.
 
@@ -77,6 +66,17 @@ Primer lanzamiento alfa con las herramientas esenciales para proyectos básicos.
     - Se incluyó soporte para el menú de Quickly en WordPress, permitiendo una fácil integración y personalización del menú desde el dashboard de WordPress.
     - Mejoras en la estructura CSS para compatibilidad con temas personalizados de WordPress.
     - Documentación ampliada con ejemplos para la integración del menú en diferentes plantillas de WordPress.
+   
+14. **Actualización a la Versión Nougat 1.4.0 (22-02-2025):**
+    - Nuevas clases de espaciado vertical y horizontal para ajustes precisos en el diseño.
+    - Optimización del buscador con mayor cobertura de términos.
+    - Indicadores visuales en la documentación: `N` para novedades y `A` para actualizaciones.
+
+15. **Actualización a la Versión Nougat 1.5.0 (26-04-2025):**
+    - Corrección en Carrusel: Solución de un bug en Safari que impedía el renderizado correcto tras el primer ciclo.
+    - Nueva función **Text Cut**: Recorta textos dinámicamente por caracteres o palabras.
+    - Nuevas clases `.text-wrap` y `.text-nowrap`: Controlan el salto de línea en textos largos para evitar desbordes.
+    - Documentación actualizada con ejemplos para Carrusel y Text Cut.
 
 ---
 
