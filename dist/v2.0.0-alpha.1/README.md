@@ -8,7 +8,7 @@ Distribución compilada de **QuicklyCSS V2** para evaluación, pruebas y desarro
 ## Archivos
 
 ```text
-v-2/
+2.0.0-alpha.1/
 ├── css/
 │   └── quicklycss_v2.min.css
 ├── js/
